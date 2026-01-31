@@ -1,0 +1,2385 @@
+{
+    "items": [
+        {
+            "name": "Ancient Fruit",
+            "prices": {
+                "base": {
+                    "normal": 550,
+                    "silver": 687,
+                    "gold": 825,
+                    "iridium": 1100
+                },
+                "tiller": {
+                    "normal": 605,
+                    "silver": 755,
+                    "gold": 907,
+                    "iridium": 1210
+                }
+            },
+            "sprite": "./Fruits - Stardew Valley Wiki_files/Ancient_Fruit.png"
+        },
+        {
+            "name": "Ancient Fruit Wine",
+            "prices": {
+                "base": {
+                    "normal": 1650,
+                    "silver": 2062,
+                    "gold": 2475,
+                    "iridium": 3300
+                },
+                "artisan": {
+                    "normal": 2310,
+                    "silver": 2886,
+                    "gold": 3465,
+                    "iridium": 4620
+                }
+            },
+            "sprite": "https://stardewvalleywiki.com/mediawiki/images/3/30/Light_Blue_Wine.png"
+        },
+        {
+            "name": "Ancient Fruit Jelly",
+            "prices": {
+                "base": {
+                    "normal": 1150
+                },
+                "artisan": {
+                    "normal": 1610
+                }
+            },
+            "sprite": "https://stardewvalleywiki.com/mediawiki/images/c/ca/Light_Blue_Jelly.png"
+        },
+        {
+            "name": "Dried Ancient Fruit",
+            "prices": {
+                "base": {
+                    "normal": 4150
+                },
+                "artisan": {
+                    "normal": 5810
+                }
+            },
+            "sprite": "https://stardewvalleywiki.com/mediawiki/images/f/f9/Light_Blue_Dried_Fruit.png"
+        },
+        {
+            "name": "Apple",
+            "prices": {
+                "base": {
+                    "normal": 100,
+                    "silver": 125,
+                    "gold": 150,
+                    "iridium": 200
+                },
+                "tiller": {
+                    "normal": 110,
+                    "silver": 137,
+                    "gold": 165,
+                    "iridium": 220
+                }
+            },
+            "sprite": "./Fruits - Stardew Valley Wiki_files/Apple.png"
+        },
+        {
+            "name": "Apple Wine",
+            "prices": {
+                "base": {
+                    "normal": 300,
+                    "silver": 375,
+                    "gold": 450,
+                    "iridium": 600
+                },
+                "artisan": {
+                    "normal": 420,
+                    "silver": 525,
+                    "gold": 630,
+                    "iridium": 840
+                }
+            },
+            "sprite": "https://stardewvalleywiki.com/mediawiki/images/9/91/Red_Wine.png"
+        },
+        {
+            "name": "Apple Jelly",
+            "prices": {
+                "base": {
+                    "normal": 250
+                },
+                "artisan": {
+                    "normal": 350
+                }
+            },
+            "sprite": "https://stardewvalleywiki.com/mediawiki/images/9/9f/Red_Jelly.png"
+        },
+        {
+            "name": "Dried Apple",
+            "prices": {
+                "base": {
+                    "normal": 775
+                },
+                "artisan": {
+                    "normal": 1085
+                }
+            },
+            "sprite": "https://stardewvalleywiki.com/mediawiki/images/9/9b/Red_Dried_Fruit.png"
+        },
+        {
+            "name": "Apricot",
+            "prices": {
+                "base": {
+                    "normal": 50,
+                    "silver": 62,
+                    "gold": 75,
+                    "iridium": 100
+                },
+                "tiller": {
+                    "normal": 55,
+                    "silver": 68,
+                    "gold": 82,
+                    "iridium": 110
+                }
+            },
+            "sprite": "./Fruits - Stardew Valley Wiki_files/Apricot.png"
+        },
+        {
+            "name": "Apricot Wine",
+            "prices": {
+                "base": {
+                    "normal": 150,
+                    "silver": 187,
+                    "gold": 225,
+                    "iridium": 300
+                },
+                "artisan": {
+                    "normal": 210,
+                    "silver": 261,
+                    "gold": 315,
+                    "iridium": 420
+                }
+            },
+            "sprite": "https://stardewvalleywiki.com/mediawiki/images/c/cd/Orange_Wine.png"
+        },
+        {
+            "name": "Apricot Jelly",
+            "prices": {
+                "base": {
+                    "normal": 150
+                },
+                "artisan": {
+                    "normal": 210
+                }
+            },
+            "sprite": "https://stardewvalleywiki.com/mediawiki/images/f/fc/Orange_Jelly.png"
+        },
+        {
+            "name": "Dried Apricot",
+            "prices": {
+                "base": {
+                    "normal": 400
+                },
+                "artisan": {
+                    "normal": 560
+                }
+            },
+            "sprite": "https://stardewvalleywiki.com/mediawiki/images/3/3a/Orange_Dried_Fruit.png"
+        },
+        {
+            "name": "Banana",
+            "prices": {
+                "base": {
+                    "normal": 150,
+                    "silver": 187,
+                    "gold": 225,
+                    "iridium": 300
+                },
+                "tiller": {
+                    "normal": 165,
+                    "silver": 205,
+                    "gold": 247,
+                    "iridium": 330
+                }
+            },
+            "sprite": "./Fruits - Stardew Valley Wiki_files/Banana.png"
+        },
+        {
+            "name": "Banana Wine",
+            "prices": {
+                "base": {
+                    "normal": 450,
+                    "silver": 562,
+                    "gold": 675,
+                    "iridium": 900
+                },
+                "artisan": {
+                    "normal": 630,
+                    "silver": 786,
+                    "gold": 945,
+                    "iridium": 1260
+                }
+            },
+            "sprite": "https://stardewvalleywiki.com/mediawiki/images/2/29/Yellow_Wine.png"
+        },
+        {
+            "name": "Banana Jelly",
+            "prices": {
+                "base": {
+                    "normal": 350
+                },
+                "artisan": {
+                    "normal": 490
+                }
+            },
+            "sprite": "https://stardewvalleywiki.com/mediawiki/images/4/43/Yellow_Jelly.png"
+        },
+        {
+            "name": "Dried Banana",
+            "prices": {
+                "base": {
+                    "normal": 1150
+                },
+                "artisan": {
+                    "normal": 1610
+                }
+            },
+            "sprite": "https://stardewvalleywiki.com/mediawiki/images/c/cd/Yellow_Dried_Fruit.png"
+        },
+        {
+            "name": "Blackberry",
+            "prices": {
+                "base": {
+                    "normal": 20,
+                    "silver": 25,
+                    "gold": 30,
+                    "iridium": 40
+                },
+                "tiller": {
+                    "normal": 22,
+                    "iridium": 44
+                }
+            },
+            "sprite": "./Fruits - Stardew Valley Wiki_files/Blackberry.png"
+        },
+        {
+            "name": "Blackberry Wine",
+            "prices": {
+                "base": {
+                    "normal": 60,
+                    "silver": 75,
+                    "gold": 90,
+                    "iridium": 120
+                },
+                "artisan": {
+                    "normal": 84,
+                    "silver": 105,
+                    "gold": 126,
+                    "iridium": 168
+                }
+            },
+            "sprite": "https://stardewvalleywiki.com/mediawiki/images/3/30/Dark_Blue_Wine.png"
+        },
+        {
+            "name": "Blackberry Jelly",
+            "prices": {
+                "base": {
+                    "normal": 90
+                },
+                "artisan": {
+                    "normal": 126
+                }
+            },
+            "sprite": "https://stardewvalleywiki.com/mediawiki/images/f/f2/Dark_Blue_Jelly.png"
+        },
+        {
+            "name": "Dried Blackberry",
+            "prices": {
+                "base": {
+                    "normal": 175
+                },
+                "artisan": {
+                    "normal": 245
+                }
+            },
+            "sprite": "https://stardewvalleywiki.com/mediawiki/images/1/1e/Dark_Blue_Dried_Fruit.png"
+        },
+        {
+            "name": "Blueberry",
+            "prices": {
+                "base": {
+                    "normal": 50,
+                    "silver": 62,
+                    "gold": 75,
+                    "iridium": 100
+                },
+                "tiller": {
+                    "normal": 55,
+                    "silver": 68,
+                    "gold": 82,
+                    "iridium": 110
+                }
+            },
+            "sprite": "./Fruits - Stardew Valley Wiki_files/Blueberry.png"
+        },
+        {
+            "name": "Blueberry Wine",
+            "prices": {
+                "base": {
+                    "normal": 150,
+                    "silver": 187,
+                    "gold": 225,
+                    "iridium": 300
+                },
+                "artisan": {
+                    "normal": 210,
+                    "silver": 261,
+                    "gold": 315,
+                    "iridium": 420
+                }
+            },
+            "sprite": "https://stardewvalleywiki.com/mediawiki/images/5/57/Blue_Wine.png"
+        },
+        {
+            "name": "Blueberry Jelly",
+            "prices": {
+                "base": {
+                    "normal": 150
+                },
+                "artisan": {
+                    "normal": 210
+                }
+            },
+            "sprite": "https://stardewvalleywiki.com/mediawiki/images/6/65/Blue_Jelly.png"
+        },
+        {
+            "name": "Dried Blueberry",
+            "prices": {
+                "base": {
+                    "normal": 400
+                },
+                "artisan": {
+                    "normal": 560
+                }
+            },
+            "sprite": "https://stardewvalleywiki.com/mediawiki/images/a/a9/Blue_Dried_Fruit.png"
+        },
+        {
+            "name": "Cactus Fruit",
+            "prices": {
+                "base": {
+                    "normal": 75,
+                    "silver": 93,
+                    "gold": 112,
+                    "iridium": 150
+                },
+                "tiller": {
+                    "normal": 82,
+                    "silver": 102,
+                    "gold": 123,
+                    "iridium": 165
+                }
+            },
+            "sprite": "./Fruits - Stardew Valley Wiki_files/Cactus_Fruit.png"
+        },
+        {
+            "name": "Cactus Fruit Wine",
+            "prices": {
+                "base": {
+                    "normal": 225,
+                    "silver": 281,
+                    "gold": 337,
+                    "iridium": 450
+                },
+                "artisan": {
+                    "normal": 315,
+                    "silver": 393,
+                    "gold": 471,
+                    "iridium": 630
+                }
+            },
+            "sprite": "https://stardewvalleywiki.com/mediawiki/images/8/81/Green_Wine.png"
+        },
+        {
+            "name": "Cactus Fruit Jelly",
+            "prices": {
+                "base": {
+                    "normal": 200
+                },
+                "artisan": {
+                    "normal": 280
+                }
+            },
+            "sprite": "https://stardewvalleywiki.com/mediawiki/images/6/6e/Green_Jelly.png"
+        },
+        {
+            "name": "Dried Cactus Fruit",
+            "prices": {
+                "base": {
+                    "normal": 587
+                },
+                "artisan": {
+                    "normal": 821
+                }
+            },
+            "sprite": "https://stardewvalleywiki.com/mediawiki/images/1/12/Green_Dried_Fruit.png"
+        },
+        {
+            "name": "Cherry",
+            "prices": {
+                "base": {
+                    "normal": 80,
+                    "silver": 100,
+                    "gold": 120,
+                    "iridium": 160
+                },
+                "tiller": {
+                    "normal": 88,
+                    "silver": 110,
+                    "gold": 132,
+                    "iridium": 176
+                }
+            },
+            "sprite": "./Fruits - Stardew Valley Wiki_files/Cherry.png"
+        },
+        {
+            "name": "Cherry Wine",
+            "prices": {
+                "base": {
+                    "normal": 240,
+                    "silver": 300,
+                    "gold": 360,
+                    "iridium": 480
+                },
+                "artisan": {
+                    "normal": 336,
+                    "silver": 420,
+                    "gold": 504,
+                    "iridium": 672
+                }
+            },
+            "sprite": "https://stardewvalleywiki.com/mediawiki/images/9/91/Red_Wine.png"
+        },
+        {
+            "name": "Cherry Jelly",
+            "prices": {
+                "base": {
+                    "normal": 210
+                },
+                "artisan": {
+                    "normal": 294
+                }
+            },
+            "sprite": "https://stardewvalleywiki.com/mediawiki/images/9/9f/Red_Jelly.png"
+        },
+        {
+            "name": "Dried Cherry",
+            "prices": {
+                "base": {
+                    "normal": 625
+                },
+                "artisan": {
+                    "normal": 875
+                }
+            },
+            "sprite": "https://stardewvalleywiki.com/mediawiki/images/9/9b/Red_Dried_Fruit.png"
+        },
+        {
+            "name": "Coconut",
+            "prices": {
+                "base": {
+                    "normal": 100,
+                    "silver": 125,
+                    "gold": 150,
+                    "iridium": 200
+                },
+                "tiller": {
+                    "normal": 100,
+                    "silver": 125,
+                    "gold": 150,
+                    "iridium": 200
+                }
+            },
+            "sprite": "./Fruits - Stardew Valley Wiki_files/Coconut.png"
+        },
+        {
+            "name": "Coconut Wine",
+            "prices": {
+                "base": {
+                    "normal": 300,
+                    "silver": 375,
+                    "gold": 450,
+                    "iridium": 600
+                },
+                "artisan": {
+                    "normal": 420,
+                    "silver": 525,
+                    "gold": 630,
+                    "iridium": 840
+                }
+            },
+            "sprite": "https://stardewvalleywiki.com/mediawiki/images/2/24/Brown_Wine.png"
+        },
+        {
+            "name": "Coconut Jelly",
+            "prices": {
+                "base": {
+                    "normal": 250
+                },
+                "artisan": {
+                    "normal": 350
+                }
+            },
+            "sprite": "https://stardewvalleywiki.com/mediawiki/images/d/d3/Brown_Jelly.png"
+        },
+        {
+            "name": "Dried Coconut",
+            "prices": {
+                "base": {
+                    "normal": 775
+                },
+                "artisan": {
+                    "normal": 1085
+                }
+            },
+            "sprite": "https://stardewvalleywiki.com/mediawiki/images/d/d2/Brown_Dried_Fruit.png"
+        },
+        {
+            "name": "Cranberries",
+            "prices": {
+                "base": {
+                    "normal": 75,
+                    "silver": 93,
+                    "gold": 112,
+                    "iridium": 150
+                },
+                "tiller": {
+                    "normal": 82,
+                    "silver": 102,
+                    "gold": 123,
+                    "iridium": 165
+                }
+            },
+            "sprite": "./Fruits - Stardew Valley Wiki_files/Cranberries.png"
+        },
+        {
+            "name": "Cranberries Wine",
+            "prices": {
+                "base": {
+                    "normal": 225,
+                    "silver": 281,
+                    "gold": 337,
+                    "iridium": 450
+                },
+                "artisan": {
+                    "normal": 315,
+                    "silver": 393,
+                    "gold": 471,
+                    "iridium": 630
+                }
+            },
+            "sprite": "https://stardewvalleywiki.com/mediawiki/images/9/91/Red_Wine.png"
+        },
+        {
+            "name": "Cranberries Jelly",
+            "prices": {
+                "base": {
+                    "normal": 200
+                },
+                "artisan": {
+                    "normal": 280
+                }
+            },
+            "sprite": "https://stardewvalleywiki.com/mediawiki/images/9/9f/Red_Jelly.png"
+        },
+        {
+            "name": "Dried Cranberries",
+            "prices": {
+                "base": {
+                    "normal": 587
+                },
+                "artisan": {
+                    "normal": 821
+                }
+            },
+            "sprite": "https://stardewvalleywiki.com/mediawiki/images/9/9b/Red_Dried_Fruit.png"
+        },
+        {
+            "name": "Crystal Fruit",
+            "prices": {
+                "base": {
+                    "normal": 150,
+                    "silver": 187,
+                    "gold": 225,
+                    "iridium": 300
+                },
+                "tiller": {
+                    "normal": 150,
+                    "silver": 187,
+                    "gold": 225,
+                    "iridium": 300
+                }
+            },
+            "sprite": "./Fruits - Stardew Valley Wiki_files/Crystal_Fruit.png"
+        },
+        {
+            "name": "Crystal Fruit Wine",
+            "prices": {
+                "base": {
+                    "normal": 450,
+                    "silver": 562,
+                    "gold": 675,
+                    "iridium": 900
+                },
+                "artisan": {
+                    "normal": 630,
+                    "silver": 786,
+                    "gold": 945,
+                    "iridium": 1260
+                }
+            },
+            "sprite": "https://stardewvalleywiki.com/mediawiki/images/5/57/Blue_Wine.png"
+        },
+        {
+            "name": "Crystal Fruit Jelly",
+            "prices": {
+                "base": {
+                    "normal": 350
+                },
+                "artisan": {
+                    "normal": 490
+                }
+            },
+            "sprite": "https://stardewvalleywiki.com/mediawiki/images/6/65/Blue_Jelly.png"
+        },
+        {
+            "name": "Dried Crystal Fruit",
+            "prices": {
+                "base": {
+                    "normal": 1150
+                },
+                "artisan": {
+                    "normal": 1610
+                }
+            },
+            "sprite": "https://stardewvalleywiki.com/mediawiki/images/a/a9/Blue_Dried_Fruit.png"
+        },
+        {
+            "name": "Grape",
+            "prices": {
+                "base": {
+                    "normal": 80,
+                    "silver": 100,
+                    "gold": 120,
+                    "iridium": 160
+                },
+                "tiller": {
+                    "normal": 88,
+                    "silver": 110,
+                    "gold": 132,
+                    "iridium": 176
+                }
+            },
+            "sprite": "./Fruits - Stardew Valley Wiki_files/Grape.png"
+        },
+        {
+            "name": "Grape Wine",
+            "prices": {
+                "base": {
+                    "normal": 240,
+                    "silver": 300,
+                    "gold": 360,
+                    "iridium": 480
+                },
+                "artisan": {
+                    "normal": 336,
+                    "silver": 420,
+                    "gold": 504,
+                    "iridium": 672
+                }
+            },
+            "sprite": "https://stardewvalleywiki.com/mediawiki/images/0/09/Dark_Purple_Wine.png"
+        },
+        {
+            "name": "Grape Jelly",
+            "prices": {
+                "base": {
+                    "normal": 210
+                },
+                "artisan": {
+                    "normal": 294
+                }
+            },
+            "sprite": "https://stardewvalleywiki.com/mediawiki/images/a/a8/Dark_Purple_Jelly.png"
+        },
+        {
+            "name": "Hot Pepper",
+            "prices": {
+                "base": {
+                    "normal": 40,
+                    "silver": 50,
+                    "gold": 60,
+                    "iridium": 80
+                },
+                "tiller": {
+                    "normal": 44,
+                    "silver": 55,
+                    "gold": 66,
+                    "iridium": 88
+                }
+            },
+            "sprite": "./Fruits - Stardew Valley Wiki_files/Hot_Pepper.png"
+        },
+        {
+            "name": "Hot Pepper Wine",
+            "prices": {
+                "base": {
+                    "normal": 120,
+                    "silver": 150,
+                    "gold": 180,
+                    "iridium": 240
+                },
+                "artisan": {
+                    "normal": 168,
+                    "silver": 210,
+                    "gold": 252,
+                    "iridium": 336
+                }
+            },
+            "sprite": "https://stardewvalleywiki.com/mediawiki/images/9/91/Red_Wine.png"
+        },
+        {
+            "name": "Hot Pepper Jelly",
+            "prices": {
+                "base": {
+                    "normal": 130
+                },
+                "artisan": {
+                    "normal": 182
+                }
+            },
+            "sprite": "https://stardewvalleywiki.com/mediawiki/images/9/9f/Red_Jelly.png"
+        },
+        {
+            "name": "Dried Hot Pepper",
+            "prices": {
+                "base": {
+                    "normal": 325
+                },
+                "artisan": {
+                    "normal": 455
+                }
+            },
+            "sprite": "https://stardewvalleywiki.com/mediawiki/images/9/9b/Red_Dried_Fruit.png"
+        },
+        {
+            "name": "Mango",
+            "prices": {
+                "base": {
+                    "normal": 130,
+                    "silver": 162,
+                    "gold": 195,
+                    "iridium": 260
+                },
+                "tiller": {
+                    "normal": 143,
+                    "silver": 178,
+                    "gold": 214,
+                    "iridium": 286
+                }
+            },
+            "sprite": "./Fruits - Stardew Valley Wiki_files/Mango.png"
+        },
+        {
+            "name": "Mango Wine",
+            "prices": {
+                "base": {
+                    "normal": 390,
+                    "silver": 487,
+                    "gold": 585,
+                    "iridium": 780
+                },
+                "artisan": {
+                    "normal": 546,
+                    "silver": 681,
+                    "gold": 819,
+                    "iridium": 1092
+                }
+            },
+            "sprite": "https://stardewvalleywiki.com/mediawiki/images/2/29/Yellow_Wine.png"
+        },
+        {
+            "name": "Mango Jelly",
+            "prices": {
+                "base": {
+                    "normal": 310
+                },
+                "artisan": {
+                    "normal": 434
+                }
+            },
+            "sprite": "https://stardewvalleywiki.com/mediawiki/images/4/43/Yellow_Jelly.png"
+        },
+        {
+            "name": "Dried Mango",
+            "prices": {
+                "base": {
+                    "normal": 1000
+                },
+                "artisan": {
+                    "normal": 1400
+                }
+            },
+            "sprite": "https://stardewvalleywiki.com/mediawiki/images/c/cd/Yellow_Dried_Fruit.png"
+        },
+        {
+            "name": "Melon",
+            "prices": {
+                "base": {
+                    "normal": 250,
+                    "silver": 312,
+                    "gold": 375,
+                    "iridium": 500
+                },
+                "tiller": {
+                    "normal": 275,
+                    "silver": 343,
+                    "gold": 412,
+                    "iridium": 550
+                }
+            },
+            "sprite": "./Fruits - Stardew Valley Wiki_files/Melon.png"
+        },
+        {
+            "name": "Melon Wine",
+            "prices": {
+                "base": {
+                    "normal": 750,
+                    "silver": 937,
+                    "gold": 1125,
+                    "iridium": 1500
+                },
+                "artisan": {
+                    "normal": 1050,
+                    "silver": 1311,
+                    "gold": 1575,
+                    "iridium": 2100
+                }
+            },
+            "sprite": "https://stardewvalleywiki.com/mediawiki/images/1/17/Pink_Wine.png"
+        },
+        {
+            "name": "Melon Jelly",
+            "prices": {
+                "base": {
+                    "normal": 550
+                },
+                "artisan": {
+                    "normal": 770
+                }
+            },
+            "sprite": "https://stardewvalleywiki.com/mediawiki/images/d/d6/Pink_Jelly.png"
+        },
+        {
+            "name": "Dried Melon",
+            "prices": {
+                "base": {
+                    "normal": 1900
+                },
+                "artisan": {
+                    "normal": 2660
+                }
+            },
+            "sprite": "https://stardewvalleywiki.com/mediawiki/images/3/3e/Pink_Dried_Fruit.png"
+        },
+        {
+            "name": "Orange",
+            "prices": {
+                "base": {
+                    "normal": 100,
+                    "silver": 125,
+                    "gold": 150,
+                    "iridium": 200
+                },
+                "tiller": {
+                    "normal": 110,
+                    "silver": 137,
+                    "gold": 165,
+                    "iridium": 220
+                }
+            },
+            "sprite": "./Fruits - Stardew Valley Wiki_files/Orange.png"
+        },
+        {
+            "name": "Orange Wine",
+            "prices": {
+                "base": {
+                    "normal": 300,
+                    "silver": 375,
+                    "gold": 450,
+                    "iridium": 600
+                },
+                "artisan": {
+                    "normal": 420,
+                    "silver": 525,
+                    "gold": 630,
+                    "iridium": 840
+                }
+            },
+            "sprite": "https://stardewvalleywiki.com/mediawiki/images/c/cd/Orange_Wine.png"
+        },
+        {
+            "name": "Orange Jelly",
+            "prices": {
+                "base": {
+                    "normal": 250
+                },
+                "artisan": {
+                    "normal": 350
+                }
+            },
+            "sprite": "https://stardewvalleywiki.com/mediawiki/images/f/fc/Orange_Jelly.png"
+        },
+        {
+            "name": "Dried Orange",
+            "prices": {
+                "base": {
+                    "normal": 775
+                },
+                "artisan": {
+                    "normal": 1085
+                }
+            },
+            "sprite": "https://stardewvalleywiki.com/mediawiki/images/3/3a/Orange_Dried_Fruit.png"
+        },
+        {
+            "name": "Peach",
+            "prices": {
+                "base": {
+                    "normal": 140,
+                    "silver": 175,
+                    "gold": 210,
+                    "iridium": 280
+                },
+                "tiller": {
+                    "normal": 154,
+                    "silver": 192,
+                    "gold": 231,
+                    "iridium": 308
+                }
+            },
+            "sprite": "./Fruits - Stardew Valley Wiki_files/Peach.png"
+        },
+        {
+            "name": "Peach Wine",
+            "prices": {
+                "base": {
+                    "normal": 420,
+                    "silver": 525,
+                    "gold": 630,
+                    "iridium": 840
+                },
+                "artisan": {
+                    "normal": 588,
+                    "silver": 735,
+                    "gold": 882,
+                    "iridium": 1176
+                }
+            },
+            "sprite": "https://stardewvalleywiki.com/mediawiki/images/1/17/Pink_Wine.png"
+        },
+        {
+            "name": "Peach Jelly",
+            "prices": {
+                "base": {
+                    "normal": 330
+                },
+                "artisan": {
+                    "normal": 462
+                }
+            },
+            "sprite": "https://stardewvalleywiki.com/mediawiki/images/d/d6/Pink_Jelly.png"
+        },
+        {
+            "name": "Dried Peach",
+            "prices": {
+                "base": {
+                    "normal": 1075
+                },
+                "artisan": {
+                    "normal": 1505
+                }
+            },
+            "sprite": "https://stardewvalleywiki.com/mediawiki/images/3/3e/Pink_Dried_Fruit.png"
+        },
+        {
+            "name": "Pineapple",
+            "prices": {
+                "base": {
+                    "normal": 300,
+                    "silver": 375,
+                    "gold": 450,
+                    "iridium": 600
+                },
+                "tiller": {
+                    "normal": 330,
+                    "silver": 412,
+                    "gold": 495,
+                    "iridium": 660
+                }
+            },
+            "sprite": "./Fruits - Stardew Valley Wiki_files/Pineapple.png"
+        },
+        {
+            "name": "Pineapple Wine",
+            "prices": {
+                "base": {
+                    "normal": 900,
+                    "silver": 1125,
+                    "gold": 1350,
+                    "iridium": 1800
+                },
+                "artisan": {
+                    "normal": 1260,
+                    "silver": 1575,
+                    "gold": 1890,
+                    "iridium": 2520
+                }
+            },
+            "sprite": "https://stardewvalleywiki.com/mediawiki/images/2/29/Yellow_Wine.png"
+        },
+        {
+            "name": "Pineapple Jelly",
+            "prices": {
+                "base": {
+                    "normal": 650
+                },
+                "artisan": {
+                    "normal": 910
+                }
+            },
+            "sprite": "https://stardewvalleywiki.com/mediawiki/images/4/43/Yellow_Jelly.png"
+        },
+        {
+            "name": "Dried Pineapple",
+            "prices": {
+                "base": {
+                    "normal": 2275
+                },
+                "artisan": {
+                    "normal": 3185
+                }
+            },
+            "sprite": "https://stardewvalleywiki.com/mediawiki/images/c/cd/Yellow_Dried_Fruit.png"
+        },
+        {
+            "name": "Pomegranate",
+            "prices": {
+                "base": {
+                    "normal": 140,
+                    "silver": 175,
+                    "gold": 210,
+                    "iridium": 280
+                },
+                "tiller": {
+                    "normal": 154,
+                    "silver": 192,
+                    "gold": 231,
+                    "iridium": 308
+                }
+            },
+            "sprite": "./Fruits - Stardew Valley Wiki_files/Pomegranate.png"
+        },
+        {
+            "name": "Pomegranate Wine",
+            "prices": {
+                "base": {
+                    "normal": 420,
+                    "silver": 525,
+                    "gold": 630,
+                    "iridium": 840
+                },
+                "artisan": {
+                    "normal": 588,
+                    "silver": 735,
+                    "gold": 882,
+                    "iridium": 1176
+                }
+            },
+            "sprite": "https://stardewvalleywiki.com/mediawiki/images/7/7f/Dark_Pink_Wine.png"
+        },
+        {
+            "name": "Pomegranate Jelly",
+            "prices": {
+                "base": {
+                    "normal": 330
+                },
+                "artisan": {
+                    "normal": 462
+                }
+            },
+            "sprite": "https://stardewvalleywiki.com/mediawiki/images/7/7b/Dark_Pink_Jelly.png"
+        },
+        {
+            "name": "Dried Pomegranate",
+            "prices": {
+                "base": {
+                    "normal": 1075
+                },
+                "artisan": {
+                    "normal": 1505
+                }
+            },
+            "sprite": "https://stardewvalleywiki.com/mediawiki/images/a/a7/Dark_Pink_Dried_Fruit.png"
+        },
+        {
+            "name": "Powdermelon",
+            "prices": {
+                "base": {
+                    "normal": 60,
+                    "silver": 75,
+                    "gold": 90,
+                    "iridium": 120
+                },
+                "tiller": {
+                    "normal": 66,
+                    "silver": 82,
+                    "gold": 99,
+                    "iridium": 132
+                }
+            },
+            "sprite": "./Fruits - Stardew Valley Wiki_files/Powdermelon.png"
+        },
+        {
+            "name": "Powdermelon Wine",
+            "prices": {
+                "base": {
+                    "normal": 180,
+                    "silver": 225,
+                    "gold": 270,
+                    "iridium": 360
+                },
+                "artisan": {
+                    "normal": 252,
+                    "silver": 315,
+                    "gold": 378,
+                    "iridium": 504
+                }
+            },
+            "sprite": "https://stardewvalleywiki.com/mediawiki/images/5/5a/White_Wine.png"
+        },
+        {
+            "name": "Powdermelon Jelly",
+            "prices": {
+                "base": {
+                    "normal": 170
+                },
+                "artisan": {
+                    "normal": 238
+                }
+            },
+            "sprite": "https://stardewvalleywiki.com/mediawiki/images/6/66/White_Jelly.png"
+        },
+        {
+            "name": "Dried Powdermelon",
+            "prices": {
+                "base": {
+                    "normal": 475
+                },
+                "artisan": {
+                    "normal": 665
+                }
+            },
+            "sprite": "https://stardewvalleywiki.com/mediawiki/images/b/ba/White_Dried_Fruit.png"
+        },
+        {
+            "name": "Qi Fruit",
+            "prices": {
+                "base": {
+                    "normal": 1
+                },
+                "tiller": {
+                    "normal": 1
+                }
+            },
+            "sprite": "./Fruits - Stardew Valley Wiki_files/Qi_Fruit.png"
+        },
+        {
+            "name": "Qi Fruit Wine",
+            "prices": {
+                "base": {
+                    "normal": 3,
+                    "silver": 3,
+                    "gold": 4,
+                    "iridium": 6
+                },
+                "artisan": {
+                    "normal": 4,
+                    "silver": 4,
+                    "gold": 5,
+                    "iridium": 8
+                }
+            },
+            "sprite": "https://stardewvalleywiki.com/mediawiki/images/5/57/Blue_Wine.png"
+        },
+        {
+            "name": "Qi Fruit Jelly",
+            "prices": {
+                "base": {
+                    "normal": 52
+                },
+                "artisan": {
+                    "normal": 72
+                }
+            },
+            "sprite": "https://stardewvalleywiki.com/mediawiki/images/6/65/Blue_Jelly.png"
+        },
+        {
+            "name": "Dried Qi Fruit",
+            "prices": {
+                "base": {
+                    "normal": 32
+                },
+                "artisan": {
+                    "normal": 44
+                }
+            },
+            "sprite": "https://stardewvalleywiki.com/mediawiki/images/a/a9/Blue_Dried_Fruit.png"
+        },
+        {
+            "name": "Rhubarb",
+            "prices": {
+                "base": {
+                    "normal": 220,
+                    "silver": 275,
+                    "gold": 330,
+                    "iridium": 440
+                },
+                "tiller": {
+                    "normal": 242,
+                    "silver": 302,
+                    "gold": 363,
+                    "iridium": 484
+                }
+            },
+            "sprite": "./Fruits - Stardew Valley Wiki_files/Rhubarb.png"
+        },
+        {
+            "name": "Rhubarb Wine",
+            "prices": {
+                "base": {
+                    "normal": 660,
+                    "silver": 825,
+                    "gold": 990,
+                    "iridium": 1320
+                },
+                "artisan": {
+                    "normal": 924,
+                    "silver": 1155,
+                    "gold": 1386,
+                    "iridium": 1848
+                }
+            },
+            "sprite": "https://stardewvalleywiki.com/mediawiki/images/9/91/Red_Wine.png"
+        },
+        {
+            "name": "Rhubarb Jelly",
+            "prices": {
+                "base": {
+                    "normal": 490
+                },
+                "artisan": {
+                    "normal": 686
+                }
+            },
+            "sprite": "https://stardewvalleywiki.com/mediawiki/images/9/9f/Red_Jelly.png"
+        },
+        {
+            "name": "Dried Rhubarb",
+            "prices": {
+                "base": {
+                    "normal": 1675
+                },
+                "artisan": {
+                    "normal": 2345
+                }
+            },
+            "sprite": "https://stardewvalleywiki.com/mediawiki/images/9/9b/Red_Dried_Fruit.png"
+        },
+        {
+            "name": "Salmonberry",
+            "prices": {
+                "base": {
+                    "normal": 5,
+                    "silver": 6,
+                    "gold": 7,
+                    "iridium": 10
+                },
+                "tiller": {
+                    "normal": 5,
+                    "iridium": 11
+                }
+            },
+            "sprite": "./Fruits - Stardew Valley Wiki_files/Salmonberry.png"
+        },
+        {
+            "name": "Salmonberry Wine",
+            "prices": {
+                "base": {
+                    "normal": 15,
+                    "silver": 18,
+                    "gold": 22,
+                    "iridium": 30
+                },
+                "artisan": {
+                    "normal": 21,
+                    "silver": 25,
+                    "gold": 30,
+                    "iridium": 42
+                }
+            },
+            "sprite": "https://stardewvalleywiki.com/mediawiki/images/9/91/Red_Wine.png"
+        },
+        {
+            "name": "Salmonberry Jelly",
+            "prices": {
+                "base": {
+                    "normal": 60
+                },
+                "artisan": {
+                    "normal": 84
+                }
+            },
+            "sprite": "https://stardewvalleywiki.com/mediawiki/images/9/9f/Red_Jelly.png"
+        },
+        {
+            "name": "Dried Salmonberry",
+            "prices": {
+                "base": {
+                    "normal": 62
+                },
+                "artisan": {
+                    "normal": 86
+                }
+            },
+            "sprite": "https://stardewvalleywiki.com/mediawiki/images/9/9b/Red_Dried_Fruit.png"
+        },
+        {
+            "name": "Spice Berry",
+            "prices": {
+                "base": {
+                    "normal": 80,
+                    "silver": 100,
+                    "gold": 120,
+                    "iridium": 160
+                },
+                "tiller": {
+                    "normal": 80,
+                    "silver": 100,
+                    "gold": 120,
+                    "iridium": 160
+                }
+            },
+            "sprite": "./Fruits - Stardew Valley Wiki_files/Spice_Berry.png"
+        },
+        {
+            "name": "Spice Berry Wine",
+            "prices": {
+                "base": {
+                    "normal": 240,
+                    "silver": 300,
+                    "gold": 360,
+                    "iridium": 480
+                },
+                "artisan": {
+                    "normal": 336,
+                    "silver": 420,
+                    "gold": 504,
+                    "iridium": 672
+                }
+            },
+            "sprite": "https://stardewvalleywiki.com/mediawiki/images/c/cd/Orange_Wine.png"
+        },
+        {
+            "name": "Spice Berry Jelly",
+            "prices": {
+                "base": {
+                    "normal": 210
+                },
+                "artisan": {
+                    "normal": 294
+                }
+            },
+            "sprite": "https://stardewvalleywiki.com/mediawiki/images/f/fc/Orange_Jelly.png"
+        },
+        {
+            "name": "Dried Spice Berry",
+            "prices": {
+                "base": {
+                    "normal": 625
+                },
+                "artisan": {
+                    "normal": 875
+                }
+            },
+            "sprite": "https://stardewvalleywiki.com/mediawiki/images/3/3a/Orange_Dried_Fruit.png"
+        },
+        {
+            "name": "Starfruit",
+            "prices": {
+                "base": {
+                    "normal": 750,
+                    "silver": 937,
+                    "gold": 1125,
+                    "iridium": 1500
+                },
+                "tiller": {
+                    "normal": 825,
+                    "silver": 1030,
+                    "gold": 1237,
+                    "iridium": 1650
+                }
+            },
+            "sprite": "./Fruits - Stardew Valley Wiki_files/Starfruit.png"
+        },
+        {
+            "name": "Starfruit Wine",
+            "prices": {
+                "base": {
+                    "normal": 2250,
+                    "silver": 2812,
+                    "gold": 3375,
+                    "iridium": 4500
+                },
+                "artisan": {
+                    "normal": 3150,
+                    "silver": 3936,
+                    "gold": 4725,
+                    "iridium": 6300
+                }
+            },
+            "sprite": "https://stardewvalleywiki.com/mediawiki/images/2/29/Yellow_Wine.png"
+        },
+        {
+            "name": "Starfruit Jelly",
+            "prices": {
+                "base": {
+                    "normal": 1550
+                },
+                "artisan": {
+                    "normal": 2170
+                }
+            },
+            "sprite": "https://stardewvalleywiki.com/mediawiki/images/4/43/Yellow_Jelly.png"
+        },
+        {
+            "name": "Dried Starfruit",
+            "prices": {
+                "base": {
+                    "normal": 5650
+                },
+                "artisan": {
+                    "normal": 7910
+                }
+            },
+            "sprite": "https://stardewvalleywiki.com/mediawiki/images/c/cd/Yellow_Dried_Fruit.png"
+        },
+        {
+            "name": "Strawberry",
+            "prices": {
+                "base": {
+                    "normal": 120,
+                    "silver": 150,
+                    "gold": 180,
+                    "iridium": 240
+                },
+                "tiller": {
+                    "normal": 132,
+                    "silver": 165,
+                    "gold": 198,
+                    "iridium": 264
+                }
+            },
+            "sprite": "./Fruits - Stardew Valley Wiki_files/Strawberry.png"
+        },
+        {
+            "name": "Strawberry Wine",
+            "prices": {
+                "base": {
+                    "normal": 360,
+                    "silver": 450,
+                    "gold": 540,
+                    "iridium": 720
+                },
+                "artisan": {
+                    "normal": 504,
+                    "silver": 630,
+                    "gold": 756,
+                    "iridium": 1008
+                }
+            },
+            "sprite": "https://stardewvalleywiki.com/mediawiki/images/9/91/Red_Wine.png"
+        },
+        {
+            "name": "Strawberry Jelly",
+            "prices": {
+                "base": {
+                    "normal": 290
+                },
+                "artisan": {
+                    "normal": 406
+                }
+            },
+            "sprite": "https://stardewvalleywiki.com/mediawiki/images/9/9f/Red_Jelly.png"
+        },
+        {
+            "name": "Dried Strawberry",
+            "prices": {
+                "base": {
+                    "normal": 925
+                },
+                "artisan": {
+                    "normal": 1295
+                }
+            },
+            "sprite": "https://stardewvalleywiki.com/mediawiki/images/9/9b/Red_Dried_Fruit.png"
+        },
+        {
+            "name": "Wild Plum",
+            "prices": {
+                "base": {
+                    "normal": 80,
+                    "silver": 100,
+                    "gold": 120,
+                    "iridium": 160
+                },
+                "tiller": {
+                    "normal": 80,
+                    "silver": 100,
+                    "gold": 120,
+                    "iridium": 160
+                }
+            },
+            "sprite": "./Fruits - Stardew Valley Wiki_files/Wild_Plum.png"
+        },
+        {
+            "name": "Wild Plum Wine",
+            "prices": {
+                "base": {
+                    "normal": 240,
+                    "silver": 300,
+                    "gold": 360,
+                    "iridium": 480
+                },
+                "artisan": {
+                    "normal": 336,
+                    "silver": 420,
+                    "gold": 504,
+                    "iridium": 672
+                }
+            },
+            "sprite": "https://stardewvalleywiki.com/mediawiki/images/1/15/Purple_Wine.png"
+        },
+        {
+            "name": "Wild Plum Jelly",
+            "prices": {
+                "base": {
+                    "normal": 210
+                },
+                "artisan": {
+                    "normal": 294
+                }
+            },
+            "sprite": "https://stardewvalleywiki.com/mediawiki/images/5/59/Purple_Jelly.png"
+        },
+        {
+            "name": "Dried Wild Plum",
+            "prices": {
+                "base": {
+                    "normal": 625
+                },
+                "artisan": {
+                    "normal": 875
+                }
+            },
+            "sprite": "https://stardewvalleywiki.com/mediawiki/images/2/24/Purple_Dried_Fruit.png"
+        },
+        {
+            "name": "Blue Jazz",
+            "prices": {
+                "base": {
+                    "normal": 50,
+                    "silver": 62,
+                    "gold": 75,
+                    "iridium": 100
+                }
+            },
+            "sprite": "https://stardewvalleywiki.com/mediawiki/images/2/2f/Blue_Jazz.png"
+        },
+        {
+            "name": "Carrot",
+            "prices": {
+                "base": {
+                    "normal": 35,
+                    "silver": 43,
+                    "gold": 52,
+                    "iridium": 70
+                }
+            },
+            "sprite": "https://stardewvalleywiki.com/mediawiki/images/c/c3/Carrot.png"
+        },
+        {
+            "name": "Carrot Juice",
+            "prices": {
+                "base": {
+                    "normal": 78
+                },
+                "artisan": {
+                    "normal": 109
+                }
+            },
+            "sprite": "https://stardewvalleywiki.com/mediawiki/images/7/7e/Orange_Juice.png"
+        },
+        {
+            "name": "Pickled Carrot",
+            "prices": {
+                "base": {
+                    "normal": 120
+                },
+                "artisan": {
+                    "normal": 168
+                }
+            },
+            "sprite": "https://stardewvalleywiki.com/mediawiki/images/3/3d/Orange_Pickles.png"
+        },
+        {
+            "name": "Cauliflower",
+            "prices": {
+                "base": {
+                    "normal": 175,
+                    "silver": 218,
+                    "gold": 262,
+                    "iridium": 350
+                }
+            },
+            "sprite": "https://stardewvalleywiki.com/mediawiki/images/a/aa/Cauliflower.png"
+        },
+        {
+            "name": "Cauliflower Juice",
+            "prices": {
+                "base": {
+                    "normal": 393
+                },
+                "artisan": {
+                    "normal": 550
+                }
+            },
+            "sprite": "https://stardewvalleywiki.com/mediawiki/images/a/a9/White_Juice.png"
+        },
+        {
+            "name": "Pickled Cauliflower",
+            "prices": {
+                "base": {
+                    "normal": 400
+                },
+                "artisan": {
+                    "normal": 560
+                }
+            },
+            "sprite": "https://stardewvalleywiki.com/mediawiki/images/5/5e/White_Pickles.png"
+        },
+        {
+            "name": "Garlic",
+            "prices": {
+                "base": {
+                    "normal": 60,
+                    "silver": 75,
+                    "gold": 90,
+                    "iridium": 120
+                }
+            },
+            "sprite": "https://stardewvalleywiki.com/mediawiki/images/c/cc/Garlic.png"
+        },
+        {
+            "name": "Garlic Juice",
+            "prices": {
+                "base": {
+                    "normal": 135
+                },
+                "artisan": {
+                    "normal": 189
+                }
+            },
+            "sprite": "https://stardewvalleywiki.com/mediawiki/images/a/a9/White_Juice.png"
+        },
+        {
+            "name": "Pickled Garlic",
+            "prices": {
+                "base": {
+                    "normal": 170
+                },
+                "artisan": {
+                    "normal": 238
+                }
+            },
+            "sprite": "https://stardewvalleywiki.com/mediawiki/images/5/5e/White_Pickles.png"
+        },
+        {
+            "name": "Kale",
+            "prices": {
+                "base": {
+                    "normal": 110,
+                    "silver": 137,
+                    "gold": 165,
+                    "iridium": 220
+                }
+            },
+            "sprite": "https://stardewvalleywiki.com/mediawiki/images/d/d1/Kale.png"
+        },
+        {
+            "name": "Parsnip",
+            "prices": {
+                "base": {
+                    "normal": 35,
+                    "silver": 43,
+                    "gold": 52,
+                    "iridium": 70
+                }
+            },
+            "sprite": "https://stardewvalleywiki.com/mediawiki/images/d/db/Parsnip.png"
+        },
+        {
+            "name": "Parsnip Juice",
+            "prices": {
+                "base": {
+                    "normal": 78
+                },
+                "artisan": {
+                    "normal": 109
+                }
+            },
+            "sprite": "https://stardewvalleywiki.com/mediawiki/images/e/e5/Yellow_Juice.png"
+        },
+        {
+            "name": "Pickled Parsnip",
+            "prices": {
+                "base": {
+                    "normal": 120
+                },
+                "artisan": {
+                    "normal": 168
+                }
+            },
+            "sprite": "https://stardewvalleywiki.com/mediawiki/images/5/5e/Yellow_Pickles.png"
+        },
+        {
+            "name": "Potato",
+            "prices": {
+                "base": {
+                    "normal": 80,
+                    "silver": 100,
+                    "gold": 120,
+                    "iridium": 160
+                }
+            },
+            "sprite": "https://stardewvalleywiki.com/mediawiki/images/c/c2/Potato.png"
+        },
+        {
+            "name": "Potato Juice",
+            "prices": {
+                "base": {
+                    "normal": 180
+                },
+                "artisan": {
+                    "normal": 252
+                }
+            },
+            "sprite": "https://stardewvalleywiki.com/mediawiki/images/e/e5/Yellow_Juice.png"
+        },
+        {
+            "name": "Pickled Potato",
+            "prices": {
+                "base": {
+                    "normal": 210
+                },
+                "artisan": {
+                    "normal": 294
+                }
+            },
+            "sprite": "https://stardewvalleywiki.com/mediawiki/images/5/5e/Yellow_Pickles.png"
+        },
+        {
+            "name": "Tulip",
+            "prices": {
+                "base": {
+                    "normal": 30,
+                    "silver": 37,
+                    "gold": 45,
+                    "iridium": 60
+                }
+            },
+            "sprite": "https://stardewvalleywiki.com/mediawiki/images/c/cf/Tulip.png"
+        },
+        {
+            "name": "Unmilled Rice",
+            "prices": {
+                "base": {
+                    "normal": 30,
+                    "silver": 37,
+                    "gold": 45,
+                    "iridium": 60
+                }
+            },
+            "sprite": "https://stardewvalleywiki.com/mediawiki/images/f/fe/Unmilled_Rice.png"
+        },
+        {
+            "name": "Rice Juice",
+            "prices": {
+                "base": {
+                    "normal": 67
+                },
+                "artisan": {
+                    "normal": 93
+                }
+            },
+            "sprite": "https://stardewvalleywiki.com/mediawiki/images/2/2d/Brown_Juice.png"
+        },
+        {
+            "name": "Pickled Rice",
+            "prices": {
+                "base": {
+                    "normal": 110
+                },
+                "artisan": {
+                    "normal": 154
+                }
+            },
+            "sprite": "https://stardewvalleywiki.com/mediawiki/images/5/5c/Brown_Pickles.png"
+        },
+        {
+            "name": "Poppy",
+            "prices": {
+                "base": {
+                    "normal": 140,
+                    "silver": 175,
+                    "gold": 210,
+                    "iridium": 280
+                }
+            },
+            "sprite": "https://stardewvalleywiki.com/mediawiki/images/3/37/Poppy.png"
+        },
+        {
+            "name": "Radish",
+            "prices": {
+                "base": {
+                    "normal": 90,
+                    "silver": 112,
+                    "gold": 135,
+                    "iridium": 180
+                }
+            },
+            "sprite": "https://stardewvalleywiki.com/mediawiki/images/d/d5/Radish.png"
+        },
+        {
+            "name": "Radish Juice",
+            "prices": {
+                "base": {
+                    "normal": 202
+                },
+                "artisan": {
+                    "normal": 282
+                }
+            },
+            "sprite": "https://stardewvalleywiki.com/mediawiki/images/e/e5/Red_Juice.png"
+        },
+        {
+            "name": "Pickled Radish",
+            "prices": {
+                "base": {
+                    "normal": 230
+                },
+                "artisan": {
+                    "normal": 322
+                }
+            },
+            "sprite": "https://stardewvalleywiki.com/mediawiki/images/3/3d/Red_Pickles.png"
+        },
+        {
+            "name": "Red Cabbage",
+            "prices": {
+                "base": {
+                    "normal": 260,
+                    "silver": 325,
+                    "gold": 390,
+                    "iridium": 520
+                }
+            },
+            "sprite": "https://stardewvalleywiki.com/mediawiki/images/2/2d/Red_Cabbage.png"
+        },
+        {
+            "name": "Red Cabbage Juice",
+            "prices": {
+                "base": {
+                    "normal": 585
+                },
+                "artisan": {
+                    "normal": 819
+                }
+            },
+            "sprite": "https://stardewvalleywiki.com/mediawiki/images/e/e5/Dark_Purple_Juice.png"
+        },
+        {
+            "name": "Pickled Red Cabbage",
+            "prices": {
+                "base": {
+                    "normal": 570
+                },
+                "artisan": {
+                    "normal": 798
+                }
+            },
+            "sprite": "https://stardewvalleywiki.com/mediawiki/images/3/3d/Dark_Purple_Pickles.png"
+        },
+        {
+            "name": "Summer Spangle",
+            "prices": {
+                "base": {
+                    "normal": 90,
+                    "silver": 112,
+                    "gold": 135,
+                    "iridium": 180
+                }
+            },
+            "sprite": "https://stardewvalleywiki.com/mediawiki/images/9/9f/Summer_Spangle.png"
+        },
+        {
+            "name": "Sunflower",
+            "prices": {
+                "base": {
+                    "normal": 80,
+                    "silver": 100,
+                    "gold": 120,
+                    "iridium": 160
+                }
+            },
+            "sprite": "https://stardewvalleywiki.com/mediawiki/images/8/81/Sunflower.png"
+        },
+        {
+            "name": "Oil",
+            "prices": {
+                "base": {
+                    "normal": 100
+                },
+                "artisan": {
+                    "normal": 100
+                }
+            },
+            "sprite": "https://stardewvalleywiki.com/mediawiki/images/0/06/Oil.png"
+        },
+        {
+            "name": "Wheat",
+            "prices": {
+                "base": {
+                    "normal": 25,
+                    "silver": 31,
+                    "gold": 37,
+                    "iridium": 50
+                }
+            },
+            "sprite": "https://stardewvalleywiki.com/mediawiki/images/e/e2/Wheat.png"
+        },
+        {
+            "name": "Beer",
+            "prices": {
+                "base": {
+                    "normal": 200,
+                    "silver": 250,
+                    "gold": 300,
+                    "iridium": 400
+                },
+                "artisan": {
+                    "normal": 280,
+                    "silver": 350,
+                    "gold": 420,
+                    "iridium": 560
+                }
+            },
+            "sprite": "https://stardewvalleywiki.com/mediawiki/images/b/b3/Beer.png"
+        },
+        {
+            "name": "Pickled Wheat",
+            "prices": {
+                "base": {
+                    "normal": 100
+                },
+                "artisan": {
+                    "normal": 140
+                }
+            },
+            "sprite": "https://stardewvalleywiki.com/mediawiki/images/1/15/Yellow_Pickles.png"
+        },
+        {
+            "name": "Amaranth",
+            "prices": {
+                "base": {
+                    "normal": 150,
+                    "silver": 187,
+                    "gold": 225,
+                    "iridium": 300
+                }
+            },
+            "sprite": "https://stardewvalleywiki.com/mediawiki/images/f/f6/Amaranth.png"
+        },
+        {
+            "name": "Amaranth Juice",
+            "prices": {
+                "base": {
+                    "normal": 337
+                },
+                "artisan": {
+                    "normal": 471
+                }
+            },
+            "sprite": "https://stardewvalleywiki.com/mediawiki/images/f/fd/Pink_Juice.png"
+        },
+        {
+            "name": "Pickled Amaranth",
+            "prices": {
+                "base": {
+                    "normal": 350
+                },
+                "artisan": {
+                    "normal": 490
+                }
+            },
+            "sprite": "https://stardewvalleywiki.com/mediawiki/images/5/5d/Pink_Pickles.png"
+        },
+        {
+            "name": "Artichoke",
+            "prices": {
+                "base": {
+                    "normal": 160,
+                    "silver": 200,
+                    "gold": 240,
+                    "iridium": 320
+                }
+            },
+            "sprite": "https://stardewvalleywiki.com/mediawiki/images/d/dd/Artichoke.png"
+        },
+        {
+            "name": "Artichoke Juice",
+            "prices": {
+                "base": {
+                    "normal": 360
+                },
+                "artisan": {
+                    "normal": 504
+                }
+            },
+            "sprite": "https://stardewvalleywiki.com/mediawiki/images/f/fd/Green_Juice.png"
+        },
+        {
+            "name": "Pickled Artichoke",
+            "prices": {
+                "base": {
+                    "normal": 370
+                },
+                "artisan": {
+                    "normal": 518
+                }
+            },
+            "sprite": "https://stardewvalleywiki.com/mediawiki/images/3/30/Green_Pickles.png"
+        },
+        {
+            "name": "Beet",
+            "prices": {
+                "base": {
+                    "normal": 100,
+                    "silver": 125,
+                    "gold": 150,
+                    "iridium": 200
+                }
+            },
+            "sprite": "https://stardewvalleywiki.com/mediawiki/images/a/a4/Beet.png"
+        },
+        {
+            "name": "Beet Juice",
+            "prices": {
+                "base": {
+                    "normal": 225
+                },
+                "artisan": {
+                    "normal": 315
+                }
+            },
+            "sprite": "https://stardewvalleywiki.com/mediawiki/images/f/fd/Red_Juice.png"
+        },
+        {
+            "name": "Pickled Beet",
+            "prices": {
+                "base": {
+                    "normal": 250
+                },
+                "artisan": {
+                    "normal": 350
+                }
+            },
+            "sprite": "https://stardewvalleywiki.com/mediawiki/images/3/3d/Red_Pickles.png"
+        },
+        {
+            "name": "Bok Choy",
+            "prices": {
+                "base": {
+                    "normal": 80,
+                    "silver": 100,
+                    "gold": 120,
+                    "iridium": 160
+                }
+            },
+            "sprite": "https://stardewvalleywiki.com/mediawiki/images/4/40/Bok_Choy.png"
+        },
+        {
+            "name": "Bok Choy Juice",
+            "prices": {
+                "base": {
+                    "normal": 180
+                },
+                "artisan": {
+                    "normal": 252
+                }
+            },
+            "sprite": "https://stardewvalleywiki.com/mediawiki/images/f/fd/Green_Juice.png"
+        },
+        {
+            "name": "Pickled Bok Choy",
+            "prices": {
+                "base": {
+                    "normal": 210
+                },
+                "artisan": {
+                    "normal": 294
+                }
+            },
+            "sprite": "https://stardewvalleywiki.com/mediawiki/images/3/30/Green_Pickles.png"
+        },
+        {
+            "name": "Fairy Rose",
+            "prices": {
+                "base": {
+                    "normal": 290,
+                    "silver": 362,
+                    "gold": 435,
+                    "iridium": 580
+                }
+            },
+            "sprite": "https://stardewvalleywiki.com/mediawiki/images/5/5c/Fairy_Rose.png"
+        },
+        {
+            "name": "Pumpkin",
+            "prices": {
+                "base": {
+                    "normal": 320,
+                    "silver": 400,
+                    "gold": 480,
+                    "iridium": 640
+                }
+            },
+            "sprite": "https://stardewvalleywiki.com/mediawiki/images/6/64/Pumpkin.png"
+        },
+        {
+            "name": "Pumpkin Juice",
+            "prices": {
+                "base": {
+                    "normal": 720
+                },
+                "artisan": {
+                    "normal": 1008
+                }
+            },
+            "sprite": "https://stardewvalleywiki.com/mediawiki/images/f/fd/Orange_Juice.png"
+        },
+        {
+            "name": "Pickled Pumpkin",
+            "prices": {
+                "base": {
+                    "normal": 690
+                },
+                "artisan": {
+                    "normal": 966
+                }
+            },
+            "sprite": "https://stardewvalleywiki.com/mediawiki/images/3/3d/Orange_Pickles.png"
+        },
+        {
+            "name": "Yam",
+            "prices": {
+                "base": {
+                    "normal": 160,
+                    "silver": 200,
+                    "gold": 240,
+                    "iridium": 320
+                }
+            },
+            "sprite": "https://stardewvalleywiki.com/mediawiki/images/5/52/Yam.png"
+        },
+        {
+            "name": "Yam Juice",
+            "prices": {
+                "base": {
+                    "normal": 360
+                },
+                "artisan": {
+                    "normal": 504
+                }
+            },
+            "sprite": "https://stardewvalleywiki.com/mediawiki/images/f/fd/Orange_Juice.png"
+        },
+        {
+            "name": "Pickled Yam",
+            "prices": {
+                "base": {
+                    "normal": 370
+                },
+                "artisan": {
+                    "normal": 518
+                }
+            },
+            "sprite": "https://stardewvalleywiki.com/mediawiki/images/3/3d/Orange_Pickles.png"
+        },
+        {
+            "name": "Taro Root",
+            "prices": {
+                "base": {
+                    "normal": 100,
+                    "silver": 125,
+                    "gold": 150,
+                    "iridium": 200
+                }
+            },
+            "sprite": "https://stardewvalleywiki.com/mediawiki/images/0/01/Taro_Root.png"
+        },
+        {
+            "name": "Sweet Gem Berry",
+            "prices": {
+                "base": {
+                    "normal": 3000,
+                    "silver": 3750,
+                    "gold": 4500,
+                    "iridium": 6000
+                }
+            },
+            "sprite": "https://stardewvalleywiki.com/mediawiki/images/8/88/Sweet_Gem_Berry.png"
+        },
+        {
+            "name": "Kale Juice",
+            "prices": {
+                "base": {
+                    "normal": 247
+                },
+                "artisan": {
+                    "normal": 345
+                }
+            },
+            "sprite": "https://stardewvalleywiki.com/mediawiki/images/c/c2/Green_Juice.png"
+        },
+        {
+            "name": "Pickled Kale",
+            "prices": {
+                "base": {
+                    "normal": 270
+                },
+                "artisan": {
+                    "normal": 378
+                }
+            },
+            "sprite": "https://stardewvalleywiki.com/mediawiki/images/3/30/Green_Pickles.png"
+        },
+        {
+            "name": "Egg",
+            "prices": {
+                "base": {
+                    "normal": 50,
+                    "silver": 62,
+                    "gold": 75,
+                    "iridium": 100
+                },
+                "rancher": {
+                    "normal": 60,
+                    "silver": 74,
+                    "gold": 90,
+                    "iridium": 120
+                }
+            },
+            "sprite": "https://stardewvalleywiki.com/mediawiki/images/2/26/Egg.png"
+        },
+        {
+            "name": "Large Egg",
+            "prices": {
+                "base": {
+                    "normal": 95,
+                    "silver": 118,
+                    "gold": 142,
+                    "iridium": 190
+                },
+                "rancher": {
+                    "normal": 114,
+                    "silver": 141,
+                    "gold": 170,
+                    "iridium": 228
+                }
+            },
+            "sprite": "https://stardewvalleywiki.com/mediawiki/images/4/4b/Large_Egg.png"
+        },
+        {
+            "name": "Mayonnaise",
+            "prices": {
+                "base": {
+                    "normal": 190,
+                    "silver": 237,
+                    "gold": 285,
+                    "iridium": 380
+                },
+                "rancher": {
+                    "normal": 228,
+                    "silver": 284,
+                    "gold": 342,
+                    "iridium": 456
+                },
+                "artisan": {
+                    "normal": 266,
+                    "silver": 331,
+                    "gold": 399,
+                    "iridium": 532
+                }
+            },
+            "sprite": "https://stardewvalleywiki.com/mediawiki/images/4/4e/Mayonnaise.png"
+        },
+        {
+            "name": "Duck Egg",
+            "prices": {
+                "base": {
+                    "normal": 95,
+                    "silver": 118,
+                    "gold": 142,
+                    "iridium": 190
+                },
+                "rancher": {
+                    "normal": 114,
+                    "silver": 141,
+                    "gold": 170,
+                    "iridium": 228
+                }
+            },
+            "sprite": "https://stardewvalleywiki.com/mediawiki/images/3/31/Duck_Egg.png"
+        },
+        {
+            "name": "Duck Mayonnaise",
+            "prices": {
+                "base": {
+                    "normal": 375
+                },
+                "rancher": {
+                    "normal": 450
+                },
+                "artisan": {
+                    "normal": 525
+                }
+            },
+            "sprite": "https://stardewvalleywiki.com/mediawiki/images/2/23/Duck_Mayonnaise.png"
+        }
+    ]
+}
