@@ -16,7 +16,7 @@ interface PriceQualities {
     iridium?: number
 }
 
-export interface Item {
+export interface GameItem {
     name: string
     prices: {
         base: PriceQualities
@@ -27,14 +27,14 @@ export interface Item {
     base: boolean
 }
 
-const items: Item[] = itemsData.items
+const items: GameItem[] = itemsData.items
 
 interface ItemSearchProps {
     query: string
     onQueryChange: (query: string) => void
     selected: string
     onSelectedChange: (selected: string) => void
-    onSelectItem: (item: Item) => void
+    onSelectItem: (item: GameItem) => void
 }
 
 export function ItemSearch({
