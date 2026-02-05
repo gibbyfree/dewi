@@ -2,6 +2,7 @@
     "items": [
         {
             "name": "Ancient Fruit",
+            "base": true,
             "prices": {
                 "base": {
                     "normal": 550,
@@ -20,6 +21,7 @@
         },
         {
             "name": "Ancient Fruit Wine",
+            "base": false,
             "prices": {
                 "base": {
                     "normal": 1650,
@@ -38,6 +40,7 @@
         },
         {
             "name": "Ancient Fruit Jelly",
+            "base": false,
             "prices": {
                 "base": {
                     "normal": 1150
@@ -50,6 +53,7 @@
         },
         {
             "name": "Dried Ancient Fruit",
+            "base": false,
             "prices": {
                 "base": {
                     "normal": 4150
@@ -62,6 +66,7 @@
         },
         {
             "name": "Apple",
+            "base": true,
             "prices": {
                 "base": {
                     "normal": 100,
@@ -80,6 +85,7 @@
         },
         {
             "name": "Apple Wine",
+            "base": false,
             "prices": {
                 "base": {
                     "normal": 300,
@@ -98,6 +104,7 @@
         },
         {
             "name": "Apple Jelly",
+            "base": false,
             "prices": {
                 "base": {
                     "normal": 250
@@ -110,6 +117,7 @@
         },
         {
             "name": "Dried Apple",
+            "base": false,
             "prices": {
                 "base": {
                     "normal": 775
@@ -122,6 +130,7 @@
         },
         {
             "name": "Apricot",
+            "base": true,
             "prices": {
                 "base": {
                     "normal": 50,
@@ -140,6 +149,7 @@
         },
         {
             "name": "Apricot Wine",
+            "base": false,
             "prices": {
                 "base": {
                     "normal": 150,
@@ -158,6 +168,7 @@
         },
         {
             "name": "Apricot Jelly",
+            "base": false,
             "prices": {
                 "base": {
                     "normal": 150
@@ -170,6 +181,7 @@
         },
         {
             "name": "Dried Apricot",
+            "base": false,
             "prices": {
                 "base": {
                     "normal": 400
@@ -182,6 +194,7 @@
         },
         {
             "name": "Banana",
+            "base": true,
             "prices": {
                 "base": {
                     "normal": 150,
@@ -200,6 +213,7 @@
         },
         {
             "name": "Banana Wine",
+            "base": false,
             "prices": {
                 "base": {
                     "normal": 450,
@@ -218,6 +232,7 @@
         },
         {
             "name": "Banana Jelly",
+            "base": false,
             "prices": {
                 "base": {
                     "normal": 350
@@ -230,6 +245,7 @@
         },
         {
             "name": "Dried Banana",
+            "base": false,
             "prices": {
                 "base": {
                     "normal": 1150
@@ -242,6 +258,7 @@
         },
         {
             "name": "Blackberry",
+            "base": true,
             "prices": {
                 "base": {
                     "normal": 20,
@@ -258,6 +275,7 @@
         },
         {
             "name": "Blackberry Wine",
+            "base": false,
             "prices": {
                 "base": {
                     "normal": 60,
@@ -276,6 +294,7 @@
         },
         {
             "name": "Blackberry Jelly",
+            "base": false,
             "prices": {
                 "base": {
                     "normal": 90
@@ -288,6 +307,7 @@
         },
         {
             "name": "Dried Blackberry",
+            "base": false,
             "prices": {
                 "base": {
                     "normal": 175
@@ -300,6 +320,7 @@
         },
         {
             "name": "Blueberry",
+            "base": true,
             "prices": {
                 "base": {
                     "normal": 50,
@@ -318,6 +339,7 @@
         },
         {
             "name": "Blueberry Wine",
+            "base": false,
             "prices": {
                 "base": {
                     "normal": 150,
@@ -336,6 +358,7 @@
         },
         {
             "name": "Blueberry Jelly",
+            "base": false,
             "prices": {
                 "base": {
                     "normal": 150
@@ -348,6 +371,7 @@
         },
         {
             "name": "Dried Blueberry",
+            "base": false,
             "prices": {
                 "base": {
                     "normal": 400
@@ -360,6 +384,7 @@
         },
         {
             "name": "Cactus Fruit",
+            "base": true,
             "prices": {
                 "base": {
                     "normal": 75,
@@ -378,6 +403,7 @@
         },
         {
             "name": "Cactus Fruit Wine",
+            "base": false,
             "prices": {
                 "base": {
                     "normal": 225,
@@ -396,6 +422,7 @@
         },
         {
             "name": "Cactus Fruit Jelly",
+            "base": false,
             "prices": {
                 "base": {
                     "normal": 200
@@ -408,6 +435,7 @@
         },
         {
             "name": "Dried Cactus Fruit",
+            "base": false,
             "prices": {
                 "base": {
                     "normal": 587
@@ -420,6 +448,7 @@
         },
         {
             "name": "Cherry",
+            "base": true,
             "prices": {
                 "base": {
                     "normal": 80,
@@ -438,6 +467,7 @@
         },
         {
             "name": "Cherry Wine",
+            "base": false,
             "prices": {
                 "base": {
                     "normal": 240,
@@ -456,6 +486,7 @@
         },
         {
             "name": "Cherry Jelly",
+            "base": false,
             "prices": {
                 "base": {
                     "normal": 210
@@ -468,6 +499,7 @@
         },
         {
             "name": "Dried Cherry",
+            "base": false,
             "prices": {
                 "base": {
                     "normal": 625
@@ -480,6 +512,7 @@
         },
         {
             "name": "Coconut",
+            "base": true,
             "prices": {
                 "base": {
                     "normal": 100,
@@ -498,6 +531,7 @@
         },
         {
             "name": "Coconut Wine",
+            "base": false,
             "prices": {
                 "base": {
                     "normal": 300,
@@ -516,6 +550,7 @@
         },
         {
             "name": "Coconut Jelly",
+            "base": false,
             "prices": {
                 "base": {
                     "normal": 250
@@ -528,6 +563,7 @@
         },
         {
             "name": "Dried Coconut",
+            "base": false,
             "prices": {
                 "base": {
                     "normal": 775
@@ -540,6 +576,7 @@
         },
         {
             "name": "Cranberries",
+            "base": true,
             "prices": {
                 "base": {
                     "normal": 75,
@@ -558,6 +595,7 @@
         },
         {
             "name": "Cranberries Wine",
+            "base": false,
             "prices": {
                 "base": {
                     "normal": 225,
@@ -576,6 +614,7 @@
         },
         {
             "name": "Cranberries Jelly",
+            "base": false,
             "prices": {
                 "base": {
                     "normal": 200
@@ -588,6 +627,7 @@
         },
         {
             "name": "Dried Cranberries",
+            "base": false,
             "prices": {
                 "base": {
                     "normal": 587
@@ -600,6 +640,7 @@
         },
         {
             "name": "Crystal Fruit",
+            "base": true,
             "prices": {
                 "base": {
                     "normal": 150,
@@ -618,6 +659,7 @@
         },
         {
             "name": "Crystal Fruit Wine",
+            "base": false,
             "prices": {
                 "base": {
                     "normal": 450,
@@ -636,6 +678,7 @@
         },
         {
             "name": "Crystal Fruit Jelly",
+            "base": false,
             "prices": {
                 "base": {
                     "normal": 350
@@ -648,6 +691,7 @@
         },
         {
             "name": "Dried Crystal Fruit",
+            "base": false,
             "prices": {
                 "base": {
                     "normal": 1150
@@ -660,6 +704,7 @@
         },
         {
             "name": "Grape",
+            "base": true,
             "prices": {
                 "base": {
                     "normal": 80,
@@ -678,6 +723,7 @@
         },
         {
             "name": "Grape Wine",
+            "base": false,
             "prices": {
                 "base": {
                     "normal": 240,
@@ -696,6 +742,7 @@
         },
         {
             "name": "Grape Jelly",
+            "base": false,
             "prices": {
                 "base": {
                     "normal": 210
@@ -708,6 +755,7 @@
         },
         {
             "name": "Hot Pepper",
+            "base": true,
             "prices": {
                 "base": {
                     "normal": 40,
@@ -726,6 +774,7 @@
         },
         {
             "name": "Hot Pepper Wine",
+            "base": false,
             "prices": {
                 "base": {
                     "normal": 120,
@@ -744,6 +793,7 @@
         },
         {
             "name": "Hot Pepper Jelly",
+            "base": false,
             "prices": {
                 "base": {
                     "normal": 130
@@ -756,6 +806,7 @@
         },
         {
             "name": "Dried Hot Pepper",
+            "base": false,
             "prices": {
                 "base": {
                     "normal": 325
@@ -768,6 +819,7 @@
         },
         {
             "name": "Mango",
+            "base": true,
             "prices": {
                 "base": {
                     "normal": 130,
@@ -786,6 +838,7 @@
         },
         {
             "name": "Mango Wine",
+            "base": false,
             "prices": {
                 "base": {
                     "normal": 390,
@@ -804,6 +857,7 @@
         },
         {
             "name": "Mango Jelly",
+            "base": false,
             "prices": {
                 "base": {
                     "normal": 310
@@ -816,6 +870,7 @@
         },
         {
             "name": "Dried Mango",
+            "base": false,
             "prices": {
                 "base": {
                     "normal": 1000
@@ -828,6 +883,7 @@
         },
         {
             "name": "Melon",
+            "base": true,
             "prices": {
                 "base": {
                     "normal": 250,
@@ -846,6 +902,7 @@
         },
         {
             "name": "Melon Wine",
+            "base": false,
             "prices": {
                 "base": {
                     "normal": 750,
@@ -864,6 +921,7 @@
         },
         {
             "name": "Melon Jelly",
+            "base": false,
             "prices": {
                 "base": {
                     "normal": 550
@@ -876,6 +934,7 @@
         },
         {
             "name": "Dried Melon",
+            "base": false,
             "prices": {
                 "base": {
                     "normal": 1900
@@ -888,6 +947,7 @@
         },
         {
             "name": "Orange",
+            "base": true,
             "prices": {
                 "base": {
                     "normal": 100,
@@ -906,6 +966,7 @@
         },
         {
             "name": "Orange Wine",
+            "base": false,
             "prices": {
                 "base": {
                     "normal": 300,
@@ -924,6 +985,7 @@
         },
         {
             "name": "Orange Jelly",
+            "base": false,
             "prices": {
                 "base": {
                     "normal": 250
@@ -936,6 +998,7 @@
         },
         {
             "name": "Dried Orange",
+            "base": false,
             "prices": {
                 "base": {
                     "normal": 775
@@ -948,6 +1011,7 @@
         },
         {
             "name": "Peach",
+            "base": true,
             "prices": {
                 "base": {
                     "normal": 140,
@@ -966,6 +1030,7 @@
         },
         {
             "name": "Peach Wine",
+            "base": false,
             "prices": {
                 "base": {
                     "normal": 420,
@@ -984,6 +1049,7 @@
         },
         {
             "name": "Peach Jelly",
+            "base": false,
             "prices": {
                 "base": {
                     "normal": 330
@@ -996,6 +1062,7 @@
         },
         {
             "name": "Dried Peach",
+            "base": false,
             "prices": {
                 "base": {
                     "normal": 1075
@@ -1008,6 +1075,7 @@
         },
         {
             "name": "Pineapple",
+            "base": true,
             "prices": {
                 "base": {
                     "normal": 300,
@@ -1026,6 +1094,7 @@
         },
         {
             "name": "Pineapple Wine",
+            "base": false,
             "prices": {
                 "base": {
                     "normal": 900,
@@ -1044,6 +1113,7 @@
         },
         {
             "name": "Pineapple Jelly",
+            "base": false,
             "prices": {
                 "base": {
                     "normal": 650
@@ -1056,6 +1126,7 @@
         },
         {
             "name": "Dried Pineapple",
+            "base": false,
             "prices": {
                 "base": {
                     "normal": 2275
@@ -1068,6 +1139,7 @@
         },
         {
             "name": "Pomegranate",
+            "base": true,
             "prices": {
                 "base": {
                     "normal": 140,
@@ -1086,6 +1158,7 @@
         },
         {
             "name": "Pomegranate Wine",
+            "base": false,
             "prices": {
                 "base": {
                     "normal": 420,
@@ -1104,6 +1177,7 @@
         },
         {
             "name": "Pomegranate Jelly",
+            "base": false,
             "prices": {
                 "base": {
                     "normal": 330
@@ -1116,6 +1190,7 @@
         },
         {
             "name": "Dried Pomegranate",
+            "base": false,
             "prices": {
                 "base": {
                     "normal": 1075
@@ -1128,6 +1203,7 @@
         },
         {
             "name": "Powdermelon",
+            "base": true,
             "prices": {
                 "base": {
                     "normal": 60,
@@ -1146,6 +1222,7 @@
         },
         {
             "name": "Powdermelon Wine",
+            "base": false,
             "prices": {
                 "base": {
                     "normal": 180,
@@ -1164,6 +1241,7 @@
         },
         {
             "name": "Powdermelon Jelly",
+            "base": false,
             "prices": {
                 "base": {
                     "normal": 170
@@ -1176,6 +1254,7 @@
         },
         {
             "name": "Dried Powdermelon",
+            "base": false,
             "prices": {
                 "base": {
                     "normal": 475
@@ -1188,6 +1267,7 @@
         },
         {
             "name": "Qi Fruit",
+            "base": true,
             "prices": {
                 "base": {
                     "normal": 1
@@ -1200,6 +1280,7 @@
         },
         {
             "name": "Qi Fruit Wine",
+            "base": false,
             "prices": {
                 "base": {
                     "normal": 3,
@@ -1218,6 +1299,7 @@
         },
         {
             "name": "Qi Fruit Jelly",
+            "base": false,
             "prices": {
                 "base": {
                     "normal": 52
@@ -1230,6 +1312,7 @@
         },
         {
             "name": "Dried Qi Fruit",
+            "base": false,
             "prices": {
                 "base": {
                     "normal": 32
@@ -1242,6 +1325,7 @@
         },
         {
             "name": "Rhubarb",
+            "base": true,
             "prices": {
                 "base": {
                     "normal": 220,
@@ -1260,6 +1344,7 @@
         },
         {
             "name": "Rhubarb Wine",
+            "base": false,
             "prices": {
                 "base": {
                     "normal": 660,
@@ -1278,6 +1363,7 @@
         },
         {
             "name": "Rhubarb Jelly",
+            "base": false,
             "prices": {
                 "base": {
                     "normal": 490
@@ -1290,6 +1376,7 @@
         },
         {
             "name": "Dried Rhubarb",
+            "base": false,
             "prices": {
                 "base": {
                     "normal": 1675
@@ -1302,6 +1389,7 @@
         },
         {
             "name": "Salmonberry",
+            "base": true,
             "prices": {
                 "base": {
                     "normal": 5,
@@ -1318,6 +1406,7 @@
         },
         {
             "name": "Salmonberry Wine",
+            "base": false,
             "prices": {
                 "base": {
                     "normal": 15,
@@ -1336,6 +1425,7 @@
         },
         {
             "name": "Salmonberry Jelly",
+            "base": false,
             "prices": {
                 "base": {
                     "normal": 60
@@ -1348,6 +1438,7 @@
         },
         {
             "name": "Dried Salmonberry",
+            "base": false,
             "prices": {
                 "base": {
                     "normal": 62
@@ -1360,6 +1451,7 @@
         },
         {
             "name": "Spice Berry",
+            "base": true,
             "prices": {
                 "base": {
                     "normal": 80,
@@ -1378,6 +1470,7 @@
         },
         {
             "name": "Spice Berry Wine",
+            "base": false,
             "prices": {
                 "base": {
                     "normal": 240,
@@ -1396,6 +1489,7 @@
         },
         {
             "name": "Spice Berry Jelly",
+            "base": false,
             "prices": {
                 "base": {
                     "normal": 210
@@ -1408,6 +1502,7 @@
         },
         {
             "name": "Dried Spice Berry",
+            "base": false,
             "prices": {
                 "base": {
                     "normal": 625
@@ -1420,6 +1515,7 @@
         },
         {
             "name": "Starfruit",
+            "base": true,
             "prices": {
                 "base": {
                     "normal": 750,
@@ -1438,6 +1534,7 @@
         },
         {
             "name": "Starfruit Wine",
+            "base": false,
             "prices": {
                 "base": {
                     "normal": 2250,
@@ -1456,6 +1553,7 @@
         },
         {
             "name": "Starfruit Jelly",
+            "base": false,
             "prices": {
                 "base": {
                     "normal": 1550
@@ -1468,6 +1566,7 @@
         },
         {
             "name": "Dried Starfruit",
+            "base": false,
             "prices": {
                 "base": {
                     "normal": 5650
@@ -1480,6 +1579,7 @@
         },
         {
             "name": "Strawberry",
+            "base": true,
             "prices": {
                 "base": {
                     "normal": 120,
@@ -1498,6 +1598,7 @@
         },
         {
             "name": "Strawberry Wine",
+            "base": false,
             "prices": {
                 "base": {
                     "normal": 360,
@@ -1516,6 +1617,7 @@
         },
         {
             "name": "Strawberry Jelly",
+            "base": false,
             "prices": {
                 "base": {
                     "normal": 290
@@ -1528,6 +1630,7 @@
         },
         {
             "name": "Dried Strawberry",
+            "base": false,
             "prices": {
                 "base": {
                     "normal": 925
@@ -1540,6 +1643,7 @@
         },
         {
             "name": "Wild Plum",
+            "base": true,
             "prices": {
                 "base": {
                     "normal": 80,
@@ -1558,6 +1662,7 @@
         },
         {
             "name": "Wild Plum Wine",
+            "base": false,
             "prices": {
                 "base": {
                     "normal": 240,
@@ -1576,6 +1681,7 @@
         },
         {
             "name": "Wild Plum Jelly",
+            "base": false,
             "prices": {
                 "base": {
                     "normal": 210
@@ -1588,6 +1694,7 @@
         },
         {
             "name": "Dried Wild Plum",
+            "base": false,
             "prices": {
                 "base": {
                     "normal": 625
@@ -1600,6 +1707,7 @@
         },
         {
             "name": "Blue Jazz",
+            "base": true,
             "prices": {
                 "base": {
                     "normal": 50,
@@ -1612,6 +1720,7 @@
         },
         {
             "name": "Carrot",
+            "base": true,
             "prices": {
                 "base": {
                     "normal": 35,
@@ -1624,6 +1733,7 @@
         },
         {
             "name": "Carrot Juice",
+            "base": false,
             "prices": {
                 "base": {
                     "normal": 78
@@ -1636,6 +1746,7 @@
         },
         {
             "name": "Pickled Carrot",
+            "base": false,
             "prices": {
                 "base": {
                     "normal": 120
@@ -1648,6 +1759,7 @@
         },
         {
             "name": "Cauliflower",
+            "base": true,
             "prices": {
                 "base": {
                     "normal": 175,
@@ -1660,6 +1772,7 @@
         },
         {
             "name": "Cauliflower Juice",
+            "base": false,
             "prices": {
                 "base": {
                     "normal": 393
@@ -1672,6 +1785,7 @@
         },
         {
             "name": "Pickled Cauliflower",
+            "base": false,
             "prices": {
                 "base": {
                     "normal": 400
@@ -1684,6 +1798,7 @@
         },
         {
             "name": "Garlic",
+            "base": true,
             "prices": {
                 "base": {
                     "normal": 60,
@@ -1696,6 +1811,7 @@
         },
         {
             "name": "Garlic Juice",
+            "base": false,
             "prices": {
                 "base": {
                     "normal": 135
@@ -1708,6 +1824,7 @@
         },
         {
             "name": "Pickled Garlic",
+            "base": false,
             "prices": {
                 "base": {
                     "normal": 170
@@ -1720,6 +1837,7 @@
         },
         {
             "name": "Kale",
+            "base": true,
             "prices": {
                 "base": {
                     "normal": 110,
@@ -1732,6 +1850,7 @@
         },
         {
             "name": "Parsnip",
+            "base": true,
             "prices": {
                 "base": {
                     "normal": 35,
@@ -1744,6 +1863,7 @@
         },
         {
             "name": "Parsnip Juice",
+            "base": false,
             "prices": {
                 "base": {
                     "normal": 78
@@ -1756,6 +1876,7 @@
         },
         {
             "name": "Pickled Parsnip",
+            "base": false,
             "prices": {
                 "base": {
                     "normal": 120
@@ -1768,6 +1889,7 @@
         },
         {
             "name": "Potato",
+            "base": true,
             "prices": {
                 "base": {
                     "normal": 80,
@@ -1780,6 +1902,7 @@
         },
         {
             "name": "Potato Juice",
+            "base": false,
             "prices": {
                 "base": {
                     "normal": 180
@@ -1792,6 +1915,7 @@
         },
         {
             "name": "Pickled Potato",
+            "base": false,
             "prices": {
                 "base": {
                     "normal": 210
@@ -1804,6 +1928,7 @@
         },
         {
             "name": "Tulip",
+            "base": true,
             "prices": {
                 "base": {
                     "normal": 30,
@@ -1816,6 +1941,7 @@
         },
         {
             "name": "Unmilled Rice",
+            "base": true,
             "prices": {
                 "base": {
                     "normal": 30,
@@ -1828,6 +1954,7 @@
         },
         {
             "name": "Rice Juice",
+            "base": false,
             "prices": {
                 "base": {
                     "normal": 67
@@ -1840,6 +1967,7 @@
         },
         {
             "name": "Pickled Rice",
+            "base": false,
             "prices": {
                 "base": {
                     "normal": 110
@@ -1852,6 +1980,7 @@
         },
         {
             "name": "Poppy",
+            "base": true,
             "prices": {
                 "base": {
                     "normal": 140,
@@ -1864,6 +1993,7 @@
         },
         {
             "name": "Radish",
+            "base": true,
             "prices": {
                 "base": {
                     "normal": 90,
@@ -1876,6 +2006,7 @@
         },
         {
             "name": "Radish Juice",
+            "base": false,
             "prices": {
                 "base": {
                     "normal": 202
@@ -1888,6 +2019,7 @@
         },
         {
             "name": "Pickled Radish",
+            "base": false,
             "prices": {
                 "base": {
                     "normal": 230
@@ -1900,6 +2032,7 @@
         },
         {
             "name": "Red Cabbage",
+            "base": true,
             "prices": {
                 "base": {
                     "normal": 260,
@@ -1912,6 +2045,7 @@
         },
         {
             "name": "Red Cabbage Juice",
+            "base": false,
             "prices": {
                 "base": {
                     "normal": 585
@@ -1924,6 +2058,7 @@
         },
         {
             "name": "Pickled Red Cabbage",
+            "base": false,
             "prices": {
                 "base": {
                     "normal": 570
@@ -1936,6 +2071,7 @@
         },
         {
             "name": "Summer Spangle",
+            "base": true,
             "prices": {
                 "base": {
                     "normal": 90,
@@ -1948,6 +2084,7 @@
         },
         {
             "name": "Sunflower",
+            "base": true,
             "prices": {
                 "base": {
                     "normal": 80,
@@ -1960,6 +2097,7 @@
         },
         {
             "name": "Oil",
+            "base": true,
             "prices": {
                 "base": {
                     "normal": 100
@@ -1972,6 +2110,7 @@
         },
         {
             "name": "Wheat",
+            "base": true,
             "prices": {
                 "base": {
                     "normal": 25,
@@ -1984,6 +2123,7 @@
         },
         {
             "name": "Beer",
+            "base": false,
             "prices": {
                 "base": {
                     "normal": 200,
@@ -2002,6 +2142,7 @@
         },
         {
             "name": "Pickled Wheat",
+            "base": false,
             "prices": {
                 "base": {
                     "normal": 100
@@ -2014,6 +2155,7 @@
         },
         {
             "name": "Amaranth",
+            "base": true,
             "prices": {
                 "base": {
                     "normal": 150,
@@ -2026,6 +2168,7 @@
         },
         {
             "name": "Amaranth Juice",
+            "base": false,
             "prices": {
                 "base": {
                     "normal": 337
@@ -2038,6 +2181,7 @@
         },
         {
             "name": "Pickled Amaranth",
+            "base": false,
             "prices": {
                 "base": {
                     "normal": 350
@@ -2050,6 +2194,7 @@
         },
         {
             "name": "Artichoke",
+            "base": true,
             "prices": {
                 "base": {
                     "normal": 160,
@@ -2062,6 +2207,7 @@
         },
         {
             "name": "Artichoke Juice",
+            "base": false,
             "prices": {
                 "base": {
                     "normal": 360
@@ -2074,6 +2220,7 @@
         },
         {
             "name": "Pickled Artichoke",
+            "base": false,
             "prices": {
                 "base": {
                     "normal": 370
@@ -2086,6 +2233,7 @@
         },
         {
             "name": "Beet",
+            "base": true,
             "prices": {
                 "base": {
                     "normal": 100,
@@ -2098,6 +2246,7 @@
         },
         {
             "name": "Beet Juice",
+            "base": false,
             "prices": {
                 "base": {
                     "normal": 225
@@ -2110,6 +2259,7 @@
         },
         {
             "name": "Pickled Beet",
+            "base": false,
             "prices": {
                 "base": {
                     "normal": 250
@@ -2122,6 +2272,7 @@
         },
         {
             "name": "Bok Choy",
+            "base": true,
             "prices": {
                 "base": {
                     "normal": 80,
@@ -2134,6 +2285,7 @@
         },
         {
             "name": "Bok Choy Juice",
+            "base": false,
             "prices": {
                 "base": {
                     "normal": 180
@@ -2146,6 +2298,7 @@
         },
         {
             "name": "Pickled Bok Choy",
+            "base": false,
             "prices": {
                 "base": {
                     "normal": 210
@@ -2158,6 +2311,7 @@
         },
         {
             "name": "Fairy Rose",
+            "base": true,
             "prices": {
                 "base": {
                     "normal": 290,
@@ -2170,6 +2324,7 @@
         },
         {
             "name": "Pumpkin",
+            "base": true,
             "prices": {
                 "base": {
                     "normal": 320,
@@ -2182,6 +2337,7 @@
         },
         {
             "name": "Pumpkin Juice",
+            "base": false,
             "prices": {
                 "base": {
                     "normal": 720
@@ -2194,6 +2350,7 @@
         },
         {
             "name": "Pickled Pumpkin",
+            "base": false,
             "prices": {
                 "base": {
                     "normal": 690
@@ -2206,6 +2363,7 @@
         },
         {
             "name": "Yam",
+            "base": true,
             "prices": {
                 "base": {
                     "normal": 160,
@@ -2218,6 +2376,7 @@
         },
         {
             "name": "Yam Juice",
+            "base": false,
             "prices": {
                 "base": {
                     "normal": 360
@@ -2230,6 +2389,7 @@
         },
         {
             "name": "Pickled Yam",
+            "base": false,
             "prices": {
                 "base": {
                     "normal": 370
@@ -2242,6 +2402,7 @@
         },
         {
             "name": "Taro Root",
+            "base": true,
             "prices": {
                 "base": {
                     "normal": 100,
@@ -2254,6 +2415,7 @@
         },
         {
             "name": "Sweet Gem Berry",
+            "base": true,
             "prices": {
                 "base": {
                     "normal": 3000,
@@ -2266,6 +2428,7 @@
         },
         {
             "name": "Kale Juice",
+            "base": false,
             "prices": {
                 "base": {
                     "normal": 247
@@ -2278,6 +2441,7 @@
         },
         {
             "name": "Pickled Kale",
+            "base": false,
             "prices": {
                 "base": {
                     "normal": 270
@@ -2290,6 +2454,7 @@
         },
         {
             "name": "Egg",
+            "base": true,
             "prices": {
                 "base": {
                     "normal": 50,
@@ -2308,6 +2473,7 @@
         },
         {
             "name": "Large Egg",
+            "base": true,
             "prices": {
                 "base": {
                     "normal": 95,
@@ -2326,6 +2492,7 @@
         },
         {
             "name": "Mayonnaise",
+            "base": false,
             "prices": {
                 "base": {
                     "normal": 190,
@@ -2350,6 +2517,7 @@
         },
         {
             "name": "Duck Egg",
+            "base": true,
             "prices": {
                 "base": {
                     "normal": 95,
@@ -2368,6 +2536,7 @@
         },
         {
             "name": "Duck Mayonnaise",
+            "base": false,
             "prices": {
                 "base": {
                     "normal": 375

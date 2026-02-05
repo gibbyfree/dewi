@@ -1,0 +1,1399 @@
+{
+    "recipes": [
+        {
+            "base": "Ancient Fruit",
+            "products": [
+                {
+                    "name": "Ancient Fruit Wine",
+                    "processor": "Keg",
+                    "ingredients": [
+                        {
+                            "name": "Ancient Fruit",
+                            "quantity": 1
+                        }
+                    ]
+                },
+                {
+                    "name": "Ancient Fruit Jelly",
+                    "processor": "Preserves Jar",
+                    "ingredients": [
+                        {
+                            "name": "Ancient Fruit",
+                            "quantity": 1
+                        }
+                    ]
+                },
+                {
+                    "name": "Dried Ancient Fruit",
+                    "processor": "Dehydrator",
+                    "ingredients": [
+                        {
+                            "name": "Ancient Fruit",
+                            "quantity": 5
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "base": "Apple",
+            "products": [
+                {
+                    "name": "Apple Wine",
+                    "processor": "Keg",
+                    "ingredients": [
+                        {
+                            "name": "Apple",
+                            "quantity": 1
+                        }
+                    ]
+                },
+                {
+                    "name": "Apple Jelly",
+                    "processor": "Preserves Jar",
+                    "ingredients": [
+                        {
+                            "name": "Apple",
+                            "quantity": 1
+                        }
+                    ]
+                },
+                {
+                    "name": "Dried Apple",
+                    "processor": "Dehydrator",
+                    "ingredients": [
+                        {
+                            "name": "Apple",
+                            "quantity": 5
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "base": "Apricot",
+            "products": [
+                {
+                    "name": "Apricot Wine",
+                    "processor": "Keg",
+                    "ingredients": [
+                        {
+                            "name": "Apricot",
+                            "quantity": 1
+                        }
+                    ]
+                },
+                {
+                    "name": "Apricot Jelly",
+                    "processor": "Preserves Jar",
+                    "ingredients": [
+                        {
+                            "name": "Apricot",
+                            "quantity": 1
+                        }
+                    ]
+                },
+                {
+                    "name": "Dried Apricot",
+                    "processor": "Dehydrator",
+                    "ingredients": [
+                        {
+                            "name": "Apricot",
+                            "quantity": 5
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "base": "Banana",
+            "products": [
+                {
+                    "name": "Banana Wine",
+                    "processor": "Keg",
+                    "ingredients": [
+                        {
+                            "name": "Banana",
+                            "quantity": 1
+                        }
+                    ]
+                },
+                {
+                    "name": "Banana Jelly",
+                    "processor": "Preserves Jar",
+                    "ingredients": [
+                        {
+                            "name": "Banana",
+                            "quantity": 1
+                        }
+                    ]
+                },
+                {
+                    "name": "Dried Banana",
+                    "processor": "Dehydrator",
+                    "ingredients": [
+                        {
+                            "name": "Banana",
+                            "quantity": 5
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "base": "Blackberry",
+            "products": [
+                {
+                    "name": "Blackberry Wine",
+                    "processor": "Keg",
+                    "ingredients": [
+                        {
+                            "name": "Blackberry",
+                            "quantity": 1
+                        }
+                    ]
+                },
+                {
+                    "name": "Blackberry Jelly",
+                    "processor": "Preserves Jar",
+                    "ingredients": [
+                        {
+                            "name": "Blackberry",
+                            "quantity": 1
+                        }
+                    ]
+                },
+                {
+                    "name": "Dried Blackberry",
+                    "processor": "Dehydrator",
+                    "ingredients": [
+                        {
+                            "name": "Blackberry",
+                            "quantity": 5
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "base": "Blueberry",
+            "products": [
+                {
+                    "name": "Blueberry Wine",
+                    "processor": "Keg",
+                    "ingredients": [
+                        {
+                            "name": "Blueberry",
+                            "quantity": 1
+                        }
+                    ]
+                },
+                {
+                    "name": "Blueberry Jelly",
+                    "processor": "Preserves Jar",
+                    "ingredients": [
+                        {
+                            "name": "Blueberry",
+                            "quantity": 1
+                        }
+                    ]
+                },
+                {
+                    "name": "Dried Blueberry",
+                    "processor": "Dehydrator",
+                    "ingredients": [
+                        {
+                            "name": "Blueberry",
+                            "quantity": 5
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "base": "Cactus Fruit",
+            "products": [
+                {
+                    "name": "Cactus Fruit Wine",
+                    "processor": "Keg",
+                    "ingredients": [
+                        {
+                            "name": "Cactus Fruit",
+                            "quantity": 1
+                        }
+                    ]
+                },
+                {
+                    "name": "Cactus Fruit Jelly",
+                    "processor": "Preserves Jar",
+                    "ingredients": [
+                        {
+                            "name": "Cactus Fruit",
+                            "quantity": 1
+                        }
+                    ]
+                },
+                {
+                    "name": "Dried Cactus Fruit",
+                    "processor": "Dehydrator",
+                    "ingredients": [
+                        {
+                            "name": "Cactus Fruit",
+                            "quantity": 5
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "base": "Cherry",
+            "products": [
+                {
+                    "name": "Cherry Wine",
+                    "processor": "Keg",
+                    "ingredients": [
+                        {
+                            "name": "Cherry",
+                            "quantity": 1
+                        }
+                    ]
+                },
+                {
+                    "name": "Cherry Jelly",
+                    "processor": "Preserves Jar",
+                    "ingredients": [
+                        {
+                            "name": "Cherry",
+                            "quantity": 1
+                        }
+                    ]
+                },
+                {
+                    "name": "Dried Cherry",
+                    "processor": "Dehydrator",
+                    "ingredients": [
+                        {
+                            "name": "Cherry",
+                            "quantity": 5
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "base": "Coconut",
+            "products": [
+                {
+                    "name": "Coconut Wine",
+                    "processor": "Keg",
+                    "ingredients": [
+                        {
+                            "name": "Coconut",
+                            "quantity": 1
+                        }
+                    ]
+                },
+                {
+                    "name": "Coconut Jelly",
+                    "processor": "Preserves Jar",
+                    "ingredients": [
+                        {
+                            "name": "Coconut",
+                            "quantity": 1
+                        }
+                    ]
+                },
+                {
+                    "name": "Dried Coconut",
+                    "processor": "Dehydrator",
+                    "ingredients": [
+                        {
+                            "name": "Coconut",
+                            "quantity": 5
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "base": "Cranberries",
+            "products": [
+                {
+                    "name": "Cranberries Wine",
+                    "processor": "Keg",
+                    "ingredients": [
+                        {
+                            "name": "Cranberries",
+                            "quantity": 1
+                        }
+                    ]
+                },
+                {
+                    "name": "Cranberries Jelly",
+                    "processor": "Preserves Jar",
+                    "ingredients": [
+                        {
+                            "name": "Cranberries",
+                            "quantity": 1
+                        }
+                    ]
+                },
+                {
+                    "name": "Dried Cranberries",
+                    "processor": "Dehydrator",
+                    "ingredients": [
+                        {
+                            "name": "Cranberries",
+                            "quantity": 5
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "base": "Crystal Fruit",
+            "products": [
+                {
+                    "name": "Crystal Fruit Wine",
+                    "processor": "Keg",
+                    "ingredients": [
+                        {
+                            "name": "Crystal Fruit",
+                            "quantity": 1
+                        }
+                    ]
+                },
+                {
+                    "name": "Crystal Fruit Jelly",
+                    "processor": "Preserves Jar",
+                    "ingredients": [
+                        {
+                            "name": "Crystal Fruit",
+                            "quantity": 1
+                        }
+                    ]
+                },
+                {
+                    "name": "Dried Crystal Fruit",
+                    "processor": "Dehydrator",
+                    "ingredients": [
+                        {
+                            "name": "Crystal Fruit",
+                            "quantity": 5
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "base": "Grape",
+            "products": [
+                {
+                    "name": "Grape Wine",
+                    "processor": "Keg",
+                    "ingredients": [
+                        {
+                            "name": "Grape",
+                            "quantity": 1
+                        }
+                    ]
+                },
+                {
+                    "name": "Grape Jelly",
+                    "processor": "Preserves Jar",
+                    "ingredients": [
+                        {
+                            "name": "Grape",
+                            "quantity": 1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "base": "Hot Pepper",
+            "products": [
+                {
+                    "name": "Hot Pepper Wine",
+                    "processor": "Keg",
+                    "ingredients": [
+                        {
+                            "name": "Hot Pepper",
+                            "quantity": 1
+                        }
+                    ]
+                },
+                {
+                    "name": "Hot Pepper Jelly",
+                    "processor": "Preserves Jar",
+                    "ingredients": [
+                        {
+                            "name": "Hot Pepper",
+                            "quantity": 1
+                        }
+                    ]
+                },
+                {
+                    "name": "Dried Hot Pepper",
+                    "processor": "Dehydrator",
+                    "ingredients": [
+                        {
+                            "name": "Hot Pepper",
+                            "quantity": 5
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "base": "Mango",
+            "products": [
+                {
+                    "name": "Mango Wine",
+                    "processor": "Keg",
+                    "ingredients": [
+                        {
+                            "name": "Mango",
+                            "quantity": 1
+                        }
+                    ]
+                },
+                {
+                    "name": "Mango Jelly",
+                    "processor": "Preserves Jar",
+                    "ingredients": [
+                        {
+                            "name": "Mango",
+                            "quantity": 1
+                        }
+                    ]
+                },
+                {
+                    "name": "Dried Mango",
+                    "processor": "Dehydrator",
+                    "ingredients": [
+                        {
+                            "name": "Mango",
+                            "quantity": 5
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "base": "Melon",
+            "products": [
+                {
+                    "name": "Melon Wine",
+                    "processor": "Keg",
+                    "ingredients": [
+                        {
+                            "name": "Melon",
+                            "quantity": 1
+                        }
+                    ]
+                },
+                {
+                    "name": "Melon Jelly",
+                    "processor": "Preserves Jar",
+                    "ingredients": [
+                        {
+                            "name": "Melon",
+                            "quantity": 1
+                        }
+                    ]
+                },
+                {
+                    "name": "Dried Melon",
+                    "processor": "Dehydrator",
+                    "ingredients": [
+                        {
+                            "name": "Melon",
+                            "quantity": 5
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "base": "Orange",
+            "products": [
+                {
+                    "name": "Orange Wine",
+                    "processor": "Keg",
+                    "ingredients": [
+                        {
+                            "name": "Orange",
+                            "quantity": 1
+                        }
+                    ]
+                },
+                {
+                    "name": "Orange Jelly",
+                    "processor": "Preserves Jar",
+                    "ingredients": [
+                        {
+                            "name": "Orange",
+                            "quantity": 1
+                        }
+                    ]
+                },
+                {
+                    "name": "Dried Orange",
+                    "processor": "Dehydrator",
+                    "ingredients": [
+                        {
+                            "name": "Orange",
+                            "quantity": 5
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "base": "Peach",
+            "products": [
+                {
+                    "name": "Peach Wine",
+                    "processor": "Keg",
+                    "ingredients": [
+                        {
+                            "name": "Peach",
+                            "quantity": 1
+                        }
+                    ]
+                },
+                {
+                    "name": "Peach Jelly",
+                    "processor": "Preserves Jar",
+                    "ingredients": [
+                        {
+                            "name": "Peach",
+                            "quantity": 1
+                        }
+                    ]
+                },
+                {
+                    "name": "Dried Peach",
+                    "processor": "Dehydrator",
+                    "ingredients": [
+                        {
+                            "name": "Peach",
+                            "quantity": 5
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "base": "Pineapple",
+            "products": [
+                {
+                    "name": "Pineapple Wine",
+                    "processor": "Keg",
+                    "ingredients": [
+                        {
+                            "name": "Pineapple",
+                            "quantity": 1
+                        }
+                    ]
+                },
+                {
+                    "name": "Pineapple Jelly",
+                    "processor": "Preserves Jar",
+                    "ingredients": [
+                        {
+                            "name": "Pineapple",
+                            "quantity": 1
+                        }
+                    ]
+                },
+                {
+                    "name": "Dried Pineapple",
+                    "processor": "Dehydrator",
+                    "ingredients": [
+                        {
+                            "name": "Pineapple",
+                            "quantity": 5
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "base": "Pomegranate",
+            "products": [
+                {
+                    "name": "Pomegranate Wine",
+                    "processor": "Keg",
+                    "ingredients": [
+                        {
+                            "name": "Pomegranate",
+                            "quantity": 1
+                        }
+                    ]
+                },
+                {
+                    "name": "Pomegranate Jelly",
+                    "processor": "Preserves Jar",
+                    "ingredients": [
+                        {
+                            "name": "Pomegranate",
+                            "quantity": 1
+                        }
+                    ]
+                },
+                {
+                    "name": "Dried Pomegranate",
+                    "processor": "Dehydrator",
+                    "ingredients": [
+                        {
+                            "name": "Pomegranate",
+                            "quantity": 5
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "base": "Powdermelon",
+            "products": [
+                {
+                    "name": "Powdermelon Wine",
+                    "processor": "Keg",
+                    "ingredients": [
+                        {
+                            "name": "Powdermelon",
+                            "quantity": 1
+                        }
+                    ]
+                },
+                {
+                    "name": "Powdermelon Jelly",
+                    "processor": "Preserves Jar",
+                    "ingredients": [
+                        {
+                            "name": "Powdermelon",
+                            "quantity": 1
+                        }
+                    ]
+                },
+                {
+                    "name": "Dried Powdermelon",
+                    "processor": "Dehydrator",
+                    "ingredients": [
+                        {
+                            "name": "Powdermelon",
+                            "quantity": 5
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "base": "Qi Fruit",
+            "products": [
+                {
+                    "name": "Qi Fruit Wine",
+                    "processor": "Keg",
+                    "ingredients": [
+                        {
+                            "name": "Qi Fruit",
+                            "quantity": 1
+                        }
+                    ]
+                },
+                {
+                    "name": "Qi Fruit Jelly",
+                    "processor": "Preserves Jar",
+                    "ingredients": [
+                        {
+                            "name": "Qi Fruit",
+                            "quantity": 1
+                        }
+                    ]
+                },
+                {
+                    "name": "Dried Qi Fruit",
+                    "processor": "Dehydrator",
+                    "ingredients": [
+                        {
+                            "name": "Qi Fruit",
+                            "quantity": 5
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "base": "Rhubarb",
+            "products": [
+                {
+                    "name": "Rhubarb Wine",
+                    "processor": "Keg",
+                    "ingredients": [
+                        {
+                            "name": "Rhubarb",
+                            "quantity": 1
+                        }
+                    ]
+                },
+                {
+                    "name": "Rhubarb Jelly",
+                    "processor": "Preserves Jar",
+                    "ingredients": [
+                        {
+                            "name": "Rhubarb",
+                            "quantity": 1
+                        }
+                    ]
+                },
+                {
+                    "name": "Dried Rhubarb",
+                    "processor": "Dehydrator",
+                    "ingredients": [
+                        {
+                            "name": "Rhubarb",
+                            "quantity": 5
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "base": "Salmonberry",
+            "products": [
+                {
+                    "name": "Salmonberry Wine",
+                    "processor": "Keg",
+                    "ingredients": [
+                        {
+                            "name": "Salmonberry",
+                            "quantity": 1
+                        }
+                    ]
+                },
+                {
+                    "name": "Salmonberry Jelly",
+                    "processor": "Preserves Jar",
+                    "ingredients": [
+                        {
+                            "name": "Salmonberry",
+                            "quantity": 1
+                        }
+                    ]
+                },
+                {
+                    "name": "Dried Salmonberry",
+                    "processor": "Dehydrator",
+                    "ingredients": [
+                        {
+                            "name": "Salmonberry",
+                            "quantity": 5
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "base": "Spice Berry",
+            "products": [
+                {
+                    "name": "Spice Berry Wine",
+                    "processor": "Keg",
+                    "ingredients": [
+                        {
+                            "name": "Spice Berry",
+                            "quantity": 1
+                        }
+                    ]
+                },
+                {
+                    "name": "Spice Berry Jelly",
+                    "processor": "Preserves Jar",
+                    "ingredients": [
+                        {
+                            "name": "Spice Berry",
+                            "quantity": 1
+                        }
+                    ]
+                },
+                {
+                    "name": "Dried Spice Berry",
+                    "processor": "Dehydrator",
+                    "ingredients": [
+                        {
+                            "name": "Spice Berry",
+                            "quantity": 5
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "base": "Starfruit",
+            "products": [
+                {
+                    "name": "Starfruit Wine",
+                    "processor": "Keg",
+                    "ingredients": [
+                        {
+                            "name": "Starfruit",
+                            "quantity": 1
+                        }
+                    ]
+                },
+                {
+                    "name": "Starfruit Jelly",
+                    "processor": "Preserves Jar",
+                    "ingredients": [
+                        {
+                            "name": "Starfruit",
+                            "quantity": 1
+                        }
+                    ]
+                },
+                {
+                    "name": "Dried Starfruit",
+                    "processor": "Dehydrator",
+                    "ingredients": [
+                        {
+                            "name": "Starfruit",
+                            "quantity": 5
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "base": "Strawberry",
+            "products": [
+                {
+                    "name": "Strawberry Wine",
+                    "processor": "Keg",
+                    "ingredients": [
+                        {
+                            "name": "Strawberry",
+                            "quantity": 1
+                        }
+                    ]
+                },
+                {
+                    "name": "Strawberry Jelly",
+                    "processor": "Preserves Jar",
+                    "ingredients": [
+                        {
+                            "name": "Strawberry",
+                            "quantity": 1
+                        }
+                    ]
+                },
+                {
+                    "name": "Dried Strawberry",
+                    "processor": "Dehydrator",
+                    "ingredients": [
+                        {
+                            "name": "Strawberry",
+                            "quantity": 5
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "base": "Wild Plum",
+            "products": [
+                {
+                    "name": "Wild Plum Wine",
+                    "processor": "Keg",
+                    "ingredients": [
+                        {
+                            "name": "Wild Plum",
+                            "quantity": 1
+                        }
+                    ]
+                },
+                {
+                    "name": "Wild Plum Jelly",
+                    "processor": "Preserves Jar",
+                    "ingredients": [
+                        {
+                            "name": "Wild Plum",
+                            "quantity": 1
+                        }
+                    ]
+                },
+                {
+                    "name": "Dried Wild Plum",
+                    "processor": "Dehydrator",
+                    "ingredients": [
+                        {
+                            "name": "Wild Plum",
+                            "quantity": 5
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "base": "Carrot",
+            "products": [
+                {
+                    "name": "Carrot Juice",
+                    "processor": "Keg",
+                    "ingredients": [
+                        {
+                            "name": "Carrot",
+                            "quantity": 1
+                        }
+                    ]
+                },
+                {
+                    "name": "Pickled Carrot",
+                    "processor": "Preserves Jar",
+                    "ingredients": [
+                        {
+                            "name": "Carrot",
+                            "quantity": 1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "base": "Cauliflower",
+            "products": [
+                {
+                    "name": "Cauliflower Juice",
+                    "processor": "Keg",
+                    "ingredients": [
+                        {
+                            "name": "Cauliflower",
+                            "quantity": 1
+                        }
+                    ]
+                },
+                {
+                    "name": "Pickled Cauliflower",
+                    "processor": "Preserves Jar",
+                    "ingredients": [
+                        {
+                            "name": "Cauliflower",
+                            "quantity": 1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "base": "Garlic",
+            "products": [
+                {
+                    "name": "Garlic Juice",
+                    "processor": "Keg",
+                    "ingredients": [
+                        {
+                            "name": "Garlic",
+                            "quantity": 1
+                        }
+                    ]
+                },
+                {
+                    "name": "Pickled Garlic",
+                    "processor": "Preserves Jar",
+                    "ingredients": [
+                        {
+                            "name": "Garlic",
+                            "quantity": 1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "base": "Kale",
+            "products": [
+                {
+                    "name": "Kale Juice",
+                    "processor": "Keg",
+                    "ingredients": [
+                        {
+                            "name": "Kale",
+                            "quantity": 1
+                        }
+                    ]
+                },
+                {
+                    "name": "Pickled Kale",
+                    "processor": "Preserves Jar",
+                    "ingredients": [
+                        {
+                            "name": "Kale",
+                            "quantity": 1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "base": "Parsnip",
+            "products": [
+                {
+                    "name": "Parsnip Juice",
+                    "processor": "Keg",
+                    "ingredients": [
+                        {
+                            "name": "Parsnip",
+                            "quantity": 1
+                        }
+                    ]
+                },
+                {
+                    "name": "Pickled Parsnip",
+                    "processor": "Preserves Jar",
+                    "ingredients": [
+                        {
+                            "name": "Parsnip",
+                            "quantity": 1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "base": "Potato",
+            "products": [
+                {
+                    "name": "Potato Juice",
+                    "processor": "Keg",
+                    "ingredients": [
+                        {
+                            "name": "Potato",
+                            "quantity": 1
+                        }
+                    ]
+                },
+                {
+                    "name": "Pickled Potato",
+                    "processor": "Preserves Jar",
+                    "ingredients": [
+                        {
+                            "name": "Potato",
+                            "quantity": 1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "base": "Unmilled Rice",
+            "products": [
+                {
+                    "name": "Rice Juice",
+                    "processor": "Keg",
+                    "ingredients": [
+                        {
+                            "name": "Unmilled Rice",
+                            "quantity": 1
+                        }
+                    ]
+                },
+                {
+                    "name": "Pickled Rice",
+                    "processor": "Preserves Jar",
+                    "ingredients": [
+                        {
+                            "name": "Unmilled Rice",
+                            "quantity": 1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "base": "Radish",
+            "products": [
+                {
+                    "name": "Radish Juice",
+                    "processor": "Keg",
+                    "ingredients": [
+                        {
+                            "name": "Radish",
+                            "quantity": 1
+                        }
+                    ]
+                },
+                {
+                    "name": "Pickled Radish",
+                    "processor": "Preserves Jar",
+                    "ingredients": [
+                        {
+                            "name": "Radish",
+                            "quantity": 1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "base": "Red Cabbage",
+            "products": [
+                {
+                    "name": "Red Cabbage Juice",
+                    "processor": "Keg",
+                    "ingredients": [
+                        {
+                            "name": "Red Cabbage",
+                            "quantity": 1
+                        }
+                    ]
+                },
+                {
+                    "name": "Pickled Red Cabbage",
+                    "processor": "Preserves Jar",
+                    "ingredients": [
+                        {
+                            "name": "Red Cabbage",
+                            "quantity": 1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "base": "Wheat",
+            "products": [
+                {
+                    "name": "Beer",
+                    "processor": "Keg",
+                    "ingredients": [
+                        {
+                            "name": "Wheat",
+                            "quantity": 1
+                        }
+                    ]
+                },
+                {
+                    "name": "Pickled Wheat",
+                    "processor": "Preserves Jar",
+                    "ingredients": [
+                        {
+                            "name": "Wheat",
+                            "quantity": 1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "base": "Amaranth",
+            "products": [
+                {
+                    "name": "Amaranth Juice",
+                    "processor": "Keg",
+                    "ingredients": [
+                        {
+                            "name": "Amaranth",
+                            "quantity": 1
+                        }
+                    ]
+                },
+                {
+                    "name": "Pickled Amaranth",
+                    "processor": "Preserves Jar",
+                    "ingredients": [
+                        {
+                            "name": "Amaranth",
+                            "quantity": 1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "base": "Artichoke",
+            "products": [
+                {
+                    "name": "Artichoke Juice",
+                    "processor": "Keg",
+                    "ingredients": [
+                        {
+                            "name": "Artichoke",
+                            "quantity": 1
+                        }
+                    ]
+                },
+                {
+                    "name": "Pickled Artichoke",
+                    "processor": "Preserves Jar",
+                    "ingredients": [
+                        {
+                            "name": "Artichoke",
+                            "quantity": 1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "base": "Beet",
+            "products": [
+                {
+                    "name": "Beet Juice",
+                    "processor": "Keg",
+                    "ingredients": [
+                        {
+                            "name": "Beet",
+                            "quantity": 1
+                        }
+                    ]
+                },
+                {
+                    "name": "Pickled Beet",
+                    "processor": "Preserves Jar",
+                    "ingredients": [
+                        {
+                            "name": "Beet",
+                            "quantity": 1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "base": "Bok Choy",
+            "products": [
+                {
+                    "name": "Bok Choy Juice",
+                    "processor": "Keg",
+                    "ingredients": [
+                        {
+                            "name": "Bok Choy",
+                            "quantity": 1
+                        }
+                    ]
+                },
+                {
+                    "name": "Pickled Bok Choy",
+                    "processor": "Preserves Jar",
+                    "ingredients": [
+                        {
+                            "name": "Bok Choy",
+                            "quantity": 1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "base": "Pumpkin",
+            "products": [
+                {
+                    "name": "Pumpkin Juice",
+                    "processor": "Keg",
+                    "ingredients": [
+                        {
+                            "name": "Pumpkin",
+                            "quantity": 1
+                        }
+                    ]
+                },
+                {
+                    "name": "Pickled Pumpkin",
+                    "processor": "Preserves Jar",
+                    "ingredients": [
+                        {
+                            "name": "Pumpkin",
+                            "quantity": 1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "base": "Yam",
+            "products": [
+                {
+                    "name": "Yam Juice",
+                    "processor": "Keg",
+                    "ingredients": [
+                        {
+                            "name": "Yam",
+                            "quantity": 1
+                        }
+                    ]
+                },
+                {
+                    "name": "Pickled Yam",
+                    "processor": "Preserves Jar",
+                    "ingredients": [
+                        {
+                            "name": "Yam",
+                            "quantity": 1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "base": "Sunflower",
+            "products": [
+                {
+                    "name": "Oil",
+                    "processor": "Oil Maker",
+                    "ingredients": [
+                        {
+                            "name": "Sunflower",
+                            "quantity": 1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "base": "Egg",
+            "products": [
+                {
+                    "name": "Mayonnaise",
+                    "processor": "Mayonnaise Machine",
+                    "ingredients": [
+                        {
+                            "name": "Egg",
+                            "quantity": 1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "base": "Large Egg",
+            "products": [
+                {
+                    "name": "Mayonnaise",
+                    "processor": "Mayonnaise Machine",
+                    "ingredients": [
+                        {
+                            "name": "Large Egg",
+                            "quantity": 1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "base": "Duck Egg",
+            "products": [
+                {
+                    "name": "Duck Mayonnaise",
+                    "processor": "Mayonnaise Machine",
+                    "ingredients": [
+                        {
+                            "name": "Duck Egg",
+                            "quantity": 1
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
