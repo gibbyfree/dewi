@@ -17,7 +17,8 @@
                     "iridium": 1210
                 }
             },
-            "sprite": "./Fruits - Stardew Valley Wiki_files/Ancient_Fruit.png"
+            "sprite": "./Fruits - Stardew Valley Wiki_files/Ancient_Fruit.png",
+            "color": "light-blue"
         },
         {
             "name": "Ancient Fruit Wine",
@@ -81,7 +82,8 @@
                     "iridium": 220
                 }
             },
-            "sprite": "./Fruits - Stardew Valley Wiki_files/Apple.png"
+            "sprite": "./Fruits - Stardew Valley Wiki_files/Apple.png",
+            "color": "red"
         },
         {
             "name": "Apple Wine",
@@ -145,7 +147,8 @@
                     "iridium": 110
                 }
             },
-            "sprite": "./Fruits - Stardew Valley Wiki_files/Apricot.png"
+            "sprite": "./Fruits - Stardew Valley Wiki_files/Apricot.png",
+            "color": "orange"
         },
         {
             "name": "Apricot Wine",
@@ -209,7 +212,8 @@
                     "iridium": 330
                 }
             },
-            "sprite": "./Fruits - Stardew Valley Wiki_files/Banana.png"
+            "sprite": "./Fruits - Stardew Valley Wiki_files/Banana.png",
+            "color": "yellow"
         },
         {
             "name": "Banana Wine",
@@ -271,7 +275,8 @@
                     "iridium": 44
                 }
             },
-            "sprite": "./Fruits - Stardew Valley Wiki_files/Blackberry.png"
+            "sprite": "./Fruits - Stardew Valley Wiki_files/Blackberry.png",
+            "color": "dark-blue"
         },
         {
             "name": "Blackberry Wine",
@@ -335,7 +340,8 @@
                     "iridium": 110
                 }
             },
-            "sprite": "./Fruits - Stardew Valley Wiki_files/Blueberry.png"
+            "sprite": "./Fruits - Stardew Valley Wiki_files/Blueberry.png",
+            "color": "blue"
         },
         {
             "name": "Blueberry Wine",
@@ -399,7 +405,8 @@
                     "iridium": 165
                 }
             },
-            "sprite": "./Fruits - Stardew Valley Wiki_files/Cactus_Fruit.png"
+            "sprite": "./Fruits - Stardew Valley Wiki_files/Cactus_Fruit.png",
+            "color": "green"
         },
         {
             "name": "Cactus Fruit Wine",
@@ -463,7 +470,8 @@
                     "iridium": 176
                 }
             },
-            "sprite": "./Fruits - Stardew Valley Wiki_files/Cherry.png"
+            "sprite": "./Fruits - Stardew Valley Wiki_files/Cherry.png",
+            "color": "red"
         },
         {
             "name": "Cherry Wine",
@@ -527,7 +535,8 @@
                     "iridium": 200
                 }
             },
-            "sprite": "./Fruits - Stardew Valley Wiki_files/Coconut.png"
+            "sprite": "./Fruits - Stardew Valley Wiki_files/Coconut.png",
+            "color": "brown"
         },
         {
             "name": "Coconut Wine",
@@ -591,7 +600,8 @@
                     "iridium": 165
                 }
             },
-            "sprite": "./Fruits - Stardew Valley Wiki_files/Cranberries.png"
+            "sprite": "./Fruits - Stardew Valley Wiki_files/Cranberries.png",
+            "color": "red"
         },
         {
             "name": "Cranberries Wine",
@@ -655,7 +665,8 @@
                     "iridium": 300
                 }
             },
-            "sprite": "./Fruits - Stardew Valley Wiki_files/Crystal_Fruit.png"
+            "sprite": "./Fruits - Stardew Valley Wiki_files/Crystal_Fruit.png",
+            "color": "blue"
         },
         {
             "name": "Crystal Fruit Wine",
@@ -719,7 +730,8 @@
                     "iridium": 176
                 }
             },
-            "sprite": "./Fruits - Stardew Valley Wiki_files/Grape.png"
+            "sprite": "./Fruits - Stardew Valley Wiki_files/Grape.png",
+            "color": "dark-purple"
         },
         {
             "name": "Grape Wine",
@@ -770,7 +782,8 @@
                     "iridium": 88
                 }
             },
-            "sprite": "./Fruits - Stardew Valley Wiki_files/Hot_Pepper.png"
+            "sprite": "./Fruits - Stardew Valley Wiki_files/Hot_Pepper.png",
+            "color": "red"
         },
         {
             "name": "Hot Pepper Wine",
@@ -834,7 +847,8 @@
                     "iridium": 286
                 }
             },
-            "sprite": "./Fruits - Stardew Valley Wiki_files/Mango.png"
+            "sprite": "./Fruits - Stardew Valley Wiki_files/Mango.png",
+            "color": "yellow"
         },
         {
             "name": "Mango Wine",
@@ -898,7 +912,8 @@
                     "iridium": 550
                 }
             },
-            "sprite": "./Fruits - Stardew Valley Wiki_files/Melon.png"
+            "sprite": "./Fruits - Stardew Valley Wiki_files/Melon.png",
+            "color": "pink"
         },
         {
             "name": "Melon Wine",
@@ -962,7 +977,8 @@
                     "iridium": 220
                 }
             },
-            "sprite": "./Fruits - Stardew Valley Wiki_files/Orange.png"
+            "sprite": "./Fruits - Stardew Valley Wiki_files/Orange.png",
+            "color": "orange"
         },
         {
             "name": "Orange Wine",
@@ -1026,7 +1042,8 @@
                     "iridium": 308
                 }
             },
-            "sprite": "./Fruits - Stardew Valley Wiki_files/Peach.png"
+            "sprite": "./Fruits - Stardew Valley Wiki_files/Peach.png",
+            "color": "pink"
         },
         {
             "name": "Peach Wine",
@@ -1090,7 +1107,8 @@
                     "iridium": 660
                 }
             },
-            "sprite": "./Fruits - Stardew Valley Wiki_files/Pineapple.png"
+            "sprite": "./Fruits - Stardew Valley Wiki_files/Pineapple.png",
+            "color": "yellow"
         },
         {
             "name": "Pineapple Wine",
@@ -1154,7 +1172,8 @@
                     "iridium": 308
                 }
             },
-            "sprite": "./Fruits - Stardew Valley Wiki_files/Pomegranate.png"
+            "sprite": "./Fruits - Stardew Valley Wiki_files/Pomegranate.png",
+            "color": "dark-pink"
         },
         {
             "name": "Pomegranate Wine",
@@ -1218,7 +1237,8 @@
                     "iridium": 132
                 }
             },
-            "sprite": "./Fruits - Stardew Valley Wiki_files/Powdermelon.png"
+            "sprite": "./Fruits - Stardew Valley Wiki_files/Powdermelon.png",
+            "color": "white"
         },
         {
             "name": "Powdermelon Wine",
@@ -1276,7 +1296,8 @@
                     "normal": 1
                 }
             },
-            "sprite": "./Fruits - Stardew Valley Wiki_files/Qi_Fruit.png"
+            "sprite": "./Fruits - Stardew Valley Wiki_files/Qi_Fruit.png",
+            "color": "blue"
         },
         {
             "name": "Qi Fruit Wine",
@@ -1340,7 +1361,8 @@
                     "iridium": 484
                 }
             },
-            "sprite": "./Fruits - Stardew Valley Wiki_files/Rhubarb.png"
+            "sprite": "./Fruits - Stardew Valley Wiki_files/Rhubarb.png",
+            "color": "red"
         },
         {
             "name": "Rhubarb Wine",
@@ -1402,7 +1424,8 @@
                     "iridium": 11
                 }
             },
-            "sprite": "./Fruits - Stardew Valley Wiki_files/Salmonberry.png"
+            "sprite": "./Fruits - Stardew Valley Wiki_files/Salmonberry.png",
+            "color": "red"
         },
         {
             "name": "Salmonberry Wine",
@@ -1466,7 +1489,8 @@
                     "iridium": 160
                 }
             },
-            "sprite": "./Fruits - Stardew Valley Wiki_files/Spice_Berry.png"
+            "sprite": "./Fruits - Stardew Valley Wiki_files/Spice_Berry.png",
+            "color": "orange"
         },
         {
             "name": "Spice Berry Wine",
@@ -1530,7 +1554,8 @@
                     "iridium": 1650
                 }
             },
-            "sprite": "./Fruits - Stardew Valley Wiki_files/Starfruit.png"
+            "sprite": "./Fruits - Stardew Valley Wiki_files/Starfruit.png",
+            "color": "yellow"
         },
         {
             "name": "Starfruit Wine",
@@ -1594,7 +1619,8 @@
                     "iridium": 264
                 }
             },
-            "sprite": "./Fruits - Stardew Valley Wiki_files/Strawberry.png"
+            "sprite": "./Fruits - Stardew Valley Wiki_files/Strawberry.png",
+            "color": "red"
         },
         {
             "name": "Strawberry Wine",
@@ -1658,7 +1684,8 @@
                     "iridium": 160
                 }
             },
-            "sprite": "./Fruits - Stardew Valley Wiki_files/Wild_Plum.png"
+            "sprite": "./Fruits - Stardew Valley Wiki_files/Wild_Plum.png",
+            "color": "purple"
         },
         {
             "name": "Wild Plum Wine",

@@ -25,6 +25,7 @@ export interface GameItem {
     }
     sprite: string
     base: boolean
+    color?: string
 }
 
 const items: GameItem[] = itemsData.items
