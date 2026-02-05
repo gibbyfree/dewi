@@ -8,25 +8,7 @@ import {
     CommandEmpty,
 } from "@/components/ui/command"
 import itemsData from "@/data/items.json"
-
-interface PriceQualities {
-    normal: number
-    silver?: number
-    gold?: number
-    iridium?: number
-}
-
-export interface GameItem {
-    name: string
-    prices: {
-        base: PriceQualities
-        tiller?: PriceQualities
-        artisan?: PriceQualities
-    }
-    sprite: string
-    base: boolean
-    color?: string
-}
+import type { GameItem } from "@/types/items"
 
 const items: GameItem[] = itemsData.items
 

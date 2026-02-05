@@ -67,6 +67,7 @@
         },
         {
             "name": "Apple",
+            "description": "A crisp fruit used for juice and cider.",
             "base": true,
             "prices": {
                 "base": {

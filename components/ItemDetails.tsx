@@ -1,7 +1,8 @@
 "use client"
 
+import { useState } from "react"
 import Image from "next/image"
-import type { GameItem } from "./ItemSearch"
+import type { GameItem } from "@/types/items"
 import {
     Item,
     ItemActions,
@@ -29,6 +30,9 @@ interface ItemDetailsProps {
 }
 
 export function ItemDetails({ item, professions }: ItemDetailsProps) {
+    const [selectedQuality, setSelectedQuality] = useState<string>("normal")
+    const [selectedPrice, setSelectedPrice] = useState<number>(0)
+
     if (!item) return null
 
     const itemSprite = getItemSpritePath(item.name)
@@ -47,6 +51,7 @@ export function ItemDetails({ item, professions }: ItemDetailsProps) {
                     height={64}
                 />
                 <h2 className="text-xl font-semibold">{item.name}</h2>
+                <h3 className="text-md italic text-gray-500">{item.description}</h3>
             </div>
 
             {categories.map(category => {
@@ -56,38 +61,53 @@ export function ItemDetails({ item, professions }: ItemDetailsProps) {
                 return (
                     <div key={category}>
                         <div className="grid grid-cols-2 gap-2">
-                            {Object.entries(qualities).map(([quality, price]) => (
-                                <Item key={quality} variant="muted">
-                                    <ItemContent>
-                                        <ItemTitle className="capitalize flex items-center gap-2">
-                                            <div className="relative w-16 h-16 flex items-center justify-center">
-                                                <Image
-                                                    src={itemSprite}
-                                                    alt={item.name}
-                                                    width={64}
-                                                    height={64}
-                                                />
-                                                {qualitySprites[quality] && (
+                            {Object.entries(qualities).map(([quality, price]) => {
+                                const isSelected = selectedQuality === quality
+                                return (
+                                    <Item
+                                        key={quality}
+                                        variant="muted"
+                                        className={`cursor-pointer transition-all ${isSelected ? 'ring-2 ring-primary' : 'hover:ring-1 hover:ring-gray-400'}`}
+                                        onClick={() => {
+                                            setSelectedQuality(quality)
+                                            setSelectedPrice(price)
+                                        }}
+                                    >
+                                        <ItemContent>
+                                            <ItemTitle className="capitalize flex items-center gap-2">
+                                                <div className="relative w-16 h-16 flex items-center justify-center">
                                                     <Image
-                                                        src={qualitySprites[quality]}
-                                                        alt={quality}
+                                                        src={itemSprite}
+                                                        alt={item.name}
                                                         width={64}
                                                         height={64}
-                                                        className="absolute -bottom-6 -left-6"
                                                     />
-                                                )}
-                                            </div>
-                                        </ItemTitle>
-                                        <ItemDescription className="text-lg font-semibold">{price}g</ItemDescription>
-                                    </ItemContent>
-                                </Item>
-                            ))}
+                                                    {qualitySprites[quality] && (
+                                                        <Image
+                                                            src={qualitySprites[quality]}
+                                                            alt={quality}
+                                                            width={64}
+                                                            height={64}
+                                                            className="absolute -bottom-6 -left-6"
+                                                        />
+                                                    )}
+                                                </div>
+                                            </ItemTitle>
+                                            <ItemDescription className="text-lg font-semibold">{price}g</ItemDescription>
+                                        </ItemContent>
+                                    </Item>
+                                )
+                            })}
                         </div>
                     </div>
                 )
             })}
 
-            <DerivedItems baseItem={item} professions={professions} />
+            <DerivedItems
+                baseItem={item}
+                professions={professions}
+                selectedBasePrice={selectedPrice}
+            />
         </div>
     )
 }
