@@ -30,19 +30,24 @@ interface ItemDetailsProps {
 }
 
 export function ItemDetails({ item, professions }: ItemDetailsProps) {
+    return <ItemDetailsInner key={item.name} item={item} professions={professions} />
+}
+
+function ItemDetailsInner({ item, professions }: ItemDetailsProps) {
     const itemSprite = getItemSpritePath(item.name)
     // For base items, use tiller if selected, otherwise use base
     const categories = professions.includes("tiller")
         ? ["tiller"]
         : ["base"]
 
-    // Get the initial normal quality price
     const category = categories[0] || "base"
     const qualities = item.prices[category as keyof typeof item.prices]
-    const initialPrice = qualities?.normal || 0
 
+    // Use item name as part of the key to reset state when item changes
     const [selectedQuality, setSelectedQuality] = useState<string>("normal")
-    const [selectedPrice, setSelectedPrice] = useState<number>(initialPrice)
+
+    // Derive the selected price from current item and quality (no separate state needed)
+    const selectedPrice = qualities?.[selectedQuality as keyof typeof qualities] || qualities?.normal || 0
 
     return (
         <div className="mt-6 space-y-4">
@@ -73,7 +78,6 @@ export function ItemDetails({ item, professions }: ItemDetailsProps) {
                                         className={`cursor-pointer transition-all ${isSelected ? 'ring-2 ring-primary' : 'hover:ring-1 hover:ring-gray-400'}`}
                                         onClick={() => {
                                             setSelectedQuality(quality)
-                                            setSelectedPrice(price)
                                         }}
                                     >
                                         <ItemContent>
