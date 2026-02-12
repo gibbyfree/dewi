@@ -25,21 +25,24 @@ function getItemSpritePath(itemName: string): string {
 }
 
 interface ItemDetailsProps {
-    item: GameItem | null
+    item: GameItem
     professions: string[]
 }
 
 export function ItemDetails({ item, professions }: ItemDetailsProps) {
-    const [selectedQuality, setSelectedQuality] = useState<string>("normal")
-    const [selectedPrice, setSelectedPrice] = useState<number>(0)
-
-    if (!item) return null
-
     const itemSprite = getItemSpritePath(item.name)
     // For base items, use tiller if selected, otherwise use base
     const categories = professions.includes("tiller")
         ? ["tiller"]
         : ["base"]
+
+    // Get the initial normal quality price
+    const category = categories[0] || "base"
+    const qualities = item.prices[category as keyof typeof item.prices]
+    const initialPrice = qualities?.normal || 0
+
+    const [selectedQuality, setSelectedQuality] = useState<string>("normal")
+    const [selectedPrice, setSelectedPrice] = useState<number>(initialPrice)
 
     return (
         <div className="mt-6 space-y-4">
@@ -93,7 +96,19 @@ export function ItemDetails({ item, professions }: ItemDetailsProps) {
                                                     )}
                                                 </div>
                                             </ItemTitle>
-                                            <ItemDescription className="text-lg font-semibold">{price}g</ItemDescription>
+                                            <ItemDescription className="text-sm !line-clamp-none">
+                                                <span className="block font-bold">{price}g</span>
+                                                {item.daysToMature && (
+                                                    <span className="block text-xs text-gray-500">
+                                                        first harvest: {(price / item.daysToMature).toFixed(1)}g/day
+                                                    </span>
+                                                )}
+                                                {item.daysToRegrow && (
+                                                    <span className="block text-xs text-gray-500">
+                                                        then: {(price / item.daysToRegrow).toFixed(1)}g/day
+                                                    </span>
+                                                )}
+                                            </ItemDescription>
                                         </ItemContent>
                                     </Item>
                                 )

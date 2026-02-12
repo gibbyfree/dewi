@@ -62,10 +62,17 @@ export function DerivedItems({ baseItem, professions, selectedBasePrice }: Deriv
                     const delta = selectedBasePrice > 0 ? price - totalBaseCost : 0
                     const deltaText = delta > 0 ? `+${delta}g` : delta < 0 ? `${delta}g` : "0g"
 
-                    // Calculate gold per day (normalized per input item for fair comparison)
+                    // Calculate gold per day
                     const processingDays = processorConfig[derivedItem.processor as keyof typeof processorConfig]?.processingDays || 1
-                    const goldPerDay = delta / processingDays / derivedItem.quantity
-                    const goldPerDayText = goldPerDay > 0 ? `${Math.round(goldPerDay)}g/item/day` : ""
+                    const isDehydrator = derivedItem.processor === "Dehydrator"
+
+                    // For dehydrator, normalize per item; for others, show total g/day
+                    const goldPerDay = isDehydrator
+                        ? delta / processingDays / derivedItem.quantity
+                        : delta / processingDays
+                    const goldPerDayText = goldPerDay > 0
+                        ? `${Math.round(goldPerDay)}g${isDehydrator ? '/item' : ''}/day`
+                        : ""
                     const deltaColor = delta > 0 ? "text-green-600" : delta < 0 ? "text-red-600" : "text-gray-600"
 
                     return (
@@ -103,7 +110,7 @@ export function DerivedItems({ baseItem, professions, selectedBasePrice }: Deriv
                                             </span>
                                         )}
                                         {selectedBasePrice > 0 && goldPerDayText && (
-                                            <span className="ml-2 text-sm text-blue-600">
+                                            <span className="ml-2 text-xs text-gray-500">
                                                 {goldPerDayText}
                                             </span>
                                         )}

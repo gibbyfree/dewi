@@ -1,7 +1,8 @@
 "use client"
 
 import { useState } from "react"
-import { ItemSearch, type GameItem } from "@/components/ItemSearch"
+import { ItemSearch } from "@/components/ItemSearch"
+import { GameItem } from "@/types/items"
 import { ItemDetails } from "@/components/ItemDetails"
 import { ProfessionToggles } from "@/components/ProfessionToggles"
 import { useLocalStorage } from "@/lib/useLocalStorage"
@@ -22,7 +23,9 @@ export default function Home() {
         onSelectItem={setSelectedItem}
       />
       <ProfessionToggles professions={professions} onChange={setProfessions} />
-      <ItemDetails item={selectedItem} professions={professions} />
+      {selectedItem && (
+        <ItemDetails item={selectedItem} professions={professions} />
+      )}
     </main>
   )
 }

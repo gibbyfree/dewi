@@ -13,7 +13,8 @@ export interface GameItem {
         tiller?: PriceQualities
         artisan?: PriceQualities
     }
-    sprite: string
     base: boolean
     color?: string
+    daysToMature?: number
+    daysToRegrow?: number
 }

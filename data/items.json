@@ -17,8 +17,9 @@
                     "iridium": 1210
                 }
             },
-            "sprite": "./Fruits - Stardew Valley Wiki_files/Ancient_Fruit.png",
-            "color": "light-blue"
+            "color": "light-blue",
+            "daysToMature": 28,
+            "daysToRegrow": 7
         },
         {
             "name": "Ancient Fruit Wine",
@@ -36,8 +37,7 @@
                     "gold": 3465,
                     "iridium": 4620
                 }
-            },
-            "sprite": "https://stardewvalleywiki.com/mediawiki/images/3/30/Light_Blue_Wine.png"
+            }
         },
         {
             "name": "Ancient Fruit Jelly",
@@ -49,8 +49,7 @@
                 "artisan": {
                     "normal": 1610
                 }
-            },
-            "sprite": "https://stardewvalleywiki.com/mediawiki/images/c/ca/Light_Blue_Jelly.png"
+            }
         },
         {
             "name": "Dried Ancient Fruit",
@@ -62,8 +61,7 @@
                 "artisan": {
                     "normal": 5810
                 }
-            },
-            "sprite": "https://stardewvalleywiki.com/mediawiki/images/f/f9/Light_Blue_Dried_Fruit.png"
+            }
         },
         {
             "name": "Apple",
@@ -83,8 +81,9 @@
                     "iridium": 220
                 }
             },
-            "sprite": "./Fruits - Stardew Valley Wiki_files/Apple.png",
-            "color": "red"
+            "color": "red",
+            "daysToMature": 28,
+            "daysToRegrow": 1
         },
         {
             "name": "Apple Wine",
@@ -102,8 +101,7 @@
                     "gold": 630,
                     "iridium": 840
                 }
-            },
-            "sprite": "https://stardewvalleywiki.com/mediawiki/images/9/91/Red_Wine.png"
+            }
         },
         {
             "name": "Apple Jelly",
@@ -115,8 +113,7 @@
                 "artisan": {
                     "normal": 350
                 }
-            },
-            "sprite": "https://stardewvalleywiki.com/mediawiki/images/9/9f/Red_Jelly.png"
+            }
         },
         {
             "name": "Dried Apple",
@@ -128,8 +125,7 @@
                 "artisan": {
                     "normal": 1085
                 }
-            },
-            "sprite": "https://stardewvalleywiki.com/mediawiki/images/9/9b/Red_Dried_Fruit.png"
+            }
         },
         {
             "name": "Apricot",
@@ -148,7 +144,6 @@
                     "iridium": 110
                 }
             },
-            "sprite": "./Fruits - Stardew Valley Wiki_files/Apricot.png",
             "color": "orange"
         },
         {
@@ -167,8 +162,7 @@
                     "gold": 315,
                     "iridium": 420
                 }
-            },
-            "sprite": "https://stardewvalleywiki.com/mediawiki/images/c/cd/Orange_Wine.png"
+            }
         },
         {
             "name": "Apricot Jelly",
@@ -180,8 +174,7 @@
                 "artisan": {
                     "normal": 210
                 }
-            },
-            "sprite": "https://stardewvalleywiki.com/mediawiki/images/f/fc/Orange_Jelly.png"
+            }
         },
         {
             "name": "Dried Apricot",
@@ -193,8 +186,7 @@
                 "artisan": {
                     "normal": 560
                 }
-            },
-            "sprite": "https://stardewvalleywiki.com/mediawiki/images/3/3a/Orange_Dried_Fruit.png"
+            }
         },
         {
             "name": "Banana",
@@ -213,7 +205,6 @@
                     "iridium": 330
                 }
             },
-            "sprite": "./Fruits - Stardew Valley Wiki_files/Banana.png",
             "color": "yellow"
         },
         {
@@ -232,8 +223,7 @@
                     "gold": 945,
                     "iridium": 1260
                 }
-            },
-            "sprite": "https://stardewvalleywiki.com/mediawiki/images/2/29/Yellow_Wine.png"
+            }
         },
         {
             "name": "Banana Jelly",
@@ -245,8 +235,7 @@
                 "artisan": {
                     "normal": 490
                 }
-            },
-            "sprite": "https://stardewvalleywiki.com/mediawiki/images/4/43/Yellow_Jelly.png"
+            }
         },
         {
             "name": "Dried Banana",
@@ -258,8 +247,7 @@
                 "artisan": {
                     "normal": 1610
                 }
-            },
-            "sprite": "https://stardewvalleywiki.com/mediawiki/images/c/cd/Yellow_Dried_Fruit.png"
+            }
         },
         {
             "name": "Blackberry",
@@ -276,7 +264,6 @@
                     "iridium": 44
                 }
             },
-            "sprite": "./Fruits - Stardew Valley Wiki_files/Blackberry.png",
             "color": "dark-blue"
         },
         {
@@ -295,8 +282,7 @@
                     "gold": 126,
                     "iridium": 168
                 }
-            },
-            "sprite": "https://stardewvalleywiki.com/mediawiki/images/3/30/Dark_Blue_Wine.png"
+            }
         },
         {
             "name": "Blackberry Jelly",
@@ -308,8 +294,7 @@
                 "artisan": {
                     "normal": 126
                 }
-            },
-            "sprite": "https://stardewvalleywiki.com/mediawiki/images/f/f2/Dark_Blue_Jelly.png"
+            }
         },
         {
             "name": "Dried Blackberry",
@@ -321,8 +306,7 @@
                 "artisan": {
                     "normal": 245
                 }
-            },
-            "sprite": "https://stardewvalleywiki.com/mediawiki/images/1/1e/Dark_Blue_Dried_Fruit.png"
+            }
         },
         {
             "name": "Blueberry",
@@ -341,8 +325,9 @@
                     "iridium": 110
                 }
             },
-            "sprite": "./Fruits - Stardew Valley Wiki_files/Blueberry.png",
-            "color": "blue"
+            "color": "blue",
+            "daysToMature": 13,
+            "daysToRegrow": 4
         },
         {
             "name": "Blueberry Wine",
@@ -360,8 +345,7 @@
                     "gold": 315,
                     "iridium": 420
                 }
-            },
-            "sprite": "https://stardewvalleywiki.com/mediawiki/images/5/57/Blue_Wine.png"
+            }
         },
         {
             "name": "Blueberry Jelly",
@@ -373,8 +357,7 @@
                 "artisan": {
                     "normal": 210
                 }
-            },
-            "sprite": "https://stardewvalleywiki.com/mediawiki/images/6/65/Blue_Jelly.png"
+            }
         },
         {
             "name": "Dried Blueberry",
@@ -386,8 +369,7 @@
                 "artisan": {
                     "normal": 560
                 }
-            },
-            "sprite": "https://stardewvalleywiki.com/mediawiki/images/a/a9/Blue_Dried_Fruit.png"
+            }
         },
         {
             "name": "Cactus Fruit",
@@ -406,7 +388,6 @@
                     "iridium": 165
                 }
             },
-            "sprite": "./Fruits - Stardew Valley Wiki_files/Cactus_Fruit.png",
             "color": "green"
         },
         {
@@ -425,8 +406,7 @@
                     "gold": 471,
                     "iridium": 630
                 }
-            },
-            "sprite": "https://stardewvalleywiki.com/mediawiki/images/8/81/Green_Wine.png"
+            }
         },
         {
             "name": "Cactus Fruit Jelly",
@@ -438,8 +418,7 @@
                 "artisan": {
                     "normal": 280
                 }
-            },
-            "sprite": "https://stardewvalleywiki.com/mediawiki/images/6/6e/Green_Jelly.png"
+            }
         },
         {
             "name": "Dried Cactus Fruit",
@@ -451,8 +430,7 @@
                 "artisan": {
                     "normal": 821
                 }
-            },
-            "sprite": "https://stardewvalleywiki.com/mediawiki/images/1/12/Green_Dried_Fruit.png"
+            }
         },
         {
             "name": "Cherry",
@@ -471,7 +449,6 @@
                     "iridium": 176
                 }
             },
-            "sprite": "./Fruits - Stardew Valley Wiki_files/Cherry.png",
             "color": "red"
         },
         {
@@ -490,8 +467,7 @@
                     "gold": 504,
                     "iridium": 672
                 }
-            },
-            "sprite": "https://stardewvalleywiki.com/mediawiki/images/9/91/Red_Wine.png"
+            }
         },
         {
             "name": "Cherry Jelly",
@@ -503,8 +479,7 @@
                 "artisan": {
                     "normal": 294
                 }
-            },
-            "sprite": "https://stardewvalleywiki.com/mediawiki/images/9/9f/Red_Jelly.png"
+            }
         },
         {
             "name": "Dried Cherry",
@@ -516,8 +491,7 @@
                 "artisan": {
                     "normal": 875
                 }
-            },
-            "sprite": "https://stardewvalleywiki.com/mediawiki/images/9/9b/Red_Dried_Fruit.png"
+            }
         },
         {
             "name": "Coconut",
@@ -536,7 +510,6 @@
                     "iridium": 200
                 }
             },
-            "sprite": "./Fruits - Stardew Valley Wiki_files/Coconut.png",
             "color": "brown"
         },
         {
@@ -555,8 +528,7 @@
                     "gold": 630,
                     "iridium": 840
                 }
-            },
-            "sprite": "https://stardewvalleywiki.com/mediawiki/images/2/24/Brown_Wine.png"
+            }
         },
         {
             "name": "Coconut Jelly",
@@ -568,8 +540,7 @@
                 "artisan": {
                     "normal": 350
                 }
-            },
-            "sprite": "https://stardewvalleywiki.com/mediawiki/images/d/d3/Brown_Jelly.png"
+            }
         },
         {
             "name": "Dried Coconut",
@@ -581,8 +552,7 @@
                 "artisan": {
                     "normal": 1085
                 }
-            },
-            "sprite": "https://stardewvalleywiki.com/mediawiki/images/d/d2/Brown_Dried_Fruit.png"
+            }
         },
         {
             "name": "Cranberries",
@@ -601,7 +571,6 @@
                     "iridium": 165
                 }
             },
-            "sprite": "./Fruits - Stardew Valley Wiki_files/Cranberries.png",
             "color": "red"
         },
         {
@@ -620,8 +589,7 @@
                     "gold": 471,
                     "iridium": 630
                 }
-            },
-            "sprite": "https://stardewvalleywiki.com/mediawiki/images/9/91/Red_Wine.png"
+            }
         },
         {
             "name": "Cranberries Jelly",
@@ -633,8 +601,7 @@
                 "artisan": {
                     "normal": 280
                 }
-            },
-            "sprite": "https://stardewvalleywiki.com/mediawiki/images/9/9f/Red_Jelly.png"
+            }
         },
         {
             "name": "Dried Cranberries",
@@ -646,8 +613,7 @@
                 "artisan": {
                     "normal": 821
                 }
-            },
-            "sprite": "https://stardewvalleywiki.com/mediawiki/images/9/9b/Red_Dried_Fruit.png"
+            }
         },
         {
             "name": "Crystal Fruit",
@@ -666,7 +632,6 @@
                     "iridium": 300
                 }
             },
-            "sprite": "./Fruits - Stardew Valley Wiki_files/Crystal_Fruit.png",
             "color": "blue"
         },
         {
@@ -685,8 +650,7 @@
                     "gold": 945,
                     "iridium": 1260
                 }
-            },
-            "sprite": "https://stardewvalleywiki.com/mediawiki/images/5/57/Blue_Wine.png"
+            }
         },
         {
             "name": "Crystal Fruit Jelly",
@@ -698,8 +662,7 @@
                 "artisan": {
                     "normal": 490
                 }
-            },
-            "sprite": "https://stardewvalleywiki.com/mediawiki/images/6/65/Blue_Jelly.png"
+            }
         },
         {
             "name": "Dried Crystal Fruit",
@@ -711,8 +674,7 @@
                 "artisan": {
                     "normal": 1610
                 }
-            },
-            "sprite": "https://stardewvalleywiki.com/mediawiki/images/a/a9/Blue_Dried_Fruit.png"
+            }
         },
         {
             "name": "Grape",
@@ -731,7 +693,6 @@
                     "iridium": 176
                 }
             },
-            "sprite": "./Fruits - Stardew Valley Wiki_files/Grape.png",
             "color": "dark-purple"
         },
         {
@@ -750,8 +711,7 @@
                     "gold": 504,
                     "iridium": 672
                 }
-            },
-            "sprite": "https://stardewvalleywiki.com/mediawiki/images/0/09/Dark_Purple_Wine.png"
+            }
         },
         {
             "name": "Grape Jelly",
@@ -763,8 +723,7 @@
                 "artisan": {
                     "normal": 294
                 }
-            },
-            "sprite": "https://stardewvalleywiki.com/mediawiki/images/a/a8/Dark_Purple_Jelly.png"
+            }
         },
         {
             "name": "Hot Pepper",
@@ -783,7 +742,6 @@
                     "iridium": 88
                 }
             },
-            "sprite": "./Fruits - Stardew Valley Wiki_files/Hot_Pepper.png",
             "color": "red"
         },
         {
@@ -802,8 +760,7 @@
                     "gold": 252,
                     "iridium": 336
                 }
-            },
-            "sprite": "https://stardewvalleywiki.com/mediawiki/images/9/91/Red_Wine.png"
+            }
         },
         {
             "name": "Hot Pepper Jelly",
@@ -815,8 +772,7 @@
                 "artisan": {
                     "normal": 182
                 }
-            },
-            "sprite": "https://stardewvalleywiki.com/mediawiki/images/9/9f/Red_Jelly.png"
+            }
         },
         {
             "name": "Dried Hot Pepper",
@@ -828,8 +784,7 @@
                 "artisan": {
                     "normal": 455
                 }
-            },
-            "sprite": "https://stardewvalleywiki.com/mediawiki/images/9/9b/Red_Dried_Fruit.png"
+            }
         },
         {
             "name": "Mango",
@@ -848,7 +803,6 @@
                     "iridium": 286
                 }
             },
-            "sprite": "./Fruits - Stardew Valley Wiki_files/Mango.png",
             "color": "yellow"
         },
         {
@@ -867,8 +821,7 @@
                     "gold": 819,
                     "iridium": 1092
                 }
-            },
-            "sprite": "https://stardewvalleywiki.com/mediawiki/images/2/29/Yellow_Wine.png"
+            }
         },
         {
             "name": "Mango Jelly",
@@ -880,8 +833,7 @@
                 "artisan": {
                     "normal": 434
                 }
-            },
-            "sprite": "https://stardewvalleywiki.com/mediawiki/images/4/43/Yellow_Jelly.png"
+            }
         },
         {
             "name": "Dried Mango",
@@ -893,8 +845,7 @@
                 "artisan": {
                     "normal": 1400
                 }
-            },
-            "sprite": "https://stardewvalleywiki.com/mediawiki/images/c/cd/Yellow_Dried_Fruit.png"
+            }
         },
         {
             "name": "Melon",
@@ -913,7 +864,6 @@
                     "iridium": 550
                 }
             },
-            "sprite": "./Fruits - Stardew Valley Wiki_files/Melon.png",
             "color": "pink"
         },
         {
@@ -932,8 +882,7 @@
                     "gold": 1575,
                     "iridium": 2100
                 }
-            },
-            "sprite": "https://stardewvalleywiki.com/mediawiki/images/1/17/Pink_Wine.png"
+            }
         },
         {
             "name": "Melon Jelly",
@@ -945,8 +894,7 @@
                 "artisan": {
                     "normal": 770
                 }
-            },
-            "sprite": "https://stardewvalleywiki.com/mediawiki/images/d/d6/Pink_Jelly.png"
+            }
         },
         {
             "name": "Dried Melon",
@@ -958,8 +906,7 @@
                 "artisan": {
                     "normal": 2660
                 }
-            },
-            "sprite": "https://stardewvalleywiki.com/mediawiki/images/3/3e/Pink_Dried_Fruit.png"
+            }
         },
         {
             "name": "Orange",
@@ -978,7 +925,6 @@
                     "iridium": 220
                 }
             },
-            "sprite": "./Fruits - Stardew Valley Wiki_files/Orange.png",
             "color": "orange"
         },
         {
@@ -997,8 +943,7 @@
                     "gold": 630,
                     "iridium": 840
                 }
-            },
-            "sprite": "https://stardewvalleywiki.com/mediawiki/images/c/cd/Orange_Wine.png"
+            }
         },
         {
             "name": "Orange Jelly",
@@ -1010,8 +955,7 @@
                 "artisan": {
                     "normal": 350
                 }
-            },
-            "sprite": "https://stardewvalleywiki.com/mediawiki/images/f/fc/Orange_Jelly.png"
+            }
         },
         {
             "name": "Dried Orange",
@@ -1023,8 +967,7 @@
                 "artisan": {
                     "normal": 1085
                 }
-            },
-            "sprite": "https://stardewvalleywiki.com/mediawiki/images/3/3a/Orange_Dried_Fruit.png"
+            }
         },
         {
             "name": "Peach",
@@ -1043,7 +986,6 @@
                     "iridium": 308
                 }
             },
-            "sprite": "./Fruits - Stardew Valley Wiki_files/Peach.png",
             "color": "pink"
         },
         {
@@ -1062,8 +1004,7 @@
                     "gold": 882,
                     "iridium": 1176
                 }
-            },
-            "sprite": "https://stardewvalleywiki.com/mediawiki/images/1/17/Pink_Wine.png"
+            }
         },
         {
             "name": "Peach Jelly",
@@ -1075,8 +1016,7 @@
                 "artisan": {
                     "normal": 462
                 }
-            },
-            "sprite": "https://stardewvalleywiki.com/mediawiki/images/d/d6/Pink_Jelly.png"
+            }
         },
         {
             "name": "Dried Peach",
@@ -1088,8 +1028,7 @@
                 "artisan": {
                     "normal": 1505
                 }
-            },
-            "sprite": "https://stardewvalleywiki.com/mediawiki/images/3/3e/Pink_Dried_Fruit.png"
+            }
         },
         {
             "name": "Pineapple",
@@ -1108,7 +1047,6 @@
                     "iridium": 660
                 }
             },
-            "sprite": "./Fruits - Stardew Valley Wiki_files/Pineapple.png",
             "color": "yellow"
         },
         {
@@ -1127,8 +1065,7 @@
                     "gold": 1890,
                     "iridium": 2520
                 }
-            },
-            "sprite": "https://stardewvalleywiki.com/mediawiki/images/2/29/Yellow_Wine.png"
+            }
         },
         {
             "name": "Pineapple Jelly",
@@ -1140,8 +1077,7 @@
                 "artisan": {
                     "normal": 910
                 }
-            },
-            "sprite": "https://stardewvalleywiki.com/mediawiki/images/4/43/Yellow_Jelly.png"
+            }
         },
         {
             "name": "Dried Pineapple",
@@ -1153,8 +1089,7 @@
                 "artisan": {
                     "normal": 3185
                 }
-            },
-            "sprite": "https://stardewvalleywiki.com/mediawiki/images/c/cd/Yellow_Dried_Fruit.png"
+            }
         },
         {
             "name": "Pomegranate",
@@ -1173,7 +1108,6 @@
                     "iridium": 308
                 }
             },
-            "sprite": "./Fruits - Stardew Valley Wiki_files/Pomegranate.png",
             "color": "dark-pink"
         },
         {
@@ -1192,8 +1126,7 @@
                     "gold": 882,
                     "iridium": 1176
                 }
-            },
-            "sprite": "https://stardewvalleywiki.com/mediawiki/images/7/7f/Dark_Pink_Wine.png"
+            }
         },
         {
             "name": "Pomegranate Jelly",
@@ -1205,8 +1138,7 @@
                 "artisan": {
                     "normal": 462
                 }
-            },
-            "sprite": "https://stardewvalleywiki.com/mediawiki/images/7/7b/Dark_Pink_Jelly.png"
+            }
         },
         {
             "name": "Dried Pomegranate",
@@ -1218,8 +1150,7 @@
                 "artisan": {
                     "normal": 1505
                 }
-            },
-            "sprite": "https://stardewvalleywiki.com/mediawiki/images/a/a7/Dark_Pink_Dried_Fruit.png"
+            }
         },
         {
             "name": "Powdermelon",
@@ -1238,7 +1169,6 @@
                     "iridium": 132
                 }
             },
-            "sprite": "./Fruits - Stardew Valley Wiki_files/Powdermelon.png",
             "color": "white"
         },
         {
@@ -1257,8 +1187,7 @@
                     "gold": 378,
                     "iridium": 504
                 }
-            },
-            "sprite": "https://stardewvalleywiki.com/mediawiki/images/5/5a/White_Wine.png"
+            }
         },
         {
             "name": "Powdermelon Jelly",
@@ -1270,8 +1199,7 @@
                 "artisan": {
                     "normal": 238
                 }
-            },
-            "sprite": "https://stardewvalleywiki.com/mediawiki/images/6/66/White_Jelly.png"
+            }
         },
         {
             "name": "Dried Powdermelon",
@@ -1283,8 +1211,7 @@
                 "artisan": {
                     "normal": 665
                 }
-            },
-            "sprite": "https://stardewvalleywiki.com/mediawiki/images/b/ba/White_Dried_Fruit.png"
+            }
         },
         {
             "name": "Qi Fruit",
@@ -1297,7 +1224,6 @@
                     "normal": 1
                 }
             },
-            "sprite": "./Fruits - Stardew Valley Wiki_files/Qi_Fruit.png",
             "color": "blue"
         },
         {
@@ -1316,8 +1242,7 @@
                     "gold": 5,
                     "iridium": 8
                 }
-            },
-            "sprite": "https://stardewvalleywiki.com/mediawiki/images/5/57/Blue_Wine.png"
+            }
         },
         {
             "name": "Qi Fruit Jelly",
@@ -1329,8 +1254,7 @@
                 "artisan": {
                     "normal": 72
                 }
-            },
-            "sprite": "https://stardewvalleywiki.com/mediawiki/images/6/65/Blue_Jelly.png"
+            }
         },
         {
             "name": "Dried Qi Fruit",
@@ -1342,8 +1266,7 @@
                 "artisan": {
                     "normal": 44
                 }
-            },
-            "sprite": "https://stardewvalleywiki.com/mediawiki/images/a/a9/Blue_Dried_Fruit.png"
+            }
         },
         {
             "name": "Rhubarb",
@@ -1362,7 +1285,6 @@
                     "iridium": 484
                 }
             },
-            "sprite": "./Fruits - Stardew Valley Wiki_files/Rhubarb.png",
             "color": "red"
         },
         {
@@ -1381,8 +1303,7 @@
                     "gold": 1386,
                     "iridium": 1848
                 }
-            },
-            "sprite": "https://stardewvalleywiki.com/mediawiki/images/9/91/Red_Wine.png"
+            }
         },
         {
             "name": "Rhubarb Jelly",
@@ -1394,8 +1315,7 @@
                 "artisan": {
                     "normal": 686
                 }
-            },
-            "sprite": "https://stardewvalleywiki.com/mediawiki/images/9/9f/Red_Jelly.png"
+            }
         },
         {
             "name": "Dried Rhubarb",
@@ -1407,8 +1327,7 @@
                 "artisan": {
                     "normal": 2345
                 }
-            },
-            "sprite": "https://stardewvalleywiki.com/mediawiki/images/9/9b/Red_Dried_Fruit.png"
+            }
         },
         {
             "name": "Salmonberry",
@@ -1425,7 +1344,6 @@
                     "iridium": 11
                 }
             },
-            "sprite": "./Fruits - Stardew Valley Wiki_files/Salmonberry.png",
             "color": "red"
         },
         {
@@ -1444,8 +1362,7 @@
                     "gold": 30,
                     "iridium": 42
                 }
-            },
-            "sprite": "https://stardewvalleywiki.com/mediawiki/images/9/91/Red_Wine.png"
+            }
         },
         {
             "name": "Salmonberry Jelly",
@@ -1457,8 +1374,7 @@
                 "artisan": {
                     "normal": 84
                 }
-            },
-            "sprite": "https://stardewvalleywiki.com/mediawiki/images/9/9f/Red_Jelly.png"
+            }
         },
         {
             "name": "Dried Salmonberry",
@@ -1470,8 +1386,7 @@
                 "artisan": {
                     "normal": 86
                 }
-            },
-            "sprite": "https://stardewvalleywiki.com/mediawiki/images/9/9b/Red_Dried_Fruit.png"
+            }
         },
         {
             "name": "Spice Berry",
@@ -1490,7 +1405,6 @@
                     "iridium": 160
                 }
             },
-            "sprite": "./Fruits - Stardew Valley Wiki_files/Spice_Berry.png",
             "color": "orange"
         },
         {
@@ -1509,8 +1423,7 @@
                     "gold": 504,
                     "iridium": 672
                 }
-            },
-            "sprite": "https://stardewvalleywiki.com/mediawiki/images/c/cd/Orange_Wine.png"
+            }
         },
         {
             "name": "Spice Berry Jelly",
@@ -1522,8 +1435,7 @@
                 "artisan": {
                     "normal": 294
                 }
-            },
-            "sprite": "https://stardewvalleywiki.com/mediawiki/images/f/fc/Orange_Jelly.png"
+            }
         },
         {
             "name": "Dried Spice Berry",
@@ -1535,8 +1447,7 @@
                 "artisan": {
                     "normal": 875
                 }
-            },
-            "sprite": "https://stardewvalleywiki.com/mediawiki/images/3/3a/Orange_Dried_Fruit.png"
+            }
         },
         {
             "name": "Starfruit",
@@ -1555,7 +1466,6 @@
                     "iridium": 1650
                 }
             },
-            "sprite": "./Fruits - Stardew Valley Wiki_files/Starfruit.png",
             "color": "yellow"
         },
         {
@@ -1574,8 +1484,7 @@
                     "gold": 4725,
                     "iridium": 6300
                 }
-            },
-            "sprite": "https://stardewvalleywiki.com/mediawiki/images/2/29/Yellow_Wine.png"
+            }
         },
         {
             "name": "Starfruit Jelly",
@@ -1587,8 +1496,7 @@
                 "artisan": {
                     "normal": 2170
                 }
-            },
-            "sprite": "https://stardewvalleywiki.com/mediawiki/images/4/43/Yellow_Jelly.png"
+            }
         },
         {
             "name": "Dried Starfruit",
@@ -1600,8 +1508,7 @@
                 "artisan": {
                     "normal": 7910
                 }
-            },
-            "sprite": "https://stardewvalleywiki.com/mediawiki/images/c/cd/Yellow_Dried_Fruit.png"
+            }
         },
         {
             "name": "Strawberry",
@@ -1620,7 +1527,6 @@
                     "iridium": 264
                 }
             },
-            "sprite": "./Fruits - Stardew Valley Wiki_files/Strawberry.png",
             "color": "red"
         },
         {
@@ -1639,8 +1545,7 @@
                     "gold": 756,
                     "iridium": 1008
                 }
-            },
-            "sprite": "https://stardewvalleywiki.com/mediawiki/images/9/91/Red_Wine.png"
+            }
         },
         {
             "name": "Strawberry Jelly",
@@ -1652,8 +1557,7 @@
                 "artisan": {
                     "normal": 406
                 }
-            },
-            "sprite": "https://stardewvalleywiki.com/mediawiki/images/9/9f/Red_Jelly.png"
+            }
         },
         {
             "name": "Dried Strawberry",
@@ -1665,8 +1569,7 @@
                 "artisan": {
                     "normal": 1295
                 }
-            },
-            "sprite": "https://stardewvalleywiki.com/mediawiki/images/9/9b/Red_Dried_Fruit.png"
+            }
         },
         {
             "name": "Wild Plum",
@@ -1685,7 +1588,6 @@
                     "iridium": 160
                 }
             },
-            "sprite": "./Fruits - Stardew Valley Wiki_files/Wild_Plum.png",
             "color": "purple"
         },
         {
@@ -1704,8 +1606,7 @@
                     "gold": 504,
                     "iridium": 672
                 }
-            },
-            "sprite": "https://stardewvalleywiki.com/mediawiki/images/1/15/Purple_Wine.png"
+            }
         },
         {
             "name": "Wild Plum Jelly",
@@ -1717,8 +1618,7 @@
                 "artisan": {
                     "normal": 294
                 }
-            },
-            "sprite": "https://stardewvalleywiki.com/mediawiki/images/5/59/Purple_Jelly.png"
+            }
         },
         {
             "name": "Dried Wild Plum",
@@ -1730,8 +1630,7 @@
                 "artisan": {
                     "normal": 875
                 }
-            },
-            "sprite": "https://stardewvalleywiki.com/mediawiki/images/2/24/Purple_Dried_Fruit.png"
+            }
         },
         {
             "name": "Blue Jazz",
@@ -1743,8 +1642,7 @@
                     "gold": 75,
                     "iridium": 100
                 }
-            },
-            "sprite": "https://stardewvalleywiki.com/mediawiki/images/2/2f/Blue_Jazz.png"
+            }
         },
         {
             "name": "Carrot",
@@ -1756,8 +1654,7 @@
                     "gold": 52,
                     "iridium": 70
                 }
-            },
-            "sprite": "https://stardewvalleywiki.com/mediawiki/images/c/c3/Carrot.png"
+            }
         },
         {
             "name": "Carrot Juice",
@@ -1769,8 +1666,7 @@
                 "artisan": {
                     "normal": 109
                 }
-            },
-            "sprite": "https://stardewvalleywiki.com/mediawiki/images/7/7e/Orange_Juice.png"
+            }
         },
         {
             "name": "Pickled Carrot",
@@ -1782,8 +1678,7 @@
                 "artisan": {
                     "normal": 168
                 }
-            },
-            "sprite": "https://stardewvalleywiki.com/mediawiki/images/3/3d/Orange_Pickles.png"
+            }
         },
         {
             "name": "Cauliflower",
@@ -1795,8 +1690,7 @@
                     "gold": 262,
                     "iridium": 350
                 }
-            },
-            "sprite": "https://stardewvalleywiki.com/mediawiki/images/a/aa/Cauliflower.png"
+            }
         },
         {
             "name": "Cauliflower Juice",
@@ -1808,8 +1702,7 @@
                 "artisan": {
                     "normal": 550
                 }
-            },
-            "sprite": "https://stardewvalleywiki.com/mediawiki/images/a/a9/White_Juice.png"
+            }
         },
         {
             "name": "Pickled Cauliflower",
@@ -1821,8 +1714,7 @@
                 "artisan": {
                     "normal": 560
                 }
-            },
-            "sprite": "https://stardewvalleywiki.com/mediawiki/images/5/5e/White_Pickles.png"
+            }
         },
         {
             "name": "Garlic",
@@ -1834,8 +1726,7 @@
                     "gold": 90,
                     "iridium": 120
                 }
-            },
-            "sprite": "https://stardewvalleywiki.com/mediawiki/images/c/cc/Garlic.png"
+            }
         },
         {
             "name": "Garlic Juice",
@@ -1847,8 +1738,7 @@
                 "artisan": {
                     "normal": 189
                 }
-            },
-            "sprite": "https://stardewvalleywiki.com/mediawiki/images/a/a9/White_Juice.png"
+            }
         },
         {
             "name": "Pickled Garlic",
@@ -1860,8 +1750,7 @@
                 "artisan": {
                     "normal": 238
                 }
-            },
-            "sprite": "https://stardewvalleywiki.com/mediawiki/images/5/5e/White_Pickles.png"
+            }
         },
         {
             "name": "Kale",
@@ -1873,8 +1762,7 @@
                     "gold": 165,
                     "iridium": 220
                 }
-            },
-            "sprite": "https://stardewvalleywiki.com/mediawiki/images/d/d1/Kale.png"
+            }
         },
         {
             "name": "Parsnip",
@@ -1886,8 +1774,7 @@
                     "gold": 52,
                     "iridium": 70
                 }
-            },
-            "sprite": "https://stardewvalleywiki.com/mediawiki/images/d/db/Parsnip.png"
+            }
         },
         {
             "name": "Parsnip Juice",
@@ -1899,8 +1786,7 @@
                 "artisan": {
                     "normal": 109
                 }
-            },
-            "sprite": "https://stardewvalleywiki.com/mediawiki/images/e/e5/Yellow_Juice.png"
+            }
         },
         {
             "name": "Pickled Parsnip",
@@ -1912,8 +1798,7 @@
                 "artisan": {
                     "normal": 168
                 }
-            },
-            "sprite": "https://stardewvalleywiki.com/mediawiki/images/5/5e/Yellow_Pickles.png"
+            }
         },
         {
             "name": "Potato",
@@ -1925,8 +1810,7 @@
                     "gold": 120,
                     "iridium": 160
                 }
-            },
-            "sprite": "https://stardewvalleywiki.com/mediawiki/images/c/c2/Potato.png"
+            }
         },
         {
             "name": "Potato Juice",
@@ -1938,8 +1822,7 @@
                 "artisan": {
                     "normal": 252
                 }
-            },
-            "sprite": "https://stardewvalleywiki.com/mediawiki/images/e/e5/Yellow_Juice.png"
+            }
         },
         {
             "name": "Pickled Potato",
@@ -1951,8 +1834,7 @@
                 "artisan": {
                     "normal": 294
                 }
-            },
-            "sprite": "https://stardewvalleywiki.com/mediawiki/images/5/5e/Yellow_Pickles.png"
+            }
         },
         {
             "name": "Tulip",
@@ -1964,8 +1846,7 @@
                     "gold": 45,
                     "iridium": 60
                 }
-            },
-            "sprite": "https://stardewvalleywiki.com/mediawiki/images/c/cf/Tulip.png"
+            }
         },
         {
             "name": "Unmilled Rice",
@@ -1977,8 +1858,7 @@
                     "gold": 45,
                     "iridium": 60
                 }
-            },
-            "sprite": "https://stardewvalleywiki.com/mediawiki/images/f/fe/Unmilled_Rice.png"
+            }
         },
         {
             "name": "Rice Juice",
@@ -1990,8 +1870,7 @@
                 "artisan": {
                     "normal": 93
                 }
-            },
-            "sprite": "https://stardewvalleywiki.com/mediawiki/images/2/2d/Brown_Juice.png"
+            }
         },
         {
             "name": "Pickled Rice",
@@ -2003,8 +1882,7 @@
                 "artisan": {
                     "normal": 154
                 }
-            },
-            "sprite": "https://stardewvalleywiki.com/mediawiki/images/5/5c/Brown_Pickles.png"
+            }
         },
         {
             "name": "Poppy",
@@ -2016,8 +1894,7 @@
                     "gold": 210,
                     "iridium": 280
                 }
-            },
-            "sprite": "https://stardewvalleywiki.com/mediawiki/images/3/37/Poppy.png"
+            }
         },
         {
             "name": "Radish",
@@ -2029,8 +1906,7 @@
                     "gold": 135,
                     "iridium": 180
                 }
-            },
-            "sprite": "https://stardewvalleywiki.com/mediawiki/images/d/d5/Radish.png"
+            }
         },
         {
             "name": "Radish Juice",
@@ -2042,8 +1918,7 @@
                 "artisan": {
                     "normal": 282
                 }
-            },
-            "sprite": "https://stardewvalleywiki.com/mediawiki/images/e/e5/Red_Juice.png"
+            }
         },
         {
             "name": "Pickled Radish",
@@ -2055,8 +1930,7 @@
                 "artisan": {
                     "normal": 322
                 }
-            },
-            "sprite": "https://stardewvalleywiki.com/mediawiki/images/3/3d/Red_Pickles.png"
+            }
         },
         {
             "name": "Red Cabbage",
@@ -2068,8 +1942,7 @@
                     "gold": 390,
                     "iridium": 520
                 }
-            },
-            "sprite": "https://stardewvalleywiki.com/mediawiki/images/2/2d/Red_Cabbage.png"
+            }
         },
         {
             "name": "Red Cabbage Juice",
@@ -2081,8 +1954,7 @@
                 "artisan": {
                     "normal": 819
                 }
-            },
-            "sprite": "https://stardewvalleywiki.com/mediawiki/images/e/e5/Dark_Purple_Juice.png"
+            }
         },
         {
             "name": "Pickled Red Cabbage",
@@ -2094,8 +1966,7 @@
                 "artisan": {
                     "normal": 798
                 }
-            },
-            "sprite": "https://stardewvalleywiki.com/mediawiki/images/3/3d/Dark_Purple_Pickles.png"
+            }
         },
         {
             "name": "Summer Spangle",
@@ -2107,8 +1978,7 @@
                     "gold": 135,
                     "iridium": 180
                 }
-            },
-            "sprite": "https://stardewvalleywiki.com/mediawiki/images/9/9f/Summer_Spangle.png"
+            }
         },
         {
             "name": "Sunflower",
@@ -2120,8 +1990,7 @@
                     "gold": 120,
                     "iridium": 160
                 }
-            },
-            "sprite": "https://stardewvalleywiki.com/mediawiki/images/8/81/Sunflower.png"
+            }
         },
         {
             "name": "Oil",
@@ -2133,8 +2002,7 @@
                 "artisan": {
                     "normal": 100
                 }
-            },
-            "sprite": "https://stardewvalleywiki.com/mediawiki/images/0/06/Oil.png"
+            }
         },
         {
             "name": "Wheat",
@@ -2146,8 +2014,7 @@
                     "gold": 37,
                     "iridium": 50
                 }
-            },
-            "sprite": "https://stardewvalleywiki.com/mediawiki/images/e/e2/Wheat.png"
+            }
         },
         {
             "name": "Beer",
@@ -2165,8 +2032,7 @@
                     "gold": 420,
                     "iridium": 560
                 }
-            },
-            "sprite": "https://stardewvalleywiki.com/mediawiki/images/b/b3/Beer.png"
+            }
         },
         {
             "name": "Pickled Wheat",
@@ -2178,8 +2044,7 @@
                 "artisan": {
                     "normal": 140
                 }
-            },
-            "sprite": "https://stardewvalleywiki.com/mediawiki/images/1/15/Yellow_Pickles.png"
+            }
         },
         {
             "name": "Amaranth",
@@ -2191,8 +2056,7 @@
                     "gold": 225,
                     "iridium": 300
                 }
-            },
-            "sprite": "https://stardewvalleywiki.com/mediawiki/images/f/f6/Amaranth.png"
+            }
         },
         {
             "name": "Amaranth Juice",
@@ -2204,8 +2068,7 @@
                 "artisan": {
                     "normal": 471
                 }
-            },
-            "sprite": "https://stardewvalleywiki.com/mediawiki/images/f/fd/Pink_Juice.png"
+            }
         },
         {
             "name": "Pickled Amaranth",
@@ -2217,8 +2080,7 @@
                 "artisan": {
                     "normal": 490
                 }
-            },
-            "sprite": "https://stardewvalleywiki.com/mediawiki/images/5/5d/Pink_Pickles.png"
+            }
         },
         {
             "name": "Artichoke",
@@ -2230,8 +2092,7 @@
                     "gold": 240,
                     "iridium": 320
                 }
-            },
-            "sprite": "https://stardewvalleywiki.com/mediawiki/images/d/dd/Artichoke.png"
+            }
         },
         {
             "name": "Artichoke Juice",
@@ -2243,8 +2104,7 @@
                 "artisan": {
                     "normal": 504
                 }
-            },
-            "sprite": "https://stardewvalleywiki.com/mediawiki/images/f/fd/Green_Juice.png"
+            }
         },
         {
             "name": "Pickled Artichoke",
@@ -2256,8 +2116,7 @@
                 "artisan": {
                     "normal": 518
                 }
-            },
-            "sprite": "https://stardewvalleywiki.com/mediawiki/images/3/30/Green_Pickles.png"
+            }
         },
         {
             "name": "Beet",
@@ -2269,8 +2128,7 @@
                     "gold": 150,
                     "iridium": 200
                 }
-            },
-            "sprite": "https://stardewvalleywiki.com/mediawiki/images/a/a4/Beet.png"
+            }
         },
         {
             "name": "Beet Juice",
@@ -2282,8 +2140,7 @@
                 "artisan": {
                     "normal": 315
                 }
-            },
-            "sprite": "https://stardewvalleywiki.com/mediawiki/images/f/fd/Red_Juice.png"
+            }
         },
         {
             "name": "Pickled Beet",
@@ -2295,8 +2152,7 @@
                 "artisan": {
                     "normal": 350
                 }
-            },
-            "sprite": "https://stardewvalleywiki.com/mediawiki/images/3/3d/Red_Pickles.png"
+            }
         },
         {
             "name": "Bok Choy",
@@ -2308,8 +2164,7 @@
                     "gold": 120,
                     "iridium": 160
                 }
-            },
-            "sprite": "https://stardewvalleywiki.com/mediawiki/images/4/40/Bok_Choy.png"
+            }
         },
         {
             "name": "Bok Choy Juice",
@@ -2321,8 +2176,7 @@
                 "artisan": {
                     "normal": 252
                 }
-            },
-            "sprite": "https://stardewvalleywiki.com/mediawiki/images/f/fd/Green_Juice.png"
+            }
         },
         {
             "name": "Pickled Bok Choy",
@@ -2334,8 +2188,7 @@
                 "artisan": {
                     "normal": 294
                 }
-            },
-            "sprite": "https://stardewvalleywiki.com/mediawiki/images/3/30/Green_Pickles.png"
+            }
         },
         {
             "name": "Fairy Rose",
@@ -2347,8 +2200,7 @@
                     "gold": 435,
                     "iridium": 580
                 }
-            },
-            "sprite": "https://stardewvalleywiki.com/mediawiki/images/5/5c/Fairy_Rose.png"
+            }
         },
         {
             "name": "Pumpkin",
@@ -2360,8 +2212,7 @@
                     "gold": 480,
                     "iridium": 640
                 }
-            },
-            "sprite": "https://stardewvalleywiki.com/mediawiki/images/6/64/Pumpkin.png"
+            }
         },
         {
             "name": "Pumpkin Juice",
@@ -2373,8 +2224,7 @@
                 "artisan": {
                     "normal": 1008
                 }
-            },
-            "sprite": "https://stardewvalleywiki.com/mediawiki/images/f/fd/Orange_Juice.png"
+            }
         },
         {
             "name": "Pickled Pumpkin",
@@ -2386,8 +2236,7 @@
                 "artisan": {
                     "normal": 966
                 }
-            },
-            "sprite": "https://stardewvalleywiki.com/mediawiki/images/3/3d/Orange_Pickles.png"
+            }
         },
         {
             "name": "Yam",
@@ -2399,8 +2248,7 @@
                     "gold": 240,
                     "iridium": 320
                 }
-            },
-            "sprite": "https://stardewvalleywiki.com/mediawiki/images/5/52/Yam.png"
+            }
         },
         {
             "name": "Yam Juice",
@@ -2412,8 +2260,7 @@
                 "artisan": {
                     "normal": 504
                 }
-            },
-            "sprite": "https://stardewvalleywiki.com/mediawiki/images/f/fd/Orange_Juice.png"
+            }
         },
         {
             "name": "Pickled Yam",
@@ -2425,8 +2272,7 @@
                 "artisan": {
                     "normal": 518
                 }
-            },
-            "sprite": "https://stardewvalleywiki.com/mediawiki/images/3/3d/Orange_Pickles.png"
+            }
         },
         {
             "name": "Taro Root",
@@ -2438,8 +2284,7 @@
                     "gold": 150,
                     "iridium": 200
                 }
-            },
-            "sprite": "https://stardewvalleywiki.com/mediawiki/images/0/01/Taro_Root.png"
+            }
         },
         {
             "name": "Sweet Gem Berry",
@@ -2451,8 +2296,7 @@
                     "gold": 4500,
                     "iridium": 6000
                 }
-            },
-            "sprite": "https://stardewvalleywiki.com/mediawiki/images/8/88/Sweet_Gem_Berry.png"
+            }
         },
         {
             "name": "Kale Juice",
@@ -2464,8 +2308,7 @@
                 "artisan": {
                     "normal": 345
                 }
-            },
-            "sprite": "https://stardewvalleywiki.com/mediawiki/images/c/c2/Green_Juice.png"
+            }
         },
         {
             "name": "Pickled Kale",
@@ -2477,8 +2320,7 @@
                 "artisan": {
                     "normal": 378
                 }
-            },
-            "sprite": "https://stardewvalleywiki.com/mediawiki/images/3/30/Green_Pickles.png"
+            }
         },
         {
             "name": "Egg",
@@ -2496,8 +2338,7 @@
                     "gold": 90,
                     "iridium": 120
                 }
-            },
-            "sprite": "https://stardewvalleywiki.com/mediawiki/images/2/26/Egg.png"
+            }
         },
         {
             "name": "Large Egg",
@@ -2515,8 +2356,7 @@
                     "gold": 170,
                     "iridium": 228
                 }
-            },
-            "sprite": "https://stardewvalleywiki.com/mediawiki/images/4/4b/Large_Egg.png"
+            }
         },
         {
             "name": "Mayonnaise",
@@ -2540,8 +2380,7 @@
                     "gold": 399,
                     "iridium": 532
                 }
-            },
-            "sprite": "https://stardewvalleywiki.com/mediawiki/images/4/4e/Mayonnaise.png"
+            }
         },
         {
             "name": "Duck Egg",
@@ -2559,8 +2398,7 @@
                     "gold": 170,
                     "iridium": 228
                 }
-            },
-            "sprite": "https://stardewvalleywiki.com/mediawiki/images/3/31/Duck_Egg.png"
+            }
         },
         {
             "name": "Duck Mayonnaise",
@@ -2575,8 +2413,7 @@
                 "artisan": {
                     "normal": 525
                 }
-            },
-            "sprite": "https://stardewvalleywiki.com/mediawiki/images/2/23/Duck_Mayonnaise.png"
+            }
         }
     ]
 }
