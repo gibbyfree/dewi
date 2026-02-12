@@ -144,7 +144,9 @@
                     "iridium": 110
                 }
             },
-            "color": "orange"
+            "color": "orange",
+            "daysToMature": 28,
+            "daysToRegrow": 1
         },
         {
             "name": "Apricot Wine",
@@ -205,7 +207,9 @@
                     "iridium": 330
                 }
             },
-            "color": "yellow"
+            "color": "yellow",
+            "daysToMature": 28,
+            "daysToRegrow": 1
         },
         {
             "name": "Banana Wine",
