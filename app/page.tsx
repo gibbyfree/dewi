@@ -23,15 +23,9 @@ export default function Home() {
         onSelectedChange={setSelected}
         onSelectItem={setSelectedItem}
       />
-      <ProfessionToggles
-        professions={professions}
-        onChange={setProfessions}
-        wasForaged={wasForaged}
-        onWasForagedChange={setWasForaged}
-        selectedItem={selectedItem}
-      />
+      <ProfessionToggles professions={professions} onChange={setProfessions} />
       {selectedItem && (
-        <ItemDetails item={selectedItem} professions={professions} wasForaged={wasForaged} />
+        <ItemDetails item={selectedItem} professions={professions} wasForaged={wasForaged} onWasForagedChange={setWasForaged} />
       )}
     </main>
   )

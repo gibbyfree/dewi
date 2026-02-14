@@ -17,6 +17,7 @@ export interface GameItem {
     }
     base: boolean
     color?: string
+    spritePath?: string
     daysToMature?: number
     daysToRegrow?: number
     forageable?: boolean

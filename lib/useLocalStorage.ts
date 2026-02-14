@@ -1,35 +1,44 @@
-import { useState, useEffect } from "react"
+import * as React from "react"
 
 export function useLocalStorage<T>(key: string, initialValue: T) {
-    // Always use initialValue for SSR and first client render
-    const [value, setValue] = useState<T>(initialValue)
-    const [isInitialized, setIsInitialized] = useState(false)
+    const [value, setValue] = React.useState<T>(initialValue)
 
-    // Load from localStorage only after mounting (client-side only)
-    useEffect(() => {
+    // Tracks whether we've completed the initial read for the current key
+    const didInitRef = React.useRef(false)
+    const keyRef = React.useRef(key)
+
+    // If key changes, reset init flag
+    if (keyRef.current !== key) {
+        keyRef.current = key
+        didInitRef.current = false
+        // keep current value until effect runs; avoids render-time localStorage access
+    }
+
+    // Read after mount (hydration-safe)
+    React.useEffect(() => {
         if (typeof window === "undefined") return
 
         try {
-            const saved = localStorage.getItem(key)
-            if (saved) {
-                setValue(JSON.parse(saved))
-            }
+            const raw = window.localStorage.getItem(key)
+            if (raw !== null) setValue(JSON.parse(raw) as T)
         } catch {
-            // ignore errors
+            // ignore
+        } finally {
+            didInitRef.current = true
         }
-        setIsInitialized(true)
     }, [key])
 
-    // Save to localStorage whenever value changes (but only after initialization)
-    useEffect(() => {
-        if (!isInitialized || typeof window === "undefined") return
+    // Write after init
+    React.useEffect(() => {
+        if (typeof window === "undefined") return
+        if (!didInitRef.current) return
 
         try {
-            localStorage.setItem(key, JSON.stringify(value))
+            window.localStorage.setItem(key, JSON.stringify(value))
         } catch {
-            // ignore errors
+            // ignore
         }
-    }, [key, value, isInitialized])
+    }, [key, value])
 
     return [value, setValue] as const
 }

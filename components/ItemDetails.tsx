@@ -25,39 +25,54 @@ function getItemSpritePath(itemName: string): string {
     return `/sprites/bases/${itemName.toLowerCase().replace(/\s+/g, "-")}.png`
 }
 
+// Determine price category based on item, professions, and source
+function getPriceCategory(
+    itemName: string,
+    wasForaged: boolean,
+    hasTiller: boolean,
+    hasBearsKnowledge: boolean
+): "base" | "tiller" | "bearsKnowledge" | "bearsKnowledgeTiller" {
+    const isBerry = itemName === "Blackberry" || itemName === "Salmonberry"
+    const bearsApplies = isBerry && wasForaged && hasBearsKnowledge
+
+    // Special rule: for berries, Tiller applies regardless of "wasForaged".
+    // For other forageables, Tiller applies only when not foraged (i.e., grown).
+    const tillerApplies = hasTiller && (isBerry || !wasForaged)
+
+    if (bearsApplies) return tillerApplies ? "bearsKnowledgeTiller" : "bearsKnowledge"
+    if (tillerApplies) return "tiller"
+    return "base"
+}
+
 interface ItemDetailsProps {
     item: GameItem
     professions: string[]
+    wasForaged: boolean
+    onWasForagedChange: (wasForaged: boolean) => void
 }
 
-export function ItemDetails({ item, professions }: ItemDetailsProps) {
-    return <ItemDetailsInner key={item.name} item={item} professions={professions} />
+export function ItemDetails({ item, professions, wasForaged, onWasForagedChange }: ItemDetailsProps) {
+    return <ItemDetailsInner key={item.name} item={item} professions={professions} wasForaged={wasForaged} onWasForagedChange={onWasForagedChange} />
 }
 
-function ItemDetailsInner({ item, professions }: ItemDetailsProps) {
+function ItemDetailsInner({ item, professions, wasForaged, onWasForagedChange }: ItemDetailsProps) {
     const itemSprite = getItemSpritePath(item.name)
     const isForageable = item.forageable ?? false
     const hasTiller = professions.includes("tiller")
     const hasBearsKnowledge = professions.includes("bearsKnowledge")
 
-    // Track whether item was foraged or grown
-    const [wasForaged, setWasForaged] = useState<boolean>(true)
     const [selectedQuality, setSelectedQuality] = useState<string>("normal")
 
-    // Determine which price category to use based on source and professions
-    let category: string
-    if (wasForaged && hasBearsKnowledge && hasTiller) {
-        category = "bearsKnowledgeTiller"
-    } else if (wasForaged && hasBearsKnowledge) {
-        category = "bearsKnowledge"
-    } else if (hasTiller) {
-        category = "tiller"
-    } else {
-        category = "base"
+    // Determine which price category to use
+    const category = getPriceCategory(item.name, wasForaged, hasTiller, hasBearsKnowledge)
+
+    // Fallback to base if the desired category doesn't exist
+    let qualities = item.prices[category as keyof typeof item.prices]
+    if (!qualities) {
+        qualities = item.prices.base
     }
 
     const categories = [category]
-    const qualities = item.prices[category as keyof typeof item.prices]
 
     // Derive the selected price from current item and quality (no separate state needed)
     const selectedPrice = qualities?.[selectedQuality as keyof typeof qualities] || qualities?.normal || 0
@@ -78,9 +93,14 @@ function ItemDetailsInner({ item, professions }: ItemDetailsProps) {
             {isForageable && (
                 <div className="flex items-center gap-2">
                     <span className="text-sm font-medium">Source:</span>
-                    <ToggleGroup variant="outline" type="single" value={wasForaged ? "foraged" : "grown"} onValueChange={(value) => {
-                        if (value) setWasForaged(value === "foraged")
-                    }}>
+                    <ToggleGroup
+                        type="single"
+                        value={wasForaged ? "foraged" : "grown"}
+                        onValueChange={(value) => {
+                            if (value) onWasForagedChange(value === "foraged")
+                        }}
+                        variant="outline"
+                    >
                         <ToggleGroupItem value="foraged" aria-label="Foraged">
                             Foraged
                         </ToggleGroupItem>
@@ -159,3 +179,4 @@ function ItemDetailsInner({ item, professions }: ItemDetailsProps) {
         </div>
     )
 }
+

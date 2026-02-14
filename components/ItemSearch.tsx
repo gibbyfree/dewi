@@ -48,7 +48,10 @@ export function ItemSearch({
                     <CommandItem
                         key={item.name}
                         value={item.name}
-                        onSelect={() => onSelectItem(item)}
+                        onSelect={() => {
+                            onSelectItem(item)
+                            onQueryChange("")
+                        }}
                         className="flex flex-col items-start gap-1"
                     >
                         <span className="font-medium">{item.name}</span>

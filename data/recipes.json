@@ -407,6 +407,16 @@
                             "quantity": 1
                         }
                     ]
+                },
+                {
+                    "name": "Raisins",
+                    "processor": "Dehydrator",
+                    "ingredients": [
+                        {
+                            "name": "Grape",
+                            "quantity": 5
+                        }
+                    ]
                 }
             ]
         },
@@ -941,6 +951,7 @@
                 {
                     "name": "Carrot Juice",
                     "processor": "Keg",
+                    "processingDays": 4,
                     "ingredients": [
                         {
                             "name": "Carrot",

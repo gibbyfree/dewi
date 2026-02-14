@@ -12,16 +12,52 @@ import recipesData from "@/data/recipes.json"
 import itemsData from "@/data/items.json"
 import { processorConfig } from "@/config/processors"
 
+// Set of fruits (others default to vegetable)
+const FRUITS = new Set([
+    "Ancient Fruit",
+    "Apple",
+    "Apricot",
+    "Banana",
+    "Blackberry",
+    "Blueberry",
+    "Cherry",
+    "Coconut",
+    "Cranberries",
+    "Crystal Fruit",
+    "Grape",
+    "Hot Pepper",
+    "Melon",
+    "Orange",
+    "Peach",
+    "Pineapple",
+    "Pomegranate",
+    "Powdermelon",
+    "Rhubarb",
+    "Salmonberry",
+    "Spice Berry",
+    "Starfruit",
+    "Strawberry",
+    "Wild Plum",
+])
+
 // Convert processor name to sprite filename
 function getProcessorSpritePath(processorName: string): string {
     return `/sprites/processors/${processorName.toLowerCase().replace(/\s+/g, "-")}.png`
 }
 
-// Get derived item sprite path based on color and processor type
-function getDerivedSpritePath(color: string, processorName: string): string {
-    const processorType = processorName === "Keg" ? "wine" :
-        processorName === "Preserves Jar" ? "jelly" :
-            processorName === "Dehydrator" ? "dried-fruit" : "unknown";
+// Get derived item sprite path based on color, processor type, and whether base is a fruit
+function getDerivedSpritePath(color: string, processorName: string, baseName: string): string {
+    const isFruit = FRUITS.has(baseName)
+    let processorType: string
+    if (processorName === "Keg") {
+        processorType = isFruit ? "wine" : "juice"
+    } else if (processorName === "Preserves Jar") {
+        processorType = isFruit ? "jelly" : "pickles"
+    } else if (processorName === "Dehydrator") {
+        processorType = "dried-fruit"
+    } else {
+        processorType = "unknown"
+    }
     return `/sprites/processedes/${color}-${processorType}.png`;
 }
 
@@ -37,8 +73,9 @@ export function DerivedItems({ baseItem, professions, selectedBasePrice }: Deriv
     const derivedItems = recipeEntry?.products.map(product => {
         const derivedItem = itemsData.items.find((i: GameItem) => i.name === product.name)
         const quantity = product.ingredients[0]?.quantity || 1
-        return derivedItem ? { ...derivedItem, processor: product.processor, quantity } : null
-    }).filter(Boolean) as (GameItem & { processor: string; quantity: number })[]
+        const processingDays = (product as any).processingDays
+        return derivedItem ? { ...derivedItem, processor: product.processor, quantity, processingDays } : null
+    }).filter(Boolean) as (GameItem & { processor: string; quantity: number; processingDays?: number })[]
 
     if (!derivedItems || derivedItems.length === 0) return null
 
@@ -50,7 +87,7 @@ export function DerivedItems({ baseItem, professions, selectedBasePrice }: Deriv
             <div className="space-y-4">
                 {derivedItems.map(derivedItem => {
                     const baseColor = (baseItem as GameItem).color || "red"
-                    const derivedSprite = getDerivedSpritePath(baseColor, derivedItem.processor)
+                    const derivedSprite = derivedItem.spritePath || getDerivedSpritePath(baseColor, derivedItem.processor, baseItem.name)
                     const processorSprite = getProcessorSpritePath(derivedItem.processor)
 
                     // Get the price for the selected category
@@ -62,8 +99,8 @@ export function DerivedItems({ baseItem, professions, selectedBasePrice }: Deriv
                     const delta = selectedBasePrice > 0 ? price - totalBaseCost : 0
                     const deltaText = delta > 0 ? `+${delta}g` : delta < 0 ? `${delta}g` : "0g"
 
-                    // Calculate gold per day
-                    const processingDays = processorConfig[derivedItem.processor as keyof typeof processorConfig]?.processingDays || 1
+                    // Calculate gold per day - use recipe-specific processing days if available
+                    const processingDays = derivedItem.processingDays ?? processorConfig[derivedItem.processor as keyof typeof processorConfig]?.processingDays ?? 1
                     const isDehydrator = derivedItem.processor === "Dehydrator"
 
                     // For dehydrator, normalize per item; for others, show total g/day

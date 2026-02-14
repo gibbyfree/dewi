@@ -19,7 +19,8 @@
             },
             "color": "light-blue",
             "daysToMature": 28,
-            "daysToRegrow": 7
+            "daysToRegrow": 7,
+            "description": "It's been dormant for eons."
         },
         {
             "name": "Ancient Fruit Wine",
@@ -146,7 +147,8 @@
             },
             "color": "orange",
             "daysToMature": 28,
-            "daysToRegrow": 1
+            "daysToRegrow": 1,
+            "description": "A tender little fruit with a rock-hard pit."
         },
         {
             "name": "Apricot Wine",
@@ -209,7 +211,8 @@
             },
             "color": "yellow",
             "daysToMature": 28,
-            "daysToRegrow": 1
+            "daysToRegrow": 1,
+            "description": "A sweet, starchy tropical fruit."
         },
         {
             "name": "Banana Wine",
@@ -277,11 +280,14 @@
                 },
                 "bearsKnowledgeTiller": {
                     "normal": 66,
+                    "silver": 83,
+                    "gold": 99,
                     "iridium": 132
                 }
             },
             "color": "dark-blue",
-            "forageable": true
+            "forageable": true,
+            "description": "An early-fall treat."
         },
         {
             "name": "Blackberry Wine",
@@ -405,7 +411,11 @@
                     "iridium": 165
                 }
             },
-            "color": "green"
+            "color": "green",
+            "forageable": true,
+            "daysToMature": 12,
+            "daysToRegrow": 3,
+            "description": "The sweet fruit of the prickly pear cactus."
         },
         {
             "name": "Cactus Fruit Wine",
@@ -466,7 +476,10 @@
                     "iridium": 176
                 }
             },
-            "color": "red"
+            "color": "red",
+            "description": "It's popular, and ripens sooner than most other fruits.",
+            "daysToMature": 28,
+            "daysToRegrow": 1
         },
         {
             "name": "Cherry Wine",
@@ -527,7 +540,9 @@
                     "iridium": 200
                 }
             },
-            "color": "brown"
+            "color": "brown",
+            "description": "A seed of the coconut palm. It has many culinary uses.",
+            "forageable": true
         },
         {
             "name": "Coconut Wine",
@@ -588,7 +603,10 @@
                     "iridium": 165
                 }
             },
-            "color": "red"
+            "color": "red",
+            "description": "These tart red berries are a traditional winter food.",
+            "daysToMature": 7,
+            "daysToRegrow": 5
         },
         {
             "name": "Cranberries Wine",
@@ -649,7 +667,9 @@
                     "iridium": 300
                 }
             },
-            "color": "blue"
+            "color": "blue",
+            "isForageable": true,
+            "description": "A delicate fruit that pops up from the snow."
         },
         {
             "name": "Crystal Fruit Wine",
@@ -710,7 +730,11 @@
                     "iridium": 176
                 }
             },
-            "color": "dark-purple"
+            "color": "dark-purple",
+            "isForageable": true,
+            "description": "A sweet cluster of fruit.",
+            "daysToMature": 10,
+            "daysToRegrow": 3
         },
         {
             "name": "Grape Wine",
@@ -743,6 +767,19 @@
             }
         },
         {
+            "name": "Raisins",
+            "base": false,
+            "spritePath": "/sprites/processedes/raisins.png",
+            "prices": {
+                "base": {
+                    "normal": 600
+                },
+                "artisan": {
+                    "normal": 840
+                }
+            }
+        },
+        {
             "name": "Hot Pepper",
             "base": true,
             "prices": {
@@ -759,7 +796,10 @@
                     "iridium": 88
                 }
             },
-            "color": "red"
+            "color": "red",
+            "description": "Fiery hot with a hint of sweetness.",
+            "daysToMature": 5,
+            "daysToRegrow": 3
         },
         {
             "name": "Hot Pepper Wine",
@@ -820,7 +860,10 @@
                     "iridium": 286
                 }
             },
-            "color": "yellow"
+            "color": "yellow",
+            "description": "A big, sweet tropical fruit with a unique flavor.",
+            "daysToMature": 28,
+            "daysToRegrow": 1
         },
         {
             "name": "Mango Wine",
@@ -881,7 +924,9 @@
                     "iridium": 550
                 }
             },
-            "color": "pink"
+            "color": "pink",
+            "description": "A cool, sweet summer treat.",
+            "daysToMature": 12
         },
         {
             "name": "Melon Wine",
@@ -942,7 +987,10 @@
                     "iridium": 220
                 }
             },
-            "color": "orange"
+            "color": "orange",
+            "description": "Juicy, tangy, and bursting with sweet summer aroma.",
+            "daysToMature": 28,
+            "daysToRegrow": 1
         },
         {
             "name": "Orange Wine",
@@ -1003,7 +1051,10 @@
                     "iridium": 308
                 }
             },
-            "color": "pink"
+            "color": "pink",
+            "description": "It's almost fuzzy to the touch.",
+            "daysToMature": 28,
+            "daysToRegrow": 1
         },
         {
             "name": "Peach Wine",
@@ -1064,7 +1115,10 @@
                     "iridium": 660
                 }
             },
-            "color": "yellow"
+            "color": "yellow",
+            "description": "A sweet and tangy tropical treat.",
+            "daysToMature": 14,
+            "daysToRegrow": 7
         },
         {
             "name": "Pineapple Wine",
@@ -1125,7 +1179,10 @@
                     "iridium": 308
                 }
             },
-            "color": "dark-pink"
+            "color": "dark-pink",
+            "description": "Within the fruit are clusters of juicy seeds.",
+            "daysToMature": 28,
+            "daysToRegrow": 1
         },
         {
             "name": "Pomegranate Wine",
@@ -1186,7 +1243,9 @@
                     "iridium": 132
                 }
             },
-            "color": "white"
+            "color": "white",
+            "description": "Named for the powdery coating that forms on the surface, this melon is crisp and sweet, with a delicate flavor.",
+            "daysToMature": 7
         },
         {
             "name": "Powdermelon Wine",
@@ -1241,7 +1300,9 @@
                     "normal": 1
                 }
             },
-            "color": "blue"
+            "color": "blue",
+            "description": "Mr. Qi has challenged you to ship 500 of these strange melons.",
+            "daysToMature": 4
         },
         {
             "name": "Qi Fruit Wine",
@@ -1302,7 +1363,9 @@
                     "iridium": 484
                 }
             },
-            "color": "red"
+            "color": "red",
+            "description": "The stalks are extremely tart, but make a great dessert when sweetened.",
+            "daysToMature": 13
         },
         {
             "name": "Rhubarb Wine",
@@ -1358,10 +1421,26 @@
                 },
                 "tiller": {
                     "normal": 5,
+                    "silver": 6,
+                    "gold": 7,
                     "iridium": 11
+                },
+                "bearsKnowledge": {
+                    "normal": 15,
+                    "silver": 18,
+                    "gold": 21,
+                    "iridium": 30
+                },
+                "bearsKnowledgeTiller": {
+                    "normal": 16,
+                    "silver": 19,
+                    "gold": 23,
+                    "iridium": 33
                 }
             },
-            "color": "red"
+            "color": "red",
+            "description": "A spring-time berry with the flavor of the forest.",
+            "foreagable": true
         },
         {
             "name": "Salmonberry Wine",
@@ -1422,7 +1501,9 @@
                     "iridium": 160
                 }
             },
-            "color": "orange"
+            "color": "orange",
+            "description": "It fills the air with a pungent aroma.",
+            "forageable": true
         },
         {
             "name": "Spice Berry Wine",
@@ -1483,7 +1564,9 @@
                     "iridium": 1650
                 }
             },
-            "color": "yellow"
+            "color": "yellow",
+            "description": "An extremely juicy fruit that grows in hot, humid weather. Slightly sweet with a sour undertone.",
+            "daysToMature": 13
         },
         {
             "name": "Starfruit Wine",
@@ -1544,7 +1627,10 @@
                     "iridium": 264
                 }
             },
-            "color": "red"
+            "color": "red",
+            "description": "A sweet, juicy favorite with an appealing red color.",
+            "daysToMature": 8,
+            "daysToRegrow": 4
         },
         {
             "name": "Strawberry Wine",
@@ -1605,7 +1691,9 @@
                     "iridium": 160
                 }
             },
-            "color": "purple"
+            "color": "purple",
+            "description": "Tart and juicy with a pungent aroma.",
+            "forageable": true
         },
         {
             "name": "Wild Plum Wine",
@@ -1659,19 +1747,30 @@
                     "gold": 75,
                     "iridium": 100
                 }
-            }
+            },
+            "description": "The flower grows in a sphere to invite as many butterflies as possible.",
+            "daysToMature": 7
         },
         {
             "name": "Carrot",
             "base": true,
+            "color": "orange",
             "prices": {
                 "base": {
                     "normal": 35,
                     "silver": 43,
                     "gold": 52,
                     "iridium": 70
+                },
+                "tiller": {
+                    "normal": 38,
+                    "silver": 47,
+                    "gold": 57,
+                    "iridium": 77
                 }
-            }
+            },
+            "description": "A fast-growing, colorful tuber that makes for a great snack.",
+            "daysToMature": 3
         },
         {
             "name": "Carrot Juice",
