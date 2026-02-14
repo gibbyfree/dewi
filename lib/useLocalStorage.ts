@@ -1,23 +1,35 @@
 import { useState, useEffect } from "react"
 
 export function useLocalStorage<T>(key: string, initialValue: T) {
-    const [value, setValue] = useState<T>(() => {
-        if (typeof window === "undefined") return initialValue
+    // Always use initialValue for SSR and first client render
+    const [value, setValue] = useState<T>(initialValue)
+    const [isInitialized, setIsInitialized] = useState(false)
+
+    // Load from localStorage only after mounting (client-side only)
+    useEffect(() => {
+        if (typeof window === "undefined") return
+
         try {
             const saved = localStorage.getItem(key)
-            return saved ? JSON.parse(saved) : initialValue
+            if (saved) {
+                setValue(JSON.parse(saved))
+            }
         } catch {
-            return initialValue
+            // ignore errors
         }
-    })
+        setIsInitialized(true)
+    }, [key])
 
+    // Save to localStorage whenever value changes (but only after initialization)
     useEffect(() => {
+        if (!isInitialized || typeof window === "undefined") return
+
         try {
             localStorage.setItem(key, JSON.stringify(value))
         } catch {
             // ignore errors
         }
-    }, [key, value])
+    }, [key, value, isInitialized])
 
     return [value, setValue] as const
 }

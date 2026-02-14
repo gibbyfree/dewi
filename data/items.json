@@ -265,10 +265,23 @@
                 },
                 "tiller": {
                     "normal": 22,
+                    "silver": 28,
+                    "gold": 33,
                     "iridium": 44
+                },
+                "bearsKnowledge": {
+                    "normal": 60,
+                    "silver": 75,
+                    "gold": 90,
+                    "iridium": 120
+                },
+                "bearsKnowledgeTiller": {
+                    "normal": 66,
+                    "iridium": 132
                 }
             },
-            "color": "dark-blue"
+            "color": "dark-blue",
+            "forageable": true
         },
         {
             "name": "Blackberry Wine",

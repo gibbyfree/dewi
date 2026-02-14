@@ -12,6 +12,7 @@ export default function Home() {
   const [selected, setSelected] = useState("")
   const [selectedItem, setSelectedItem] = useState<GameItem | null>(null)
   const [professions, setProfessions] = useLocalStorage<string[]>("professions", [])
+  const [wasForaged, setWasForaged] = useState<boolean>(true)
 
   return (
     <main className="max-w-md mx-auto mt-10 p-4">
@@ -22,9 +23,15 @@ export default function Home() {
         onSelectedChange={setSelected}
         onSelectItem={setSelectedItem}
       />
-      <ProfessionToggles professions={professions} onChange={setProfessions} />
+      <ProfessionToggles
+        professions={professions}
+        onChange={setProfessions}
+        wasForaged={wasForaged}
+        onWasForagedChange={setWasForaged}
+        selectedItem={selectedItem}
+      />
       {selectedItem && (
-        <ItemDetails item={selectedItem} professions={professions} />
+        <ItemDetails item={selectedItem} professions={professions} wasForaged={wasForaged} />
       )}
     </main>
   )

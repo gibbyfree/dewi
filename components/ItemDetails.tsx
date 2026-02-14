@@ -11,6 +11,7 @@ import {
     ItemMedia,
     ItemTitle,
 } from "@/components/ui/item"
+import { ToggleGroup, ToggleGroupItem } from "@/components/ui/toggle-group"
 import { DerivedItems } from "./DerivedItems"
 
 const qualitySprites: Record<string, string> = {
@@ -35,16 +36,28 @@ export function ItemDetails({ item, professions }: ItemDetailsProps) {
 
 function ItemDetailsInner({ item, professions }: ItemDetailsProps) {
     const itemSprite = getItemSpritePath(item.name)
-    // For base items, use tiller if selected, otherwise use base
-    const categories = professions.includes("tiller")
-        ? ["tiller"]
-        : ["base"]
+    const isForageable = item.forageable ?? false
+    const hasTiller = professions.includes("tiller")
+    const hasBearsKnowledge = professions.includes("bearsKnowledge")
 
-    const category = categories[0] || "base"
-    const qualities = item.prices[category as keyof typeof item.prices]
-
-    // Use item name as part of the key to reset state when item changes
+    // Track whether item was foraged or grown
+    const [wasForaged, setWasForaged] = useState<boolean>(true)
     const [selectedQuality, setSelectedQuality] = useState<string>("normal")
+
+    // Determine which price category to use based on source and professions
+    let category: string
+    if (wasForaged && hasBearsKnowledge && hasTiller) {
+        category = "bearsKnowledgeTiller"
+    } else if (wasForaged && hasBearsKnowledge) {
+        category = "bearsKnowledge"
+    } else if (hasTiller) {
+        category = "tiller"
+    } else {
+        category = "base"
+    }
+
+    const categories = [category]
+    const qualities = item.prices[category as keyof typeof item.prices]
 
     // Derive the selected price from current item and quality (no separate state needed)
     const selectedPrice = qualities?.[selectedQuality as keyof typeof qualities] || qualities?.normal || 0
@@ -61,6 +74,22 @@ function ItemDetailsInner({ item, professions }: ItemDetailsProps) {
                 <h2 className="text-xl font-semibold">{item.name}</h2>
                 <h3 className="text-md italic text-gray-500">{item.description}</h3>
             </div>
+
+            {isForageable && (
+                <div className="flex items-center gap-2">
+                    <span className="text-sm font-medium">Source:</span>
+                    <ToggleGroup variant="outline" type="single" value={wasForaged ? "foraged" : "grown"} onValueChange={(value) => {
+                        if (value) setWasForaged(value === "foraged")
+                    }}>
+                        <ToggleGroupItem value="foraged" aria-label="Foraged">
+                            Foraged
+                        </ToggleGroupItem>
+                        <ToggleGroupItem value="grown" aria-label="Grown">
+                            Grown
+                        </ToggleGroupItem>
+                    </ToggleGroup>
+                </div>
+            )}
 
             {categories.map(category => {
                 const qualities = item.prices[category as keyof typeof item.prices]

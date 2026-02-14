@@ -12,9 +12,12 @@ export interface GameItem {
         base: PriceQualities
         tiller?: PriceQualities
         artisan?: PriceQualities
+        bearsKnowledge?: PriceQualities
+        bearsKnowledgeTiller?: PriceQualities
     }
     base: boolean
     color?: string
     daysToMature?: number
     daysToRegrow?: number
+    forageable?: boolean
 }
