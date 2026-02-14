@@ -1,7 +1,7 @@
 "use client"
 
 import Image from "next/image"
-import type { GameItem } from "@/types/items"
+import type { GameItem, Recipe, RecipeProduct } from "@/types/items"
 import {
     Item,
     ItemContent,
@@ -69,11 +69,11 @@ interface DerivedItemsProps {
 
 export function DerivedItems({ baseItem, professions, selectedBasePrice }: DerivedItemsProps) {
     // Find all recipes that use this item as base
-    const recipeEntry = recipesData.recipes.find(r => r.base === baseItem.name)
-    const derivedItems = recipeEntry?.products.map(product => {
+    const recipeEntry = recipesData.recipes.find(r => r.base === baseItem.name) as Recipe | undefined
+    const derivedItems = recipeEntry?.products.map((product: RecipeProduct) => {
         const derivedItem = itemsData.items.find((i: GameItem) => i.name === product.name)
         const quantity = product.ingredients[0]?.quantity || 1
-        const processingDays = (product as any).processingDays
+        const processingDays = product.processingDays
         return derivedItem ? { ...derivedItem, processor: product.processor, quantity, processingDays } : null
     }).filter(Boolean) as (GameItem & { processor: string; quantity: number; processingDays?: number })[]
 
@@ -100,7 +100,17 @@ export function DerivedItems({ baseItem, professions, selectedBasePrice }: Deriv
                     const deltaText = delta > 0 ? `+${delta}g` : delta < 0 ? `${delta}g` : "0g"
 
                     // Calculate gold per day - use recipe-specific processing days if available
-                    const processingDays = derivedItem.processingDays ?? processorConfig[derivedItem.processor as keyof typeof processorConfig]?.processingDays ?? 1
+                    let processingDays: number
+                    if (derivedItem.processingDays !== undefined) {
+                        processingDays = derivedItem.processingDays
+                    } else if (derivedItem.processor === "Keg") {
+                        const isFruit = FRUITS.has(baseItem.name)
+                        const kegConfig = processorConfig["Keg"].processingDays
+                        processingDays = isFruit ? kegConfig.fruit : kegConfig.vegetable
+                    } else {
+                        const config = processorConfig[derivedItem.processor as keyof typeof processorConfig]
+                        processingDays = typeof config?.processingDays === 'number' ? config.processingDays : 1
+                    }
                     const isDehydrator = derivedItem.processor === "Dehydrator"
 
                     // For dehydrator, normalize per item; for others, show total g/day

@@ -1805,8 +1805,17 @@
                     "silver": 218,
                     "gold": 262,
                     "iridium": 350
+                },
+                "tiller": {
+                    "normal": 192,
+                    "silver": 239,
+                    "gold": 288,
+                    "iridium": 385
                 }
-            }
+            },
+            "description": "Valuable, but slow-growing. Despite its pale color, the florets are packed with nutrients.",
+            "daysToMature": 12,
+            "color": "white"
         },
         {
             "name": "Cauliflower Juice",
@@ -1841,8 +1850,17 @@
                     "silver": 75,
                     "gold": 90,
                     "iridium": 120
+                },
+                "tiller": {
+                    "normal": 66,
+                    "silver": 82,
+                    "gold": 99,
+                    "iridium": 132
                 }
-            }
+            },
+            "color": "white",
+            "description": "Adds a wonderful zestiness to dishes. High quality garlic can be pretty spicy.",
+            "daysToMature": 4
         },
         {
             "name": "Garlic Juice",
@@ -1877,8 +1895,17 @@
                     "silver": 137,
                     "gold": 165,
                     "iridium": 220
+                },
+                "tiller": {
+                    "normal": 121,
+                    "silver": 150,
+                    "gold": 181,
+                    "iridium": 242
                 }
-            }
+            },
+            "color": "green",
+            "description": "The waxy leaves are great in soups and stir fries.",
+            "daysToMature": 6
         },
         {
             "name": "Parsnip",
@@ -1889,8 +1916,17 @@
                     "silver": 43,
                     "gold": 52,
                     "iridium": 70
+                },
+                "tiller": {
+                    "normal": 38,
+                    "silver": 47,
+                    "gold": 57,
+                    "iridium": 77
                 }
-            }
+            },
+            "description": "A spring tuber closely related to the carrot. It has an earthy taste and is full of nutrients.",
+            "daysToMature": 4,
+            "color": "yellow"
         },
         {
             "name": "Parsnip Juice",
@@ -1925,8 +1961,17 @@
                     "silver": 100,
                     "gold": 120,
                     "iridium": 160
+                },
+                "tiller": {
+                    "normal": 88,
+                    "silver": 110,
+                    "gold": 132,
+                    "iridium": 176
                 }
-            }
+            },
+            "description": "A widely cultivated tuber.",
+            "color": "brown",
+            "daysToMature": 6
         },
         {
             "name": "Potato Juice",
@@ -1961,8 +2006,16 @@
                     "silver": 37,
                     "gold": 45,
                     "iridium": 60
+                },
+                "tiller": {
+                    "normal": 33,
+                    "silver": 40,
+                    "gold": 49,
+                    "iridium": 66
                 }
-            }
+            },
+            "description": "The most popular spring flower. Has a very faint sweet smell.",
+            "daysToMature": 6
         },
         {
             "name": "Unmilled Rice",
@@ -1973,8 +2026,27 @@
                     "silver": 37,
                     "gold": 45,
                     "iridium": 60
+                },
+                "tiller": {
+                    "normal": 33,
+                    "silver": 40,
+                    "gold": 49,
+                    "iridium": 66
                 }
-            }
+            },
+            "description": "Rice in its rawest form. Run this through a mill to increase the value.",
+            "daysToMature": 6,
+            "color": "brown"
+        },
+        {
+            "name": "Rice",
+            "base": false,
+            "prices": {
+                "base": {
+                    "normal": 100
+                }
+            },
+            "spritePath": "/sprites/processedes/rice.png"
         },
         {
             "name": "Rice Juice",

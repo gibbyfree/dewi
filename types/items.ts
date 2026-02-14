@@ -22,3 +22,20 @@ export interface GameItem {
     daysToRegrow?: number
     forageable?: boolean
 }
+
+export interface RecipeIngredient {
+    name: string
+    quantity: number
+}
+
+export interface RecipeProduct {
+    name: string
+    processor: string
+    processingDays?: number
+    ingredients: RecipeIngredient[]
+}
+
+export interface Recipe {
+    base: string
+    products: RecipeProduct[]
+}

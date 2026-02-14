@@ -1118,6 +1118,16 @@
                             "quantity": 1
                         }
                     ]
+                },
+                {
+                    "name": "Rice",
+                    "processor": "Mill",
+                    "ingredients": [
+                        {
+                            "name": "Unmilled Rice",
+                            "quantity": 1
+                        }
+                    ]
                 }
             ]
         },
