@@ -28,6 +28,7 @@ function getItemSpritePath(itemName: string): string {
 // Determine price category based on item, professions, and source
 function getPriceCategory(
     itemName: string,
+    isForageable: boolean,
     wasForaged: boolean,
     hasTiller: boolean,
     hasBearsKnowledge: boolean
@@ -37,7 +38,8 @@ function getPriceCategory(
 
     // Special rule: for berries, Tiller applies regardless of "wasForaged".
     // For other forageables, Tiller applies only when not foraged (i.e., grown).
-    const tillerApplies = hasTiller && (isBerry || !wasForaged)
+    // For non-forageables, Tiller always applies if the profession is selected.
+    const tillerApplies = hasTiller && (!isForageable || isBerry || !wasForaged)
 
     if (bearsApplies) return tillerApplies ? "bearsKnowledgeTiller" : "bearsKnowledge"
     if (tillerApplies) return "tiller"
@@ -52,7 +54,7 @@ interface ItemDetailsProps {
 }
 
 export function ItemDetails({ item, professions, wasForaged, onWasForagedChange }: ItemDetailsProps) {
-    return <ItemDetailsInner key={item.name} item={item} professions={professions} wasForaged={wasForaged} onWasForagedChange={onWasForagedChange} />
+    return <ItemDetailsInner key={`${item.name}-${professions.join('-')}-${wasForaged}`} item={item} professions={professions} wasForaged={wasForaged} onWasForagedChange={onWasForagedChange} />
 }
 
 function ItemDetailsInner({ item, professions, wasForaged, onWasForagedChange }: ItemDetailsProps) {
@@ -64,7 +66,7 @@ function ItemDetailsInner({ item, professions, wasForaged, onWasForagedChange }:
     const [selectedQuality, setSelectedQuality] = useState<string>("normal")
 
     // Determine which price category to use
-    const category = getPriceCategory(item.name, wasForaged, hasTiller, hasBearsKnowledge)
+    const category = getPriceCategory(item.name, isForageable, wasForaged, hasTiller, hasBearsKnowledge)
 
     // Fallback to base if the desired category doesn't exist
     let qualities = item.prices[category as keyof typeof item.prices]
@@ -153,7 +155,7 @@ function ItemDetailsInner({ item, professions, wasForaged, onWasForagedChange }:
                                                 <span className="block font-bold">{price}g</span>
                                                 {item.daysToMature && (
                                                     <span className="block text-xs text-gray-500">
-                                                        first harvest: {(price / item.daysToMature).toFixed(1)}g/day
+                                                        {item.daysToRegrow ? 'first harvest: ' : ''}{(price / item.daysToMature).toFixed(1)}g/day
                                                     </span>
                                                 )}
                                                 {item.daysToRegrow && (

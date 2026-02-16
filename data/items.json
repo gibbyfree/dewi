@@ -2081,8 +2081,16 @@
                     "silver": 175,
                     "gold": 210,
                     "iridium": 280
+                },
+                "tiller": {
+                    "normal": 154,
+                    "silver": 192,
+                    "gold": 231,
+                    "iridium": 308
                 }
-            }
+            },
+            "description": "In addition to its colorful flower, the Poppy has culinary and medicinal uses.",
+            "daysToMature": 7
         },
         {
             "name": "Radish",
@@ -2093,8 +2101,17 @@
                     "silver": 112,
                     "gold": 135,
                     "iridium": 180
+                },
+                "tiller": {
+                    "normal": 99,
+                    "silver": 123,
+                    "gold": 148,
+                    "iridium": 198
                 }
-            }
+            },
+            "description": "A crisp and refreshing root vegetable with hints of pepper when eaten raw.",
+            "daysToMature": 6,
+            "color": "red"
         },
         {
             "name": "Radish Juice",
@@ -2129,8 +2146,16 @@
                     "silver": 325,
                     "gold": 390,
                     "iridium": 520
+                },
+                "tiller": {
+                    "normal": 286,
+                    "silver": 357,
+                    "gold": 429,
+                    "iridium": 572
                 }
-            }
+            },
+            "description": "Often used in salads and coleslaws. The color can range from purple to blue to green-yellow depending on soil conditions.",
+            "daysToMature": 9
         },
         {
             "name": "Red Cabbage Juice",
@@ -2165,8 +2190,16 @@
                     "silver": 112,
                     "gold": 135,
                     "iridium": 180
+                },
+                "tiller": {
+                    "normal": 99,
+                    "silver": 123,
+                    "gold": 148,
+                    "iridium": 198
                 }
-            }
+            },
+            "description": "A tropical bloom that thrives in the humid summer air. Has a sweet, tangy aroma.",
+            "daysToMature": 8
         },
         {
             "name": "Sunflower",
@@ -2177,8 +2210,16 @@
                     "silver": 100,
                     "gold": 120,
                     "iridium": 160
+                },
+                "tiller": {
+                    "normal": 88,
+                    "silver": 110,
+                    "gold": 132,
+                    "iridium": 176
                 }
-            }
+            },
+            "description": "A common misconception is that the flower turns so it's always facing the sun.",
+            "daysToMature": 8
         },
         {
             "name": "Oil",
@@ -2190,7 +2231,8 @@
                 "artisan": {
                     "normal": 100
                 }
-            }
+            },
+            "spritePath": "/sprites/processedes/oil.png"
         },
         {
             "name": "Wheat",
@@ -2201,8 +2243,17 @@
                     "silver": 31,
                     "gold": 37,
                     "iridium": 50
+                },
+                "tiller": {
+                    "normal": 27,
+                    "silver": 34,
+                    "gold": 40,
+                    "iridium": 55
                 }
-            }
+            },
+            "description": "One of the most widely cultivated grains. Makes a great flour for breads and cakes.",
+            "daysToMature": 4,
+            "color": "yellow"
         },
         {
             "name": "Beer",
@@ -2220,7 +2271,8 @@
                     "gold": 420,
                     "iridium": 560
                 }
-            }
+            },
+            "spritePath": "/sprites/processedes/beer.png"
         },
         {
             "name": "Pickled Wheat",
@@ -2245,6 +2297,16 @@
                     "iridium": 300
                 }
             }
+        },
+        {
+            "name": "Wheat Flour",
+            "base": false,
+            "prices": {
+                "base": {
+                    "normal": 100
+                }
+            },
+            "spritePath": "/sprites/processedes/wheat-flour.png"
         },
         {
             "name": "Amaranth Juice",

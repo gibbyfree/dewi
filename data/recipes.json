@@ -1203,6 +1203,16 @@
                             "quantity": 1
                         }
                     ]
+                },
+                {
+                    "name": "Wheat Flour",
+                    "processor": "Mill",
+                    "ingredients": [
+                        {
+                            "name": "Wheat",
+                            "quantity": 1
+                        }
+                    ]
                 }
             ]
         },

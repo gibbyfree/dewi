@@ -55,6 +55,8 @@ function getDerivedSpritePath(color: string, processorName: string, baseName: st
         processorType = isFruit ? "jelly" : "pickles"
     } else if (processorName === "Dehydrator") {
         processorType = "dried-fruit"
+    } else if (processorName === "Oil Maker") {
+        processorType = "oil-maker"
     } else {
         processorType = "unknown"
     }
