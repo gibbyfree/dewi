@@ -74,10 +74,11 @@ export function DerivedItems({ baseItem, professions, selectedBasePrice }: Deriv
     const recipeEntry = recipesData.recipes.find(r => r.base === baseItem.name) as Recipe | undefined
     const derivedItems = recipeEntry?.products.map((product: RecipeProduct) => {
         const derivedItem = itemsData.items.find((i: GameItem) => i.name === product.name)
-        const quantity = product.ingredients[0]?.quantity || 1
+        const inputQuantity = product.ingredients[0]?.quantity || 1
+        const outputQuantity = product.outputQuantity || 1
         const processingDays = product.processingDays
-        return derivedItem ? { ...derivedItem, processor: product.processor, quantity, processingDays } : null
-    }).filter(Boolean) as (GameItem & { processor: string; quantity: number; processingDays?: number })[]
+        return derivedItem ? { ...derivedItem, processor: product.processor, inputQuantity, outputQuantity, processingDays } : null
+    }).filter(Boolean) as (GameItem & { processor: string; inputQuantity: number; outputQuantity: number; processingDays?: number })[]
 
     if (!derivedItems || derivedItems.length === 0) return null
 
@@ -96,9 +97,10 @@ export function DerivedItems({ baseItem, professions, selectedBasePrice }: Deriv
                     const prices = derivedItem.prices[category as keyof typeof derivedItem.prices]
                     const price = prices?.normal || 0
 
-                    // Calculate delta from selected base price, accounting for quantity needed
-                    const totalBaseCost = selectedBasePrice * derivedItem.quantity
-                    const delta = selectedBasePrice > 0 ? price - totalBaseCost : 0
+                    // Calculate delta accounting for input quantity and output quantity
+                    const totalBaseCost = selectedBasePrice * derivedItem.inputQuantity
+                    const totalOutputValue = price * derivedItem.outputQuantity
+                    const delta = selectedBasePrice > 0 ? totalOutputValue - totalBaseCost : 0
                     const deltaText = delta > 0 ? `+${delta}g` : delta < 0 ? `${delta}g` : "0g"
 
                     // Calculate gold per day - use recipe-specific processing days if available
@@ -115,9 +117,9 @@ export function DerivedItems({ baseItem, professions, selectedBasePrice }: Deriv
                     }
                     const isDehydrator = derivedItem.processor === "Dehydrator"
 
-                    // For dehydrator, normalize per item; for others, show total g/day
+                    // For dehydrator, normalize per input item; for others, show total g/day
                     const goldPerDay = isDehydrator
-                        ? delta / processingDays / derivedItem.quantity
+                        ? delta / processingDays / derivedItem.inputQuantity
                         : delta / processingDays
                     const goldPerDayText = goldPerDay > 0
                         ? `${Math.round(goldPerDay)}g${isDehydrator ? '/item' : ''}/day`
@@ -133,9 +135,9 @@ export function DerivedItems({ baseItem, professions, selectedBasePrice }: Deriv
                                     width={48}
                                     height={48}
                                 />
-                                {derivedItem.quantity > 1 && (
+                                {derivedItem.inputQuantity > 1 && (
                                     <div className="absolute -top-1 -right-1 bg-blue-600 text-white text-xs font-bold rounded-full w-5 h-5 flex items-center justify-center">
-                                        {derivedItem.quantity}
+                                        {derivedItem.inputQuantity}
                                     </div>
                                 )}
                             </div>
@@ -143,16 +145,23 @@ export function DerivedItems({ baseItem, professions, selectedBasePrice }: Deriv
                             <Item variant="muted" className="flex-1">
                                 <ItemContent>
                                     <ItemTitle className="flex items-center gap-2">
-                                        <Image
-                                            src={derivedSprite}
-                                            alt={derivedItem.name}
-                                            width={48}
-                                            height={48}
-                                        />
+                                        <div className="relative">
+                                            <Image
+                                                src={derivedSprite}
+                                                alt={derivedItem.name}
+                                                width={48}
+                                                height={48}
+                                            />
+                                            {derivedItem.outputQuantity > 1 && (
+                                                <div className="absolute -top-1 -right-1 bg-green-600 text-white text-xs font-bold rounded-full w-5 h-5 flex items-center justify-center">
+                                                    {derivedItem.outputQuantity}
+                                                </div>
+                                            )}
+                                        </div>
                                         <span>{derivedItem.name}</span>
                                     </ItemTitle>
                                     <ItemDescription className="text-lg font-semibold">
-                                        {price}g
+                                        {price}g{derivedItem.outputQuantity > 1 && <span className="text-xs text-gray-500">/ea</span>}
                                         {selectedBasePrice > 0 && (
                                             <span className={`ml-2 text-sm ${deltaColor}`}>
                                                 ({deltaText})

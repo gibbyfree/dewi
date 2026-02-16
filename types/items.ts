@@ -32,6 +32,7 @@ export interface RecipeProduct {
     name: string
     processor: string
     processingDays?: number
+    outputQuantity?: number
     ingredients: RecipeIngredient[]
 }
 

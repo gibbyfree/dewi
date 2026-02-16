@@ -1288,6 +1288,17 @@
                             "quantity": 1
                         }
                     ]
+                },
+                {
+                    "name": "Sugar",
+                    "processor": "Mill",
+                    "ingredients": [
+                        {
+                            "name": "Beet",
+                            "quantity": 1
+                        }
+                    ],
+                    "outputQuantity": 3
                 }
             ]
         },

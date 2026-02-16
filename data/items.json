@@ -2295,8 +2295,17 @@
                     "silver": 187,
                     "gold": 225,
                     "iridium": 300
+                },
+                "tiller": {
+                    "normal": 165,
+                    "silver": 205,
+                    "gold": 247,
+                    "iridium": 330
                 }
-            }
+            },
+            "description": "A purple grain cultivated by an ancient civilization.",
+            "daysToMature": 7,
+            "color": "pink"
         },
         {
             "name": "Wheat Flour",
@@ -2341,8 +2350,17 @@
                     "silver": 200,
                     "gold": 240,
                     "iridium": 320
+                },
+                "tiller": {
+                    "normal": 176,
+                    "silver": 220,
+                    "gold": 264,
+                    "iridium": 352
                 }
-            }
+            },
+            "description": "The bud of a thistle plant. The spiny outer leaves conceal a fleshy, filling interior.",
+            "daysToMature": 8,
+            "color": "green"
         },
         {
             "name": "Artichoke Juice",
@@ -2377,8 +2395,17 @@
                     "silver": 125,
                     "gold": 150,
                     "iridium": 200
+                },
+                "tiller": {
+                    "normal": 110,
+                    "silver": 137,
+                    "gold": 165,
+                    "iridium": 220
                 }
-            }
+            },
+            "description": "A sweet and earthy root vegetable. As a bonus, the leaves make a great salad.",
+            "daysToMature": 6,
+            "color": "purple"
         },
         {
             "name": "Beet Juice",
@@ -2403,6 +2430,16 @@
                     "normal": 350
                 }
             }
+        },
+        {
+            "name": "Sugar",
+            "base": false,
+            "prices": {
+                "base": {
+                    "normal": 50
+                }
+            },
+            "spritePath": "/sprites/processedes/sugar.png"
         },
         {
             "name": "Bok Choy",
