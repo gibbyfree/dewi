@@ -2450,8 +2450,17 @@
                     "silver": 100,
                     "gold": 120,
                     "iridium": 160
+                },
+                "tiller": {
+                    "normal": 88,
+                    "silver": 110,
+                    "gold": 132,
+                    "iridium": 176
                 }
-            }
+            },
+            "description": "The leafy greens and fibrous stalks are healthy and delicious.",
+            "daysToMature": 4,
+            "color": "green"
         },
         {
             "name": "Bok Choy Juice",
@@ -2486,8 +2495,16 @@
                     "silver": 362,
                     "gold": 435,
                     "iridium": 580
+                },
+                "tiller": {
+                    "normal": 319,
+                    "silver": 398,
+                    "gold": 478,
+                    "iridium": 638
                 }
-            }
+            },
+            "description": "An old folk legend suggests that the sweet smell of this flower attracts fairies.",
+            "daysToMature": 12
         },
         {
             "name": "Pumpkin",
@@ -2498,8 +2515,17 @@
                     "silver": 400,
                     "gold": 480,
                     "iridium": 640
+                },
+                "tiller": {
+                    "normal": 352,
+                    "silver": 440,
+                    "gold": 528,
+                    "iridium": 704
                 }
-            }
+            },
+            "description": "A fall favorite, grown for its crunchy seeds and delicately flavored flesh. As a bonus, the hollow shell can be carved into a festive decoration.",
+            "daysToMature": 13,
+            "color": "orange"
         },
         {
             "name": "Pumpkin Juice",
@@ -2534,8 +2560,17 @@
                     "silver": 200,
                     "gold": 240,
                     "iridium": 320
+                },
+                "tiller": {
+                    "normal": 176,
+                    "silver": 220,
+                    "gold": 264,
+                    "iridium": 352
                 }
-            }
+            },
+            "description": "A starchy tuber with a lot of culinary versatility.",
+            "daysToMature": 10,
+            "color": "brown"
         },
         {
             "name": "Yam Juice",
@@ -2570,6 +2605,39 @@
                     "silver": 125,
                     "gold": 150,
                     "iridium": 200
+                },
+                "tiller": {
+                    "normal": 110,
+                    "silver": 137,
+                    "gold": 165,
+                    "iridium": 220
+                }
+            },
+            "description": "This starchy root is one of the most ancient crops.",
+            "daysToMature": 7,
+            "color": "brown"
+        },
+        {
+            "name": "Taro Root Juice",
+            "base": false,
+            "prices": {
+                "base": {
+                    "normal": 225
+                },
+                "artisan": {
+                    "normal": 315
+                }
+            }
+        },
+        {
+            "name": "Pickled Taro Root",
+            "base": false,
+            "prices": {
+                "base": {
+                    "normal": 250
+                },
+                "artisan": {
+                    "normal": 350
                 }
             }
         },
@@ -2583,7 +2651,9 @@
                     "gold": 4500,
                     "iridium": 6000
                 }
-            }
+            },
+            "description": "It's by far the sweetest thing you've ever smelled.",
+            "daysToMature": 24
         },
         {
             "name": "Kale Juice",
@@ -2625,7 +2695,9 @@
                     "gold": 90,
                     "iridium": 120
                 }
-            }
+            },
+            "description": "A regular white chicken egg.",
+            "daysToMature": 1
         },
         {
             "name": "Large Egg",
@@ -2643,7 +2715,9 @@
                     "gold": 170,
                     "iridium": 228
                 }
-            }
+            },
+            "description": "It's an uncommonly large white egg!",
+            "daysToMature": 1
         },
         {
             "name": "Mayonnaise",
@@ -2667,7 +2741,8 @@
                     "gold": 399,
                     "iridium": 532
                 }
-            }
+            },
+            "spritePath": "/sprites/processedes/mayonnaise.png"
         },
         {
             "name": "Duck Egg",
@@ -2685,7 +2760,9 @@
                     "gold": 170,
                     "iridium": 228
                 }
-            }
+            },
+            "description": "It's still warm.",
+            "daysToMature": 2
         },
         {
             "name": "Duck Mayonnaise",
@@ -2700,7 +2777,8 @@
                 "artisan": {
                     "normal": 525
                 }
-            }
+            },
+            "spritePath": "/sprites/processedes/duck-mayonnaise.png"
         }
     ]
 }

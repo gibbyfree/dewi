@@ -33,6 +33,7 @@ export interface RecipeProduct {
     processor: string
     processingDays?: number
     outputQuantity?: number
+    outputQuality?: "normal" | "silver" | "gold" | "iridium"
     ingredients: RecipeIngredient[]
 }
 

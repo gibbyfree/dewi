@@ -10,7 +10,6 @@ import {
 } from "@/components/ui/item"
 import recipesData from "@/data/recipes.json"
 import itemsData from "@/data/items.json"
-import { processorConfig } from "@/config/processors"
 
 // Set of fruits (others default to vegetable)
 const FRUITS = new Set([
@@ -76,9 +75,10 @@ export function DerivedItems({ baseItem, professions, selectedBasePrice }: Deriv
         const derivedItem = itemsData.items.find((i: GameItem) => i.name === product.name)
         const inputQuantity = product.ingredients[0]?.quantity || 1
         const outputQuantity = product.outputQuantity || 1
+        const outputQuality = product.outputQuality || "normal"
         const processingDays = product.processingDays
-        return derivedItem ? { ...derivedItem, processor: product.processor, inputQuantity, outputQuantity, processingDays } : null
-    }).filter(Boolean) as (GameItem & { processor: string; inputQuantity: number; outputQuantity: number; processingDays?: number })[]
+        return derivedItem ? { ...derivedItem, processor: product.processor, inputQuantity, outputQuantity, outputQuality, processingDays } : null
+    }).filter(Boolean) as (GameItem & { processor: string; inputQuantity: number; outputQuantity: number; outputQuality: string; processingDays?: number })[]
 
     if (!derivedItems || derivedItems.length === 0) return null
 
@@ -93,9 +93,9 @@ export function DerivedItems({ baseItem, professions, selectedBasePrice }: Deriv
                     const derivedSprite = derivedItem.spritePath || getDerivedSpritePath(baseColor, derivedItem.processor, baseItem.name)
                     const processorSprite = getProcessorSpritePath(derivedItem.processor)
 
-                    // Get the price for the selected category
+                    // Get the price for the selected category and output quality
                     const prices = derivedItem.prices[category as keyof typeof derivedItem.prices]
-                    const price = prices?.normal || 0
+                    const price = prices?.[derivedItem.outputQuality as keyof typeof prices] || prices?.normal || 0
 
                     // Calculate delta accounting for input quantity and output quantity
                     const totalBaseCost = selectedBasePrice * derivedItem.inputQuantity
@@ -103,18 +103,9 @@ export function DerivedItems({ baseItem, professions, selectedBasePrice }: Deriv
                     const delta = selectedBasePrice > 0 ? totalOutputValue - totalBaseCost : 0
                     const deltaText = delta > 0 ? `+${delta}g` : delta < 0 ? `${delta}g` : "0g"
 
-                    // Calculate gold per day - use recipe-specific processing days if available
-                    let processingDays: number
-                    if (derivedItem.processingDays !== undefined) {
-                        processingDays = derivedItem.processingDays
-                    } else if (derivedItem.processor === "Keg") {
-                        const isFruit = FRUITS.has(baseItem.name)
-                        const kegConfig = processorConfig["Keg"].processingDays
-                        processingDays = isFruit ? kegConfig.fruit : kegConfig.vegetable
-                    } else {
-                        const config = processorConfig[derivedItem.processor as keyof typeof processorConfig]
-                        processingDays = typeof config?.processingDays === 'number' ? config.processingDays : 1
-                    }
+                    // Calculate gold per day - processing days should be specified in recipe
+                    // Fallback to 1 day if not specified (but all recipes should specify it)
+                    const processingDays = derivedItem.processingDays ?? 1
                     const isDehydrator = derivedItem.processor === "Dehydrator"
 
                     // For dehydrator, normalize per input item; for others, show total g/day

@@ -1,19 +1,13 @@
+// Processor configuration
+// Note: Processing times are specified per-recipe in recipes.json since they vary by input
 export const processorConfig = {
-    "Keg": {
-        processingDays: {
-            fruit: 6.25,
-            vegetable: 4,
-        },
-    },
-    "Preserves Jar": {
-        processingDays: 2.5,
-    },
-    "Dehydrator": {
-        processingDays: 1,
-    },
-    "Mill": {
-        processingDays: 1,
-    },
+    "Keg": {},
+    "Preserves Jar": {},
+    "Dehydrator": {},
+    "Mill": {},
+    "Oil Maker": {},
+    "Mayonnaise Machine": {},
+    "Cheese Press": {},
 } as const
 
 export type ProcessorName = keyof typeof processorConfig
