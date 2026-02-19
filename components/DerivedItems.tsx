@@ -78,7 +78,7 @@ export function DerivedItems({ baseItem, professions, selectedBasePrice }: Deriv
     // Find all recipes that use this item as base
     const recipeEntry = recipesData.recipes.find(r => r.base === baseItem.name) as Recipe | undefined
     const derivedItems = recipeEntry?.products.map((product: RecipeProduct) => {
-        const derivedItem = itemsData.items.find((i: GameItem) => i.name === product.name)
+        const derivedItem = itemsData.items.find(i => i.name === product.name)
         const inputQuantity = product.ingredients[0]?.quantity || 1
         const outputQuantity = product.outputQuantity || 1
         const outputQuality = product.outputQuality || "normal"
