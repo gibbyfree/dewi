@@ -20,9 +20,14 @@ const qualitySprites: Record<string, string> = {
     iridium: "/sprites/iridium.webp",
 }
 
+// Animal products that go in bases/animals
+const ANIMAL_PRODUCTS = new Set(["Egg", "Large Egg", "Duck Egg"])
+
 // Convert item name to sprite filename (e.g., "Ancient Fruit" -> "ancient-fruit.png")
 function getItemSpritePath(itemName: string): string {
-    return `/sprites/bases/${itemName.toLowerCase().replace(/\s+/g, "-")}.png`
+    const fileName = itemName.toLowerCase().replace(/\s+/g, "-")
+    const subfolder = ANIMAL_PRODUCTS.has(itemName) ? "animals" : "crops"
+    return `/sprites/bases/${subfolder}/${fileName}.png`
 }
 
 // Determine price category based on item, professions, and source

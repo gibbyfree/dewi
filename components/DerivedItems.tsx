@@ -59,6 +59,12 @@ function getDerivedSpritePath(color: string, processorName: string, baseName: st
     } else {
         processorType = "unknown"
     }
+    
+    // If item has a color, use color subfolder
+    if (color) {
+        return `/sprites/processedes/${color}/${color}-${processorType}.png`;
+    }
+    // Otherwise use top-level processedes
     return `/sprites/processedes/${color}-${processorType}.png`;
 }
 
