@@ -18,6 +18,7 @@ export interface GameItem {
     base: boolean
     color?: string
     spritePath?: string
+    category?: "crop" | "animal"
     daysToMature?: number
     daysToRegrow?: number
     forageable?: boolean

@@ -2682,6 +2682,7 @@
         {
             "name": "Egg",
             "base": true,
+            "category": "animal",
             "prices": {
                 "base": {
                     "normal": 50,
@@ -2702,6 +2703,7 @@
         {
             "name": "Large Egg",
             "base": true,
+            "category": "animal",
             "prices": {
                 "base": {
                     "normal": 95,
@@ -2747,6 +2749,7 @@
         {
             "name": "Duck Egg",
             "base": true,
+            "category": "animal",
             "prices": {
                 "base": {
                     "normal": 95,
@@ -2779,6 +2782,73 @@
                 }
             },
             "spritePath": "/sprites/processedes/duck-mayonnaise.png"
+        },
+        {
+            "name": "Milk",
+            "base": true,
+            "prices": {
+                "base": {
+                    "normal": 125,
+                    "silver": 156,
+                    "gold": 187,
+                    "iridium": 250
+                },
+                "rancher": {
+                    "normal": 150,
+                    "silver": 187,
+                    "gold": 225,
+                    "iridium": 300
+                }
+            },
+            "description": "A jug of cow's milk.",
+            "daysToMature": 1,
+            "category": "animal"
+        },
+        {
+            "name": "Large Milk",
+            "base": true,
+            "prices": {
+                "base": {
+                    "normal": 190,
+                    "silver": 237,
+                    "gold": 285,
+                    "iridium": 380
+                },
+                "rancher": {
+                    "normal": 228,
+                    "silver": 284,
+                    "gold": 342,
+                    "iridium": 456
+                }
+            },
+            "description": "A large jug of cow's milk.",
+            "daysToMature": 1,
+            "category": "animal"
+        },
+        {
+            "name": "Cheese",
+            "base": false,
+            "prices": {
+                "base": {
+                    "normal": 230,
+                    "silver": 287,
+                    "gold": 345,
+                    "iridium": 460
+                },
+                "rancher": {
+                    "normal": 276,
+                    "silver": 344,
+                    "gold": 414,
+                    "iridium": 552
+                },
+                "artisan": {
+                    "normal": 322,
+                    "silver": 401,
+                    "gold": 480,
+                    "iridium": 640
+                }
+            },
+            "spritePath": "/sprites/processedes/cheese.png"
         }
     ]
 }

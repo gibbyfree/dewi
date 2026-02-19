@@ -20,13 +20,10 @@ const qualitySprites: Record<string, string> = {
     iridium: "/sprites/iridium.webp",
 }
 
-// Animal products that go in bases/animals
-const ANIMAL_PRODUCTS = new Set(["Egg", "Large Egg", "Duck Egg"])
-
 // Convert item name to sprite filename (e.g., "Ancient Fruit" -> "ancient-fruit.png")
-function getItemSpritePath(itemName: string): string {
-    const fileName = itemName.toLowerCase().replace(/\s+/g, "-")
-    const subfolder = ANIMAL_PRODUCTS.has(itemName) ? "animals" : "crops"
+function getItemSpritePath(item: GameItem): string {
+    const fileName = item.name.toLowerCase().replace(/\s+/g, "-")
+    const subfolder = item.category === "animal" ? "animals" : "crops"
     return `/sprites/bases/${subfolder}/${fileName}.png`
 }
 
@@ -63,7 +60,7 @@ export function ItemDetails({ item, professions, wasForaged, onWasForagedChange 
 }
 
 function ItemDetailsInner({ item, professions, wasForaged, onWasForagedChange }: ItemDetailsProps) {
-    const itemSprite = getItemSpritePath(item.name)
+    const itemSprite = getItemSpritePath(item)
     const isForageable = item.forageable ?? false
     const hasTiller = professions.includes("tiller")
     const hasBearsKnowledge = professions.includes("bearsKnowledge")

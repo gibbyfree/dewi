@@ -1583,6 +1583,72 @@
                     "processingDays": 2.5
                 }
             ]
+        },
+        {
+            "base": "Milk",
+            "products": [
+                {
+                    "name": "Cheese",
+                    "processor": "Cheese Press",
+                    "ingredients": [
+                        {
+                            "name": "Milk",
+                            "quantity": 1
+                        }
+                    ],
+                    "processingDays": 0.125
+                }
+            ]
+        },
+        {
+            "base": "Large Milk",
+            "products": [
+                {
+                    "name": "Cheese",
+                    "processor": "Cheese Press",
+                    "outputQuality": "gold",
+                    "ingredients": [
+                        {
+                            "name": "Large Milk",
+                            "quantity": 1
+                        }
+                    ],
+                    "processingDays": 0.125
+                }
+            ]
+        },
+        {
+            "base": "Goat Milk",
+            "products": [
+                {
+                    "name": "Goat Cheese",
+                    "processor": "Cheese Press",
+                    "ingredients": [
+                        {
+                            "name": "Goat Milk",
+                            "quantity": 1
+                        }
+                    ],
+                    "processingDays": 0.125
+                }
+            ]
+        },
+        {
+            "base": "Large Goat Milk",
+            "products": [
+                {
+                    "name": "Goat Cheese",
+                    "processor": "Cheese Press",
+                    "outputQuality": "gold",
+                    "ingredients": [
+                        {
+                            "name": "Goat Large Milk",
+                            "quantity": 1
+                        }
+                    ],
+                    "processingDays": 0.125
+                }
+            ]
         }
     ]
 }
