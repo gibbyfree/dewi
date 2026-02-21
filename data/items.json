@@ -2849,6 +2849,188 @@
                 }
             },
             "spritePath": "/sprites/processedes/cheese.png"
+        },
+        {
+            "name": "Goat Milk",
+            "base": true,
+            "prices": {
+                "base": {
+                    "normal": 225,
+                    "silver": 281,
+                    "gold": 337,
+                    "iridium": 450
+                },
+                "rancher": {
+                    "normal": 270,
+                    "silver": 337,
+                    "gold": 404,
+                    "iridium": 540
+                }
+            },
+            "description": "The milk of a goat.",
+            "daysToMature": 2,
+            "category": "animal"
+        },
+        {
+            "name": "Large Goat Milk",
+            "base": true,
+            "prices": {
+                "base": {
+                    "normal": 345,
+                    "silver": 431,
+                    "gold": 517,
+                    "iridium": 690
+                },
+                "rancher": {
+                    "normal": 414,
+                    "silver": 517,
+                    "gold": 620,
+                    "iridium": 828
+                }
+            },
+            "description": "A gallon of creamy goat's milk.",
+            "daysToMature": 2,
+            "category": "animal"
+        },
+        {
+            "name": "Goat Cheese",
+            "base": false,
+            "prices": {
+                "base": {
+                    "normal": 400,
+                    "silver": 500,
+                    "gold": 600,
+                    "iridium": 800
+                },
+                "rancher": {
+                    "normal": 480,
+                    "silver": 600,
+                    "gold": 720,
+                    "iridium": 960
+                },
+                "artisan": {
+                    "normal": 560,
+                    "silver": 700,
+                    "gold": 840,
+                    "iridium": 1120
+                }
+            },
+            "spritePath": "/sprites/processedes/goat-cheese.png"
+        },
+        {
+            "name": "Truffle",
+            "base": true,
+            "prices": {
+                "base": {
+                    "normal": 625,
+                    "silver": 781,
+                    "gold": 937,
+                    "iridium": 1250
+                }
+            },
+            "description": "A gourmet type of mushroom with a unique taste.",
+            "daysToMature": 1,
+            "category": "animal"
+        },
+        {
+            "name": "Truffle Oil",
+            "base": false,
+            "prices": {
+                "base": {
+                    "normal": 1065
+                },
+                "artisan": {
+                    "normal": 1491
+                }
+            },
+            "spritePath": "/sprites/processedes/truffle-oil.png"
+        },
+        {
+            "name": "Honey",
+            "base": true,
+            "prices": {
+                "base": {
+                    "normal": 100
+                },
+                "artisan": {
+                    "normal": 140
+                }
+            },
+            "description": "It's a sweet syrup produced by bees. (Wild Honey assumed)",
+            "daysToMature": 1,
+            "category": "animal"
+        },
+        {
+            "name": "Mead",
+            "base": false,
+            "prices": {
+                "base": {
+                    "normal": 300,
+                    "silver": 375,
+                    "gold": 450,
+                    "iridium": 600
+                },
+                "artisan": {
+                    "normal": 420,
+                    "silver": 525,
+                    "gold": 630,
+                    "iridium": 840
+                }
+            },
+            "spritePath": "/sprites/processedes/mead.png"
+        },
+        {
+            "name": "Hops",
+            "base": true,
+            "prices": {
+                "base": {
+                    "normal": 25,
+                    "silver": 31,
+                    "gold": 37,
+                    "iridium": 50
+                },
+                "tiller": {
+                    "normal": 27,
+                    "silver": 34,
+                    "gold": 40,
+                    "iridium": 55
+                }
+            },
+            "description": "A bitter, tangy flower used to flavor beer.",
+            "daysToMature": 11,
+            "daysToRegrow": 1,
+            "color": "green"
+        },
+        {
+            "name": "Pale Ale",
+            "base": false,
+            "prices": {
+                "base": {
+                    "normal": 300,
+                    "silver": 375,
+                    "gold": 450,
+                    "iridium": 600
+                },
+                "artisan": {
+                    "normal": 420,
+                    "silver": 525,
+                    "gold": 630,
+                    "iridium": 840
+                }
+            },
+            "spritePath": "/sprites/processedes/pale-ale.png"
+        },
+        {
+            "name": "Pickled Hops",
+            "base": false,
+            "prices": {
+                "base": {
+                    "normal": 100
+                },
+                "artisan": {
+                    "normal": 140
+                }
+            }
         }
     ]
 }

@@ -10,7 +10,7 @@ import {
 import itemsData from "@/data/items.json"
 import type { GameItem } from "@/types/items"
 
-const items: GameItem[] = itemsData.items
+const items = itemsData.items as GameItem[]
 
 interface ItemSearchProps {
     query: string
@@ -29,9 +29,20 @@ export function ItemSearch({
 }: ItemSearchProps) {
     const hasInput = query.trim() !== ""
 
-    const results = items.filter(item =>
-        hasInput && item.name.toLowerCase().startsWith(query.toLowerCase()) && item.base
-    )
+    const results = !hasInput ? [] : (() => {
+        const words = query.toLowerCase().split(/\s+/).filter(Boolean)
+        return items
+            .filter(item =>
+                item.base && words.every(w => item.name.toLowerCase().includes(w))
+            )
+            .sort((a, b) => {
+                const al = a.name.toLowerCase(), bl = b.name.toLowerCase(), ql = query.toLowerCase()
+                // Exact prefix first, then alphabetical
+                const aPrefix = al.startsWith(ql) ? 0 : 1
+                const bPrefix = bl.startsWith(ql) ? 0 : 1
+                return aPrefix - bPrefix || al.localeCompare(bl)
+            })
+    })()
 
     return (
         <Command value={selected} onValueChange={onSelectedChange}>

@@ -1649,6 +1649,66 @@
                     "processingDays": 0.125
                 }
             ]
+        },
+        {
+            "base": "Truffle",
+            "products": [
+                {
+                    "name": "Truffle Oil",
+                    "processor": "Oil Maker",
+                    "ingredients": [
+                        {
+                            "name": "Truffle",
+                            "quantity": 1
+                        }
+                    ],
+                    "processingDays": 0.25
+                }
+            ]
+        },
+        {
+            "base": "Honey",
+            "products": [
+                {
+                    "name": "Mead",
+                    "processor": "Keg",
+                    "outputQuality": "normal",
+                    "ingredients": [
+                        {
+                            "name": "Honey",
+                            "quantity": 1
+                        }
+                    ],
+                    "processingDays": 0.42
+                }
+            ]
+        },
+        {
+            "base": "Hops",
+            "products": [
+                {
+                    "name": "Pale Ale",
+                    "processor": "Keg",
+                    "ingredients": [
+                        {
+                            "name": "Hops",
+                            "quantity": 1
+                        }
+                    ],
+                    "processingDays": 1.5
+                },
+                {
+                    "name": "Pickled Hops",
+                    "processor": "Preserves Jar",
+                    "ingredients": [
+                        {
+                            "name": "Hops",
+                            "quantity": 1
+                        }
+                    ],
+                    "processingDays": 2.5
+                }
+            ]
         }
     ]
 }
