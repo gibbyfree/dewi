@@ -6,11 +6,26 @@ import {
     CommandItem,
     CommandList,
     CommandEmpty,
+    CommandGroup,
 } from "@/components/ui/command"
 import itemsData from "@/data/items.json"
-import type { GameItem } from "@/types/items"
+import type { GameItem, ItemCategory } from "@/types/items"
 
 const items = itemsData.items as GameItem[]
+
+const categoryLabels: Record<ItemCategory, string> = {
+    crop: "Crops",
+    fruit: "Fruit",
+    "animal-product": "Animal Products",
+    fish: "Fish",
+    "artisan-good": "Artisan Goods",
+    processed: "Processed Items",
+}
+
+// Display order for categories
+const categoryOrder: ItemCategory[] = [
+    "crop", "fruit", "animal-product", "fish", "artisan-good", "processed",
+]
 
 interface ItemSearchProps {
     query: string
@@ -44,6 +59,14 @@ export function ItemSearch({
             })
     })()
 
+    // Group results by category
+    const grouped = results.reduce<Partial<Record<ItemCategory, GameItem[]>>>((acc, item) => {
+        const cat = item.category
+        if (!acc[cat]) acc[cat] = []
+        acc[cat]!.push(item)
+        return acc
+    }, {})
+
     return (
         <Command value={selected} onValueChange={onSelectedChange}>
             <CommandInput
@@ -55,19 +78,26 @@ export function ItemSearch({
                 {results.length === 0 && hasInput && (
                     <CommandEmpty>No results.</CommandEmpty>
                 )}
-                {results.map(item => (
-                    <CommandItem
-                        key={item.name}
-                        value={item.name}
-                        onSelect={() => {
-                            onSelectItem(item)
-                            onQueryChange("")
-                        }}
-                        className="flex flex-col items-start gap-1"
-                    >
-                        <span className="font-medium">{item.name}</span>
-                    </CommandItem>
-                ))}
+                {categoryOrder
+                    .filter(cat => grouped[cat]?.length)
+                    .map(cat => (
+                        <CommandGroup key={cat} heading={categoryLabels[cat]}>
+                            {grouped[cat]!.map(item => (
+                                <CommandItem
+                                    key={item.name}
+                                    value={item.name}
+                                    onSelect={() => {
+                                        onSelectItem(item)
+                                        onQueryChange("")
+                                    }}
+                                    className="flex flex-col items-start gap-1"
+                                >
+                                    <span className="font-medium">{item.name}</span>
+                                </CommandItem>
+                            ))}
+                        </CommandGroup>
+                    ))
+                }
             </CommandList>
         </Command>
     )

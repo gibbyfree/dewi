@@ -5,10 +5,8 @@ import Image from "next/image"
 import type { GameItem } from "@/types/items"
 import {
     Item,
-    ItemActions,
     ItemContent,
     ItemDescription,
-    ItemMedia,
     ItemTitle,
 } from "@/components/ui/item"
 import { ToggleGroup, ToggleGroupItem } from "@/components/ui/toggle-group"
@@ -20,31 +18,69 @@ const qualitySprites: Record<string, string> = {
     iridium: "/sprites/iridium.webp",
 }
 
-// Convert item name to sprite filename (e.g., "Ancient Fruit" -> "ancient-fruit.png")
-function getItemSpritePath(item: GameItem): string {
-    const fileName = item.name.toLowerCase().replace(/\s+/g, "-")
-    const subfolder = item.category === "animal" ? "animals" : "crops"
-    return `/sprites/bases/${subfolder}/${fileName}.png`
+// Convert item name to sprite filename
+// Map item name patterns to processed sprite type suffixes
+const DERIVED_SPRITE_SUFFIXES: [RegExp, string][] = [
+    [/ Wine$/, "wine"],
+    [/ Jelly$/, "jelly"],
+    [/ Juice$/, "juice"],
+    [/^Pickled /, "pickles"],
+    [/^Dried /, "dried-fruit"],
+]
+
+function getItemSpritePath(item: GameItem): string | null {
+    if (item.spritePath) return item.spritePath
+
+    if (item.base) {
+        const fileName = item.name.toLowerCase().replace(/\s+/g, "-")
+        const subfolder = item.category === "animal-product" ? "animals" : "crops"
+        return `/sprites/bases/${subfolder}/${fileName}.png`
+    }
+
+    // Derived items with a color: resolve from color + name pattern
+    if (item.color) {
+        for (const [pattern, suffix] of DERIVED_SPRITE_SUFFIXES) {
+            if (pattern.test(item.name)) {
+                return `/sprites/processedes/${item.color}/${item.color}-${suffix}.png`
+            }
+        }
+    }
+
+    return null
 }
 
 // Determine price category based on item, professions, and source
 function getPriceCategory(
     itemName: string,
+    category: GameItem["category"],
     isForageable: boolean,
     wasForaged: boolean,
-    hasTiller: boolean,
-    hasBearsKnowledge: boolean
-): "base" | "tiller" | "bearsKnowledge" | "bearsKnowledgeTiller" {
-    const isBerry = itemName === "Blackberry" || itemName === "Salmonberry"
-    const bearsApplies = isBerry && wasForaged && hasBearsKnowledge
+    professions: string[]
+): "base" | "tiller" | "bearsKnowledge" | "bearsKnowledgeTiller" | "artisan" | "rancher" | "angler" {
+    const hasTiller = professions.includes("tiller")
+    const hasArtisan = professions.includes("artisan")
+    const hasBearsKnowledge = professions.includes("bearsKnowledge")
+    const hasRancher = professions.includes("rancher")
+    const hasAngler = professions.includes("angler")
 
-    // Special rule: for berries, Tiller applies regardless of "wasForaged".
-    // For other forageables, Tiller applies only when not foraged (i.e., grown).
-    // For non-forageables, Tiller always applies if the profession is selected.
+    const isBerry = itemName === "Blackberry" || itemName === "Salmonberry"
+
+    // Fish use angler
+    if (category === "fish" && hasAngler) return "angler"
+
+    // Animal products use rancher
+    if (category === "animal-product" && hasRancher) return "rancher"
+
+    // Artisan goods use artisan
+    if ((category === "artisan-good" || category === "processed") && hasArtisan) return "artisan"
+
+    // Bear's knowledge for berries
+    const bearsApplies = isBerry && wasForaged && hasBearsKnowledge
     const tillerApplies = hasTiller && (!isForageable || isBerry || !wasForaged)
 
     if (bearsApplies) return tillerApplies ? "bearsKnowledgeTiller" : "bearsKnowledge"
-    if (tillerApplies) return "tiller"
+    if (tillerApplies && (category === "crop" || category === "fruit")) return "tiller"
+
     return "base"
 }
 
@@ -53,22 +89,21 @@ interface ItemDetailsProps {
     professions: string[]
     wasForaged: boolean
     onWasForagedChange: (wasForaged: boolean) => void
+    onNavigateToItem?: (item: GameItem) => void
 }
 
-export function ItemDetails({ item, professions, wasForaged, onWasForagedChange }: ItemDetailsProps) {
-    return <ItemDetailsInner key={`${item.name}-${professions.join('-')}-${wasForaged}`} item={item} professions={professions} wasForaged={wasForaged} onWasForagedChange={onWasForagedChange} />
+export function ItemDetails({ item, professions, wasForaged, onWasForagedChange, onNavigateToItem }: ItemDetailsProps) {
+    return <ItemDetailsInner key={`${item.name}-${professions.join('-')}-${wasForaged}`} item={item} professions={professions} wasForaged={wasForaged} onWasForagedChange={onWasForagedChange} onNavigateToItem={onNavigateToItem} />
 }
 
-function ItemDetailsInner({ item, professions, wasForaged, onWasForagedChange }: ItemDetailsProps) {
+function ItemDetailsInner({ item, professions, wasForaged, onWasForagedChange, onNavigateToItem }: ItemDetailsProps) {
     const itemSprite = getItemSpritePath(item)
     const isForageable = item.forageable ?? false
-    const hasTiller = professions.includes("tiller")
-    const hasBearsKnowledge = professions.includes("bearsKnowledge")
 
     const [selectedQuality, setSelectedQuality] = useState<string>("normal")
 
     // Determine which price category to use
-    const category = getPriceCategory(item.name, isForageable, wasForaged, hasTiller, hasBearsKnowledge)
+    const category = getPriceCategory(item.name, item.category, isForageable, wasForaged, professions)
 
     // Fallback to base if the desired category doesn't exist
     let qualities = item.prices[category as keyof typeof item.prices]
@@ -84,12 +119,14 @@ function ItemDetailsInner({ item, professions, wasForaged, onWasForagedChange }:
     return (
         <div className="mt-6 space-y-4">
             <div className="flex items-center gap-3">
-                <Image
-                    src={itemSprite}
-                    alt={item.name}
-                    width={64}
-                    height={64}
-                />
+                {itemSprite && (
+                    <Image
+                        src={itemSprite}
+                        alt={item.name}
+                        width={64}
+                        height={64}
+                    />
+                )}
                 <h2 className="text-xl font-semibold">{item.name}</h2>
                 <h3 className="text-md italic text-gray-500">{item.description}</h3>
             </div>
@@ -136,12 +173,14 @@ function ItemDetailsInner({ item, professions, wasForaged, onWasForagedChange }:
                                         <ItemContent>
                                             <ItemTitle className="capitalize flex items-center gap-2">
                                                 <div className="relative w-16 h-16 flex items-center justify-center">
-                                                    <Image
-                                                        src={itemSprite}
-                                                        alt={item.name}
-                                                        width={64}
-                                                        height={64}
-                                                    />
+                                                    {itemSprite && (
+                                                        <Image
+                                                            src={itemSprite}
+                                                            alt={item.name}
+                                                            width={64}
+                                                            height={64}
+                                                        />
+                                                    )}
                                                     {qualitySprites[quality] && (
                                                         <Image
                                                             src={qualitySprites[quality]}
@@ -179,6 +218,8 @@ function ItemDetailsInner({ item, professions, wasForaged, onWasForagedChange }:
                 baseItem={item}
                 professions={professions}
                 selectedBasePrice={selectedPrice}
+                selectedQuality={selectedQuality}
+                onNavigateToItem={onNavigateToItem}
             />
         </div>
     )

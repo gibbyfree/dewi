@@ -1709,6 +1709,23 @@
                     "processingDays": 2.5
                 }
             ]
+        },
+        {
+            "base": "Rice",
+            "products": [
+                {
+                    "name": "Vinegar",
+                    "processor": "Keg",
+                    "ingredients": [
+                        {
+                            "name": "Rice",
+                            "quantity": 1
+                        }
+                    ],
+                    "outputQuantity": 2,
+                    "processingDays": 0.42
+                }
+            ]
         }
     ]
 }

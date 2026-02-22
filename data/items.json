@@ -2,6 +2,7 @@
     "items": [
         {
             "name": "Ancient Fruit",
+            "category": "fruit",
             "base": true,
             "prices": {
                 "base": {
@@ -17,14 +18,20 @@
                     "iridium": 1210
                 }
             },
+            "description": "It's been dormant for eons.",
             "color": "light-blue",
             "daysToMature": 28,
-            "daysToRegrow": 7,
-            "description": "It's been dormant for eons."
+            "daysToRegrow": 7
         },
         {
             "name": "Ancient Fruit Wine",
+            "category": "artisan-good",
             "base": false,
+            "caskAgingDays": {
+                "silver": 14,
+                "gold": 28,
+                "iridium": 56
+            },
             "prices": {
                 "base": {
                     "normal": 1650,
@@ -38,10 +45,12 @@
                     "gold": 3465,
                     "iridium": 4620
                 }
-            }
+            },
+            "color": "light-blue"
         },
         {
             "name": "Ancient Fruit Jelly",
+            "category": "artisan-good",
             "base": false,
             "prices": {
                 "base": {
@@ -50,10 +59,12 @@
                 "artisan": {
                     "normal": 1610
                 }
-            }
+            },
+            "color": "light-blue"
         },
         {
             "name": "Dried Ancient Fruit",
+            "category": "artisan-good",
             "base": false,
             "prices": {
                 "base": {
@@ -62,11 +73,12 @@
                 "artisan": {
                     "normal": 5810
                 }
-            }
+            },
+            "color": "light-blue"
         },
         {
             "name": "Apple",
-            "description": "A crisp fruit used for juice and cider.",
+            "category": "fruit",
             "base": true,
             "prices": {
                 "base": {
@@ -82,13 +94,20 @@
                     "iridium": 220
                 }
             },
+            "description": "A crisp fruit used for juice and cider.",
             "color": "red",
             "daysToMature": 28,
             "daysToRegrow": 1
         },
         {
             "name": "Apple Wine",
+            "category": "artisan-good",
             "base": false,
+            "caskAgingDays": {
+                "silver": 14,
+                "gold": 28,
+                "iridium": 56
+            },
             "prices": {
                 "base": {
                     "normal": 300,
@@ -102,10 +121,12 @@
                     "gold": 630,
                     "iridium": 840
                 }
-            }
+            },
+            "color": "red"
         },
         {
             "name": "Apple Jelly",
+            "category": "artisan-good",
             "base": false,
             "prices": {
                 "base": {
@@ -114,10 +135,12 @@
                 "artisan": {
                     "normal": 350
                 }
-            }
+            },
+            "color": "red"
         },
         {
             "name": "Dried Apple",
+            "category": "artisan-good",
             "base": false,
             "prices": {
                 "base": {
@@ -126,10 +149,12 @@
                 "artisan": {
                     "normal": 1085
                 }
-            }
+            },
+            "color": "red"
         },
         {
             "name": "Apricot",
+            "category": "fruit",
             "base": true,
             "prices": {
                 "base": {
@@ -145,14 +170,20 @@
                     "iridium": 110
                 }
             },
+            "description": "A tender little fruit with a rock-hard pit.",
             "color": "orange",
             "daysToMature": 28,
-            "daysToRegrow": 1,
-            "description": "A tender little fruit with a rock-hard pit."
+            "daysToRegrow": 1
         },
         {
             "name": "Apricot Wine",
+            "category": "artisan-good",
             "base": false,
+            "caskAgingDays": {
+                "silver": 14,
+                "gold": 28,
+                "iridium": 56
+            },
             "prices": {
                 "base": {
                     "normal": 150,
@@ -166,10 +197,12 @@
                     "gold": 315,
                     "iridium": 420
                 }
-            }
+            },
+            "color": "orange"
         },
         {
             "name": "Apricot Jelly",
+            "category": "artisan-good",
             "base": false,
             "prices": {
                 "base": {
@@ -178,10 +211,12 @@
                 "artisan": {
                     "normal": 210
                 }
-            }
+            },
+            "color": "orange"
         },
         {
             "name": "Dried Apricot",
+            "category": "artisan-good",
             "base": false,
             "prices": {
                 "base": {
@@ -190,10 +225,12 @@
                 "artisan": {
                     "normal": 560
                 }
-            }
+            },
+            "color": "orange"
         },
         {
             "name": "Banana",
+            "category": "fruit",
             "base": true,
             "prices": {
                 "base": {
@@ -209,14 +246,20 @@
                     "iridium": 330
                 }
             },
+            "description": "A sweet, starchy tropical fruit.",
             "color": "yellow",
             "daysToMature": 28,
-            "daysToRegrow": 1,
-            "description": "A sweet, starchy tropical fruit."
+            "daysToRegrow": 1
         },
         {
             "name": "Banana Wine",
+            "category": "artisan-good",
             "base": false,
+            "caskAgingDays": {
+                "silver": 14,
+                "gold": 28,
+                "iridium": 56
+            },
             "prices": {
                 "base": {
                     "normal": 450,
@@ -230,10 +273,12 @@
                     "gold": 945,
                     "iridium": 1260
                 }
-            }
+            },
+            "color": "yellow"
         },
         {
             "name": "Banana Jelly",
+            "category": "artisan-good",
             "base": false,
             "prices": {
                 "base": {
@@ -242,10 +287,12 @@
                 "artisan": {
                     "normal": 490
                 }
-            }
+            },
+            "color": "yellow"
         },
         {
             "name": "Dried Banana",
+            "category": "artisan-good",
             "base": false,
             "prices": {
                 "base": {
@@ -254,10 +301,12 @@
                 "artisan": {
                     "normal": 1610
                 }
-            }
+            },
+            "color": "yellow"
         },
         {
             "name": "Blackberry",
+            "category": "fruit",
             "base": true,
             "prices": {
                 "base": {
@@ -285,13 +334,19 @@
                     "iridium": 132
                 }
             },
+            "description": "An early-fall treat.",
             "color": "dark-blue",
-            "forageable": true,
-            "description": "An early-fall treat."
+            "forageable": true
         },
         {
             "name": "Blackberry Wine",
+            "category": "artisan-good",
             "base": false,
+            "caskAgingDays": {
+                "silver": 14,
+                "gold": 28,
+                "iridium": 56
+            },
             "prices": {
                 "base": {
                     "normal": 60,
@@ -305,10 +360,12 @@
                     "gold": 126,
                     "iridium": 168
                 }
-            }
+            },
+            "color": "dark-blue"
         },
         {
             "name": "Blackberry Jelly",
+            "category": "artisan-good",
             "base": false,
             "prices": {
                 "base": {
@@ -317,10 +374,12 @@
                 "artisan": {
                     "normal": 126
                 }
-            }
+            },
+            "color": "dark-blue"
         },
         {
             "name": "Dried Blackberry",
+            "category": "artisan-good",
             "base": false,
             "prices": {
                 "base": {
@@ -329,10 +388,12 @@
                 "artisan": {
                     "normal": 245
                 }
-            }
+            },
+            "color": "dark-blue"
         },
         {
             "name": "Blueberry",
+            "category": "fruit",
             "base": true,
             "prices": {
                 "base": {
@@ -354,7 +415,13 @@
         },
         {
             "name": "Blueberry Wine",
+            "category": "artisan-good",
             "base": false,
+            "caskAgingDays": {
+                "silver": 14,
+                "gold": 28,
+                "iridium": 56
+            },
             "prices": {
                 "base": {
                     "normal": 150,
@@ -368,10 +435,12 @@
                     "gold": 315,
                     "iridium": 420
                 }
-            }
+            },
+            "color": "blue"
         },
         {
             "name": "Blueberry Jelly",
+            "category": "artisan-good",
             "base": false,
             "prices": {
                 "base": {
@@ -380,10 +449,12 @@
                 "artisan": {
                     "normal": 210
                 }
-            }
+            },
+            "color": "blue"
         },
         {
             "name": "Dried Blueberry",
+            "category": "artisan-good",
             "base": false,
             "prices": {
                 "base": {
@@ -392,10 +463,12 @@
                 "artisan": {
                     "normal": 560
                 }
-            }
+            },
+            "color": "blue"
         },
         {
             "name": "Cactus Fruit",
+            "category": "fruit",
             "base": true,
             "prices": {
                 "base": {
@@ -411,15 +484,21 @@
                     "iridium": 165
                 }
             },
+            "description": "The sweet fruit of the prickly pear cactus.",
             "color": "green",
-            "forageable": true,
             "daysToMature": 12,
             "daysToRegrow": 3,
-            "description": "The sweet fruit of the prickly pear cactus."
+            "forageable": true
         },
         {
             "name": "Cactus Fruit Wine",
+            "category": "artisan-good",
             "base": false,
+            "caskAgingDays": {
+                "silver": 14,
+                "gold": 28,
+                "iridium": 56
+            },
             "prices": {
                 "base": {
                     "normal": 225,
@@ -433,10 +512,12 @@
                     "gold": 471,
                     "iridium": 630
                 }
-            }
+            },
+            "color": "green"
         },
         {
             "name": "Cactus Fruit Jelly",
+            "category": "artisan-good",
             "base": false,
             "prices": {
                 "base": {
@@ -445,10 +526,12 @@
                 "artisan": {
                     "normal": 280
                 }
-            }
+            },
+            "color": "green"
         },
         {
             "name": "Dried Cactus Fruit",
+            "category": "artisan-good",
             "base": false,
             "prices": {
                 "base": {
@@ -457,10 +540,12 @@
                 "artisan": {
                     "normal": 821
                 }
-            }
+            },
+            "color": "green"
         },
         {
             "name": "Cherry",
+            "category": "fruit",
             "base": true,
             "prices": {
                 "base": {
@@ -476,14 +561,20 @@
                     "iridium": 176
                 }
             },
-            "color": "red",
             "description": "It's popular, and ripens sooner than most other fruits.",
+            "color": "red",
             "daysToMature": 28,
             "daysToRegrow": 1
         },
         {
             "name": "Cherry Wine",
+            "category": "artisan-good",
             "base": false,
+            "caskAgingDays": {
+                "silver": 14,
+                "gold": 28,
+                "iridium": 56
+            },
             "prices": {
                 "base": {
                     "normal": 240,
@@ -497,10 +588,12 @@
                     "gold": 504,
                     "iridium": 672
                 }
-            }
+            },
+            "color": "red"
         },
         {
             "name": "Cherry Jelly",
+            "category": "artisan-good",
             "base": false,
             "prices": {
                 "base": {
@@ -509,10 +602,12 @@
                 "artisan": {
                     "normal": 294
                 }
-            }
+            },
+            "color": "red"
         },
         {
             "name": "Dried Cherry",
+            "category": "artisan-good",
             "base": false,
             "prices": {
                 "base": {
@@ -521,10 +616,12 @@
                 "artisan": {
                     "normal": 875
                 }
-            }
+            },
+            "color": "red"
         },
         {
             "name": "Coconut",
+            "category": "fruit",
             "base": true,
             "prices": {
                 "base": {
@@ -540,13 +637,19 @@
                     "iridium": 200
                 }
             },
-            "color": "brown",
             "description": "A seed of the coconut palm. It has many culinary uses.",
+            "color": "brown",
             "forageable": true
         },
         {
             "name": "Coconut Wine",
+            "category": "artisan-good",
             "base": false,
+            "caskAgingDays": {
+                "silver": 14,
+                "gold": 28,
+                "iridium": 56
+            },
             "prices": {
                 "base": {
                     "normal": 300,
@@ -560,10 +663,12 @@
                     "gold": 630,
                     "iridium": 840
                 }
-            }
+            },
+            "color": "brown"
         },
         {
             "name": "Coconut Jelly",
+            "category": "artisan-good",
             "base": false,
             "prices": {
                 "base": {
@@ -572,10 +677,12 @@
                 "artisan": {
                     "normal": 350
                 }
-            }
+            },
+            "color": "brown"
         },
         {
             "name": "Dried Coconut",
+            "category": "artisan-good",
             "base": false,
             "prices": {
                 "base": {
@@ -584,10 +691,12 @@
                 "artisan": {
                     "normal": 1085
                 }
-            }
+            },
+            "color": "brown"
         },
         {
             "name": "Cranberries",
+            "category": "fruit",
             "base": true,
             "prices": {
                 "base": {
@@ -603,14 +712,20 @@
                     "iridium": 165
                 }
             },
-            "color": "red",
             "description": "These tart red berries are a traditional winter food.",
+            "color": "red",
             "daysToMature": 7,
             "daysToRegrow": 5
         },
         {
             "name": "Cranberries Wine",
+            "category": "artisan-good",
             "base": false,
+            "caskAgingDays": {
+                "silver": 14,
+                "gold": 28,
+                "iridium": 56
+            },
             "prices": {
                 "base": {
                     "normal": 225,
@@ -624,10 +739,12 @@
                     "gold": 471,
                     "iridium": 630
                 }
-            }
+            },
+            "color": "red"
         },
         {
             "name": "Cranberries Jelly",
+            "category": "artisan-good",
             "base": false,
             "prices": {
                 "base": {
@@ -636,10 +753,12 @@
                 "artisan": {
                     "normal": 280
                 }
-            }
+            },
+            "color": "red"
         },
         {
             "name": "Dried Cranberries",
+            "category": "artisan-good",
             "base": false,
             "prices": {
                 "base": {
@@ -648,10 +767,12 @@
                 "artisan": {
                     "normal": 821
                 }
-            }
+            },
+            "color": "red"
         },
         {
             "name": "Crystal Fruit",
+            "category": "fruit",
             "base": true,
             "prices": {
                 "base": {
@@ -667,13 +788,19 @@
                     "iridium": 300
                 }
             },
+            "description": "A delicate fruit that pops up from the snow.",
             "color": "blue",
-            "isForageable": true,
-            "description": "A delicate fruit that pops up from the snow."
+            "forageable": true
         },
         {
             "name": "Crystal Fruit Wine",
+            "category": "artisan-good",
             "base": false,
+            "caskAgingDays": {
+                "silver": 14,
+                "gold": 28,
+                "iridium": 56
+            },
             "prices": {
                 "base": {
                     "normal": 450,
@@ -687,10 +814,12 @@
                     "gold": 945,
                     "iridium": 1260
                 }
-            }
+            },
+            "color": "blue"
         },
         {
             "name": "Crystal Fruit Jelly",
+            "category": "artisan-good",
             "base": false,
             "prices": {
                 "base": {
@@ -699,10 +828,12 @@
                 "artisan": {
                     "normal": 490
                 }
-            }
+            },
+            "color": "blue"
         },
         {
             "name": "Dried Crystal Fruit",
+            "category": "artisan-good",
             "base": false,
             "prices": {
                 "base": {
@@ -711,10 +842,12 @@
                 "artisan": {
                     "normal": 1610
                 }
-            }
+            },
+            "color": "blue"
         },
         {
             "name": "Grape",
+            "category": "fruit",
             "base": true,
             "prices": {
                 "base": {
@@ -730,15 +863,21 @@
                     "iridium": 176
                 }
             },
-            "color": "dark-purple",
-            "isForageable": true,
             "description": "A sweet cluster of fruit.",
+            "color": "dark-purple",
             "daysToMature": 10,
-            "daysToRegrow": 3
+            "daysToRegrow": 3,
+            "forageable": true
         },
         {
             "name": "Grape Wine",
+            "category": "artisan-good",
             "base": false,
+            "caskAgingDays": {
+                "silver": 14,
+                "gold": 28,
+                "iridium": 56
+            },
             "prices": {
                 "base": {
                     "normal": 240,
@@ -752,10 +891,12 @@
                     "gold": 504,
                     "iridium": 672
                 }
-            }
+            },
+            "color": "dark-purple"
         },
         {
             "name": "Grape Jelly",
+            "category": "artisan-good",
             "base": false,
             "prices": {
                 "base": {
@@ -764,12 +905,13 @@
                 "artisan": {
                     "normal": 294
                 }
-            }
+            },
+            "color": "dark-purple"
         },
         {
             "name": "Raisins",
+            "category": "artisan-good",
             "base": false,
-            "spritePath": "/sprites/processedes/raisins.png",
             "prices": {
                 "base": {
                     "normal": 600
@@ -777,10 +919,12 @@
                 "artisan": {
                     "normal": 840
                 }
-            }
+            },
+            "spritePath": "/sprites/processedes/raisins.png"
         },
         {
             "name": "Hot Pepper",
+            "category": "fruit",
             "base": true,
             "prices": {
                 "base": {
@@ -796,14 +940,20 @@
                     "iridium": 88
                 }
             },
-            "color": "red",
             "description": "Fiery hot with a hint of sweetness.",
+            "color": "red",
             "daysToMature": 5,
             "daysToRegrow": 3
         },
         {
             "name": "Hot Pepper Wine",
+            "category": "artisan-good",
             "base": false,
+            "caskAgingDays": {
+                "silver": 14,
+                "gold": 28,
+                "iridium": 56
+            },
             "prices": {
                 "base": {
                     "normal": 120,
@@ -817,10 +967,12 @@
                     "gold": 252,
                     "iridium": 336
                 }
-            }
+            },
+            "color": "red"
         },
         {
             "name": "Hot Pepper Jelly",
+            "category": "artisan-good",
             "base": false,
             "prices": {
                 "base": {
@@ -829,10 +981,12 @@
                 "artisan": {
                     "normal": 182
                 }
-            }
+            },
+            "color": "red"
         },
         {
             "name": "Dried Hot Pepper",
+            "category": "artisan-good",
             "base": false,
             "prices": {
                 "base": {
@@ -841,10 +995,12 @@
                 "artisan": {
                     "normal": 455
                 }
-            }
+            },
+            "color": "red"
         },
         {
             "name": "Mango",
+            "category": "fruit",
             "base": true,
             "prices": {
                 "base": {
@@ -860,14 +1016,20 @@
                     "iridium": 286
                 }
             },
-            "color": "yellow",
             "description": "A big, sweet tropical fruit with a unique flavor.",
+            "color": "yellow",
             "daysToMature": 28,
             "daysToRegrow": 1
         },
         {
             "name": "Mango Wine",
+            "category": "artisan-good",
             "base": false,
+            "caskAgingDays": {
+                "silver": 14,
+                "gold": 28,
+                "iridium": 56
+            },
             "prices": {
                 "base": {
                     "normal": 390,
@@ -881,10 +1043,12 @@
                     "gold": 819,
                     "iridium": 1092
                 }
-            }
+            },
+            "color": "yellow"
         },
         {
             "name": "Mango Jelly",
+            "category": "artisan-good",
             "base": false,
             "prices": {
                 "base": {
@@ -893,10 +1057,12 @@
                 "artisan": {
                     "normal": 434
                 }
-            }
+            },
+            "color": "yellow"
         },
         {
             "name": "Dried Mango",
+            "category": "artisan-good",
             "base": false,
             "prices": {
                 "base": {
@@ -905,10 +1071,12 @@
                 "artisan": {
                     "normal": 1400
                 }
-            }
+            },
+            "color": "yellow"
         },
         {
             "name": "Melon",
+            "category": "fruit",
             "base": true,
             "prices": {
                 "base": {
@@ -924,13 +1092,19 @@
                     "iridium": 550
                 }
             },
-            "color": "pink",
             "description": "A cool, sweet summer treat.",
+            "color": "pink",
             "daysToMature": 12
         },
         {
             "name": "Melon Wine",
+            "category": "artisan-good",
             "base": false,
+            "caskAgingDays": {
+                "silver": 14,
+                "gold": 28,
+                "iridium": 56
+            },
             "prices": {
                 "base": {
                     "normal": 750,
@@ -944,10 +1118,12 @@
                     "gold": 1575,
                     "iridium": 2100
                 }
-            }
+            },
+            "color": "pink"
         },
         {
             "name": "Melon Jelly",
+            "category": "artisan-good",
             "base": false,
             "prices": {
                 "base": {
@@ -956,10 +1132,12 @@
                 "artisan": {
                     "normal": 770
                 }
-            }
+            },
+            "color": "pink"
         },
         {
             "name": "Dried Melon",
+            "category": "artisan-good",
             "base": false,
             "prices": {
                 "base": {
@@ -968,10 +1146,12 @@
                 "artisan": {
                     "normal": 2660
                 }
-            }
+            },
+            "color": "pink"
         },
         {
             "name": "Orange",
+            "category": "fruit",
             "base": true,
             "prices": {
                 "base": {
@@ -987,14 +1167,20 @@
                     "iridium": 220
                 }
             },
-            "color": "orange",
             "description": "Juicy, tangy, and bursting with sweet summer aroma.",
+            "color": "orange",
             "daysToMature": 28,
             "daysToRegrow": 1
         },
         {
             "name": "Orange Wine",
+            "category": "artisan-good",
             "base": false,
+            "caskAgingDays": {
+                "silver": 14,
+                "gold": 28,
+                "iridium": 56
+            },
             "prices": {
                 "base": {
                     "normal": 300,
@@ -1008,10 +1194,12 @@
                     "gold": 630,
                     "iridium": 840
                 }
-            }
+            },
+            "color": "orange"
         },
         {
             "name": "Orange Jelly",
+            "category": "artisan-good",
             "base": false,
             "prices": {
                 "base": {
@@ -1020,10 +1208,12 @@
                 "artisan": {
                     "normal": 350
                 }
-            }
+            },
+            "color": "orange"
         },
         {
             "name": "Dried Orange",
+            "category": "artisan-good",
             "base": false,
             "prices": {
                 "base": {
@@ -1032,10 +1222,12 @@
                 "artisan": {
                     "normal": 1085
                 }
-            }
+            },
+            "color": "orange"
         },
         {
             "name": "Peach",
+            "category": "fruit",
             "base": true,
             "prices": {
                 "base": {
@@ -1051,14 +1243,20 @@
                     "iridium": 308
                 }
             },
-            "color": "pink",
             "description": "It's almost fuzzy to the touch.",
+            "color": "pink",
             "daysToMature": 28,
             "daysToRegrow": 1
         },
         {
             "name": "Peach Wine",
+            "category": "artisan-good",
             "base": false,
+            "caskAgingDays": {
+                "silver": 14,
+                "gold": 28,
+                "iridium": 56
+            },
             "prices": {
                 "base": {
                     "normal": 420,
@@ -1072,10 +1270,12 @@
                     "gold": 882,
                     "iridium": 1176
                 }
-            }
+            },
+            "color": "pink"
         },
         {
             "name": "Peach Jelly",
+            "category": "artisan-good",
             "base": false,
             "prices": {
                 "base": {
@@ -1084,10 +1284,12 @@
                 "artisan": {
                     "normal": 462
                 }
-            }
+            },
+            "color": "pink"
         },
         {
             "name": "Dried Peach",
+            "category": "artisan-good",
             "base": false,
             "prices": {
                 "base": {
@@ -1096,10 +1298,12 @@
                 "artisan": {
                     "normal": 1505
                 }
-            }
+            },
+            "color": "pink"
         },
         {
             "name": "Pineapple",
+            "category": "fruit",
             "base": true,
             "prices": {
                 "base": {
@@ -1115,14 +1319,20 @@
                     "iridium": 660
                 }
             },
-            "color": "yellow",
             "description": "A sweet and tangy tropical treat.",
+            "color": "yellow",
             "daysToMature": 14,
             "daysToRegrow": 7
         },
         {
             "name": "Pineapple Wine",
+            "category": "artisan-good",
             "base": false,
+            "caskAgingDays": {
+                "silver": 14,
+                "gold": 28,
+                "iridium": 56
+            },
             "prices": {
                 "base": {
                     "normal": 900,
@@ -1136,10 +1346,12 @@
                     "gold": 1890,
                     "iridium": 2520
                 }
-            }
+            },
+            "color": "yellow"
         },
         {
             "name": "Pineapple Jelly",
+            "category": "artisan-good",
             "base": false,
             "prices": {
                 "base": {
@@ -1148,10 +1360,12 @@
                 "artisan": {
                     "normal": 910
                 }
-            }
+            },
+            "color": "yellow"
         },
         {
             "name": "Dried Pineapple",
+            "category": "artisan-good",
             "base": false,
             "prices": {
                 "base": {
@@ -1160,10 +1374,12 @@
                 "artisan": {
                     "normal": 3185
                 }
-            }
+            },
+            "color": "yellow"
         },
         {
             "name": "Pomegranate",
+            "category": "fruit",
             "base": true,
             "prices": {
                 "base": {
@@ -1179,14 +1395,20 @@
                     "iridium": 308
                 }
             },
-            "color": "dark-pink",
             "description": "Within the fruit are clusters of juicy seeds.",
+            "color": "dark-pink",
             "daysToMature": 28,
             "daysToRegrow": 1
         },
         {
             "name": "Pomegranate Wine",
+            "category": "artisan-good",
             "base": false,
+            "caskAgingDays": {
+                "silver": 14,
+                "gold": 28,
+                "iridium": 56
+            },
             "prices": {
                 "base": {
                     "normal": 420,
@@ -1200,10 +1422,12 @@
                     "gold": 882,
                     "iridium": 1176
                 }
-            }
+            },
+            "color": "dark-pink"
         },
         {
             "name": "Pomegranate Jelly",
+            "category": "artisan-good",
             "base": false,
             "prices": {
                 "base": {
@@ -1212,10 +1436,12 @@
                 "artisan": {
                     "normal": 462
                 }
-            }
+            },
+            "color": "dark-pink"
         },
         {
             "name": "Dried Pomegranate",
+            "category": "artisan-good",
             "base": false,
             "prices": {
                 "base": {
@@ -1224,10 +1450,12 @@
                 "artisan": {
                     "normal": 1505
                 }
-            }
+            },
+            "color": "dark-pink"
         },
         {
             "name": "Powdermelon",
+            "category": "fruit",
             "base": true,
             "prices": {
                 "base": {
@@ -1243,13 +1471,19 @@
                     "iridium": 132
                 }
             },
-            "color": "white",
             "description": "Named for the powdery coating that forms on the surface, this melon is crisp and sweet, with a delicate flavor.",
+            "color": "white",
             "daysToMature": 7
         },
         {
             "name": "Powdermelon Wine",
+            "category": "artisan-good",
             "base": false,
+            "caskAgingDays": {
+                "silver": 14,
+                "gold": 28,
+                "iridium": 56
+            },
             "prices": {
                 "base": {
                     "normal": 180,
@@ -1263,10 +1497,12 @@
                     "gold": 378,
                     "iridium": 504
                 }
-            }
+            },
+            "color": "white"
         },
         {
             "name": "Powdermelon Jelly",
+            "category": "artisan-good",
             "base": false,
             "prices": {
                 "base": {
@@ -1275,10 +1511,12 @@
                 "artisan": {
                     "normal": 238
                 }
-            }
+            },
+            "color": "white"
         },
         {
             "name": "Dried Powdermelon",
+            "category": "artisan-good",
             "base": false,
             "prices": {
                 "base": {
@@ -1287,10 +1525,12 @@
                 "artisan": {
                     "normal": 665
                 }
-            }
+            },
+            "color": "white"
         },
         {
             "name": "Qi Fruit",
+            "category": "fruit",
             "base": true,
             "prices": {
                 "base": {
@@ -1300,13 +1540,19 @@
                     "normal": 1
                 }
             },
-            "color": "blue",
             "description": "Mr. Qi has challenged you to ship 500 of these strange melons.",
+            "color": "blue",
             "daysToMature": 4
         },
         {
             "name": "Qi Fruit Wine",
+            "category": "artisan-good",
             "base": false,
+            "caskAgingDays": {
+                "silver": 14,
+                "gold": 28,
+                "iridium": 56
+            },
             "prices": {
                 "base": {
                     "normal": 3,
@@ -1320,10 +1566,12 @@
                     "gold": 5,
                     "iridium": 8
                 }
-            }
+            },
+            "color": "blue"
         },
         {
             "name": "Qi Fruit Jelly",
+            "category": "artisan-good",
             "base": false,
             "prices": {
                 "base": {
@@ -1332,10 +1580,12 @@
                 "artisan": {
                     "normal": 72
                 }
-            }
+            },
+            "color": "blue"
         },
         {
             "name": "Dried Qi Fruit",
+            "category": "artisan-good",
             "base": false,
             "prices": {
                 "base": {
@@ -1344,10 +1594,12 @@
                 "artisan": {
                     "normal": 44
                 }
-            }
+            },
+            "color": "blue"
         },
         {
             "name": "Rhubarb",
+            "category": "fruit",
             "base": true,
             "prices": {
                 "base": {
@@ -1363,13 +1615,19 @@
                     "iridium": 484
                 }
             },
-            "color": "red",
             "description": "The stalks are extremely tart, but make a great dessert when sweetened.",
+            "color": "red",
             "daysToMature": 13
         },
         {
             "name": "Rhubarb Wine",
+            "category": "artisan-good",
             "base": false,
+            "caskAgingDays": {
+                "silver": 14,
+                "gold": 28,
+                "iridium": 56
+            },
             "prices": {
                 "base": {
                     "normal": 660,
@@ -1383,10 +1641,12 @@
                     "gold": 1386,
                     "iridium": 1848
                 }
-            }
+            },
+            "color": "red"
         },
         {
             "name": "Rhubarb Jelly",
+            "category": "artisan-good",
             "base": false,
             "prices": {
                 "base": {
@@ -1395,10 +1655,12 @@
                 "artisan": {
                     "normal": 686
                 }
-            }
+            },
+            "color": "red"
         },
         {
             "name": "Dried Rhubarb",
+            "category": "artisan-good",
             "base": false,
             "prices": {
                 "base": {
@@ -1407,10 +1669,12 @@
                 "artisan": {
                     "normal": 2345
                 }
-            }
+            },
+            "color": "red"
         },
         {
             "name": "Salmonberry",
+            "category": "fruit",
             "base": true,
             "prices": {
                 "base": {
@@ -1438,13 +1702,19 @@
                     "iridium": 33
                 }
             },
-            "color": "red",
             "description": "A spring-time berry with the flavor of the forest.",
-            "foreagable": true
+            "color": "red",
+            "forageable": true
         },
         {
             "name": "Salmonberry Wine",
+            "category": "artisan-good",
             "base": false,
+            "caskAgingDays": {
+                "silver": 14,
+                "gold": 28,
+                "iridium": 56
+            },
             "prices": {
                 "base": {
                     "normal": 15,
@@ -1458,10 +1728,12 @@
                     "gold": 30,
                     "iridium": 42
                 }
-            }
+            },
+            "color": "red"
         },
         {
             "name": "Salmonberry Jelly",
+            "category": "artisan-good",
             "base": false,
             "prices": {
                 "base": {
@@ -1470,10 +1742,12 @@
                 "artisan": {
                     "normal": 84
                 }
-            }
+            },
+            "color": "red"
         },
         {
             "name": "Dried Salmonberry",
+            "category": "artisan-good",
             "base": false,
             "prices": {
                 "base": {
@@ -1482,10 +1756,12 @@
                 "artisan": {
                     "normal": 86
                 }
-            }
+            },
+            "color": "red"
         },
         {
             "name": "Spice Berry",
+            "category": "fruit",
             "base": true,
             "prices": {
                 "base": {
@@ -1501,13 +1777,19 @@
                     "iridium": 160
                 }
             },
-            "color": "orange",
             "description": "It fills the air with a pungent aroma.",
+            "color": "orange",
             "forageable": true
         },
         {
             "name": "Spice Berry Wine",
+            "category": "artisan-good",
             "base": false,
+            "caskAgingDays": {
+                "silver": 14,
+                "gold": 28,
+                "iridium": 56
+            },
             "prices": {
                 "base": {
                     "normal": 240,
@@ -1521,10 +1803,12 @@
                     "gold": 504,
                     "iridium": 672
                 }
-            }
+            },
+            "color": "orange"
         },
         {
             "name": "Spice Berry Jelly",
+            "category": "artisan-good",
             "base": false,
             "prices": {
                 "base": {
@@ -1533,10 +1817,12 @@
                 "artisan": {
                     "normal": 294
                 }
-            }
+            },
+            "color": "orange"
         },
         {
             "name": "Dried Spice Berry",
+            "category": "artisan-good",
             "base": false,
             "prices": {
                 "base": {
@@ -1545,10 +1831,12 @@
                 "artisan": {
                     "normal": 875
                 }
-            }
+            },
+            "color": "orange"
         },
         {
             "name": "Starfruit",
+            "category": "fruit",
             "base": true,
             "prices": {
                 "base": {
@@ -1564,13 +1852,19 @@
                     "iridium": 1650
                 }
             },
-            "color": "yellow",
             "description": "An extremely juicy fruit that grows in hot, humid weather. Slightly sweet with a sour undertone.",
+            "color": "yellow",
             "daysToMature": 13
         },
         {
             "name": "Starfruit Wine",
+            "category": "artisan-good",
             "base": false,
+            "caskAgingDays": {
+                "silver": 14,
+                "gold": 28,
+                "iridium": 56
+            },
             "prices": {
                 "base": {
                     "normal": 2250,
@@ -1584,10 +1878,12 @@
                     "gold": 4725,
                     "iridium": 6300
                 }
-            }
+            },
+            "color": "yellow"
         },
         {
             "name": "Starfruit Jelly",
+            "category": "artisan-good",
             "base": false,
             "prices": {
                 "base": {
@@ -1596,10 +1892,12 @@
                 "artisan": {
                     "normal": 2170
                 }
-            }
+            },
+            "color": "yellow"
         },
         {
             "name": "Dried Starfruit",
+            "category": "artisan-good",
             "base": false,
             "prices": {
                 "base": {
@@ -1608,10 +1906,12 @@
                 "artisan": {
                     "normal": 7910
                 }
-            }
+            },
+            "color": "yellow"
         },
         {
             "name": "Strawberry",
+            "category": "fruit",
             "base": true,
             "prices": {
                 "base": {
@@ -1627,14 +1927,20 @@
                     "iridium": 264
                 }
             },
-            "color": "red",
             "description": "A sweet, juicy favorite with an appealing red color.",
+            "color": "red",
             "daysToMature": 8,
             "daysToRegrow": 4
         },
         {
             "name": "Strawberry Wine",
+            "category": "artisan-good",
             "base": false,
+            "caskAgingDays": {
+                "silver": 14,
+                "gold": 28,
+                "iridium": 56
+            },
             "prices": {
                 "base": {
                     "normal": 360,
@@ -1648,10 +1954,12 @@
                     "gold": 756,
                     "iridium": 1008
                 }
-            }
+            },
+            "color": "red"
         },
         {
             "name": "Strawberry Jelly",
+            "category": "artisan-good",
             "base": false,
             "prices": {
                 "base": {
@@ -1660,10 +1968,12 @@
                 "artisan": {
                     "normal": 406
                 }
-            }
+            },
+            "color": "red"
         },
         {
             "name": "Dried Strawberry",
+            "category": "artisan-good",
             "base": false,
             "prices": {
                 "base": {
@@ -1672,10 +1982,12 @@
                 "artisan": {
                     "normal": 1295
                 }
-            }
+            },
+            "color": "red"
         },
         {
             "name": "Wild Plum",
+            "category": "fruit",
             "base": true,
             "prices": {
                 "base": {
@@ -1691,13 +2003,19 @@
                     "iridium": 160
                 }
             },
-            "color": "purple",
             "description": "Tart and juicy with a pungent aroma.",
+            "color": "purple",
             "forageable": true
         },
         {
             "name": "Wild Plum Wine",
+            "category": "artisan-good",
             "base": false,
+            "caskAgingDays": {
+                "silver": 14,
+                "gold": 28,
+                "iridium": 56
+            },
             "prices": {
                 "base": {
                     "normal": 240,
@@ -1711,10 +2029,12 @@
                     "gold": 504,
                     "iridium": 672
                 }
-            }
+            },
+            "color": "purple"
         },
         {
             "name": "Wild Plum Jelly",
+            "category": "artisan-good",
             "base": false,
             "prices": {
                 "base": {
@@ -1723,10 +2043,12 @@
                 "artisan": {
                     "normal": 294
                 }
-            }
+            },
+            "color": "purple"
         },
         {
             "name": "Dried Wild Plum",
+            "category": "artisan-good",
             "base": false,
             "prices": {
                 "base": {
@@ -1735,10 +2057,12 @@
                 "artisan": {
                     "normal": 875
                 }
-            }
+            },
+            "color": "purple"
         },
         {
             "name": "Blue Jazz",
+            "category": "crop",
             "base": true,
             "prices": {
                 "base": {
@@ -1753,8 +2077,8 @@
         },
         {
             "name": "Carrot",
+            "category": "crop",
             "base": true,
-            "color": "orange",
             "prices": {
                 "base": {
                     "normal": 35,
@@ -1770,10 +2094,12 @@
                 }
             },
             "description": "A fast-growing, colorful tuber that makes for a great snack.",
+            "color": "orange",
             "daysToMature": 3
         },
         {
             "name": "Carrot Juice",
+            "category": "artisan-good",
             "base": false,
             "prices": {
                 "base": {
@@ -1782,10 +2108,12 @@
                 "artisan": {
                     "normal": 109
                 }
-            }
+            },
+            "color": "orange"
         },
         {
             "name": "Pickled Carrot",
+            "category": "artisan-good",
             "base": false,
             "prices": {
                 "base": {
@@ -1794,10 +2122,12 @@
                 "artisan": {
                     "normal": 168
                 }
-            }
+            },
+            "color": "orange"
         },
         {
             "name": "Cauliflower",
+            "category": "crop",
             "base": true,
             "prices": {
                 "base": {
@@ -1814,11 +2144,12 @@
                 }
             },
             "description": "Valuable, but slow-growing. Despite its pale color, the florets are packed with nutrients.",
-            "daysToMature": 12,
-            "color": "white"
+            "color": "white",
+            "daysToMature": 12
         },
         {
             "name": "Cauliflower Juice",
+            "category": "artisan-good",
             "base": false,
             "prices": {
                 "base": {
@@ -1827,10 +2158,12 @@
                 "artisan": {
                     "normal": 550
                 }
-            }
+            },
+            "color": "white"
         },
         {
             "name": "Pickled Cauliflower",
+            "category": "artisan-good",
             "base": false,
             "prices": {
                 "base": {
@@ -1839,10 +2172,12 @@
                 "artisan": {
                     "normal": 560
                 }
-            }
+            },
+            "color": "white"
         },
         {
             "name": "Garlic",
+            "category": "crop",
             "base": true,
             "prices": {
                 "base": {
@@ -1858,12 +2193,13 @@
                     "iridium": 132
                 }
             },
-            "color": "white",
             "description": "Adds a wonderful zestiness to dishes. High quality garlic can be pretty spicy.",
+            "color": "white",
             "daysToMature": 4
         },
         {
             "name": "Garlic Juice",
+            "category": "artisan-good",
             "base": false,
             "prices": {
                 "base": {
@@ -1872,10 +2208,12 @@
                 "artisan": {
                     "normal": 189
                 }
-            }
+            },
+            "color": "white"
         },
         {
             "name": "Pickled Garlic",
+            "category": "artisan-good",
             "base": false,
             "prices": {
                 "base": {
@@ -1884,10 +2222,12 @@
                 "artisan": {
                     "normal": 238
                 }
-            }
+            },
+            "color": "white"
         },
         {
             "name": "Kale",
+            "category": "crop",
             "base": true,
             "prices": {
                 "base": {
@@ -1903,12 +2243,13 @@
                     "iridium": 242
                 }
             },
-            "color": "green",
             "description": "The waxy leaves are great in soups and stir fries.",
+            "color": "green",
             "daysToMature": 6
         },
         {
             "name": "Parsnip",
+            "category": "crop",
             "base": true,
             "prices": {
                 "base": {
@@ -1925,11 +2266,12 @@
                 }
             },
             "description": "A spring tuber closely related to the carrot. It has an earthy taste and is full of nutrients.",
-            "daysToMature": 4,
-            "color": "yellow"
+            "color": "yellow",
+            "daysToMature": 4
         },
         {
             "name": "Parsnip Juice",
+            "category": "artisan-good",
             "base": false,
             "prices": {
                 "base": {
@@ -1938,10 +2280,12 @@
                 "artisan": {
                     "normal": 109
                 }
-            }
+            },
+            "color": "yellow"
         },
         {
             "name": "Pickled Parsnip",
+            "category": "artisan-good",
             "base": false,
             "prices": {
                 "base": {
@@ -1950,10 +2294,12 @@
                 "artisan": {
                     "normal": 168
                 }
-            }
+            },
+            "color": "yellow"
         },
         {
             "name": "Potato",
+            "category": "crop",
             "base": true,
             "prices": {
                 "base": {
@@ -1975,6 +2321,7 @@
         },
         {
             "name": "Potato Juice",
+            "category": "artisan-good",
             "base": false,
             "prices": {
                 "base": {
@@ -1983,10 +2330,12 @@
                 "artisan": {
                     "normal": 252
                 }
-            }
+            },
+            "color": "brown"
         },
         {
             "name": "Pickled Potato",
+            "category": "artisan-good",
             "base": false,
             "prices": {
                 "base": {
@@ -1995,10 +2344,12 @@
                 "artisan": {
                     "normal": 294
                 }
-            }
+            },
+            "color": "brown"
         },
         {
             "name": "Tulip",
+            "category": "crop",
             "base": true,
             "prices": {
                 "base": {
@@ -2019,6 +2370,7 @@
         },
         {
             "name": "Unmilled Rice",
+            "category": "crop",
             "base": true,
             "prices": {
                 "base": {
@@ -2035,21 +2387,24 @@
                 }
             },
             "description": "Rice in its rawest form. Run this through a mill to increase the value.",
-            "daysToMature": 6,
-            "color": "brown"
+            "color": "brown",
+            "daysToMature": 6
         },
         {
             "name": "Rice",
+            "category": "processed",
             "base": false,
             "prices": {
                 "base": {
                     "normal": 100
                 }
             },
-            "spritePath": "/sprites/processedes/rice.png"
+            "spritePath": "/sprites/processedes/rice.png",
+            "description": "A basic grain often served under vegetables."
         },
         {
             "name": "Rice Juice",
+            "category": "artisan-good",
             "base": false,
             "prices": {
                 "base": {
@@ -2058,10 +2413,12 @@
                 "artisan": {
                     "normal": 93
                 }
-            }
+            },
+            "color": "brown"
         },
         {
             "name": "Pickled Rice",
+            "category": "artisan-good",
             "base": false,
             "prices": {
                 "base": {
@@ -2070,10 +2427,12 @@
                 "artisan": {
                     "normal": 154
                 }
-            }
+            },
+            "color": "brown"
         },
         {
             "name": "Poppy",
+            "category": "crop",
             "base": true,
             "prices": {
                 "base": {
@@ -2094,6 +2453,7 @@
         },
         {
             "name": "Radish",
+            "category": "crop",
             "base": true,
             "prices": {
                 "base": {
@@ -2110,11 +2470,12 @@
                 }
             },
             "description": "A crisp and refreshing root vegetable with hints of pepper when eaten raw.",
-            "daysToMature": 6,
-            "color": "red"
+            "color": "red",
+            "daysToMature": 6
         },
         {
             "name": "Radish Juice",
+            "category": "artisan-good",
             "base": false,
             "prices": {
                 "base": {
@@ -2123,10 +2484,12 @@
                 "artisan": {
                     "normal": 282
                 }
-            }
+            },
+            "color": "red"
         },
         {
             "name": "Pickled Radish",
+            "category": "artisan-good",
             "base": false,
             "prices": {
                 "base": {
@@ -2135,10 +2498,12 @@
                 "artisan": {
                     "normal": 322
                 }
-            }
+            },
+            "color": "red"
         },
         {
             "name": "Red Cabbage",
+            "category": "crop",
             "base": true,
             "prices": {
                 "base": {
@@ -2155,10 +2520,12 @@
                 }
             },
             "description": "Often used in salads and coleslaws. The color can range from purple to blue to green-yellow depending on soil conditions.",
-            "daysToMature": 9
+            "daysToMature": 9,
+            "color": "dark-purple"
         },
         {
             "name": "Red Cabbage Juice",
+            "category": "artisan-good",
             "base": false,
             "prices": {
                 "base": {
@@ -2167,10 +2534,12 @@
                 "artisan": {
                     "normal": 819
                 }
-            }
+            },
+            "color": "dark-purple"
         },
         {
             "name": "Pickled Red Cabbage",
+            "category": "artisan-good",
             "base": false,
             "prices": {
                 "base": {
@@ -2179,10 +2548,12 @@
                 "artisan": {
                     "normal": 798
                 }
-            }
+            },
+            "color": "dark-purple"
         },
         {
             "name": "Summer Spangle",
+            "category": "crop",
             "base": true,
             "prices": {
                 "base": {
@@ -2203,6 +2574,7 @@
         },
         {
             "name": "Sunflower",
+            "category": "crop",
             "base": true,
             "prices": {
                 "base": {
@@ -2223,7 +2595,8 @@
         },
         {
             "name": "Oil",
-            "base": true,
+            "category": "crop",
+            "base": false,
             "prices": {
                 "base": {
                     "normal": 100
@@ -2236,6 +2609,7 @@
         },
         {
             "name": "Wheat",
+            "category": "crop",
             "base": true,
             "prices": {
                 "base": {
@@ -2252,12 +2626,18 @@
                 }
             },
             "description": "One of the most widely cultivated grains. Makes a great flour for breads and cakes.",
-            "daysToMature": 4,
-            "color": "yellow"
+            "color": "yellow",
+            "daysToMature": 4
         },
         {
             "name": "Beer",
+            "category": "artisan-good",
             "base": false,
+            "caskAgingDays": {
+                "silver": 7,
+                "gold": 14,
+                "iridium": 28
+            },
             "prices": {
                 "base": {
                     "normal": 200,
@@ -2276,6 +2656,7 @@
         },
         {
             "name": "Pickled Wheat",
+            "category": "artisan-good",
             "base": false,
             "prices": {
                 "base": {
@@ -2284,10 +2665,12 @@
                 "artisan": {
                     "normal": 140
                 }
-            }
+            },
+            "color": "yellow"
         },
         {
             "name": "Amaranth",
+            "category": "crop",
             "base": true,
             "prices": {
                 "base": {
@@ -2304,11 +2687,12 @@
                 }
             },
             "description": "A purple grain cultivated by an ancient civilization.",
-            "daysToMature": 7,
-            "color": "pink"
+            "color": "pink",
+            "daysToMature": 7
         },
         {
             "name": "Wheat Flour",
+            "category": "processed",
             "base": false,
             "prices": {
                 "base": {
@@ -2319,6 +2703,7 @@
         },
         {
             "name": "Amaranth Juice",
+            "category": "artisan-good",
             "base": false,
             "prices": {
                 "base": {
@@ -2327,10 +2712,12 @@
                 "artisan": {
                     "normal": 471
                 }
-            }
+            },
+            "color": "pink"
         },
         {
             "name": "Pickled Amaranth",
+            "category": "artisan-good",
             "base": false,
             "prices": {
                 "base": {
@@ -2339,10 +2726,12 @@
                 "artisan": {
                     "normal": 490
                 }
-            }
+            },
+            "color": "pink"
         },
         {
             "name": "Artichoke",
+            "category": "crop",
             "base": true,
             "prices": {
                 "base": {
@@ -2359,11 +2748,12 @@
                 }
             },
             "description": "The bud of a thistle plant. The spiny outer leaves conceal a fleshy, filling interior.",
-            "daysToMature": 8,
-            "color": "green"
+            "color": "green",
+            "daysToMature": 8
         },
         {
             "name": "Artichoke Juice",
+            "category": "artisan-good",
             "base": false,
             "prices": {
                 "base": {
@@ -2372,10 +2762,12 @@
                 "artisan": {
                     "normal": 504
                 }
-            }
+            },
+            "color": "green"
         },
         {
             "name": "Pickled Artichoke",
+            "category": "artisan-good",
             "base": false,
             "prices": {
                 "base": {
@@ -2384,10 +2776,12 @@
                 "artisan": {
                     "normal": 518
                 }
-            }
+            },
+            "color": "green"
         },
         {
             "name": "Beet",
+            "category": "crop",
             "base": true,
             "prices": {
                 "base": {
@@ -2404,11 +2798,12 @@
                 }
             },
             "description": "A sweet and earthy root vegetable. As a bonus, the leaves make a great salad.",
-            "daysToMature": 6,
-            "color": "purple"
+            "color": "purple",
+            "daysToMature": 6
         },
         {
             "name": "Beet Juice",
+            "category": "artisan-good",
             "base": false,
             "prices": {
                 "base": {
@@ -2417,10 +2812,12 @@
                 "artisan": {
                     "normal": 315
                 }
-            }
+            },
+            "color": "purple"
         },
         {
             "name": "Pickled Beet",
+            "category": "artisan-good",
             "base": false,
             "prices": {
                 "base": {
@@ -2429,10 +2826,12 @@
                 "artisan": {
                     "normal": 350
                 }
-            }
+            },
+            "color": "purple"
         },
         {
             "name": "Sugar",
+            "category": "processed",
             "base": false,
             "prices": {
                 "base": {
@@ -2443,6 +2842,7 @@
         },
         {
             "name": "Bok Choy",
+            "category": "crop",
             "base": true,
             "prices": {
                 "base": {
@@ -2459,11 +2859,12 @@
                 }
             },
             "description": "The leafy greens and fibrous stalks are healthy and delicious.",
-            "daysToMature": 4,
-            "color": "green"
+            "color": "green",
+            "daysToMature": 4
         },
         {
             "name": "Bok Choy Juice",
+            "category": "artisan-good",
             "base": false,
             "prices": {
                 "base": {
@@ -2472,10 +2873,12 @@
                 "artisan": {
                     "normal": 252
                 }
-            }
+            },
+            "color": "green"
         },
         {
             "name": "Pickled Bok Choy",
+            "category": "artisan-good",
             "base": false,
             "prices": {
                 "base": {
@@ -2484,10 +2887,12 @@
                 "artisan": {
                     "normal": 294
                 }
-            }
+            },
+            "color": "green"
         },
         {
             "name": "Fairy Rose",
+            "category": "crop",
             "base": true,
             "prices": {
                 "base": {
@@ -2508,6 +2913,7 @@
         },
         {
             "name": "Pumpkin",
+            "category": "crop",
             "base": true,
             "prices": {
                 "base": {
@@ -2524,11 +2930,12 @@
                 }
             },
             "description": "A fall favorite, grown for its crunchy seeds and delicately flavored flesh. As a bonus, the hollow shell can be carved into a festive decoration.",
-            "daysToMature": 13,
-            "color": "orange"
+            "color": "orange",
+            "daysToMature": 13
         },
         {
             "name": "Pumpkin Juice",
+            "category": "artisan-good",
             "base": false,
             "prices": {
                 "base": {
@@ -2537,10 +2944,12 @@
                 "artisan": {
                     "normal": 1008
                 }
-            }
+            },
+            "color": "orange"
         },
         {
             "name": "Pickled Pumpkin",
+            "category": "artisan-good",
             "base": false,
             "prices": {
                 "base": {
@@ -2549,10 +2958,12 @@
                 "artisan": {
                     "normal": 966
                 }
-            }
+            },
+            "color": "orange"
         },
         {
             "name": "Yam",
+            "category": "crop",
             "base": true,
             "prices": {
                 "base": {
@@ -2569,11 +2980,12 @@
                 }
             },
             "description": "A starchy tuber with a lot of culinary versatility.",
-            "daysToMature": 10,
-            "color": "brown"
+            "color": "brown",
+            "daysToMature": 10
         },
         {
             "name": "Yam Juice",
+            "category": "artisan-good",
             "base": false,
             "prices": {
                 "base": {
@@ -2582,10 +2994,12 @@
                 "artisan": {
                     "normal": 504
                 }
-            }
+            },
+            "color": "brown"
         },
         {
             "name": "Pickled Yam",
+            "category": "artisan-good",
             "base": false,
             "prices": {
                 "base": {
@@ -2594,10 +3008,12 @@
                 "artisan": {
                     "normal": 518
                 }
-            }
+            },
+            "color": "brown"
         },
         {
             "name": "Taro Root",
+            "category": "crop",
             "base": true,
             "prices": {
                 "base": {
@@ -2614,11 +3030,12 @@
                 }
             },
             "description": "This starchy root is one of the most ancient crops.",
-            "daysToMature": 7,
-            "color": "brown"
+            "color": "brown",
+            "daysToMature": 7
         },
         {
             "name": "Taro Root Juice",
+            "category": "artisan-good",
             "base": false,
             "prices": {
                 "base": {
@@ -2627,10 +3044,12 @@
                 "artisan": {
                     "normal": 315
                 }
-            }
+            },
+            "color": "brown"
         },
         {
             "name": "Pickled Taro Root",
+            "category": "artisan-good",
             "base": false,
             "prices": {
                 "base": {
@@ -2639,10 +3058,12 @@
                 "artisan": {
                     "normal": 350
                 }
-            }
+            },
+            "color": "brown"
         },
         {
             "name": "Sweet Gem Berry",
+            "category": "crop",
             "base": true,
             "prices": {
                 "base": {
@@ -2657,6 +3078,7 @@
         },
         {
             "name": "Kale Juice",
+            "category": "artisan-good",
             "base": false,
             "prices": {
                 "base": {
@@ -2665,10 +3087,12 @@
                 "artisan": {
                     "normal": 345
                 }
-            }
+            },
+            "color": "green"
         },
         {
             "name": "Pickled Kale",
+            "category": "artisan-good",
             "base": false,
             "prices": {
                 "base": {
@@ -2677,12 +3101,13 @@
                 "artisan": {
                     "normal": 378
                 }
-            }
+            },
+            "color": "green"
         },
         {
             "name": "Egg",
+            "category": "animal-product",
             "base": true,
-            "category": "animal",
             "prices": {
                 "base": {
                     "normal": 50,
@@ -2702,8 +3127,8 @@
         },
         {
             "name": "Large Egg",
+            "category": "animal-product",
             "base": true,
-            "category": "animal",
             "prices": {
                 "base": {
                     "normal": 95,
@@ -2723,7 +3148,8 @@
         },
         {
             "name": "Mayonnaise",
-            "base": false,
+            "category": "artisan-good",
+            "base": true,
             "prices": {
                 "base": {
                     "normal": 190,
@@ -2748,8 +3174,8 @@
         },
         {
             "name": "Duck Egg",
+            "category": "animal-product",
             "base": true,
-            "category": "animal",
             "prices": {
                 "base": {
                     "normal": 95,
@@ -2769,7 +3195,8 @@
         },
         {
             "name": "Duck Mayonnaise",
-            "base": false,
+            "category": "artisan-good",
+            "base": true,
             "prices": {
                 "base": {
                     "normal": 375
@@ -2785,6 +3212,7 @@
         },
         {
             "name": "Milk",
+            "category": "animal-product",
             "base": true,
             "prices": {
                 "base": {
@@ -2801,11 +3229,11 @@
                 }
             },
             "description": "A jug of cow's milk.",
-            "daysToMature": 1,
-            "category": "animal"
+            "daysToMature": 1
         },
         {
             "name": "Large Milk",
+            "category": "animal-product",
             "base": true,
             "prices": {
                 "base": {
@@ -2822,12 +3250,17 @@
                 }
             },
             "description": "A large jug of cow's milk.",
-            "daysToMature": 1,
-            "category": "animal"
+            "daysToMature": 1
         },
         {
             "name": "Cheese",
-            "base": false,
+            "category": "artisan-good",
+            "base": true,
+            "caskAgingDays": {
+                "silver": 7,
+                "gold": 14,
+                "iridium": 28
+            },
             "prices": {
                 "base": {
                     "normal": 230,
@@ -2852,6 +3285,7 @@
         },
         {
             "name": "Goat Milk",
+            "category": "animal-product",
             "base": true,
             "prices": {
                 "base": {
@@ -2868,11 +3302,11 @@
                 }
             },
             "description": "The milk of a goat.",
-            "daysToMature": 2,
-            "category": "animal"
+            "daysToMature": 2
         },
         {
             "name": "Large Goat Milk",
+            "category": "animal-product",
             "base": true,
             "prices": {
                 "base": {
@@ -2889,12 +3323,17 @@
                 }
             },
             "description": "A gallon of creamy goat's milk.",
-            "daysToMature": 2,
-            "category": "animal"
+            "daysToMature": 2
         },
         {
             "name": "Goat Cheese",
-            "base": false,
+            "category": "artisan-good",
+            "base": true,
+            "caskAgingDays": {
+                "silver": 7,
+                "gold": 14,
+                "iridium": 28
+            },
             "prices": {
                 "base": {
                     "normal": 400,
@@ -2919,6 +3358,7 @@
         },
         {
             "name": "Truffle",
+            "category": "animal-product",
             "base": true,
             "prices": {
                 "base": {
@@ -2929,11 +3369,11 @@
                 }
             },
             "description": "A gourmet type of mushroom with a unique taste.",
-            "daysToMature": 1,
-            "category": "animal"
+            "daysToMature": 1
         },
         {
             "name": "Truffle Oil",
+            "category": "artisan-good",
             "base": false,
             "prices": {
                 "base": {
@@ -2947,6 +3387,7 @@
         },
         {
             "name": "Honey",
+            "category": "animal-product",
             "base": true,
             "prices": {
                 "base": {
@@ -2957,12 +3398,17 @@
                 }
             },
             "description": "It's a sweet syrup produced by bees. (Wild Honey assumed)",
-            "daysToMature": 1,
-            "category": "animal"
+            "daysToMature": 1
         },
         {
             "name": "Mead",
+            "category": "artisan-good",
             "base": false,
+            "caskAgingDays": {
+                "silver": 7,
+                "gold": 14,
+                "iridium": 28
+            },
             "prices": {
                 "base": {
                     "normal": 300,
@@ -2981,6 +3427,7 @@
         },
         {
             "name": "Hops",
+            "category": "crop",
             "base": true,
             "prices": {
                 "base": {
@@ -2997,13 +3444,19 @@
                 }
             },
             "description": "A bitter, tangy flower used to flavor beer.",
+            "color": "green",
             "daysToMature": 11,
-            "daysToRegrow": 1,
-            "color": "green"
+            "daysToRegrow": 1
         },
         {
             "name": "Pale Ale",
+            "category": "artisan-good",
             "base": false,
+            "caskAgingDays": {
+                "silver": 8.5,
+                "gold": 17,
+                "iridium": 34
+            },
             "prices": {
                 "base": {
                     "normal": 300,
@@ -3022,6 +3475,7 @@
         },
         {
             "name": "Pickled Hops",
+            "category": "artisan-good",
             "base": false,
             "prices": {
                 "base": {
@@ -3030,7 +3484,23 @@
                 "artisan": {
                     "normal": 140
                 }
-            }
+            },
+            "color": "green"
+        },
+        {
+            "name": "Vinegar",
+            "description": "An aged fermented liquid used in many cooking recipes.",
+            "category": "artisan-good",
+            "base": false,
+            "prices": {
+                "base": {
+                    "normal": 100
+                },
+                "artisan": {
+                    "normal": 140
+                }
+            },
+            "spritePath": "/sprites/processedes/vinegar.png"
         }
     ]
 }

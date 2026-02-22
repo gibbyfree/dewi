@@ -8,6 +8,9 @@ export const processorConfig = {
     "Oil Maker": {},
     "Mayonnaise Machine": {},
     "Cheese Press": {},
+    "Cask": {},
+    "Fish Smoker": {},
+    "Fish Pond": {},
 } as const
 
 export type ProcessorName = keyof typeof processorConfig

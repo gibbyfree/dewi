@@ -22,6 +22,9 @@ export function ProfessionToggles({
             <ToggleGroupItem value="rancher">
                 Rancher
             </ToggleGroupItem>
+            <ToggleGroupItem value="angler">
+                Angler
+            </ToggleGroupItem>
             <ToggleGroupItem value="bearsKnowledge">
                 Bear&apos;s Knowledge
             </ToggleGroupItem>
