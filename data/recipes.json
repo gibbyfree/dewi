@@ -1,0 +1,3876 @@
+{
+    "recipes": [
+        {
+            "base": "Ancient Fruit",
+            "products": [
+                {
+                    "name": "Ancient Fruit Wine",
+                    "processor": "Keg",
+                    "ingredients": [
+                        {
+                            "name": "Ancient Fruit",
+                            "quantity": 1
+                        }
+                    ],
+                    "processingDays": 6.25
+                },
+                {
+                    "name": "Ancient Fruit Jelly",
+                    "processor": "Preserves Jar",
+                    "ingredients": [
+                        {
+                            "name": "Ancient Fruit",
+                            "quantity": 1
+                        }
+                    ],
+                    "processingDays": 2.5
+                },
+                {
+                    "name": "Dried Ancient Fruit",
+                    "processor": "Dehydrator",
+                    "ingredients": [
+                        {
+                            "name": "Ancient Fruit",
+                            "quantity": 5
+                        }
+                    ],
+                    "processingDays": 1
+                }
+            ]
+        },
+        {
+            "base": "Apple",
+            "products": [
+                {
+                    "name": "Apple Wine",
+                    "processor": "Keg",
+                    "ingredients": [
+                        {
+                            "name": "Apple",
+                            "quantity": 1
+                        }
+                    ],
+                    "processingDays": 6.25
+                },
+                {
+                    "name": "Apple Jelly",
+                    "processor": "Preserves Jar",
+                    "ingredients": [
+                        {
+                            "name": "Apple",
+                            "quantity": 1
+                        }
+                    ],
+                    "processingDays": 2.5
+                },
+                {
+                    "name": "Dried Apple",
+                    "processor": "Dehydrator",
+                    "ingredients": [
+                        {
+                            "name": "Apple",
+                            "quantity": 5
+                        }
+                    ],
+                    "processingDays": 1
+                }
+            ]
+        },
+        {
+            "base": "Apricot",
+            "products": [
+                {
+                    "name": "Apricot Wine",
+                    "processor": "Keg",
+                    "ingredients": [
+                        {
+                            "name": "Apricot",
+                            "quantity": 1
+                        }
+                    ],
+                    "processingDays": 6.25
+                },
+                {
+                    "name": "Apricot Jelly",
+                    "processor": "Preserves Jar",
+                    "ingredients": [
+                        {
+                            "name": "Apricot",
+                            "quantity": 1
+                        }
+                    ],
+                    "processingDays": 2.5
+                },
+                {
+                    "name": "Dried Apricot",
+                    "processor": "Dehydrator",
+                    "ingredients": [
+                        {
+                            "name": "Apricot",
+                            "quantity": 5
+                        }
+                    ],
+                    "processingDays": 1
+                }
+            ]
+        },
+        {
+            "base": "Banana",
+            "products": [
+                {
+                    "name": "Banana Wine",
+                    "processor": "Keg",
+                    "ingredients": [
+                        {
+                            "name": "Banana",
+                            "quantity": 1
+                        }
+                    ],
+                    "processingDays": 6.25
+                },
+                {
+                    "name": "Banana Jelly",
+                    "processor": "Preserves Jar",
+                    "ingredients": [
+                        {
+                            "name": "Banana",
+                            "quantity": 1
+                        }
+                    ],
+                    "processingDays": 2.5
+                },
+                {
+                    "name": "Dried Banana",
+                    "processor": "Dehydrator",
+                    "ingredients": [
+                        {
+                            "name": "Banana",
+                            "quantity": 5
+                        }
+                    ],
+                    "processingDays": 1
+                }
+            ]
+        },
+        {
+            "base": "Blackberry",
+            "products": [
+                {
+                    "name": "Blackberry Wine",
+                    "processor": "Keg",
+                    "ingredients": [
+                        {
+                            "name": "Blackberry",
+                            "quantity": 1
+                        }
+                    ],
+                    "processingDays": 6.25
+                },
+                {
+                    "name": "Blackberry Jelly",
+                    "processor": "Preserves Jar",
+                    "ingredients": [
+                        {
+                            "name": "Blackberry",
+                            "quantity": 1
+                        }
+                    ],
+                    "processingDays": 2.5
+                },
+                {
+                    "name": "Dried Blackberry",
+                    "processor": "Dehydrator",
+                    "ingredients": [
+                        {
+                            "name": "Blackberry",
+                            "quantity": 5
+                        }
+                    ],
+                    "processingDays": 1
+                }
+            ]
+        },
+        {
+            "base": "Blueberry",
+            "products": [
+                {
+                    "name": "Blueberry Wine",
+                    "processor": "Keg",
+                    "ingredients": [
+                        {
+                            "name": "Blueberry",
+                            "quantity": 1
+                        }
+                    ],
+                    "processingDays": 6.25
+                },
+                {
+                    "name": "Blueberry Jelly",
+                    "processor": "Preserves Jar",
+                    "ingredients": [
+                        {
+                            "name": "Blueberry",
+                            "quantity": 1
+                        }
+                    ],
+                    "processingDays": 2.5
+                },
+                {
+                    "name": "Dried Blueberry",
+                    "processor": "Dehydrator",
+                    "ingredients": [
+                        {
+                            "name": "Blueberry",
+                            "quantity": 5
+                        }
+                    ],
+                    "processingDays": 1
+                }
+            ]
+        },
+        {
+            "base": "Cactus Fruit",
+            "products": [
+                {
+                    "name": "Cactus Fruit Wine",
+                    "processor": "Keg",
+                    "ingredients": [
+                        {
+                            "name": "Cactus Fruit",
+                            "quantity": 1
+                        }
+                    ],
+                    "processingDays": 4
+                },
+                {
+                    "name": "Cactus Fruit Jelly",
+                    "processor": "Preserves Jar",
+                    "ingredients": [
+                        {
+                            "name": "Cactus Fruit",
+                            "quantity": 1
+                        }
+                    ],
+                    "processingDays": 2.5
+                },
+                {
+                    "name": "Dried Cactus Fruit",
+                    "processor": "Dehydrator",
+                    "ingredients": [
+                        {
+                            "name": "Cactus Fruit",
+                            "quantity": 5
+                        }
+                    ],
+                    "processingDays": 1
+                }
+            ]
+        },
+        {
+            "base": "Cherry",
+            "products": [
+                {
+                    "name": "Cherry Wine",
+                    "processor": "Keg",
+                    "ingredients": [
+                        {
+                            "name": "Cherry",
+                            "quantity": 1
+                        }
+                    ],
+                    "processingDays": 6.25
+                },
+                {
+                    "name": "Cherry Jelly",
+                    "processor": "Preserves Jar",
+                    "ingredients": [
+                        {
+                            "name": "Cherry",
+                            "quantity": 1
+                        }
+                    ],
+                    "processingDays": 2.5
+                },
+                {
+                    "name": "Dried Cherry",
+                    "processor": "Dehydrator",
+                    "ingredients": [
+                        {
+                            "name": "Cherry",
+                            "quantity": 5
+                        }
+                    ],
+                    "processingDays": 1
+                }
+            ]
+        },
+        {
+            "base": "Coconut",
+            "products": [
+                {
+                    "name": "Coconut Wine",
+                    "processor": "Keg",
+                    "ingredients": [
+                        {
+                            "name": "Coconut",
+                            "quantity": 1
+                        }
+                    ],
+                    "processingDays": 6.25
+                },
+                {
+                    "name": "Coconut Jelly",
+                    "processor": "Preserves Jar",
+                    "ingredients": [
+                        {
+                            "name": "Coconut",
+                            "quantity": 1
+                        }
+                    ],
+                    "processingDays": 2.5
+                },
+                {
+                    "name": "Dried Coconut",
+                    "processor": "Dehydrator",
+                    "ingredients": [
+                        {
+                            "name": "Coconut",
+                            "quantity": 5
+                        }
+                    ],
+                    "processingDays": 1
+                }
+            ]
+        },
+        {
+            "base": "Cranberries",
+            "products": [
+                {
+                    "name": "Cranberries Wine",
+                    "processor": "Keg",
+                    "ingredients": [
+                        {
+                            "name": "Cranberries",
+                            "quantity": 1
+                        }
+                    ],
+                    "processingDays": 6.25
+                },
+                {
+                    "name": "Cranberries Jelly",
+                    "processor": "Preserves Jar",
+                    "ingredients": [
+                        {
+                            "name": "Cranberries",
+                            "quantity": 1
+                        }
+                    ],
+                    "processingDays": 2.5
+                },
+                {
+                    "name": "Dried Cranberries",
+                    "processor": "Dehydrator",
+                    "ingredients": [
+                        {
+                            "name": "Cranberries",
+                            "quantity": 5
+                        }
+                    ],
+                    "processingDays": 1
+                }
+            ]
+        },
+        {
+            "base": "Crystal Fruit",
+            "products": [
+                {
+                    "name": "Crystal Fruit Wine",
+                    "processor": "Keg",
+                    "ingredients": [
+                        {
+                            "name": "Crystal Fruit",
+                            "quantity": 1
+                        }
+                    ],
+                    "processingDays": 6.25
+                },
+                {
+                    "name": "Crystal Fruit Jelly",
+                    "processor": "Preserves Jar",
+                    "ingredients": [
+                        {
+                            "name": "Crystal Fruit",
+                            "quantity": 1
+                        }
+                    ],
+                    "processingDays": 2.5
+                },
+                {
+                    "name": "Dried Crystal Fruit",
+                    "processor": "Dehydrator",
+                    "ingredients": [
+                        {
+                            "name": "Crystal Fruit",
+                            "quantity": 5
+                        }
+                    ],
+                    "processingDays": 1
+                }
+            ]
+        },
+        {
+            "base": "Grape",
+            "products": [
+                {
+                    "name": "Grape Wine",
+                    "processor": "Keg",
+                    "ingredients": [
+                        {
+                            "name": "Grape",
+                            "quantity": 1
+                        }
+                    ],
+                    "processingDays": 6.25
+                },
+                {
+                    "name": "Grape Jelly",
+                    "processor": "Preserves Jar",
+                    "ingredients": [
+                        {
+                            "name": "Grape",
+                            "quantity": 1
+                        }
+                    ],
+                    "processingDays": 2.5
+                },
+                {
+                    "name": "Raisins",
+                    "processor": "Dehydrator",
+                    "ingredients": [
+                        {
+                            "name": "Grape",
+                            "quantity": 5
+                        }
+                    ],
+                    "processingDays": 1
+                }
+            ]
+        },
+        {
+            "base": "Hot Pepper",
+            "products": [
+                {
+                    "name": "Hot Pepper Wine",
+                    "processor": "Keg",
+                    "ingredients": [
+                        {
+                            "name": "Hot Pepper",
+                            "quantity": 1
+                        }
+                    ],
+                    "processingDays": 6.25
+                },
+                {
+                    "name": "Hot Pepper Jelly",
+                    "processor": "Preserves Jar",
+                    "ingredients": [
+                        {
+                            "name": "Hot Pepper",
+                            "quantity": 1
+                        }
+                    ],
+                    "processingDays": 2.5
+                },
+                {
+                    "name": "Dried Hot Pepper",
+                    "processor": "Dehydrator",
+                    "ingredients": [
+                        {
+                            "name": "Hot Pepper",
+                            "quantity": 5
+                        }
+                    ],
+                    "processingDays": 1
+                }
+            ]
+        },
+        {
+            "base": "Mango",
+            "products": [
+                {
+                    "name": "Mango Wine",
+                    "processor": "Keg",
+                    "ingredients": [
+                        {
+                            "name": "Mango",
+                            "quantity": 1
+                        }
+                    ],
+                    "processingDays": 4
+                },
+                {
+                    "name": "Mango Jelly",
+                    "processor": "Preserves Jar",
+                    "ingredients": [
+                        {
+                            "name": "Mango",
+                            "quantity": 1
+                        }
+                    ],
+                    "processingDays": 2.5
+                },
+                {
+                    "name": "Dried Mango",
+                    "processor": "Dehydrator",
+                    "ingredients": [
+                        {
+                            "name": "Mango",
+                            "quantity": 5
+                        }
+                    ],
+                    "processingDays": 1
+                }
+            ]
+        },
+        {
+            "base": "Melon",
+            "products": [
+                {
+                    "name": "Melon Wine",
+                    "processor": "Keg",
+                    "ingredients": [
+                        {
+                            "name": "Melon",
+                            "quantity": 1
+                        }
+                    ],
+                    "processingDays": 6.25
+                },
+                {
+                    "name": "Melon Jelly",
+                    "processor": "Preserves Jar",
+                    "ingredients": [
+                        {
+                            "name": "Melon",
+                            "quantity": 1
+                        }
+                    ],
+                    "processingDays": 2.5
+                },
+                {
+                    "name": "Dried Melon",
+                    "processor": "Dehydrator",
+                    "ingredients": [
+                        {
+                            "name": "Melon",
+                            "quantity": 5
+                        }
+                    ],
+                    "processingDays": 1
+                }
+            ]
+        },
+        {
+            "base": "Orange",
+            "products": [
+                {
+                    "name": "Orange Wine",
+                    "processor": "Keg",
+                    "ingredients": [
+                        {
+                            "name": "Orange",
+                            "quantity": 1
+                        }
+                    ],
+                    "processingDays": 6.25
+                },
+                {
+                    "name": "Orange Jelly",
+                    "processor": "Preserves Jar",
+                    "ingredients": [
+                        {
+                            "name": "Orange",
+                            "quantity": 1
+                        }
+                    ],
+                    "processingDays": 2.5
+                },
+                {
+                    "name": "Dried Orange",
+                    "processor": "Dehydrator",
+                    "ingredients": [
+                        {
+                            "name": "Orange",
+                            "quantity": 5
+                        }
+                    ],
+                    "processingDays": 1
+                }
+            ]
+        },
+        {
+            "base": "Peach",
+            "products": [
+                {
+                    "name": "Peach Wine",
+                    "processor": "Keg",
+                    "ingredients": [
+                        {
+                            "name": "Peach",
+                            "quantity": 1
+                        }
+                    ],
+                    "processingDays": 6.25
+                },
+                {
+                    "name": "Peach Jelly",
+                    "processor": "Preserves Jar",
+                    "ingredients": [
+                        {
+                            "name": "Peach",
+                            "quantity": 1
+                        }
+                    ],
+                    "processingDays": 2.5
+                },
+                {
+                    "name": "Dried Peach",
+                    "processor": "Dehydrator",
+                    "ingredients": [
+                        {
+                            "name": "Peach",
+                            "quantity": 5
+                        }
+                    ],
+                    "processingDays": 1
+                }
+            ]
+        },
+        {
+            "base": "Pineapple",
+            "products": [
+                {
+                    "name": "Pineapple Wine",
+                    "processor": "Keg",
+                    "ingredients": [
+                        {
+                            "name": "Pineapple",
+                            "quantity": 1
+                        }
+                    ],
+                    "processingDays": 6.25
+                },
+                {
+                    "name": "Pineapple Jelly",
+                    "processor": "Preserves Jar",
+                    "ingredients": [
+                        {
+                            "name": "Pineapple",
+                            "quantity": 1
+                        }
+                    ],
+                    "processingDays": 2.5
+                },
+                {
+                    "name": "Dried Pineapple",
+                    "processor": "Dehydrator",
+                    "ingredients": [
+                        {
+                            "name": "Pineapple",
+                            "quantity": 5
+                        }
+                    ],
+                    "processingDays": 1
+                }
+            ]
+        },
+        {
+            "base": "Pomegranate",
+            "products": [
+                {
+                    "name": "Pomegranate Wine",
+                    "processor": "Keg",
+                    "ingredients": [
+                        {
+                            "name": "Pomegranate",
+                            "quantity": 1
+                        }
+                    ],
+                    "processingDays": 6.25
+                },
+                {
+                    "name": "Pomegranate Jelly",
+                    "processor": "Preserves Jar",
+                    "ingredients": [
+                        {
+                            "name": "Pomegranate",
+                            "quantity": 1
+                        }
+                    ],
+                    "processingDays": 2.5
+                },
+                {
+                    "name": "Dried Pomegranate",
+                    "processor": "Dehydrator",
+                    "ingredients": [
+                        {
+                            "name": "Pomegranate",
+                            "quantity": 5
+                        }
+                    ],
+                    "processingDays": 1
+                }
+            ]
+        },
+        {
+            "base": "Powdermelon",
+            "products": [
+                {
+                    "name": "Powdermelon Wine",
+                    "processor": "Keg",
+                    "ingredients": [
+                        {
+                            "name": "Powdermelon",
+                            "quantity": 1
+                        }
+                    ],
+                    "processingDays": 6.25
+                },
+                {
+                    "name": "Powdermelon Jelly",
+                    "processor": "Preserves Jar",
+                    "ingredients": [
+                        {
+                            "name": "Powdermelon",
+                            "quantity": 1
+                        }
+                    ],
+                    "processingDays": 2.5
+                },
+                {
+                    "name": "Dried Powdermelon",
+                    "processor": "Dehydrator",
+                    "ingredients": [
+                        {
+                            "name": "Powdermelon",
+                            "quantity": 5
+                        }
+                    ],
+                    "processingDays": 1
+                }
+            ]
+        },
+        {
+            "base": "Qi Fruit",
+            "products": [
+                {
+                    "name": "Qi Fruit Wine",
+                    "processor": "Keg",
+                    "ingredients": [
+                        {
+                            "name": "Qi Fruit",
+                            "quantity": 1
+                        }
+                    ],
+                    "processingDays": 4
+                },
+                {
+                    "name": "Qi Fruit Jelly",
+                    "processor": "Preserves Jar",
+                    "ingredients": [
+                        {
+                            "name": "Qi Fruit",
+                            "quantity": 1
+                        }
+                    ],
+                    "processingDays": 2.5
+                },
+                {
+                    "name": "Dried Qi Fruit",
+                    "processor": "Dehydrator",
+                    "ingredients": [
+                        {
+                            "name": "Qi Fruit",
+                            "quantity": 5
+                        }
+                    ],
+                    "processingDays": 1
+                }
+            ]
+        },
+        {
+            "base": "Rhubarb",
+            "products": [
+                {
+                    "name": "Rhubarb Wine",
+                    "processor": "Keg",
+                    "ingredients": [
+                        {
+                            "name": "Rhubarb",
+                            "quantity": 1
+                        }
+                    ],
+                    "processingDays": 6.25
+                },
+                {
+                    "name": "Rhubarb Jelly",
+                    "processor": "Preserves Jar",
+                    "ingredients": [
+                        {
+                            "name": "Rhubarb",
+                            "quantity": 1
+                        }
+                    ],
+                    "processingDays": 2.5
+                },
+                {
+                    "name": "Dried Rhubarb",
+                    "processor": "Dehydrator",
+                    "ingredients": [
+                        {
+                            "name": "Rhubarb",
+                            "quantity": 5
+                        }
+                    ],
+                    "processingDays": 1
+                }
+            ]
+        },
+        {
+            "base": "Salmonberry",
+            "products": [
+                {
+                    "name": "Salmonberry Wine",
+                    "processor": "Keg",
+                    "ingredients": [
+                        {
+                            "name": "Salmonberry",
+                            "quantity": 1
+                        }
+                    ],
+                    "processingDays": 6.25
+                },
+                {
+                    "name": "Salmonberry Jelly",
+                    "processor": "Preserves Jar",
+                    "ingredients": [
+                        {
+                            "name": "Salmonberry",
+                            "quantity": 1
+                        }
+                    ],
+                    "processingDays": 2.5
+                },
+                {
+                    "name": "Dried Salmonberry",
+                    "processor": "Dehydrator",
+                    "ingredients": [
+                        {
+                            "name": "Salmonberry",
+                            "quantity": 5
+                        }
+                    ],
+                    "processingDays": 1
+                }
+            ]
+        },
+        {
+            "base": "Spice Berry",
+            "products": [
+                {
+                    "name": "Spice Berry Wine",
+                    "processor": "Keg",
+                    "ingredients": [
+                        {
+                            "name": "Spice Berry",
+                            "quantity": 1
+                        }
+                    ],
+                    "processingDays": 6.25
+                },
+                {
+                    "name": "Spice Berry Jelly",
+                    "processor": "Preserves Jar",
+                    "ingredients": [
+                        {
+                            "name": "Spice Berry",
+                            "quantity": 1
+                        }
+                    ],
+                    "processingDays": 2.5
+                },
+                {
+                    "name": "Dried Spice Berry",
+                    "processor": "Dehydrator",
+                    "ingredients": [
+                        {
+                            "name": "Spice Berry",
+                            "quantity": 5
+                        }
+                    ],
+                    "processingDays": 1
+                }
+            ]
+        },
+        {
+            "base": "Starfruit",
+            "products": [
+                {
+                    "name": "Starfruit Wine",
+                    "processor": "Keg",
+                    "ingredients": [
+                        {
+                            "name": "Starfruit",
+                            "quantity": 1
+                        }
+                    ],
+                    "processingDays": 6.25
+                },
+                {
+                    "name": "Starfruit Jelly",
+                    "processor": "Preserves Jar",
+                    "ingredients": [
+                        {
+                            "name": "Starfruit",
+                            "quantity": 1
+                        }
+                    ],
+                    "processingDays": 2.5
+                },
+                {
+                    "name": "Dried Starfruit",
+                    "processor": "Dehydrator",
+                    "ingredients": [
+                        {
+                            "name": "Starfruit",
+                            "quantity": 5
+                        }
+                    ],
+                    "processingDays": 1
+                }
+            ]
+        },
+        {
+            "base": "Strawberry",
+            "products": [
+                {
+                    "name": "Strawberry Wine",
+                    "processor": "Keg",
+                    "ingredients": [
+                        {
+                            "name": "Strawberry",
+                            "quantity": 1
+                        }
+                    ],
+                    "processingDays": 6.25
+                },
+                {
+                    "name": "Strawberry Jelly",
+                    "processor": "Preserves Jar",
+                    "ingredients": [
+                        {
+                            "name": "Strawberry",
+                            "quantity": 1
+                        }
+                    ],
+                    "processingDays": 2.5
+                },
+                {
+                    "name": "Dried Strawberry",
+                    "processor": "Dehydrator",
+                    "ingredients": [
+                        {
+                            "name": "Strawberry",
+                            "quantity": 5
+                        }
+                    ],
+                    "processingDays": 1
+                }
+            ]
+        },
+        {
+            "base": "Wild Plum",
+            "products": [
+                {
+                    "name": "Wild Plum Wine",
+                    "processor": "Keg",
+                    "ingredients": [
+                        {
+                            "name": "Wild Plum",
+                            "quantity": 1
+                        }
+                    ],
+                    "processingDays": 6.25
+                },
+                {
+                    "name": "Wild Plum Jelly",
+                    "processor": "Preserves Jar",
+                    "ingredients": [
+                        {
+                            "name": "Wild Plum",
+                            "quantity": 1
+                        }
+                    ],
+                    "processingDays": 2.5
+                },
+                {
+                    "name": "Dried Wild Plum",
+                    "processor": "Dehydrator",
+                    "ingredients": [
+                        {
+                            "name": "Wild Plum",
+                            "quantity": 5
+                        }
+                    ],
+                    "processingDays": 1
+                }
+            ]
+        },
+        {
+            "base": "Carrot",
+            "products": [
+                {
+                    "name": "Carrot Juice",
+                    "processor": "Keg",
+                    "processingDays": 4,
+                    "ingredients": [
+                        {
+                            "name": "Carrot",
+                            "quantity": 1
+                        }
+                    ]
+                },
+                {
+                    "name": "Pickled Carrot",
+                    "processor": "Preserves Jar",
+                    "ingredients": [
+                        {
+                            "name": "Carrot",
+                            "quantity": 1
+                        }
+                    ],
+                    "processingDays": 2.5
+                }
+            ]
+        },
+        {
+            "base": "Cauliflower",
+            "products": [
+                {
+                    "name": "Cauliflower Juice",
+                    "processor": "Keg",
+                    "ingredients": [
+                        {
+                            "name": "Cauliflower",
+                            "quantity": 1
+                        }
+                    ],
+                    "processingDays": 4
+                },
+                {
+                    "name": "Pickled Cauliflower",
+                    "processor": "Preserves Jar",
+                    "ingredients": [
+                        {
+                            "name": "Cauliflower",
+                            "quantity": 1
+                        }
+                    ],
+                    "processingDays": 2.5
+                }
+            ]
+        },
+        {
+            "base": "Garlic",
+            "products": [
+                {
+                    "name": "Garlic Juice",
+                    "processor": "Keg",
+                    "ingredients": [
+                        {
+                            "name": "Garlic",
+                            "quantity": 1
+                        }
+                    ],
+                    "processingDays": 4
+                },
+                {
+                    "name": "Pickled Garlic",
+                    "processor": "Preserves Jar",
+                    "ingredients": [
+                        {
+                            "name": "Garlic",
+                            "quantity": 1
+                        }
+                    ],
+                    "processingDays": 2.5
+                }
+            ]
+        },
+        {
+            "base": "Kale",
+            "products": [
+                {
+                    "name": "Kale Juice",
+                    "processor": "Keg",
+                    "ingredients": [
+                        {
+                            "name": "Kale",
+                            "quantity": 1
+                        }
+                    ],
+                    "processingDays": 4
+                },
+                {
+                    "name": "Pickled Kale",
+                    "processor": "Preserves Jar",
+                    "ingredients": [
+                        {
+                            "name": "Kale",
+                            "quantity": 1
+                        }
+                    ],
+                    "processingDays": 2.5
+                }
+            ]
+        },
+        {
+            "base": "Parsnip",
+            "products": [
+                {
+                    "name": "Parsnip Juice",
+                    "processor": "Keg",
+                    "ingredients": [
+                        {
+                            "name": "Parsnip",
+                            "quantity": 1
+                        }
+                    ],
+                    "processingDays": 4
+                },
+                {
+                    "name": "Pickled Parsnip",
+                    "processor": "Preserves Jar",
+                    "ingredients": [
+                        {
+                            "name": "Parsnip",
+                            "quantity": 1
+                        }
+                    ],
+                    "processingDays": 2.5
+                }
+            ]
+        },
+        {
+            "base": "Potato",
+            "products": [
+                {
+                    "name": "Potato Juice",
+                    "processor": "Keg",
+                    "ingredients": [
+                        {
+                            "name": "Potato",
+                            "quantity": 1
+                        }
+                    ],
+                    "processingDays": 4
+                },
+                {
+                    "name": "Pickled Potato",
+                    "processor": "Preserves Jar",
+                    "ingredients": [
+                        {
+                            "name": "Potato",
+                            "quantity": 1
+                        }
+                    ],
+                    "processingDays": 2.5
+                }
+            ]
+        },
+        {
+            "base": "Unmilled Rice",
+            "products": [
+                {
+                    "name": "Rice Juice",
+                    "processor": "Keg",
+                    "ingredients": [
+                        {
+                            "name": "Unmilled Rice",
+                            "quantity": 1
+                        }
+                    ],
+                    "processingDays": 4
+                },
+                {
+                    "name": "Pickled Rice",
+                    "processor": "Preserves Jar",
+                    "ingredients": [
+                        {
+                            "name": "Unmilled Rice",
+                            "quantity": 1
+                        }
+                    ],
+                    "processingDays": 2.5
+                },
+                {
+                    "name": "Rice",
+                    "processor": "Mill",
+                    "ingredients": [
+                        {
+                            "name": "Unmilled Rice",
+                            "quantity": 1
+                        }
+                    ],
+                    "processingDays": 0
+                }
+            ]
+        },
+        {
+            "base": "Radish",
+            "products": [
+                {
+                    "name": "Radish Juice",
+                    "processor": "Keg",
+                    "ingredients": [
+                        {
+                            "name": "Radish",
+                            "quantity": 1
+                        }
+                    ],
+                    "processingDays": 4
+                },
+                {
+                    "name": "Pickled Radish",
+                    "processor": "Preserves Jar",
+                    "ingredients": [
+                        {
+                            "name": "Radish",
+                            "quantity": 1
+                        }
+                    ],
+                    "processingDays": 2.5
+                }
+            ]
+        },
+        {
+            "base": "Red Cabbage",
+            "products": [
+                {
+                    "name": "Red Cabbage Juice",
+                    "processor": "Keg",
+                    "ingredients": [
+                        {
+                            "name": "Red Cabbage",
+                            "quantity": 1
+                        }
+                    ],
+                    "processingDays": 4
+                },
+                {
+                    "name": "Pickled Red Cabbage",
+                    "processor": "Preserves Jar",
+                    "ingredients": [
+                        {
+                            "name": "Red Cabbage",
+                            "quantity": 1
+                        }
+                    ],
+                    "processingDays": 2.5
+                }
+            ]
+        },
+        {
+            "base": "Wheat",
+            "products": [
+                {
+                    "name": "Beer",
+                    "processor": "Keg",
+                    "ingredients": [
+                        {
+                            "name": "Wheat",
+                            "quantity": 1
+                        }
+                    ],
+                    "processingDays": 1.75
+                },
+                {
+                    "name": "Pickled Wheat",
+                    "processor": "Preserves Jar",
+                    "ingredients": [
+                        {
+                            "name": "Wheat",
+                            "quantity": 1
+                        }
+                    ],
+                    "processingDays": 2.5
+                },
+                {
+                    "name": "Wheat Flour",
+                    "processor": "Mill",
+                    "ingredients": [
+                        {
+                            "name": "Wheat",
+                            "quantity": 1
+                        }
+                    ],
+                    "processingDays": 0
+                }
+            ]
+        },
+        {
+            "base": "Amaranth",
+            "products": [
+                {
+                    "name": "Amaranth Juice",
+                    "processor": "Keg",
+                    "ingredients": [
+                        {
+                            "name": "Amaranth",
+                            "quantity": 1
+                        }
+                    ],
+                    "processingDays": 4
+                },
+                {
+                    "name": "Pickled Amaranth",
+                    "processor": "Preserves Jar",
+                    "ingredients": [
+                        {
+                            "name": "Amaranth",
+                            "quantity": 1
+                        }
+                    ],
+                    "processingDays": 2.5
+                }
+            ]
+        },
+        {
+            "base": "Artichoke",
+            "products": [
+                {
+                    "name": "Artichoke Juice",
+                    "processor": "Keg",
+                    "ingredients": [
+                        {
+                            "name": "Artichoke",
+                            "quantity": 1
+                        }
+                    ],
+                    "processingDays": 4
+                },
+                {
+                    "name": "Pickled Artichoke",
+                    "processor": "Preserves Jar",
+                    "ingredients": [
+                        {
+                            "name": "Artichoke",
+                            "quantity": 1
+                        }
+                    ],
+                    "processingDays": 2.5
+                }
+            ]
+        },
+        {
+            "base": "Beet",
+            "products": [
+                {
+                    "name": "Beet Juice",
+                    "processor": "Keg",
+                    "ingredients": [
+                        {
+                            "name": "Beet",
+                            "quantity": 1
+                        }
+                    ],
+                    "processingDays": 4
+                },
+                {
+                    "name": "Pickled Beet",
+                    "processor": "Preserves Jar",
+                    "ingredients": [
+                        {
+                            "name": "Beet",
+                            "quantity": 1
+                        }
+                    ],
+                    "processingDays": 2.5
+                },
+                {
+                    "name": "Sugar",
+                    "processor": "Mill",
+                    "ingredients": [
+                        {
+                            "name": "Beet",
+                            "quantity": 1
+                        }
+                    ],
+                    "outputQuantity": 3,
+                    "processingDays": 0
+                }
+            ]
+        },
+        {
+            "base": "Bok Choy",
+            "products": [
+                {
+                    "name": "Bok Choy Juice",
+                    "processor": "Keg",
+                    "ingredients": [
+                        {
+                            "name": "Bok Choy",
+                            "quantity": 1
+                        }
+                    ],
+                    "processingDays": 4
+                },
+                {
+                    "name": "Pickled Bok Choy",
+                    "processor": "Preserves Jar",
+                    "ingredients": [
+                        {
+                            "name": "Bok Choy",
+                            "quantity": 1
+                        }
+                    ],
+                    "processingDays": 2.5
+                }
+            ]
+        },
+        {
+            "base": "Pumpkin",
+            "products": [
+                {
+                    "name": "Pumpkin Juice",
+                    "processor": "Keg",
+                    "ingredients": [
+                        {
+                            "name": "Pumpkin",
+                            "quantity": 1
+                        }
+                    ],
+                    "processingDays": 4
+                },
+                {
+                    "name": "Pickled Pumpkin",
+                    "processor": "Preserves Jar",
+                    "ingredients": [
+                        {
+                            "name": "Pumpkin",
+                            "quantity": 1
+                        }
+                    ],
+                    "processingDays": 2.5
+                }
+            ]
+        },
+        {
+            "base": "Yam",
+            "products": [
+                {
+                    "name": "Yam Juice",
+                    "processor": "Keg",
+                    "ingredients": [
+                        {
+                            "name": "Yam",
+                            "quantity": 1
+                        }
+                    ],
+                    "processingDays": 4
+                },
+                {
+                    "name": "Pickled Yam",
+                    "processor": "Preserves Jar",
+                    "ingredients": [
+                        {
+                            "name": "Yam",
+                            "quantity": 1
+                        }
+                    ],
+                    "processingDays": 2.5
+                }
+            ]
+        },
+        {
+            "base": "Sunflower",
+            "products": [
+                {
+                    "name": "Oil",
+                    "processor": "Oil Maker",
+                    "ingredients": [
+                        {
+                            "name": "Sunflower",
+                            "quantity": 1
+                        }
+                    ],
+                    "processingDays": 0.042
+                }
+            ]
+        },
+        {
+            "base": "Egg",
+            "products": [
+                {
+                    "name": "Mayonnaise",
+                    "processor": "Mayonnaise Machine",
+                    "ingredients": [
+                        {
+                            "name": "Egg",
+                            "quantity": 1
+                        }
+                    ],
+                    "processingDays": 0.125
+                }
+            ]
+        },
+        {
+            "base": "Large Egg",
+            "products": [
+                {
+                    "name": "Mayonnaise",
+                    "processor": "Mayonnaise Machine",
+                    "outputQuality": "gold",
+                    "ingredients": [
+                        {
+                            "name": "Large Egg",
+                            "quantity": 1
+                        }
+                    ],
+                    "processingDays": 0.125
+                }
+            ]
+        },
+        {
+            "base": "Duck Egg",
+            "products": [
+                {
+                    "name": "Duck Mayonnaise",
+                    "processor": "Mayonnaise Machine",
+                    "ingredients": [
+                        {
+                            "name": "Duck Egg",
+                            "quantity": 1
+                        }
+                    ],
+                    "processingDays": 0.125
+                }
+            ]
+        },
+        {
+            "base": "Taro Root",
+            "products": [
+                {
+                    "name": "Taro Root Juice",
+                    "processor": "Keg",
+                    "ingredients": [
+                        {
+                            "name": "Taro Root",
+                            "quantity": 1
+                        }
+                    ],
+                    "processingDays": 4
+                },
+                {
+                    "name": "Pickled Taro Root",
+                    "processor": "Preserves Jar",
+                    "ingredients": [
+                        {
+                            "name": "Taro Root",
+                            "quantity": 1
+                        }
+                    ],
+                    "processingDays": 2.5
+                }
+            ]
+        },
+        {
+            "base": "Milk",
+            "products": [
+                {
+                    "name": "Cheese",
+                    "processor": "Cheese Press",
+                    "ingredients": [
+                        {
+                            "name": "Milk",
+                            "quantity": 1
+                        }
+                    ],
+                    "processingDays": 0.125
+                }
+            ]
+        },
+        {
+            "base": "Large Milk",
+            "products": [
+                {
+                    "name": "Cheese",
+                    "processor": "Cheese Press",
+                    "outputQuality": "gold",
+                    "ingredients": [
+                        {
+                            "name": "Large Milk",
+                            "quantity": 1
+                        }
+                    ],
+                    "processingDays": 0.125
+                }
+            ]
+        },
+        {
+            "base": "Goat Milk",
+            "products": [
+                {
+                    "name": "Goat Cheese",
+                    "processor": "Cheese Press",
+                    "ingredients": [
+                        {
+                            "name": "Goat Milk",
+                            "quantity": 1
+                        }
+                    ],
+                    "processingDays": 0.125
+                }
+            ]
+        },
+        {
+            "base": "Large Goat Milk",
+            "products": [
+                {
+                    "name": "Goat Cheese",
+                    "processor": "Cheese Press",
+                    "outputQuality": "gold",
+                    "ingredients": [
+                        {
+                            "name": "Goat Large Milk",
+                            "quantity": 1
+                        }
+                    ],
+                    "processingDays": 0.125
+                }
+            ]
+        },
+        {
+            "base": "Truffle",
+            "products": [
+                {
+                    "name": "Truffle Oil",
+                    "processor": "Oil Maker",
+                    "ingredients": [
+                        {
+                            "name": "Truffle",
+                            "quantity": 1
+                        }
+                    ],
+                    "processingDays": 0.25
+                }
+            ]
+        },
+        {
+            "base": "Honey",
+            "products": [
+                {
+                    "name": "Mead",
+                    "processor": "Keg",
+                    "outputQuality": "normal",
+                    "ingredients": [
+                        {
+                            "name": "Honey",
+                            "quantity": 1
+                        }
+                    ],
+                    "processingDays": 0.42
+                }
+            ]
+        },
+        {
+            "base": "Hops",
+            "products": [
+                {
+                    "name": "Pale Ale",
+                    "processor": "Keg",
+                    "ingredients": [
+                        {
+                            "name": "Hops",
+                            "quantity": 1
+                        }
+                    ],
+                    "processingDays": 1.5
+                },
+                {
+                    "name": "Pickled Hops",
+                    "processor": "Preserves Jar",
+                    "ingredients": [
+                        {
+                            "name": "Hops",
+                            "quantity": 1
+                        }
+                    ],
+                    "processingDays": 2.5
+                }
+            ]
+        },
+        {
+            "base": "Rice",
+            "products": [
+                {
+                    "name": "Vinegar",
+                    "processor": "Keg",
+                    "ingredients": [
+                        {
+                            "name": "Rice",
+                            "quantity": 1
+                        }
+                    ],
+                    "outputQuantity": 2,
+                    "processingDays": 0.42
+                }
+            ]
+        },
+        {
+            "base": "Coffee Bean",
+            "products": [
+                {
+                    "name": "Coffee",
+                    "processor": "Keg",
+                    "ingredients": [
+                        {
+                            "name": "Coffee Bean",
+                            "quantity": 5
+                        }
+                    ],
+                    "processingDays": 0.084
+                }
+            ]
+        },
+        {
+            "base": "Green Bean",
+            "products": [
+                {
+                    "name": "Green Bean Juice",
+                    "processor": "Keg",
+                    "ingredients": [
+                        {
+                            "name": "Green Bean",
+                            "quantity": 1
+                        }
+                    ],
+                    "processingDays": 4
+                },
+                {
+                    "name": "Pickled Green Bean",
+                    "processor": "Preserves Jar",
+                    "ingredients": [
+                        {
+                            "name": "Green Bean",
+                            "quantity": 1
+                        }
+                    ],
+                    "processingDays": 2.5
+                }
+            ]
+        },
+        {
+            "base": "Corn",
+            "products": [
+                {
+                    "name": "Corn Juice",
+                    "processor": "Keg",
+                    "ingredients": [
+                        {
+                            "name": "Corn",
+                            "quantity": 1
+                        }
+                    ],
+                    "processingDays": 4
+                },
+                {
+                    "name": "Pickled Corn",
+                    "processor": "Preserves Jar",
+                    "ingredients": [
+                        {
+                            "name": "Corn",
+                            "quantity": 1
+                        }
+                    ],
+                    "processingDays": 2.5
+                },
+                {
+                    "name": "Oil",
+                    "processor": "Oil Maker",
+                    "ingredients": [
+                        {
+                            "name": "Corn",
+                            "quantity": 1
+                        }
+                    ],
+                    "processingDays": 0.69972
+                }
+            ]
+        },
+        {
+            "base": "Summer Squash",
+            "products": [
+                {
+                    "name": "Summer Squash Juice",
+                    "processor": "Keg",
+                    "ingredients": [
+                        {
+                            "name": "Summer Squash",
+                            "quantity": 1
+                        }
+                    ],
+                    "processingDays": 4
+                },
+                {
+                    "name": "Pickled Summer Squash",
+                    "processor": "Preserves Jar",
+                    "ingredients": [
+                        {
+                            "name": "Summer Squash",
+                            "quantity": 1
+                        }
+                    ],
+                    "processingDays": 2.5
+                }
+            ]
+        },
+        {
+            "base": "Tomato",
+            "products": [
+                {
+                    "name": "Tomato Juice",
+                    "processor": "Keg",
+                    "ingredients": [
+                        {
+                            "name": "Tomato",
+                            "quantity": 1
+                        }
+                    ],
+                    "processingDays": 4
+                },
+                {
+                    "name": "Pickled Tomato",
+                    "processor": "Preserves Jar",
+                    "ingredients": [
+                        {
+                            "name": "Tomato",
+                            "quantity": 1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "base": "Broccoli",
+            "products": [
+                {
+                    "name": "Broccoli Juice",
+                    "processor": "Keg",
+                    "ingredients": [
+                        {
+                            "name": "Broccoli",
+                            "quantity": 1
+                        }
+                    ],
+                    "processingDays": 4
+                },
+                {
+                    "name": "Pickled Broccoli",
+                    "processor": "Preserves Jar",
+                    "ingredients": [
+                        {
+                            "name": "Broccoli",
+                            "quantity": 1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "base": "Eggplant",
+            "products": [
+                {
+                    "name": "Eggplant Juice",
+                    "processor": "Keg",
+                    "ingredients": [
+                        {
+                            "name": "Eggplant",
+                            "quantity": 1
+                        }
+                    ],
+                    "processingDays": 4
+                },
+                {
+                    "name": "Pickled Eggplant",
+                    "processor": "Preserves Jar",
+                    "ingredients": [
+                        {
+                            "name": "Eggplant",
+                            "quantity": 1
+                        }
+                    ],
+                    "processingDays": 2.5
+                }
+            ]
+        },
+        {
+            "base": "Tea Leaves",
+            "products": [
+                {
+                    "name": "Green Tea",
+                    "processor": "Keg",
+                    "ingredients": [
+                        {
+                            "name": "Tea Leaves",
+                            "quantity": 1
+                        }
+                    ],
+                    "processingDays": 0.126
+                }
+            ]
+        },
+        {
+            "base": [
+                "Apple",
+                "Cranberries",
+                "Sugar"
+            ],
+            "products": [
+                {
+                    "name": "Cranberry Candy",
+                    "processor": "Kitchen",
+                    "ingredients": [
+                        {
+                            "name": "Apple",
+                            "quantity": 1
+                        },
+                        {
+                            "name": "Cranberries",
+                            "quantity": 1
+                        },
+                        {
+                            "name": "Sugar",
+                            "quantity": 1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "base": "Egg",
+            "products": [
+                {
+                    "name": "Fried Egg",
+                    "processor": "Kitchen",
+                    "ingredients": [
+                        {
+                            "name": "Egg",
+                            "quantity": 1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "base": "Green Bean",
+            "products": [
+                {
+                    "name": "Bean Hotpot",
+                    "processor": "Kitchen",
+                    "ingredients": [
+                        {
+                            "name": "Green Bean",
+                            "quantity": 2
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "base": "Carp",
+            "products": [
+                {
+                    "name": "Carp Surprise",
+                    "processor": "Kitchen",
+                    "ingredients": [
+                        {
+                            "name": "Carp",
+                            "quantity": 4
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "base": "Wheat Flour",
+            "products": [
+                {
+                    "name": "Bread",
+                    "processor": "Kitchen",
+                    "ingredients": [
+                        {
+                            "name": "Wheat Flour",
+                            "quantity": 1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "base": "Corn",
+            "products": [
+                {
+                    "name": "Tortilla",
+                    "processor": "Kitchen",
+                    "ingredients": [
+                        {
+                            "name": "Corn",
+                            "quantity": 1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "base": "Green Algae",
+            "products": [
+                {
+                    "name": "Algae Soup",
+                    "processor": "Kitchen",
+                    "ingredients": [
+                        {
+                            "name": "Green Algae",
+                            "quantity": 4
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "base": "White Algae",
+            "products": [
+                {
+                    "name": "Pale Broth",
+                    "processor": "Kitchen",
+                    "ingredients": [
+                        {
+                            "name": "White Algae",
+                            "quantity": 2
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "base": "Hazelnut",
+            "products": [
+                {
+                    "name": "Roasted Hazelnuts",
+                    "processor": "Kitchen",
+                    "ingredients": [
+                        {
+                            "name": "Hazelnut",
+                            "quantity": 3
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "base": "Taro Root",
+            "products": [
+                {
+                    "name": "Poi",
+                    "processor": "Kitchen",
+                    "ingredients": [
+                        {
+                            "name": "Taro Root",
+                            "quantity": 4
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "base": "Moss",
+            "products": [
+                {
+                    "name": "Moss Soup",
+                    "processor": "Kitchen",
+                    "ingredients": [
+                        {
+                            "name": "Moss",
+                            "quantity": 20
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "base": "Coffee",
+            "products": [
+                {
+                    "name": "Triple Shot Espresso",
+                    "processor": "Kitchen",
+                    "ingredients": [
+                        {
+                            "name": "Coffee",
+                            "quantity": 3
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "base": [
+                "Egg",
+                "Milk"
+            ],
+            "products": [
+                {
+                    "name": "Omelet",
+                    "processor": "Kitchen",
+                    "ingredients": [
+                        {
+                            "name": "Egg",
+                            "quantity": 1
+                        },
+                        {
+                            "name": "Milk",
+                            "quantity": 1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "base": [
+                "Cauliflower",
+                "Cheese"
+            ],
+            "products": [
+                {
+                    "name": "Cheese Cauliflower",
+                    "processor": "Kitchen",
+                    "ingredients": [
+                        {
+                            "name": "Cauliflower",
+                            "quantity": 1
+                        },
+                        {
+                            "name": "Cheese",
+                            "quantity": 1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "base": [
+                "Tomato",
+                "Beet"
+            ],
+            "products": [
+                {
+                    "name": "Vegetable Medley",
+                    "processor": "Kitchen",
+                    "ingredients": [
+                        {
+                            "name": "Tomato",
+                            "quantity": 1
+                        },
+                        {
+                            "name": "Beet",
+                            "quantity": 1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "base": [
+                "Yam",
+                "Sugar"
+            ],
+            "products": [
+                {
+                    "name": "Glazed Yams",
+                    "processor": "Kitchen",
+                    "ingredients": [
+                        {
+                            "name": "Yam",
+                            "quantity": 1
+                        },
+                        {
+                            "name": "Sugar",
+                            "quantity": 1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "base": [
+                "Potato",
+                "Oil"
+            ],
+            "products": [
+                {
+                    "name": "Hashbrowns",
+                    "processor": "Kitchen",
+                    "ingredients": [
+                        {
+                            "name": "Potato",
+                            "quantity": 1
+                        },
+                        {
+                            "name": "Oil",
+                            "quantity": 1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "base": [
+                "Hot Pepper",
+                "Cheese"
+            ],
+            "products": [
+                {
+                    "name": "Pepper Poppers",
+                    "processor": "Kitchen",
+                    "ingredients": [
+                        {
+                            "name": "Hot Pepper",
+                            "quantity": 1
+                        },
+                        {
+                            "name": "Cheese",
+                            "quantity": 1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "base": [
+                "Rainbow Trout",
+                "Green Algae"
+            ],
+            "products": [
+                {
+                    "name": "Trout Soup",
+                    "processor": "Kitchen",
+                    "ingredients": [
+                        {
+                            "name": "Rainbow Trout",
+                            "quantity": 1
+                        },
+                        {
+                            "name": "Green Algae",
+                            "quantity": 1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "base": [
+                "Tomato",
+                "Wheat Flour"
+            ],
+            "products": [
+                {
+                    "name": "Spaghetti",
+                    "processor": "Kitchen",
+                    "ingredients": [
+                        {
+                            "name": "Wheat Flour",
+                            "quantity": 1
+                        },
+                        {
+                            "name": "Tomato",
+                            "quantity": 1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "base": [
+                "Eel",
+                "Oil"
+            ],
+            "products": [
+                {
+                    "name": "Fried Eel",
+                    "processor": "Kitchen",
+                    "ingredients": [
+                        {
+                            "name": "Eel",
+                            "quantity": 1
+                        },
+                        {
+                            "name": "Oil",
+                            "quantity": 1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "base": [
+                "Eel",
+                "Hot Pepper"
+            ],
+            "products": [
+                {
+                    "name": "Spicy Eel",
+                    "processor": "Kitchen",
+                    "ingredients": [
+                        {
+                            "name": "Eel",
+                            "quantity": 1
+                        },
+                        {
+                            "name": "Hot Pepper",
+                            "quantity": 1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "base": [
+                "Red Cabbage",
+                "Radish"
+            ],
+            "products": [
+                {
+                    "name": "Red Plate",
+                    "processor": "Kitchen",
+                    "ingredients": [
+                        {
+                            "name": "Red Cabbage",
+                            "quantity": 1
+                        },
+                        {
+                            "name": "Radish",
+                            "quantity": 1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "base": [
+                "Eggplant",
+                "Tomato"
+            ],
+            "products": [
+                {
+                    "name": "Eggplant Parmesan",
+                    "processor": "Kitchen",
+                    "ingredients": [
+                        {
+                            "name": "Eggplant",
+                            "quantity": 1
+                        },
+                        {
+                            "name": "Tomato",
+                            "quantity": 1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "base": [
+                "Milk",
+                "Sugar"
+            ],
+            "products": [
+                {
+                    "name": "Ice Cream",
+                    "processor": "Kitchen",
+                    "ingredients": [
+                        {
+                            "name": "Milk",
+                            "quantity": 1
+                        },
+                        {
+                            "name": "Sugar",
+                            "quantity": 1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "base": [
+                "Yam",
+                "Pumpkin"
+            ],
+            "products": [
+                {
+                    "name": "Autumn's Bounty",
+                    "processor": "Kitchen",
+                    "ingredients": [
+                        {
+                            "name": "Yam",
+                            "quantity": 1
+                        },
+                        {
+                            "name": "Pumpkin",
+                            "quantity": 1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "base": [
+                "Pumpkin",
+                "Milk"
+            ],
+            "products": [
+                {
+                    "name": "Pumpkin Soup",
+                    "processor": "Kitchen",
+                    "ingredients": [
+                        {
+                            "name": "Pumpkin",
+                            "quantity": 1
+                        },
+                        {
+                            "name": "Milk",
+                            "quantity": 1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "base": [
+                "Cranberries",
+                "Sugar"
+            ],
+            "products": [
+                {
+                    "name": "Cranberry Sauce",
+                    "processor": "Kitchen",
+                    "ingredients": [
+                        {
+                            "name": "Cranberries",
+                            "quantity": 1
+                        },
+                        {
+                            "name": "Sugar",
+                            "quantity": 1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "base": [
+                "Wheat Flour",
+                "Egg"
+            ],
+            "products": [
+                {
+                    "name": "Pancakes",
+                    "processor": "Kitchen",
+                    "ingredients": [
+                        {
+                            "name": "Wheat Flour",
+                            "quantity": 1
+                        },
+                        {
+                            "name": "Egg",
+                            "quantity": 1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "base": [
+                "Clam",
+                "Milk"
+            ],
+            "products": [
+                {
+                    "name": "Chowder",
+                    "processor": "Kitchen",
+                    "ingredients": [
+                        {
+                            "name": "Clam",
+                            "quantity": 1
+                        },
+                        {
+                            "name": "Milk",
+                            "quantity": 1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "base": [
+                "Snail",
+                "Garlic"
+            ],
+            "products": [
+                {
+                    "name": "Escargot",
+                    "processor": "Kitchen",
+                    "ingredients": [
+                        {
+                            "name": "Snail",
+                            "quantity": 1
+                        },
+                        {
+                            "name": "Garlic",
+                            "quantity": 1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "base": [
+                "Lobster",
+                "Milk"
+            ],
+            "products": [
+                {
+                    "name": "Lobster Bisque",
+                    "processor": "Kitchen",
+                    "ingredients": [
+                        {
+                            "name": "Lobster",
+                            "quantity": 1
+                        },
+                        {
+                            "name": "Milk",
+                            "quantity": 1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "base": [
+                "Artichoke",
+                "Milk"
+            ],
+            "products": [
+                {
+                    "name": "Artichoke Dip",
+                    "processor": "Kitchen",
+                    "ingredients": [
+                        {
+                            "name": "Artichoke",
+                            "quantity": 1
+                        },
+                        {
+                            "name": "Milk",
+                            "quantity": 1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "base": [
+                "Cave Carrot",
+                "Winter Root"
+            ],
+            "products": [
+                {
+                    "name": "Roots Platter",
+                    "processor": "Kitchen",
+                    "ingredients": [
+                        {
+                            "name": "Cave Carrot",
+                            "quantity": 1
+                        },
+                        {
+                            "name": "Winter Root",
+                            "quantity": 1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "base": [
+                "Omelet",
+                "Parsnip"
+            ],
+            "products": [
+                {
+                    "name": "Farmer's Lunch",
+                    "processor": "Kitchen",
+                    "ingredients": [
+                        {
+                            "name": "Omelet",
+                            "quantity": 1
+                        },
+                        {
+                            "name": "Parsnip",
+                            "quantity": 1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "base": [
+                "Leek",
+                "Dandelion",
+                "Vinegar"
+            ],
+            "products": [
+                {
+                    "name": "Salad",
+                    "processor": "Kitchen",
+                    "ingredients": [
+                        {
+                            "name": "Leek",
+                            "quantity": 1
+                        },
+                        {
+                            "name": "Dandelion",
+                            "quantity": 1
+                        },
+                        {
+                            "name": "Vinegar",
+                            "quantity": 1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "base": [
+                "Sunfish",
+                "Bream",
+                "Wheat Flour"
+            ],
+            "products": [
+                {
+                    "name": "Baked Fish",
+                    "processor": "Kitchen",
+                    "ingredients": [
+                        {
+                            "name": "Sunfish",
+                            "quantity": 1
+                        },
+                        {
+                            "name": "Bream",
+                            "quantity": 1
+                        },
+                        {
+                            "name": "Wheat Flour",
+                            "quantity": 1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "base": [
+                "Parsnip",
+                "Milk",
+                "Vinegar"
+            ],
+            "products": [
+                {
+                    "name": "Parsnip Soup",
+                    "processor": "Kitchen",
+                    "ingredients": [
+                        {
+                            "name": "Parsnip",
+                            "quantity": 1
+                        },
+                        {
+                            "name": "Milk",
+                            "quantity": 1
+                        },
+                        {
+                            "name": "Vinegar",
+                            "quantity": 1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "base": [
+                "Squid",
+                "Wheat Flour",
+                "Oil"
+            ],
+            "products": [
+                {
+                    "name": "Fried Calamari",
+                    "processor": "Kitchen",
+                    "ingredients": [
+                        {
+                            "name": "Squid",
+                            "quantity": 1
+                        },
+                        {
+                            "name": "Wheat Flour",
+                            "quantity": 1
+                        },
+                        {
+                            "name": "Oil",
+                            "quantity": 1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "base": [
+                "Wheat Flour",
+                "Periwinkle",
+                "Void Mayonnaise"
+            ],
+            "products": [
+                {
+                    "name": "Strange Bun",
+                    "processor": "Kitchen",
+                    "ingredients": [
+                        {
+                            "name": "Wheat Flour",
+                            "quantity": 1
+                        },
+                        {
+                            "name": "Periwinkle",
+                            "quantity": 1
+                        },
+                        {
+                            "name": "Void Mayonnaise",
+                            "quantity": 1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "base": [
+                "Sea Cucumber",
+                "Tortilla",
+                "Blue Jazz"
+            ],
+            "products": [
+                {
+                    "name": "Lucky Lunch",
+                    "processor": "Kitchen",
+                    "ingredients": [
+                        {
+                            "name": "Sea Cucumber",
+                            "quantity": 1
+                        },
+                        {
+                            "name": "Tortilla",
+                            "quantity": 1
+                        },
+                        {
+                            "name": "Blue Jazz",
+                            "quantity": 1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "base": [
+                "Common Mushroom",
+                "Morel",
+                "Oil"
+            ],
+            "products": [
+                {
+                    "name": "Fried Mushroom",
+                    "processor": "Kitchen",
+                    "ingredients": [
+                        {
+                            "name": "Common Mushroom",
+                            "quantity": 1
+                        },
+                        {
+                            "name": "Morel",
+                            "quantity": 1
+                        },
+                        {
+                            "name": "Oil",
+                            "quantity": 1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "base": [
+                "Wheat Flour",
+                "Tomato",
+                "Cheese"
+            ],
+            "products": [
+                {
+                    "name": "Pizza",
+                    "processor": "Kitchen",
+                    "ingredients": [
+                        {
+                            "name": "Wheat Flour",
+                            "quantity": 1
+                        },
+                        {
+                            "name": "Tomato",
+                            "quantity": 1
+                        },
+                        {
+                            "name": "Cheese",
+                            "quantity": 1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "base": [
+                "Salmon",
+                "Amaranth",
+                "Kale"
+            ],
+            "products": [
+                {
+                    "name": "Salmon Dinner",
+                    "processor": "Kitchen",
+                    "ingredients": [
+                        {
+                            "name": "Salmon",
+                            "quantity": 1
+                        },
+                        {
+                            "name": "Amaranth",
+                            "quantity": 1
+                        },
+                        {
+                            "name": "Kale",
+                            "quantity": 1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "base": [
+                "Largemouth Bass",
+                "Wheat Flour",
+                "Oil"
+            ],
+            "products": [
+                {
+                    "name": "Crispy Bass",
+                    "processor": "Kitchen",
+                    "ingredients": [
+                        {
+                            "name": "Largemouth Bass",
+                            "quantity": 1
+                        },
+                        {
+                            "name": "Wheat Flour",
+                            "quantity": 1
+                        },
+                        {
+                            "name": "Oil",
+                            "quantity": 1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "base": [
+                "Coconut",
+                "Shrimp",
+                "Common Mushroom"
+            ],
+            "products": [
+                {
+                    "name": "Tom Kha Soup",
+                    "processor": "Kitchen",
+                    "ingredients": [
+                        {
+                            "name": "Coconut",
+                            "quantity": 1
+                        },
+                        {
+                            "name": "Shrimp",
+                            "quantity": 1
+                        },
+                        {
+                            "name": "Common Mushroom",
+                            "quantity": 1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "base": [
+                "Wheat Flour",
+                "Sugar",
+                "Egg"
+            ],
+            "products": [
+                {
+                    "name": "Chocolate Cake",
+                    "processor": "Kitchen",
+                    "ingredients": [
+                        {
+                            "name": "Wheat Flour",
+                            "quantity": 1
+                        },
+                        {
+                            "name": "Sugar",
+                            "quantity": 1
+                        },
+                        {
+                            "name": "Egg",
+                            "quantity": 1
+                        }
+                    ]
+                },
+                {
+                    "name": "Cookie",
+                    "processor": "Kitchen",
+                    "ingredients": [
+                        {
+                            "name": "Wheat Flour",
+                            "quantity": 1
+                        },
+                        {
+                            "name": "Sugar",
+                            "quantity": 1
+                        },
+                        {
+                            "name": "Egg",
+                            "quantity": 1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "base": [
+                "Rhubarb",
+                "Wheat Flour",
+                "Sugar"
+            ],
+            "products": [
+                {
+                    "name": "Rhubarb Pie",
+                    "processor": "Kitchen",
+                    "ingredients": [
+                        {
+                            "name": "Rhubarb",
+                            "quantity": 1
+                        },
+                        {
+                            "name": "Wheat Flour",
+                            "quantity": 1
+                        },
+                        {
+                            "name": "Sugar",
+                            "quantity": 1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "base": [
+                "Milk",
+                "Sugar",
+                "Rice"
+            ],
+            "products": [
+                {
+                    "name": "Rice Pudding",
+                    "processor": "Kitchen",
+                    "ingredients": [
+                        {
+                            "name": "Milk",
+                            "quantity": 1
+                        },
+                        {
+                            "name": "Sugar",
+                            "quantity": 1
+                        },
+                        {
+                            "name": "Rice",
+                            "quantity": 1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "base": [
+                "Bok Choy",
+                "Cranberries",
+                "Artichoke"
+            ],
+            "products": [
+                {
+                    "name": "Super Meal",
+                    "processor": "Kitchen",
+                    "ingredients": [
+                        {
+                            "name": "Bok Choy",
+                            "quantity": 1
+                        },
+                        {
+                            "name": "Cranberries",
+                            "quantity": 1
+                        },
+                        {
+                            "name": "Artichoke",
+                            "quantity": 1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "base": [
+                "Bread",
+                "Cranberries",
+                "Hazelnut"
+            ],
+            "products": [
+                {
+                    "name": "Stuffing",
+                    "processor": "Kitchen",
+                    "ingredients": [
+                        {
+                            "name": "Bread",
+                            "quantity": 1
+                        },
+                        {
+                            "name": "Cranberries",
+                            "quantity": 1
+                        },
+                        {
+                            "name": "Hazelnut",
+                            "quantity": 1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "base": [
+                "Bread",
+                "Cave Carrot",
+                "Eggplant"
+            ],
+            "products": [
+                {
+                    "name": "Survival Burger",
+                    "processor": "Kitchen",
+                    "ingredients": [
+                        {
+                            "name": "Bread",
+                            "quantity": 1
+                        },
+                        {
+                            "name": "Cave Carrot",
+                            "quantity": 1
+                        },
+                        {
+                            "name": "Eggplant",
+                            "quantity": 1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "base": [
+                "Bread",
+                "Oil",
+                "Tomato"
+            ],
+            "products": [
+                {
+                    "name": "Bruschetta",
+                    "processor": "Kitchen",
+                    "ingredients": [
+                        {
+                            "name": "Bread",
+                            "quantity": 1
+                        },
+                        {
+                            "name": "Oil",
+                            "quantity": 1
+                        },
+                        {
+                            "name": "Tomato",
+                            "quantity": 1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "base": [
+                "Blueberry",
+                "Melon",
+                "Apricot"
+            ],
+            "products": [
+                {
+                    "name": "Fruit Salad",
+                    "processor": "Kitchen",
+                    "ingredients": [
+                        {
+                            "name": "Blueberry",
+                            "quantity": 1
+                        },
+                        {
+                            "name": "Melon",
+                            "quantity": 1
+                        },
+                        {
+                            "name": "Apricot",
+                            "quantity": 1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "base": [
+                "Oil",
+                "Fiddlehead Fern",
+                "Garlic"
+            ],
+            "products": [
+                {
+                    "name": "Fiddlehead Risotto",
+                    "processor": "Kitchen",
+                    "ingredients": [
+                        {
+                            "name": "Oil",
+                            "quantity": 1
+                        },
+                        {
+                            "name": "Fiddlehead Fern",
+                            "quantity": 1
+                        },
+                        {
+                            "name": "Garlic",
+                            "quantity": 1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "base": [
+                "Poppy",
+                "Wheat Flour",
+                "Sugar"
+            ],
+            "products": [
+                {
+                    "name": "Poppyseed Muffin",
+                    "processor": "Kitchen",
+                    "ingredients": [
+                        {
+                            "name": "Poppy",
+                            "quantity": 1
+                        },
+                        {
+                            "name": "Wheat Flour",
+                            "quantity": 1
+                        },
+                        {
+                            "name": "Sugar",
+                            "quantity": 1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "base": [
+                "Maple Syrup",
+                "Sugar",
+                "Wheat Flour"
+            ],
+            "products": [
+                {
+                    "name": "Maple Bar",
+                    "processor": "Kitchen",
+                    "ingredients": [
+                        {
+                            "name": "Maple Syrup",
+                            "quantity": 1
+                        },
+                        {
+                            "name": "Sugar",
+                            "quantity": 1
+                        },
+                        {
+                            "name": "Wheat Flour",
+                            "quantity": 1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "base": [
+                "Flounder",
+                "Midnight Carp",
+                "Squid Ink"
+            ],
+            "products": [
+                {
+                    "name": "Seafoam Pudding",
+                    "processor": "Kitchen",
+                    "ingredients": [
+                        {
+                            "name": "Flounder",
+                            "quantity": 1
+                        },
+                        {
+                            "name": "Midnight Carp",
+                            "quantity": 1
+                        },
+                        {
+                            "name": "Squid Ink",
+                            "quantity": 1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "base": [
+                "Oil",
+                "Vinegar",
+                "Radish"
+            ],
+            "products": [
+                {
+                    "name": "Radish Salad",
+                    "processor": "Kitchen",
+                    "ingredients": [
+                        {
+                            "name": "Oil",
+                            "quantity": 1
+                        },
+                        {
+                            "name": "Vinegar",
+                            "quantity": 1
+                        },
+                        {
+                            "name": "Radish",
+                            "quantity": 1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "base": [
+                "Coconut",
+                "Pineapple",
+                "Hot Pepper"
+            ],
+            "products": [
+                {
+                    "name": "Tropical Curry",
+                    "processor": "Kitchen",
+                    "ingredients": [
+                        {
+                            "name": "Coconut",
+                            "quantity": 1
+                        },
+                        {
+                            "name": "Pineapple",
+                            "quantity": 1
+                        },
+                        {
+                            "name": "Hot Pepper",
+                            "quantity": 1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "base": [
+                "Squid Ink",
+                "Wheat Flour",
+                "Tomato"
+            ],
+            "products": [
+                {
+                    "name": "Squid Ink Ravioli",
+                    "processor": "Kitchen",
+                    "ingredients": [
+                        {
+                            "name": "Squid Ink",
+                            "quantity": 1
+                        },
+                        {
+                            "name": "Wheat Flour",
+                            "quantity": 1
+                        },
+                        {
+                            "name": "Tomato",
+                            "quantity": 1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "base": [
+                "Banana",
+                "Milk",
+                "Sugar"
+            ],
+            "products": [
+                {
+                    "name": "Banana Pudding",
+                    "processor": "Kitchen",
+                    "ingredients": [
+                        {
+                            "name": "Banana",
+                            "quantity": 1
+                        },
+                        {
+                            "name": "Milk",
+                            "quantity": 1
+                        },
+                        {
+                            "name": "Sugar",
+                            "quantity": 1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "base": [
+                "Mango",
+                "Coconut",
+                "Rice"
+            ],
+            "products": [
+                {
+                    "name": "Mango Sticky Rice",
+                    "processor": "Kitchen",
+                    "ingredients": [
+                        {
+                            "name": "Mango",
+                            "quantity": 1
+                        },
+                        {
+                            "name": "Coconut",
+                            "quantity": 1
+                        },
+                        {
+                            "name": "Rice",
+                            "quantity": 1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "base": [
+                "Tomato",
+                "Shrimp",
+                "Wild Horseradish"
+            ],
+            "products": [
+                {
+                    "name": "Shrimp Cocktail",
+                    "processor": "Kitchen",
+                    "ingredients": [
+                        {
+                            "name": "Tomato",
+                            "quantity": 1
+                        },
+                        {
+                            "name": "Shrimp",
+                            "quantity": 1
+                        },
+                        {
+                            "name": "Wild Horseradish",
+                            "quantity": 1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "base": [
+                "Red Cabbage",
+                "Vinegar",
+                "Mayonnaise"
+            ],
+            "products": [
+                {
+                    "name": "Coleslaw",
+                    "processor": "Kitchen",
+                    "ingredients": [
+                        {
+                            "name": "Red Cabbage",
+                            "quantity": 1
+                        },
+                        {
+                            "name": "Vinegar",
+                            "quantity": 1
+                        },
+                        {
+                            "name": "Mayonnaise",
+                            "quantity": 1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "base": [
+                "Ginger",
+                "Sugar"
+            ],
+            "products": [
+                {
+                    "name": "Ginger Ale",
+                    "processor": "Kitchen",
+                    "ingredients": [
+                        {
+                            "name": "Ginger",
+                            "quantity": 3
+                        },
+                        {
+                            "name": "Sugar",
+                            "quantity": 1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "base": [
+                "Fried Egg",
+                "Milk",
+                "Hashbrowns",
+                "Pancakes"
+            ],
+            "products": [
+                {
+                    "name": "Complete Breakfast",
+                    "processor": "Kitchen",
+                    "ingredients": [
+                        {
+                            "name": "Fried Egg",
+                            "quantity": 1
+                        },
+                        {
+                            "name": "Milk",
+                            "quantity": 1
+                        },
+                        {
+                            "name": "Hashbrowns",
+                            "quantity": 1
+                        },
+                        {
+                            "name": "Pancakes",
+                            "quantity": 1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "base": [
+                "Tuna",
+                "Tortilla",
+                "Red Cabbage",
+                "Mayonnaise"
+            ],
+            "products": [
+                {
+                    "name": "Fish Taco",
+                    "processor": "Kitchen",
+                    "ingredients": [
+                        {
+                            "name": "Tuna",
+                            "quantity": 1
+                        },
+                        {
+                            "name": "Tortilla",
+                            "quantity": 1
+                        },
+                        {
+                            "name": "Red Cabbage",
+                            "quantity": 1
+                        },
+                        {
+                            "name": "Mayonnaise",
+                            "quantity": 1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "base": [
+                "Melon",
+                "Wheat Flour",
+                "Sugar",
+                "Egg"
+            ],
+            "products": [
+                {
+                    "name": "Pink Cake",
+                    "processor": "Kitchen",
+                    "ingredients": [
+                        {
+                            "name": "Melon",
+                            "quantity": 1
+                        },
+                        {
+                            "name": "Wheat Flour",
+                            "quantity": 1
+                        },
+                        {
+                            "name": "Sugar",
+                            "quantity": 1
+                        },
+                        {
+                            "name": "Egg",
+                            "quantity": 1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "base": [
+                "Blueberry",
+                "Wheat Flour",
+                "Sugar",
+                "Egg"
+            ],
+            "products": [
+                {
+                    "name": "Blueberry Tart",
+                    "processor": "Kitchen",
+                    "ingredients": [
+                        {
+                            "name": "Blueberry",
+                            "quantity": 1
+                        },
+                        {
+                            "name": "Wheat Flour",
+                            "quantity": 1
+                        },
+                        {
+                            "name": "Sugar",
+                            "quantity": 1
+                        },
+                        {
+                            "name": "Egg",
+                            "quantity": 1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "base": [
+                "Sardine",
+                "Hashbrowns"
+            ],
+            "products": [
+                {
+                    "name": "Dish O' The Sea",
+                    "processor": "Kitchen",
+                    "ingredients": [
+                        {
+                            "name": "Sardine",
+                            "quantity": 2
+                        },
+                        {
+                            "name": "Hashbrowns",
+                            "quantity": 1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "base": [
+                "Cave Carrot",
+                "Sugar",
+                "Milk"
+            ],
+            "products": [
+                {
+                    "name": "Miner's Treat",
+                    "processor": "Kitchen",
+                    "ingredients": [
+                        {
+                            "name": "Cave Carrot",
+                            "quantity": 2
+                        },
+                        {
+                            "name": "Sugar",
+                            "quantity": 1
+                        },
+                        {
+                            "name": "Milk",
+                            "quantity": 1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "base": [
+                "Wild Plum",
+                "Wheat Flour",
+                "Sugar"
+            ],
+            "products": [
+                {
+                    "name": "Plum Pudding",
+                    "processor": "Kitchen",
+                    "ingredients": [
+                        {
+                            "name": "Wild Plum",
+                            "quantity": 2
+                        },
+                        {
+                            "name": "Wheat Flour",
+                            "quantity": 1
+                        },
+                        {
+                            "name": "Sugar",
+                            "quantity": 1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "base": [
+                "Cave Carrot",
+                "Common Mushroom",
+                "Kale",
+                "Oil"
+            ],
+            "products": [
+                {
+                    "name": "Stir Fry",
+                    "processor": "Kitchen",
+                    "ingredients": [
+                        {
+                            "name": "Cave Carrot",
+                            "quantity": 1
+                        },
+                        {
+                            "name": "Common Mushroom",
+                            "quantity": 1
+                        },
+                        {
+                            "name": "Kale",
+                            "quantity": 1
+                        },
+                        {
+                            "name": "Oil",
+                            "quantity": 1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "base": [
+                "Pumpkin",
+                "Wheat Flour",
+                "Milk",
+                "Sugar"
+            ],
+            "products": [
+                {
+                    "name": "Pumpkin Pie",
+                    "processor": "Kitchen",
+                    "ingredients": [
+                        {
+                            "name": "Pumpkin",
+                            "quantity": 1
+                        },
+                        {
+                            "name": "Wheat Flour",
+                            "quantity": 1
+                        },
+                        {
+                            "name": "Milk",
+                            "quantity": 1
+                        },
+                        {
+                            "name": "Sugar",
+                            "quantity": 1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "base": [
+                "Blackberry",
+                "Sugar",
+                "Wheat Flour"
+            ],
+            "products": [
+                {
+                    "name": "Blackberry Cobbler",
+                    "processor": "Kitchen",
+                    "ingredients": [
+                        {
+                            "name": "Blackberry",
+                            "quantity": 2
+                        },
+                        {
+                            "name": "Sugar",
+                            "quantity": 1
+                        },
+                        {
+                            "name": "Wheat Flour",
+                            "quantity": 1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "base": [
+                "Crab",
+                "Wheat Flour",
+                "Egg",
+                "Oil"
+            ],
+            "products": [
+                {
+                    "name": "Crab Cakes",
+                    "processor": "Kitchen",
+                    "ingredients": [
+                        {
+                            "name": "Crab",
+                            "quantity": 1
+                        },
+                        {
+                            "name": "Wheat Flour",
+                            "quantity": 1
+                        },
+                        {
+                            "name": "Egg",
+                            "quantity": 1
+                        },
+                        {
+                            "name": "Oil",
+                            "quantity": 1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "base": [
+                "Crayfish",
+                "Mussel",
+                "Periwinkle",
+                "Tomato"
+            ],
+            "products": [
+                {
+                    "name": "Fish Stew",
+                    "processor": "Kitchen",
+                    "ingredients": [
+                        {
+                            "name": "Crayfish",
+                            "quantity": 1
+                        },
+                        {
+                            "name": "Mussel",
+                            "quantity": 1
+                        },
+                        {
+                            "name": "Periwinkle",
+                            "quantity": 1
+                        },
+                        {
+                            "name": "Tomato",
+                            "quantity": 1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "base": {
+                "category": "fish"
+            },
+            "products": [
+                {
+                    "name": "Sashimi",
+                    "processor": "Kitchen",
+                    "ingredients": [
+                        {
+                            "name": "{input}",
+                            "quantity": 1
+                        }
+                    ]
+                },
+                {
+                    "name": "Maki Roll",
+                    "processor": "Kitchen",
+                    "ingredients": [
+                        {
+                            "name": "{input}",
+                            "quantity": 1
+                        },
+                        {
+                            "name": "Seaweed",
+                            "quantity": 1
+                        },
+                        {
+                            "name": "Rice",
+                            "quantity": 1
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
