@@ -4,6 +4,7 @@ import { useState } from "react"
 import { ItemSearch } from "@/components/ItemSearch"
 import { ItemDetails } from "@/components/ItemDetails"
 import { ProfessionToggles } from "@/components/ProfessionToggles"
+import { ThemeToggle } from "@/components/ThemeToggle"
 import { useLocalStorage } from "@/lib/useLocalStorage"
 import { useItemNavigation } from "@/lib/useItemNavigation"
 
@@ -15,7 +16,11 @@ export default function Home() {
   const { currentItem, history, selectItem, navigateTo, goBack, canGoBack } = useItemNavigation()
 
   return (
-    <main className="max-w-md mx-auto mt-10 p-4">
+    <main className="max-w-md mx-auto mt-6 p-4">
+      <div className="flex items-center justify-between mb-6">
+        <h1 className="text-xl font-bold">Dew I?</h1>
+        <ThemeToggle />
+      </div>
       <ItemSearch
         query={query}
         onQueryChange={setQuery}

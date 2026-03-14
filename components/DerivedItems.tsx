@@ -154,6 +154,43 @@ function IngredientPopover({
     )
 }
 
+// Processor icon with Fish Smoker easter egg support for both hover and tap
+function ProcessorIcon({ processor, inputQuantity }: { processor: string; inputQuantity: number }) {
+    const [glowing, setGlowing] = useState(false)
+    const isFishSmoker = processor === "Fish Smoker"
+
+    return (
+        <div
+            className="relative w-12 h-12"
+            onPointerEnter={(e) => { if (e.pointerType !== "touch" && isFishSmoker) setGlowing(true) }}
+            onPointerLeave={(e) => { if (e.pointerType !== "touch" && isFishSmoker) setGlowing(false) }}
+            onTouchStart={() => { if (isFishSmoker) setGlowing(g => !g) }}
+        >
+            <Image
+                src={getProcessorSpritePath(processor)}
+                alt={processor}
+                width={48}
+                height={48}
+                className={isFishSmoker && glowing ? "opacity-0" : ""}
+            />
+            {isFishSmoker && (
+                <Image
+                    src="/sprites/processors/fish-smoker-glow.png"
+                    alt={processor}
+                    width={48}
+                    height={48}
+                    className={`absolute top-0 left-0 ${glowing ? "opacity-100" : "opacity-0"}`}
+                />
+            )}
+            {inputQuantity > 1 && (
+                <div className="absolute -top-1 -right-1 bg-blue-600 text-white text-xs font-bold rounded-full w-5 h-5 flex items-center justify-center">
+                    {inputQuantity}
+                </div>
+            )}
+        </div>
+    )
+}
+
 // Get sprite path for an ingredient item
 function getIngredientSpritePath(ingredientName: string): string | null {
     const item = itemsByName.get(ingredientName)
@@ -163,7 +200,7 @@ function getIngredientSpritePath(ingredientName: string): string | null {
         const fileName = item.name.toLowerCase().replace(/'/g, "").replace(/\s+/g, "-")
         const subfolder = item.category === "animal-product" ? "animals"
             : item.category === "fish" ? "fish"
-            : "crops"
+                : "crops"
         return `/sprites/bases/${subfolder}/${fileName}.png`
     }
     return null
@@ -273,62 +310,40 @@ export function DerivedItems({ baseItem, professions, selectedBasePrice, selecte
                         : []
 
                     const processorIcon = (
-                        <div className="relative group w-12 h-12">
-                            <Image
-                                src={getProcessorSpritePath(product.processor)}
-                                alt={product.processor}
-                                width={48}
-                                height={48}
-                                className={product.processor === "Fish Smoker" ? "group-hover:opacity-0" : ""}
-                            />
-                            {product.processor === "Fish Smoker" && (
-                                <Image
-                                    src="/sprites/processors/fish-smoker-glow.png"
-                                    alt={product.processor}
-                                    width={48}
-                                    height={48}
-                                    className="absolute top-0 left-0 opacity-0 group-hover:opacity-100"
-                                />
-                            )}
-                            {!showProcessorWithExtras && inputQuantity > 1 && (
-                                <div className="absolute -top-1 -right-1 bg-blue-600 text-white text-xs font-bold rounded-full w-5 h-5 flex items-center justify-center">
-                                    {inputQuantity}
-                                </div>
-                            )}
-                        </div>
+                        <ProcessorIcon
+                            processor={product.processor}
+                            inputQuantity={!showProcessorWithExtras ? inputQuantity : 1}
+                        />
                     )
 
                     return (
                         <div key={`${resolvedName}-${product.processor}`} className="flex items-center gap-3">
                             {showIngredientSprites ? (
-                                // Kitchen recipe: show all ingredient sprites
-                                <div className="flex items-center gap-1">
-                                    {orderedIngredients.map((ing, idx) => {
+                                // Kitchen recipe: show all ingredient sprites in a compact grid
+                                <div className="grid grid-cols-2 gap-1 shrink-0 rounded-md border border-border/50 bg-muted/30 p-1.5">
+                                    {orderedIngredients.map((ing) => {
                                         const spritePath = getIngredientSpritePath(ing.name)
                                         const ingPrice = ing.name === baseItem.name
                                             ? selectedBasePrice
                                             : getIngredientPrice(ing.name, professions)
                                         return (
-                                            <Fragment key={ing.name}>
-                                                {idx > 0 && <span className="text-lg text-gray-400">+</span>}
-                                                <IngredientPopover ingredientName={ing.name} ingredientPrice={ingPrice}>
-                                                    <div className="relative">
-                                                        {spritePath && (
-                                                            <Image
-                                                                src={spritePath}
-                                                                alt={ing.name}
-                                                                width={32}
-                                                                height={32}
-                                                            />
-                                                        )}
-                                                        {ing.quantity > 1 && (
-                                                            <div className="absolute -top-1 -right-1 bg-blue-600 text-white text-xs font-bold rounded-full w-4 h-4 flex items-center justify-center text-[10px]">
-                                                                {ing.quantity}
-                                                            </div>
-                                                        )}
-                                                    </div>
-                                                </IngredientPopover>
-                                            </Fragment>
+                                            <IngredientPopover key={ing.name} ingredientName={ing.name} ingredientPrice={ingPrice}>
+                                                <div className="relative w-8 h-8">
+                                                    {spritePath && (
+                                                        <Image
+                                                            src={spritePath}
+                                                            alt={ing.name}
+                                                            width={32}
+                                                            height={32}
+                                                        />
+                                                    )}
+                                                    {ing.quantity > 1 && (
+                                                        <div className="absolute -top-1 -right-1 bg-blue-600 text-white text-xs font-bold rounded-full w-4 h-4 flex items-center justify-center text-[10px]">
+                                                            {ing.quantity}
+                                                        </div>
+                                                    )}
+                                                </div>
+                                            </IngredientPopover>
                                         )
                                     })}
                                 </div>
@@ -411,7 +426,7 @@ export function DerivedItems({ baseItem, professions, selectedBasePrice, selecte
                                                 ({deltaText})
                                             </span>
                                         )}
-{processingDays !== undefined && processingDays > 0 && (
+                                        {processingDays !== undefined && processingDays > 0 && (
                                             <span className="ml-2 text-xs text-gray-400">
                                                 {processingDays}d
                                             </span>

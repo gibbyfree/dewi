@@ -1,10 +1,24 @@
 # Dewi — Dew I or don't I?
 
-> A lightweight, mobile-first companion app for Stardew Valley players who think too hard about what to dew with their items.
+**[Try it → dewi.gibby.dev](https://dewi.gibby.dev)**
 
-<!-- SCREENSHOTS TODO -->
+> A lightweight, mobile-first companion app for Stardew Valley players who think too hard about what to _dew_ with their items.
 
-You just harvested a Melon. Do you sell it as-is? Throw it in a Keg? Save it for a recipe? Dewi shows you the money at a glance: sell prices, processing outputs, recipe uses - all adjusted for your professions.
+<p align="center">
+  <img src="public/screenshots/comparison.webp" width="130" alt="Processor comparison" />
+  &nbsp;&nbsp;
+  <img src="public/screenshots/search.webp" width="130" alt="Search" />
+  &nbsp;&nbsp;
+  <img src="public/screenshots/recipes.webp" width="130" alt="Recipes" />
+</p>
+
+- Search for any crop, fruit, fish, or animal product and compare sell prices across all quality levels
+- See every processor transformation and whether it's worth the cost
+- Check recipes (ingredient breakdown + buff info) associated with an item
+- Prices adjust live for your professions - Tiller, Artisan, Angler, etc.
+- Dark + light mode support
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/fcaf2de1-71c8-416f-9809-94a7776dbeff/deploy-status)](https://app.netlify.com/projects/dewio/deploys)
 
 ## Development
 
