@@ -9,7 +9,7 @@
   &nbsp;&nbsp;
   <img src="public/screenshots/search.webp" width="130" alt="Search" />
   &nbsp;&nbsp;
-  <img src="public/screenshots/recipes.webp" width="150" alt="Recipes" />
+  <img src="public/screenshots/recipes.webp" width="130" alt="Recipes" />
 </p>
 
 - Search for any crop, fruit, fish, or animal product and compare sell prices across all quality levels
