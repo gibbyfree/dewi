@@ -1,10 +1,14 @@
 # Dewi — Dew I or don't I?
 
-> A lightweight, mobile-first companion app for Stardew Valley players who think too hard about what to dew with their items.
+**[Try it → dewi.gibby.dev](https://dewi.gibby.dev)**
+
+> A lightweight, mobile-first companion app for Stardew Valley players who think too hard about what to _dew_ with their items.
 
 <!-- SCREENSHOTS TODO -->
 
 You just harvested a Melon. Do you sell it as-is? Throw it in a Keg? Save it for a recipe? Dewi shows you the money at a glance: sell prices, processing outputs, recipe uses - all adjusted for your professions.
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/fcaf2de1-71c8-416f-9809-94a7776dbeff/deploy-status)](https://app.netlify.com/projects/dewio/deploys)
 
 ## Development
 
