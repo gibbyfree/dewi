@@ -5,12 +5,15 @@
 > A lightweight, mobile-first companion app for Stardew Valley players who think too hard about what to _dew_ with their items.
 
 <p align="center">
-  <img src="public/screenshots/results.webp" width="200" alt="Search results" />
+  <img src="public/screenshots/results.webp" width="150" alt="Search results" />
   &nbsp;&nbsp;
-  <img src="public/screenshots/recipes.webp" width="200" alt="Recipes" />
+  <img src="public/screenshots/recipes.webp" width="150" alt="Recipes" />
 </p>
 
-You just harvested a Melon. Do you sell it as-is? Throw it in a Keg? Save it for a recipe? Dewi shows you the money at a glance: sell prices, processing outputs, recipe uses - all adjusted for your professions.
+- Search for any crop, fruit, fish, or animal product and compare sell prices across all quality levels
+- See every processor transformation and whether it's worth the cost
+- Check recipes (ingredient breakdown + buff info) associated with an item
+- Prices adjust live for your professions - Tiller, Artisan, Angler, etc.
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/fcaf2de1-71c8-416f-9809-94a7776dbeff/deploy-status)](https://app.netlify.com/projects/dewio/deploys)
 
