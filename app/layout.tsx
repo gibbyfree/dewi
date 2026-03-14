@@ -28,6 +28,26 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {children}
+        <footer className="mt-12 py-4 text-center text-xs text-muted-foreground border-t border-border">
+          Data &amp; sprites from{" "}
+          <a
+            href="https://stardewvalleywiki.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline hover:text-foreground transition-colors"
+          >
+            Stardew Valley Wiki
+          </a>{" "}
+          · Stardew Valley by{" "}
+          <a
+            href="https://x.com/concernedape"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline hover:text-foreground transition-colors"
+          >
+            ConcernedApe
+          </a>
+        </footer>
       </body>
     </html>
   );
