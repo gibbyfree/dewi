@@ -1,6 +1,21 @@
 import type { GameItem, Recipe, RecipeProduct } from "@/types/items"
 
 /**
+ * Build a map from each item name to its canonical alias (first in each group).
+ * e.g. "Large Egg" → "Egg", "Goat Milk" → "Milk"
+ */
+export function buildAliasMap(aliasGroups: string[][]): Map<string, string> {
+    const map = new Map<string, string>()
+    for (const group of aliasGroups) {
+        const canonical = group[0]
+        for (const name of group) {
+            map.set(name, canonical)
+        }
+    }
+    return map
+}
+
+/**
  * A node in the derivation tree for an item.
  * Represents one processing step and its output.
  */
@@ -18,14 +33,20 @@ export interface DerivationNode {
 }
 
 /**
- * Check if a recipe's base matches a given item.
+ * Check if a recipe's base matches a given item, respecting ingredient aliases.
+ * e.g. a recipe with base "Egg" will also match "Large Egg" if they share a canonical alias.
  */
-function recipeMatchesItem(recipeBase: Recipe["base"], item: GameItem): boolean {
+function recipeMatchesItem(recipeBase: Recipe["base"], item: GameItem, aliasMap?: Map<string, string>): boolean {
+    const itemCanonical = aliasMap?.get(item.name) ?? item.name
     if (typeof recipeBase === "string") {
-        return recipeBase === item.name
+        const baseCanonical = aliasMap?.get(recipeBase) ?? recipeBase
+        return recipeBase === item.name || baseCanonical === itemCanonical
     }
     if (Array.isArray(recipeBase)) {
-        return recipeBase.includes(item.name)
+        return recipeBase.some(b => {
+            const bCanonical = aliasMap?.get(b) ?? b
+            return b === item.name || bCanonical === itemCanonical
+        })
     }
     if ("category" in recipeBase) {
         return recipeBase.category === item.category
@@ -50,34 +71,44 @@ function resolveTemplateSlug(template: string, inputName: string): string {
 
 /**
  * Get all recipe products applicable to a given item, with resolved names and sprites.
+ *
+ * When aliasMap is provided, alias-matched recipes are included but deduplicated:
+ * if the item has a direct recipe for a given processor (e.g. Large Egg → gold Mayonnaise),
+ * alias-matched recipes for that same processor are suppressed (e.g. Egg → Mayonnaise).
  */
 export function getProductsForItem(
     item: GameItem,
-    recipes: Recipe[]
+    recipes: Recipe[],
+    aliasMap?: Map<string, string>
 ): Array<{ product: RecipeProduct; resolvedName: string; resolvedSprite: string | null }> {
-    const results: Array<{
+    type TaggedResult = {
         product: RecipeProduct
         resolvedName: string
         resolvedSprite: string | null
-    }> = []
+        direct: boolean
+    }
+    const tagged: TaggedResult[] = []
 
     for (const recipe of recipes) {
-        if (!recipeMatchesItem(recipe.base, item)) continue
+        const direct = recipeMatchesItem(recipe.base, item)
+        if (!direct && !recipeMatchesItem(recipe.base, item, aliasMap)) continue
 
         for (const product of recipe.products) {
             const resolvedName = product.nameTemplate
                 ? resolveTemplate(product.nameTemplate, item.name)
                 : product.name
-
             const resolvedSprite = product.spriteTemplate
                 ? resolveTemplateSlug(product.spriteTemplate, item.name)
                 : product.staticSprite ?? null
-
-            results.push({ product, resolvedName, resolvedSprite })
+            tagged.push({ product, resolvedName, resolvedSprite, direct })
         }
     }
 
-    return results
+    // Suppress alias matches for any processor that already has a direct match
+    const directProcessors = new Set(tagged.filter(r => r.direct).map(r => r.product.processor))
+    return tagged
+        .filter(r => r.direct || !directProcessors.has(r.product.processor))
+        .map(({ direct: _direct, ...rest }) => rest)
 }
 
 /**
@@ -130,6 +161,6 @@ export function buildItemIndex(items: GameItem[]): Map<string, GameItem> {
 /**
  * Find all recipes whose base matches a given item.
  */
-export function getRecipesForItem(item: GameItem, recipes: Recipe[]): Recipe[] {
-    return recipes.filter(r => recipeMatchesItem(r.base, item))
+export function getRecipesForItem(item: GameItem, recipes: Recipe[], aliasMap?: Map<string, string>): Recipe[] {
+    return recipes.filter(r => recipeMatchesItem(r.base, item, aliasMap))
 }

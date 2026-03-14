@@ -1,4 +1,16 @@
-import type { GameItem, ItemCategory, ItemPrices, PriceQualities } from "@/types/items"
+import type { FoodBuff, GameItem, ItemCategory, ItemPrices, PriceQualities } from "@/types/items"
+
+/**
+ * Apply a profession multiplier to every quality tier of a PriceQualities object.
+ */
+function computeProfessionQualities(base: PriceQualities, multiplier: number): PriceQualities {
+    return {
+        normal: Math.floor(base.normal * multiplier),
+        ...(base.silver !== undefined ? { silver: Math.floor(base.silver * multiplier) } : {}),
+        ...(base.gold !== undefined ? { gold: Math.floor(base.gold * multiplier) } : {}),
+        ...(base.iridium !== undefined ? { iridium: Math.floor(base.iridium * multiplier) } : {}),
+    }
+}
 
 /**
  * Named price formulas used across the game.
@@ -9,8 +21,8 @@ import type { GameItem, ItemCategory, ItemPrices, PriceQualities } from "@/types
 type PriceFormula = (basePrice: number) => number
 
 const formulaRegistry: Record<string, PriceFormula> = {
-    // Fish Smoker: base * 1.5 (minimum +50g, but we'll keep it simple for now)
-    "smoked_fish": (base) => Math.floor(base * 1.5),
+    // Fish Smoker: 2x the fish's quality-adjusted price
+    "smoked_fish": (base) => Math.floor(base * 2),
 
     // Roe: 30 + floor(base / 2)
     "roe": (base) => 30 + Math.floor(base / 2),
@@ -81,12 +93,28 @@ export function generateQualities(normalPrice: number): PriceQualities {
 }
 
 /**
+ * Expand a PriceQualities object to include all quality tiers.
+ * Any tier not stored is computed from normal using standard multipliers.
+ * Explicitly stored values always take precedence (for overrides).
+ */
+function expandQualities(q: PriceQualities): Required<PriceQualities> {
+    const n = q.normal
+    return {
+        normal: n,
+        silver: q.silver ?? applyQualityMultiplier(n, "silver"),
+        gold: q.gold ?? applyQualityMultiplier(n, "gold"),
+        iridium: q.iridium ?? applyQualityMultiplier(n, "iridium"),
+    }
+}
+
+/**
  * Profession multipliers.
  */
 const PROFESSION_MULTIPLIERS: Record<string, number> = {
     tiller: 1.1,
     rancher: 1.1,
     artisan: 1.4,
+    fisher: 1.25,
     angler: 1.5,
 }
 
@@ -127,12 +155,34 @@ export function getSourceItemName(derivedName: string): { sourceName: string; fo
 /**
  * Get effective prices for an item. If the item has stored prices, use them.
  * Otherwise, try to compute from formula based on the source item.
+ * For fish, dynamically adds fisher/angler price tiers if not already stored.
  */
 export function getEffectivePrices(
     item: GameItem,
     itemsByName: Map<string, GameItem>
 ): ItemPrices | null {
-    if (item.prices) return item.prices
+    if (item.prices) {
+        // Cooked items cannot have quality tiers — only normal quality exists.
+        if (item.category === "cooked") {
+            return Object.fromEntries(
+                Object.entries(item.prices).map(([tier, quals]) => [tier, { normal: quals.normal }])
+            ) as ItemPrices
+        }
+
+        // Expand all stored tiers to include all quality levels (silver/gold/iridium may be
+        // omitted from items.json and inferred from normal via standard multipliers).
+        const expanded = Object.fromEntries(
+            Object.entries(item.prices).map(([tier, quals]) => [tier, expandQualities(quals)])
+        ) as ItemPrices
+        if (item.category === "fish" && (!expanded.fisher || !expanded.angler)) {
+            return {
+                ...expanded,
+                fisher: expanded.fisher ?? computeProfessionQualities(expanded.base, 1.25),
+                angler: expanded.angler ?? computeProfessionQualities(expanded.base, 1.5),
+            }
+        }
+        return expanded
+    }
 
     const source = getSourceItemName(item.name)
     if (!source) return null
@@ -158,6 +208,7 @@ export type PriceCategoryResult =
     | "bearsKnowledgeTiller"
     | "artisan"
     | "rancher"
+    | "fisher"
     | "angler"
 
 /**
@@ -174,12 +225,14 @@ export function getPriceCategory(
     const hasArtisan = professions.includes("artisan")
     const hasBearsKnowledge = professions.includes("bearsKnowledge")
     const hasRancher = professions.includes("rancher")
+    const hasFisher = professions.includes("fisher")
     const hasAngler = professions.includes("angler")
 
     const isBerry = itemName === "Blackberry" || itemName === "Salmonberry"
 
-    // Fish use angler
+    // Fish use angler (50%) or fisher (25%)
     if (category === "fish" && hasAngler) return "angler"
+    if (category === "fish" && hasFisher) return "fisher"
 
     // Animal products use rancher
     if (category === "animal-product" && hasRancher) return "rancher"
@@ -195,6 +248,30 @@ export function getPriceCategory(
     if (tillerApplies && (category === "crop" || category === "fruit")) return "tiller"
 
     return "base"
+}
+
+// --- Food buff formatting ---
+
+export function formatBuffDuration(seconds: number): string {
+    const m = Math.floor(seconds / 60)
+    const s = seconds % 60
+    return s === 0 ? `${m}m` : `${m}m ${s}s`
+}
+
+export function formatBuffs(buffs: FoodBuff[]): string {
+    // Group buffs by duration so shared durations are shown once
+    const byDuration = new Map<number, FoodBuff[]>()
+    for (const buff of buffs) {
+        const group = byDuration.get(buff.duration) ?? []
+        group.push(buff)
+        byDuration.set(buff.duration, group)
+    }
+    return Array.from(byDuration.entries())
+        .map(([duration, group]) => {
+            const effects = group.map(b => `${b.name} +${b.amount}`).join(", ")
+            return `${effects} (${formatBuffDuration(duration)})`
+        })
+        .join(" · ")
 }
 
 // --- Gold per day helpers ---

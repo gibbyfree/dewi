@@ -56,9 +56,30 @@ describe("resolveFormula", () => {
         expect(resolveFormula("dried", 550)).toBe(4150)
     })
 
-    it("smoked_fish: floor(base * 1.5)", () => {
-        expect(resolveFormula("smoked_fish", 100)).toBe(150)
-        expect(resolveFormula("smoked_fish", 75)).toBe(112)
+    it("smoked_fish: floor(base * 2)", () => {
+        expect(resolveFormula("smoked_fish", 100)).toBe(200)
+        expect(resolveFormula("smoked_fish", 75)).toBe(150)
+    })
+
+    it("smoked_fish with fisher: 2x the profession-adjusted quality price", () => {
+        // Fisher/Angler apply to the fish sell price; smoked fish = 2x that sell price.
+        // Sardine base normal = 40; iridium = floor(40 * 2) = 80
+        // Fisher iridium = floor(80 * 1.25) = 100; smoked = 2 * 100 = 200
+        const sardine = getItem("Sardine")
+        const prices = getEffectivePrices(sardine, itemsByName)!
+        const fisherIridium = prices.fisher!.iridium!
+        expect(fisherIridium).toBe(100) // floor(80 * 1.25)
+        expect(resolveFormula("smoked_fish", fisherIridium)).toBe(200)
+    })
+
+    it("smoked_fish with angler: 2x the profession-adjusted quality price", () => {
+        // Sardine base normal = 40; iridium = floor(40 * 2) = 80
+        // Angler iridium = floor(80 * 1.5) = 120; smoked = 2 * 120 = 240
+        const sardine = getItem("Sardine")
+        const prices = getEffectivePrices(sardine, itemsByName)!
+        const anglerIridium = prices.angler!.iridium!
+        expect(anglerIridium).toBe(120) // floor(80 * 1.5)
+        expect(resolveFormula("smoked_fish", anglerIridium)).toBe(240)
     })
 
     it("roe: 30 + floor(base / 2)", () => {
@@ -124,6 +145,11 @@ describe("applyProfessionMultiplier", () => {
         expect(applyProfessionMultiplier(1650, "artisan")).toBe(2310)
     })
 
+    it("fisher = floor(1.25x)", () => {
+        expect(applyProfessionMultiplier(200, "fisher")).toBe(250)
+        expect(applyProfessionMultiplier(65, "fisher")).toBe(81)
+    })
+
     it("angler = floor(1.5x)", () => {
         expect(applyProfessionMultiplier(200, "angler")).toBe(300)
     })
@@ -137,9 +163,11 @@ describe("applyProfessionMultiplier", () => {
 // Item price retrieval from items.json
 // ---------------------------------------------------------------------------
 describe("item prices from data", () => {
-    it("Ancient Fruit has correct base prices", () => {
+    it("Ancient Fruit has correct base prices (via getEffectivePrices)", () => {
         const af = getItem("Ancient Fruit")
-        expect(af.prices!.base).toEqual({
+        const prices = getEffectivePrices(af, itemsByName)!
+        // normal stored; silver/gold/iridium computed from standard multipliers
+        expect(prices.base).toEqual({
             normal: 550,
             silver: 687,
             gold: 825,
@@ -147,9 +175,10 @@ describe("item prices from data", () => {
         })
     })
 
-    it("Ancient Fruit has correct tiller prices", () => {
+    it("Ancient Fruit has correct tiller prices (via getEffectivePrices)", () => {
         const af = getItem("Ancient Fruit")
-        expect(af.prices!.tiller).toEqual({
+        const prices = getEffectivePrices(af, itemsByName)!
+        expect(prices.tiller).toEqual({
             normal: 605,
             silver: 755,
             gold: 907,
@@ -157,9 +186,10 @@ describe("item prices from data", () => {
         })
     })
 
-    it("Carrot has correct base prices", () => {
+    it("Carrot has correct base prices (via getEffectivePrices)", () => {
         const carrot = getItem("Carrot")
-        expect(carrot.prices!.base).toEqual({
+        const prices = getEffectivePrices(carrot, itemsByName)!
+        expect(prices.base).toEqual({
             normal: 35,
             silver: 43,
             gold: 52,
@@ -167,9 +197,10 @@ describe("item prices from data", () => {
         })
     })
 
-    it("Egg has correct rancher prices", () => {
+    it("Egg has correct rancher prices (via getEffectivePrices)", () => {
         const egg = getItem("Egg")
-        expect(egg.prices!.rancher).toEqual({
+        const prices = getEffectivePrices(egg, itemsByName)!
+        expect(prices.rancher).toEqual({
             normal: 60,
             silver: 74,
             gold: 90,
@@ -188,10 +219,13 @@ describe("item prices from data", () => {
 // Derived (computed) prices via getEffectivePrices
 // ---------------------------------------------------------------------------
 describe("getEffectivePrices", () => {
-    it("returns stored prices for base items", () => {
+    it("returns expanded prices for base items", () => {
         const af = getItem("Ancient Fruit")
-        const prices = getEffectivePrices(af, itemsByName)
-        expect(prices).toBe(af.prices)
+        const prices = getEffectivePrices(af, itemsByName)!
+        // getEffectivePrices returns a new expanded object, not the stored reference
+        expect(prices.base.normal).toBe(550)
+        expect(prices.base.silver).toBe(687)
+        expect(prices.base.iridium).toBe(1100)
     })
 
     it("computes wine price via synthetic item", () => {
@@ -236,6 +270,25 @@ describe("getEffectivePrices", () => {
         const wine: GameItem = { name: "Ancient Fruit Wine", category: "artisan-good", base: false }
         const prices = getEffectivePrices(wine, itemsByName)!
         expect(prices.base).toEqual(generateQualities(1650))
+    })
+
+    it("cooked items only have normal quality — no silver/gold/iridium", () => {
+        const sashimi = getItem("Sashimi")
+        const prices = getEffectivePrices(sashimi, itemsByName)!
+        expect(prices.base.normal).toBeGreaterThan(0)
+        expect(prices.base.silver).toBeUndefined()
+        expect(prices.base.gold).toBeUndefined()
+        expect(prices.base.iridium).toBeUndefined()
+    })
+
+    it("expands quality tiers from normal even when not stored in items.json", () => {
+        // Ancient Fruit only stores base.normal=550; silver/gold/iridium are computed
+        const af = getItem("Ancient Fruit")
+        expect(af.prices!.base.silver).toBeUndefined()
+        const prices = getEffectivePrices(af, itemsByName)!
+        expect(prices.base.silver).toBe(687)  // floor(550 * 1.25)
+        expect(prices.base.gold).toBe(825)    // floor(550 * 1.5)
+        expect(prices.base.iridium).toBe(1100) // 550 * 2
     })
 })
 
@@ -334,6 +387,38 @@ describe("getPriceCategory", () => {
 
     it("tiller does not apply to artisan goods", () => {
         expect(getPriceCategory("Ancient Fruit Wine", "artisan-good", false, false, ["tiller"])).toBe("base")
+    })
+
+    it("returns 'fisher' for fish with fisher profession", () => {
+        expect(getPriceCategory("Salmon", "fish", false, false, ["fisher"])).toBe("fisher")
+    })
+
+    it("returns 'angler' for fish with angler profession (takes priority over fisher)", () => {
+        expect(getPriceCategory("Salmon", "fish", false, false, ["angler"])).toBe("angler")
+        expect(getPriceCategory("Salmon", "fish", false, false, ["fisher", "angler"])).toBe("angler")
+    })
+
+    it("fisher does not apply to non-fish", () => {
+        expect(getPriceCategory("Ancient Fruit", "fruit", false, false, ["fisher"])).toBe("base")
+    })
+})
+
+describe("getEffectivePrices fish profession tiers", () => {
+    it("dynamically adds fisher and angler tiers for fish", () => {
+        const salmon = getItem("Salmon")
+        const prices = getEffectivePrices(salmon, itemsByName)!
+        // Salmon base = 75g; fisher = floor(75 * 1.25) = 93; angler = floor(75 * 1.5) = 112
+        expect(prices.fisher?.normal).toBe(93)
+        expect(prices.angler?.normal).toBe(112)
+    })
+
+    it("fisher tier has quality prices", () => {
+        const salmon = getItem("Salmon")
+        const prices = getEffectivePrices(salmon, itemsByName)!
+        // silver = floor(93 * 1.25) = 116... wait, fisher applies to base quality prices
+        // base silver = floor(75 * 1.25) = 93; fisher silver = floor(93 * 1.25) = 116
+        expect(prices.fisher?.silver).toBeDefined()
+        expect(prices.angler?.gold).toBeDefined()
     })
 })
 

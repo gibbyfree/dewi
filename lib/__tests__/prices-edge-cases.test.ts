@@ -165,10 +165,12 @@ describe("getEffectivePrices (synthetic)", () => {
         expect(prices.base.normal).toBe(300) // wine: 100 * 3
     })
 
-    it("returns stored prices when item has them", () => {
+    it("returns prices when item has them stored", () => {
         const item = index.get("ItemWithStoredPrices")!
         const prices = getEffectivePrices(item, index)
-        expect(prices).toBe(item.prices) // reference equality
+        // getEffectivePrices always returns an expanded copy, not the stored reference
+        expect(prices).not.toBeNull()
+        expect(prices!.base.normal).toBe(item.prices!.base.normal)
     })
 
     it("returns null when source item not found", () => {

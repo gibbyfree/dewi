@@ -1,3186 +1,3974 @@
 {
-    "items": [
-        {
-            "name": "Algae Soup",
-            "category": "cooked",
-            "base": false,
-            "prices": {
-                "base": {
-                    "normal": 100
-                }
-            },
-            "spritePath": "/sprites/food/algae-soup.png"
-        },
-        {
-            "name": "Amaranth",
-            "category": "crop",
-            "base": true,
-            "prices": {
-                "base": {
-                    "normal": 150,
-                    "silver": 187,
-                    "gold": 225,
-                    "iridium": 300
-                },
-                "tiller": {
-                    "normal": 165,
-                    "silver": 205,
-                    "gold": 247,
-                    "iridium": 330
-                }
-            },
-            "description": "A purple grain cultivated by an ancient civilization.",
-            "color": "pink",
-            "daysToMature": 7
-        },
-        {
-            "name": "Ancient Fruit",
-            "category": "fruit",
-            "base": true,
-            "prices": {
-                "base": {
-                    "normal": 550,
-                    "silver": 687,
-                    "gold": 825,
-                    "iridium": 1100
-                },
-                "tiller": {
-                    "normal": 605,
-                    "silver": 755,
-                    "gold": 907,
-                    "iridium": 1210
-                }
-            },
-            "description": "It's been dormant for eons.",
-            "color": "light-blue",
-            "daysToMature": 28,
-            "daysToRegrow": 7
-        },
-        {
-            "name": "Apple",
-            "category": "fruit",
-            "base": true,
-            "prices": {
-                "base": {
-                    "normal": 100,
-                    "silver": 125,
-                    "gold": 150,
-                    "iridium": 200
-                },
-                "tiller": {
-                    "normal": 110,
-                    "silver": 137,
-                    "gold": 165,
-                    "iridium": 220
-                }
-            },
-            "description": "A crisp fruit used for juice and cider.",
-            "color": "red",
-            "daysToMature": 28,
-            "daysToRegrow": 1
-        },
-        {
-            "name": "Apricot",
-            "category": "fruit",
-            "base": true,
-            "prices": {
-                "base": {
-                    "normal": 50,
-                    "silver": 62,
-                    "gold": 75,
-                    "iridium": 100
-                },
-                "tiller": {
-                    "normal": 55,
-                    "silver": 68,
-                    "gold": 82,
-                    "iridium": 110
-                }
-            },
-            "description": "A tender little fruit with a rock-hard pit.",
-            "color": "orange",
-            "daysToMature": 28,
-            "daysToRegrow": 1
-        },
-        {
-            "name": "Artichoke",
-            "category": "crop",
-            "base": true,
-            "prices": {
-                "base": {
-                    "normal": 160,
-                    "silver": 200,
-                    "gold": 240,
-                    "iridium": 320
-                },
-                "tiller": {
-                    "normal": 176,
-                    "silver": 220,
-                    "gold": 264,
-                    "iridium": 352
-                }
-            },
-            "description": "The bud of a thistle plant. The spiny outer leaves conceal a fleshy, filling interior.",
-            "color": "green",
-            "daysToMature": 8
-        },
-        {
-            "name": "Artichoke Dip",
-            "category": "cooked",
-            "base": false,
-            "prices": {
-                "base": {
-                    "normal": 210
-                }
-            },
-            "spritePath": "/sprites/food/artichoke-dip.png"
-        },
-        {
-            "name": "Autumn's Bounty",
-            "category": "cooked",
-            "base": false,
-            "prices": {
-                "base": {
-                    "normal": 350
-                }
-            },
-            "spritePath": "/sprites/food/autumns-bounty.png"
-        },
-        {
-            "name": "Baked Fish",
-            "category": "cooked",
-            "base": false,
-            "prices": {
-                "base": {
-                    "normal": 100
-                }
-            },
-            "spritePath": "/sprites/food/baked-fish.png"
-        },
-        {
-            "name": "Banana",
-            "category": "fruit",
-            "base": true,
-            "prices": {
-                "base": {
-                    "normal": 150,
-                    "silver": 187,
-                    "gold": 225,
-                    "iridium": 300
-                },
-                "tiller": {
-                    "normal": 165,
-                    "silver": 205,
-                    "gold": 247,
-                    "iridium": 330
-                }
-            },
-            "description": "A sweet, starchy tropical fruit.",
-            "color": "yellow",
-            "daysToMature": 28,
-            "daysToRegrow": 1
-        },
-        {
-            "name": "Banana Pudding",
-            "category": "cooked",
-            "base": false,
-            "prices": {
-                "base": {
-                    "normal": 260
-                }
-            },
-            "spritePath": "/sprites/food/banana-pudding.png"
-        },
-        {
-            "name": "Bean Hotpot",
-            "category": "cooked",
-            "base": false,
-            "prices": {
-                "base": {
-                    "normal": 100
-                }
-            },
-            "spritePath": "/sprites/food/bean-hotpot.png"
-        },
-        {
-            "name": "Beer",
-            "category": "artisan-good",
-            "base": false,
-            "prices": {
-                "base": {
-                    "normal": 200,
-                    "silver": 250,
-                    "gold": 300,
-                    "iridium": 400
-                },
-                "artisan": {
-                    "normal": 280,
-                    "silver": 350,
-                    "gold": 420,
-                    "iridium": 560
-                }
-            },
-            "spritePath": "/sprites/processedes/beer.png"
-        },
-        {
-            "name": "Beet",
-            "category": "crop",
-            "base": true,
-            "prices": {
-                "base": {
-                    "normal": 100,
-                    "silver": 125,
-                    "gold": 150,
-                    "iridium": 200
-                },
-                "tiller": {
-                    "normal": 110,
-                    "silver": 137,
-                    "gold": 165,
-                    "iridium": 220
-                }
-            },
-            "description": "A sweet and earthy root vegetable. As a bonus, the leaves make a great salad.",
-            "color": "purple",
-            "daysToMature": 6
-        },
-        {
-            "name": "Blackberry",
-            "category": "fruit",
-            "base": true,
-            "prices": {
-                "base": {
-                    "normal": 20,
-                    "silver": 25,
-                    "gold": 30,
-                    "iridium": 40
-                },
-                "tiller": {
-                    "normal": 22,
-                    "silver": 28,
-                    "gold": 33,
-                    "iridium": 44
-                },
-                "bearsKnowledge": {
-                    "normal": 60,
-                    "silver": 75,
-                    "gold": 90,
-                    "iridium": 120
-                },
-                "bearsKnowledgeTiller": {
-                    "normal": 66,
-                    "silver": 83,
-                    "gold": 99,
-                    "iridium": 132
-                }
-            },
-            "description": "An early-fall treat.",
-            "color": "dark-blue",
-            "forageable": true
-        },
-        {
-            "name": "Blackberry Cobbler",
-            "category": "cooked",
-            "base": false,
-            "prices": {
-                "base": {
-                    "normal": 260
-                }
-            },
-            "spritePath": "/sprites/food/blackberry-cobbler.png"
-        },
-        {
-            "name": "Blue Jazz",
-            "category": "crop",
-            "base": true,
-            "prices": {
-                "base": {
-                    "normal": 50,
-                    "silver": 62,
-                    "gold": 75,
-                    "iridium": 100
-                }
-            },
-            "description": "The flower grows in a sphere to invite as many butterflies as possible.",
-            "daysToMature": 7
-        },
-        {
-            "name": "Blueberry",
-            "category": "fruit",
-            "base": true,
-            "prices": {
-                "base": {
-                    "normal": 50,
-                    "silver": 62,
-                    "gold": 75,
-                    "iridium": 100
-                },
-                "tiller": {
-                    "normal": 55,
-                    "silver": 68,
-                    "gold": 82,
-                    "iridium": 110
-                }
-            },
-            "color": "blue",
-            "daysToMature": 13,
-            "daysToRegrow": 4
-        },
-        {
-            "name": "Blueberry Tart",
-            "category": "cooked",
-            "base": false,
-            "prices": {
-                "base": {
-                    "normal": 150
-                }
-            },
-            "spritePath": "/sprites/food/blueberry-tart.png"
-        },
-        {
-            "name": "Bok Choy",
-            "category": "crop",
-            "base": true,
-            "prices": {
-                "base": {
-                    "normal": 80,
-                    "silver": 100,
-                    "gold": 120,
-                    "iridium": 160
-                },
-                "tiller": {
-                    "normal": 88,
-                    "silver": 110,
-                    "gold": 132,
-                    "iridium": 176
-                }
-            },
-            "description": "The leafy greens and fibrous stalks are healthy and delicious.",
-            "color": "green",
-            "daysToMature": 4
-        },
-        {
-            "name": "Bread",
-            "category": "cooked",
-            "base": false,
-            "prices": {
-                "base": {
-                    "normal": 60
-                }
-            },
-            "spritePath": "/sprites/food/bread.png"
-        },
-        {
-            "name": "Bream",
-            "category": "fish",
-            "base": true,
-            "prices": {
-                "base": {
-                    "normal": 45,
-                    "silver": 56,
-                    "gold": 67,
-                    "iridium": 90
-                }
-            },
-            "description": "A fairly common river fish."
-        },
-        {
-            "name": "Broccoli",
-            "category": "crop",
-            "base": true,
-            "prices": {
-                "base": {
-                    "normal": 70,
-                    "silver": 87,
-                    "gold": 105,
-                    "iridium": 140
-                },
-                "tiller": {
-                    "normal": 77,
-                    "silver": 95,
-                    "gold": 115,
-                    "iridium": 154
-                }
-            },
-            "description": "The flowering head of a broccoli plant. The tiny buds give it a unique texture.",
-            "daysToMature": 8,
-            "daysToRegrow": 4
-        },
-        {
-            "name": "Bruschetta",
-            "category": "cooked",
-            "base": false,
-            "prices": {
-                "base": {
-                    "normal": 210
-                }
-            },
-            "spritePath": "/sprites/food/bruschetta.png"
-        },
-        {
-            "name": "Cactus Fruit",
-            "category": "fruit",
-            "base": true,
-            "prices": {
-                "base": {
-                    "normal": 75,
-                    "silver": 93,
-                    "gold": 112,
-                    "iridium": 150
-                },
-                "tiller": {
-                    "normal": 82,
-                    "silver": 102,
-                    "gold": 123,
-                    "iridium": 165
-                }
-            },
-            "description": "The sweet fruit of the prickly pear cactus.",
-            "color": "green",
-            "daysToMature": 12,
-            "daysToRegrow": 3,
-            "forageable": true
-        },
-        {
-            "name": "Carp",
-            "category": "fish",
-            "base": true,
-            "prices": {
-                "base": {
-                    "normal": 30,
-                    "silver": 37,
-                    "gold": 45,
-                    "iridium": 60
-                }
-            },
-            "description": "A common pond fish."
-        },
-        {
-            "name": "Carp Surprise",
-            "category": "cooked",
-            "base": false,
-            "prices": {
-                "base": {
-                    "normal": 150
-                }
-            },
-            "spritePath": "/sprites/food/carp-surprise.png"
-        },
-        {
-            "name": "Carrot",
-            "category": "crop",
-            "base": true,
-            "prices": {
-                "base": {
-                    "normal": 35,
-                    "silver": 43,
-                    "gold": 52,
-                    "iridium": 70
-                },
-                "tiller": {
-                    "normal": 38,
-                    "silver": 47,
-                    "gold": 57,
-                    "iridium": 77
-                }
-            },
-            "description": "A fast-growing, colorful tuber that makes for a great snack.",
-            "color": "orange",
-            "daysToMature": 3
-        },
-        {
-            "name": "Cauliflower",
-            "category": "crop",
-            "base": true,
-            "prices": {
-                "base": {
-                    "normal": 175,
-                    "silver": 218,
-                    "gold": 262,
-                    "iridium": 350
-                },
-                "tiller": {
-                    "normal": 192,
-                    "silver": 239,
-                    "gold": 288,
-                    "iridium": 385
-                }
-            },
-            "description": "Valuable, but slow-growing. Despite its pale color, the florets are packed with nutrients.",
-            "color": "white",
-            "daysToMature": 12
-        },
-        {
-            "name": "Cave Carrot",
-            "category": "crop",
-            "base": true,
-            "prices": {
-                "base": {
-                    "normal": 25,
-                    "silver": 31,
-                    "gold": 37,
-                    "iridium": 50
-                }
-            },
-            "description": "A starchy snack found in the mines."
-        },
-        {
-            "name": "Cheese",
-            "category": "artisan-good",
-            "base": true,
-            "prices": {
-                "base": {
-                    "normal": 230,
-                    "silver": 287,
-                    "gold": 345,
-                    "iridium": 460
-                },
-                "rancher": {
-                    "normal": 276,
-                    "silver": 344,
-                    "gold": 414,
-                    "iridium": 552
-                },
-                "artisan": {
-                    "normal": 322,
-                    "silver": 401,
-                    "gold": 480,
-                    "iridium": 640
-                }
-            },
-            "spritePath": "/sprites/processedes/cheese.png"
-        },
-        {
-            "name": "Cheese Cauliflower",
-            "category": "cooked",
-            "base": false,
-            "prices": {
-                "base": {
-                    "normal": 300
-                }
-            },
-            "spritePath": "/sprites/food/cheese-cauliflower.png"
-        },
-        {
-            "name": "Cherry",
-            "category": "fruit",
-            "base": true,
-            "prices": {
-                "base": {
-                    "normal": 80,
-                    "silver": 100,
-                    "gold": 120,
-                    "iridium": 160
-                },
-                "tiller": {
-                    "normal": 88,
-                    "silver": 110,
-                    "gold": 132,
-                    "iridium": 176
-                }
-            },
-            "description": "It's popular, and ripens sooner than most other fruits.",
-            "color": "red",
-            "daysToMature": 28,
-            "daysToRegrow": 1
-        },
-        {
-            "name": "Chocolate Cake",
-            "category": "cooked",
-            "base": false,
-            "prices": {
-                "base": {
-                    "normal": 200
-                }
-            },
-            "spritePath": "/sprites/food/chocolate-cake.png"
-        },
-        {
-            "name": "Chowder",
-            "category": "cooked",
-            "base": false,
-            "prices": {
-                "base": {
-                    "normal": 135
-                }
-            },
-            "spritePath": "/sprites/food/chowder.png"
-        },
-        {
-            "name": "Clam",
-            "category": "fish",
-            "base": true,
-            "prices": {
-                "base": {
-                    "normal": 50,
-                    "silver": 62,
-                    "gold": 75,
-                    "iridium": 100
-                }
-            },
-            "description": "Someone lived in here once."
-        },
-        {
-            "name": "Coconut",
-            "category": "fruit",
-            "base": true,
-            "prices": {
-                "base": {
-                    "normal": 100,
-                    "silver": 125,
-                    "gold": 150,
-                    "iridium": 200
-                },
-                "tiller": {
-                    "normal": 100,
-                    "silver": 125,
-                    "gold": 150,
-                    "iridium": 200
-                }
-            },
-            "description": "A seed of the coconut palm. It has many culinary uses.",
-            "color": "brown",
-            "forageable": true
-        },
-        {
-            "name": "Coffee",
-            "category": "artisan-good",
-            "base": false,
-            "prices": {
-                "base": {
-                    "normal": 150
-                }
-            },
-            "spritePath": "/sprites/processedes/coffee.png"
-        },
-        {
-            "name": "Coffee Bean",
-            "category": "crop",
-            "base": true,
-            "description": "Plant in spring or summer to grow a coffee plant. Place five beans in a keg to make coffee.",
-            "prices": {
-                "base": {
-                    "normal": 15,
-                    "silver": 18,
-                    "gold": 22,
-                    "iridium": 30
-                }
-            },
-            "daysToMature": 10,
-            "daysToRegrow": 2
-        },
-        {
-            "name": "Coleslaw",
-            "category": "cooked",
-            "base": false,
-            "prices": {
-                "base": {
-                    "normal": 345
-                }
-            },
-            "spritePath": "/sprites/food/coleslaw.png"
-        },
-        {
-            "name": "Common Mushroom",
-            "category": "crop",
-            "base": true,
-            "forageable": true,
-            "prices": {
-                "base": {
-                    "normal": 40,
-                    "silver": 50,
-                    "gold": 60,
-                    "iridium": 80
-                }
-            },
-            "description": "Slightly nutty, with good texture."
-        },
-        {
-            "name": "Complete Breakfast",
-            "category": "cooked",
-            "base": false,
-            "prices": {
-                "base": {
-                    "normal": 350
-                }
-            },
-            "spritePath": "/sprites/food/complete-breakfast.png"
-        },
-        {
-            "name": "Cookie",
-            "category": "cooked",
-            "base": false,
-            "prices": {
-                "base": {
-                    "normal": 140
-                }
-            },
-            "spritePath": "/sprites/food/cookie.png"
-        },
-        {
-            "name": "Corn",
-            "category": "crop",
-            "base": true,
-            "prices": {
-                "base": {
-                    "normal": 50,
-                    "silver": 62,
-                    "gold": 75,
-                    "iridium": 100
-                },
-                "tiller": {
-                    "normal": 55,
-                    "silver": 68,
-                    "gold": 82,
-                    "iridium": 110
-                }
-            },
-            "description": "One of the most popular grains. The sweet, fresh cobs are a summer favorite.",
-            "color": "yellow",
-            "daysToMature": 14,
-            "daysToRegrow": 4
-        },
-        {
-            "name": "Crab",
-            "category": "fish",
-            "base": true,
-            "prices": {
-                "base": {
-                    "normal": 100,
-                    "silver": 125,
-                    "gold": 150,
-                    "iridium": 200
-                }
-            },
-            "description": "A marine crustacean with a hard shell."
-        },
-        {
-            "name": "Crab Cakes",
-            "category": "cooked",
-            "base": false,
-            "prices": {
-                "base": {
-                    "normal": 275
-                }
-            },
-            "spritePath": "/sprites/food/crab-cakes.png"
-        },
-        {
-            "name": "Cranberries",
-            "category": "fruit",
-            "base": true,
-            "prices": {
-                "base": {
-                    "normal": 75,
-                    "silver": 93,
-                    "gold": 112,
-                    "iridium": 150
-                },
-                "tiller": {
-                    "normal": 82,
-                    "silver": 102,
-                    "gold": 123,
-                    "iridium": 165
-                }
-            },
-            "description": "These tart red berries are a traditional winter food.",
-            "color": "red",
-            "daysToMature": 7,
-            "daysToRegrow": 5
-        },
-        {
-            "name": "Cranberry Candy",
-            "category": "cooked",
-            "base": false,
-            "prices": {
-                "base": {
-                    "normal": 175
-                }
-            },
-            "spritePath": "/sprites/food/cranberry-candy.png"
-        },
-        {
-            "name": "Cranberry Sauce",
-            "category": "cooked",
-            "base": false,
-            "prices": {
-                "base": {
-                    "normal": 120
-                }
-            },
-            "spritePath": "/sprites/food/cranberry-sauce.png"
-        },
-        {
-            "name": "Crayfish",
-            "category": "fish",
-            "base": true,
-            "prices": {
-                "base": {
-                    "normal": 75,
-                    "silver": 93,
-                    "gold": 112,
-                    "iridium": 150
-                }
-            },
-            "description": "A small freshwater relative of the lobster."
-        },
-        {
-            "name": "Crispy Bass",
-            "category": "cooked",
-            "base": false,
-            "prices": {
-                "base": {
-                    "normal": 150
-                }
-            },
-            "spritePath": "/sprites/food/crispy-bass.png"
-        },
-        {
-            "name": "Crystal Fruit",
-            "category": "fruit",
-            "base": true,
-            "prices": {
-                "base": {
-                    "normal": 150,
-                    "silver": 187,
-                    "gold": 225,
-                    "iridium": 300
-                },
-                "tiller": {
-                    "normal": 150,
-                    "silver": 187,
-                    "gold": 225,
-                    "iridium": 300
-                }
-            },
-            "description": "A delicate fruit that pops up from the snow.",
-            "color": "blue",
-            "forageable": true
-        },
-        {
-            "name": "Dandelion",
-            "category": "crop",
-            "base": true,
-            "forageable": true,
-            "prices": {
-                "base": {
-                    "normal": 40,
-                    "silver": 50,
-                    "gold": 60,
-                    "iridium": 80
-                }
-            },
-            "description": "Not the prettiest flower, but the leaves make a good salad."
-        },
-        {
-            "name": "Dish O' The Sea",
-            "category": "cooked",
-            "base": false,
-            "prices": {
-                "base": {
-                    "normal": 220
-                }
-            },
-            "spritePath": "/sprites/food/dish-o-the-sea.png"
-        },
-        {
-            "name": "Duck Egg",
-            "category": "animal-product",
-            "base": true,
-            "prices": {
-                "base": {
-                    "normal": 95,
-                    "silver": 118,
-                    "gold": 142,
-                    "iridium": 190
-                },
-                "rancher": {
-                    "normal": 114,
-                    "silver": 141,
-                    "gold": 170,
-                    "iridium": 228
-                }
-            },
-            "description": "It's still warm.",
-            "daysToMature": 2
-        },
-        {
-            "name": "Duck Mayonnaise",
-            "category": "artisan-good",
-            "base": true,
-            "prices": {
-                "base": {
-                    "normal": 375
-                },
-                "rancher": {
-                    "normal": 450
-                },
-                "artisan": {
-                    "normal": 525
-                }
-            },
-            "spritePath": "/sprites/processedes/duck-mayonnaise.png"
-        },
-        {
-            "name": "Eel",
-            "category": "fish",
-            "base": true,
-            "prices": {
-                "base": {
-                    "normal": 85,
-                    "silver": 106,
-                    "gold": 127,
-                    "iridium": 170
-                }
-            },
-            "description": "A long, slippery fish."
-        },
-        {
-            "name": "Egg",
-            "category": "animal-product",
-            "base": true,
-            "prices": {
-                "base": {
-                    "normal": 50,
-                    "silver": 62,
-                    "gold": 75,
-                    "iridium": 100
-                },
-                "rancher": {
-                    "normal": 60,
-                    "silver": 74,
-                    "gold": 90,
-                    "iridium": 120
-                }
-            },
-            "description": "A regular white chicken egg.",
-            "daysToMature": 1
-        },
-        {
-            "name": "Eggplant",
-            "category": "crop",
-            "base": true,
-            "prices": {
-                "base": {
-                    "normal": 60,
-                    "silver": 75,
-                    "gold": 90,
-                    "iridium": 120
-                },
-                "tiller": {
-                    "normal": 66,
-                    "silver": 82,
-                    "gold": 99,
-                    "iridium": 132
-                }
-            },
-            "description": "A rich and wholesome relative of the tomato. Delicious fried or stewed.",
-            "color": "purple",
-            "daysToMature": 5,
-            "daysToRegrow": 5
-        },
-        {
-            "name": "Eggplant Parmesan",
-            "category": "cooked",
-            "base": false,
-            "prices": {
-                "base": {
-                    "normal": 200
-                }
-            },
-            "spritePath": "/sprites/food/eggplant-parmesan.png"
-        },
-        {
-            "name": "Escargot",
-            "category": "cooked",
-            "base": false,
-            "prices": {
-                "base": {
-                    "normal": 125
-                }
-            },
-            "spritePath": "/sprites/food/escargot.png"
-        },
-        {
-            "name": "Fairy Rose",
-            "category": "crop",
-            "base": true,
-            "prices": {
-                "base": {
-                    "normal": 290,
-                    "silver": 362,
-                    "gold": 435,
-                    "iridium": 580
-                },
-                "tiller": {
-                    "normal": 319,
-                    "silver": 398,
-                    "gold": 478,
-                    "iridium": 638
-                }
-            },
-            "description": "An old folk legend suggests that the sweet smell of this flower attracts fairies.",
-            "daysToMature": 12
-        },
-        {
-            "name": "Farmer's Lunch",
-            "category": "cooked",
-            "base": false,
-            "prices": {
-                "base": {
-                    "normal": 150
-                }
-            },
-            "spritePath": "/sprites/food/farmers-lunch.png"
-        },
-        {
-            "name": "Fiddlehead Fern",
-            "category": "crop",
-            "base": true,
-            "forageable": true,
-            "prices": {
-                "base": {
-                    "normal": 90,
-                    "silver": 112,
-                    "gold": 135,
-                    "iridium": 180
-                }
-            },
-            "description": "The young shoots are an edible delicacy."
-        },
-        {
-            "name": "Fiddlehead Risotto",
-            "category": "cooked",
-            "base": false,
-            "prices": {
-                "base": {
-                    "normal": 350
-                }
-            },
-            "spritePath": "/sprites/food/fiddlehead-risotto.png"
-        },
-        {
-            "name": "Fish Stew",
-            "category": "cooked",
-            "base": false,
-            "prices": {
-                "base": {
-                    "normal": 175
-                }
-            },
-            "spritePath": "/sprites/food/fish-stew.png"
-        },
-        {
-            "name": "Fish Taco",
-            "category": "cooked",
-            "base": false,
-            "prices": {
-                "base": {
-                    "normal": 500
-                }
-            },
-            "spritePath": "/sprites/food/fish-taco.png"
-        },
-        {
-            "name": "Flounder",
-            "category": "fish",
-            "base": true,
-            "prices": {
-                "base": {
-                    "normal": 100,
-                    "silver": 125,
-                    "gold": 150,
-                    "iridium": 200
-                }
-            },
-            "description": "A flat fish that lives on the ocean floor."
-        },
-        {
-            "name": "Fried Calamari",
-            "category": "cooked",
-            "base": false,
-            "prices": {
-                "base": {
-                    "normal": 150
-                }
-            },
-            "spritePath": "/sprites/food/fried-calamari.png"
-        },
-        {
-            "name": "Fried Eel",
-            "category": "cooked",
-            "base": false,
-            "prices": {
-                "base": {
-                    "normal": 120
-                }
-            },
-            "spritePath": "/sprites/food/fried-eel.png"
-        },
-        {
-            "name": "Fried Egg",
-            "category": "cooked",
-            "base": false,
-            "prices": {
-                "base": {
-                    "normal": 35
-                }
-            },
-            "spritePath": "/sprites/food/fried-egg.png"
-        },
-        {
-            "name": "Fried Mushroom",
-            "category": "cooked",
-            "base": false,
-            "prices": {
-                "base": {
-                    "normal": 200
-                }
-            },
-            "spritePath": "/sprites/food/fried-mushroom.png"
-        },
-        {
-            "name": "Fruit Salad",
-            "category": "cooked",
-            "base": false,
-            "prices": {
-                "base": {
-                    "normal": 450
-                }
-            },
-            "spritePath": "/sprites/food/fruit-salad.png"
-        },
-        {
-            "name": "Garlic",
-            "category": "crop",
-            "base": true,
-            "prices": {
-                "base": {
-                    "normal": 60,
-                    "silver": 75,
-                    "gold": 90,
-                    "iridium": 120
-                },
-                "tiller": {
-                    "normal": 66,
-                    "silver": 82,
-                    "gold": 99,
-                    "iridium": 132
-                }
-            },
-            "description": "Adds a wonderful zestiness to dishes. High quality garlic can be pretty spicy.",
-            "color": "white",
-            "daysToMature": 4
-        },
-        {
-            "name": "Ginger",
-            "category": "crop",
-            "base": true,
-            "forageable": true,
-            "prices": {
-                "base": {
-                    "normal": 60,
-                    "silver": 75,
-                    "gold": 90,
-                    "iridium": 120
-                }
-            },
-            "description": "This sharp, spicy root can be used in cooking."
-        },
-        {
-            "name": "Ginger Ale",
-            "category": "cooked",
-            "base": false,
-            "prices": {
-                "base": {
-                    "normal": 200
-                }
-            },
-            "spritePath": "/sprites/food/ginger-ale.png"
-        },
-        {
-            "name": "Glazed Yams",
-            "category": "cooked",
-            "base": false,
-            "prices": {
-                "base": {
-                    "normal": 200
-                }
-            },
-            "spritePath": "/sprites/food/glazed-yams.png"
-        },
-        {
-            "name": "Goat Cheese",
-            "category": "artisan-good",
-            "base": true,
-            "prices": {
-                "base": {
-                    "normal": 400,
-                    "silver": 500,
-                    "gold": 600,
-                    "iridium": 800
-                },
-                "rancher": {
-                    "normal": 480,
-                    "silver": 600,
-                    "gold": 720,
-                    "iridium": 960
-                },
-                "artisan": {
-                    "normal": 560,
-                    "silver": 700,
-                    "gold": 840,
-                    "iridium": 1120
-                }
-            },
-            "spritePath": "/sprites/processedes/goat-cheese.png"
-        },
-        {
-            "name": "Goat Milk",
-            "category": "animal-product",
-            "base": true,
-            "prices": {
-                "base": {
-                    "normal": 225,
-                    "silver": 281,
-                    "gold": 337,
-                    "iridium": 450
-                },
-                "rancher": {
-                    "normal": 270,
-                    "silver": 337,
-                    "gold": 404,
-                    "iridium": 540
-                }
-            },
-            "description": "The milk of a goat.",
-            "daysToMature": 2
-        },
-        {
-            "name": "Grape",
-            "category": "fruit",
-            "base": true,
-            "prices": {
-                "base": {
-                    "normal": 80,
-                    "silver": 100,
-                    "gold": 120,
-                    "iridium": 160
-                },
-                "tiller": {
-                    "normal": 88,
-                    "silver": 110,
-                    "gold": 132,
-                    "iridium": 176
-                }
-            },
-            "description": "A sweet cluster of fruit.",
-            "color": "dark-purple",
-            "daysToMature": 10,
-            "daysToRegrow": 3,
-            "forageable": true
-        },
-        {
-            "name": "Green Algae",
-            "category": "fish",
-            "base": true,
-            "prices": {
-                "base": {
-                    "normal": 15
-                }
-            },
-            "description": "It's slimy."
-        },
-        {
-            "name": "Green Bean",
-            "category": "crop",
-            "base": true,
-            "prices": {
-                "base": {
-                    "normal": 40,
-                    "silver": 50,
-                    "gold": 60,
-                    "iridium": 80
-                },
-                "tiller": {
-                    "normal": 44,
-                    "silver": 55,
-                    "gold": 66,
-                    "iridium": 88
-                }
-            },
-            "description": "A juicy little bean with a cool, crisp snap.",
-            "color": "green",
-            "daysToMature": 10,
-            "daysToRegrow": 3
-        },
-        {
-            "name": "Green Tea",
-            "category": "artisan-good",
-            "base": false,
-            "spritePath": "/sprites/processedes/green-tea.png"
-        },
-        {
-            "name": "Hashbrowns",
-            "category": "cooked",
-            "base": false,
-            "prices": {
-                "base": {
-                    "normal": 120
-                }
-            },
-            "spritePath": "/sprites/food/hashbrowns.png"
-        },
-        {
-            "name": "Hazelnut",
-            "category": "crop",
-            "base": true,
-            "forageable": true,
-            "prices": {
-                "base": {
-                    "normal": 90,
-                    "silver": 112,
-                    "gold": 135,
-                    "iridium": 180
-                }
-            },
-            "description": "That's one big hazelnut!"
-        },
-        {
-            "name": "Honey",
-            "category": "animal-product",
-            "base": true,
-            "prices": {
-                "base": {
-                    "normal": 100
-                },
-                "artisan": {
-                    "normal": 140
-                }
-            },
-            "description": "It's a sweet syrup produced by bees. (Wild Honey assumed)",
-            "daysToMature": 1
-        },
-        {
-            "name": "Hops",
-            "category": "crop",
-            "base": true,
-            "prices": {
-                "base": {
-                    "normal": 25,
-                    "silver": 31,
-                    "gold": 37,
-                    "iridium": 50
-                },
-                "tiller": {
-                    "normal": 27,
-                    "silver": 34,
-                    "gold": 40,
-                    "iridium": 55
-                }
-            },
-            "description": "A bitter, tangy flower used to flavor beer.",
-            "color": "green",
-            "daysToMature": 11,
-            "daysToRegrow": 1
-        },
-        {
-            "name": "Hot Pepper",
-            "category": "fruit",
-            "base": true,
-            "prices": {
-                "base": {
-                    "normal": 40,
-                    "silver": 50,
-                    "gold": 60,
-                    "iridium": 80
-                },
-                "tiller": {
-                    "normal": 44,
-                    "silver": 55,
-                    "gold": 66,
-                    "iridium": 88
-                }
-            },
-            "description": "Fiery hot with a hint of sweetness.",
-            "color": "red",
-            "daysToMature": 5,
-            "daysToRegrow": 3
-        },
-        {
-            "name": "Ice Cream",
-            "category": "cooked",
-            "base": false,
-            "prices": {
-                "base": {
-                    "normal": 120
-                }
-            },
-            "spritePath": "/sprites/food/ice-cream.png"
-        },
-        {
-            "name": "Kale",
-            "category": "crop",
-            "base": true,
-            "prices": {
-                "base": {
-                    "normal": 110,
-                    "silver": 137,
-                    "gold": 165,
-                    "iridium": 220
-                },
-                "tiller": {
-                    "normal": 121,
-                    "silver": 150,
-                    "gold": 181,
-                    "iridium": 242
-                }
-            },
-            "description": "The waxy leaves are great in soups and stir fries.",
-            "color": "green",
-            "daysToMature": 6
-        },
-        {
-            "name": "Large Egg",
-            "category": "animal-product",
-            "base": true,
-            "prices": {
-                "base": {
-                    "normal": 95,
-                    "silver": 118,
-                    "gold": 142,
-                    "iridium": 190
-                },
-                "rancher": {
-                    "normal": 114,
-                    "silver": 141,
-                    "gold": 170,
-                    "iridium": 228
-                }
-            },
-            "description": "It's an uncommonly large white egg!",
-            "daysToMature": 1
-        },
-        {
-            "name": "Large Goat Milk",
-            "category": "animal-product",
-            "base": true,
-            "prices": {
-                "base": {
-                    "normal": 345,
-                    "silver": 431,
-                    "gold": 517,
-                    "iridium": 690
-                },
-                "rancher": {
-                    "normal": 414,
-                    "silver": 517,
-                    "gold": 620,
-                    "iridium": 828
-                }
-            },
-            "description": "A gallon of creamy goat's milk.",
-            "daysToMature": 2
-        },
-        {
-            "name": "Large Milk",
-            "category": "animal-product",
-            "base": true,
-            "prices": {
-                "base": {
-                    "normal": 190,
-                    "silver": 237,
-                    "gold": 285,
-                    "iridium": 380
-                },
-                "rancher": {
-                    "normal": 228,
-                    "silver": 284,
-                    "gold": 342,
-                    "iridium": 456
-                }
-            },
-            "description": "A large jug of cow's milk.",
-            "daysToMature": 1
-        },
-        {
-            "name": "Largemouth Bass",
-            "category": "fish",
-            "base": true,
-            "prices": {
-                "base": {
-                    "normal": 100,
-                    "silver": 125,
-                    "gold": 150,
-                    "iridium": 200
-                }
-            },
-            "description": "A popular freshwater game fish."
-        },
-        {
-            "name": "Leek",
-            "category": "crop",
-            "base": true,
-            "forageable": true,
-            "prices": {
-                "base": {
-                    "normal": 60,
-                    "silver": 75,
-                    "gold": 90,
-                    "iridium": 120
-                }
-            },
-            "description": "A tasty relative of the onion."
-        },
-        {
-            "name": "Lobster",
-            "category": "fish",
-            "base": true,
-            "prices": {
-                "base": {
-                    "normal": 120,
-                    "silver": 150,
-                    "gold": 180,
-                    "iridium": 240
-                }
-            },
-            "description": "A large ocean-dwelling crustacean."
-        },
-        {
-            "name": "Lobster Bisque",
-            "category": "cooked",
-            "base": false,
-            "prices": {
-                "base": {
-                    "normal": 205
-                }
-            },
-            "spritePath": "/sprites/food/lobster-bisque.png"
-        },
-        {
-            "name": "Lucky Lunch",
-            "category": "cooked",
-            "base": false,
-            "prices": {
-                "base": {
-                    "normal": 250
-                }
-            },
-            "spritePath": "/sprites/food/lucky-lunch.png"
-        },
-        {
-            "name": "Maki Roll",
-            "category": "cooked",
-            "base": false,
-            "prices": {
-                "base": {
-                    "normal": 220
-                }
-            },
-            "spritePath": "/sprites/food/maki-roll.png"
-        },
-        {
-            "name": "Mango",
-            "category": "fruit",
-            "base": true,
-            "prices": {
-                "base": {
-                    "normal": 130,
-                    "silver": 162,
-                    "gold": 195,
-                    "iridium": 260
-                },
-                "tiller": {
-                    "normal": 143,
-                    "silver": 178,
-                    "gold": 214,
-                    "iridium": 286
-                }
-            },
-            "description": "A big, sweet tropical fruit with a unique flavor.",
-            "color": "yellow",
-            "daysToMature": 28,
-            "daysToRegrow": 1
-        },
-        {
-            "name": "Mango Sticky Rice",
-            "category": "cooked",
-            "base": false,
-            "prices": {
-                "base": {
-                    "normal": 250
-                }
-            },
-            "spritePath": "/sprites/food/mango-sticky-rice.png"
-        },
-        {
-            "name": "Maple Bar",
-            "category": "cooked",
-            "base": false,
-            "prices": {
-                "base": {
-                    "normal": 300
-                }
-            },
-            "spritePath": "/sprites/food/maple-bar.png"
-        },
-        {
-            "name": "Maple Syrup",
-            "category": "artisan-good",
-            "base": true,
-            "prices": {
-                "base": {
-                    "normal": 200
-                }
-            },
-            "description": "A sweet syrup with a unique flavor."
-        },
-        {
-            "name": "Mayonnaise",
-            "category": "artisan-good",
-            "base": true,
-            "prices": {
-                "base": {
-                    "normal": 190,
-                    "silver": 237,
-                    "gold": 285,
-                    "iridium": 380
-                },
-                "rancher": {
-                    "normal": 228,
-                    "silver": 284,
-                    "gold": 342,
-                    "iridium": 456
-                },
-                "artisan": {
-                    "normal": 266,
-                    "silver": 331,
-                    "gold": 399,
-                    "iridium": 532
-                }
-            },
-            "spritePath": "/sprites/processedes/mayonnaise.png"
-        },
-        {
-            "name": "Mead",
-            "category": "artisan-good",
-            "base": false,
-            "prices": {
-                "base": {
-                    "normal": 300,
-                    "silver": 375,
-                    "gold": 450,
-                    "iridium": 600
-                },
-                "artisan": {
-                    "normal": 420,
-                    "silver": 525,
-                    "gold": 630,
-                    "iridium": 840
-                }
-            },
-            "spritePath": "/sprites/processedes/mead.png"
-        },
-        {
-            "name": "Melon",
-            "category": "fruit",
-            "base": true,
-            "prices": {
-                "base": {
-                    "normal": 250,
-                    "silver": 312,
-                    "gold": 375,
-                    "iridium": 500
-                },
-                "tiller": {
-                    "normal": 275,
-                    "silver": 343,
-                    "gold": 412,
-                    "iridium": 550
-                }
-            },
-            "description": "A cool, sweet summer treat.",
-            "color": "pink",
-            "daysToMature": 12
-        },
-        {
-            "name": "Midnight Carp",
-            "category": "fish",
-            "base": true,
-            "prices": {
-                "base": {
-                    "normal": 150,
-                    "silver": 187,
-                    "gold": 225,
-                    "iridium": 300
-                }
-            },
-            "description": "This shy fish only comes out at night."
-        },
-        {
-            "name": "Milk",
-            "category": "animal-product",
-            "base": true,
-            "prices": {
-                "base": {
-                    "normal": 125,
-                    "silver": 156,
-                    "gold": 187,
-                    "iridium": 250
-                },
-                "rancher": {
-                    "normal": 150,
-                    "silver": 187,
-                    "gold": 225,
-                    "iridium": 300
-                }
-            },
-            "description": "A jug of cow's milk.",
-            "daysToMature": 1
-        },
-        {
-            "name": "Miner's Treat",
-            "category": "cooked",
-            "base": false,
-            "prices": {
-                "base": {
-                    "normal": 200
-                }
-            },
-            "spritePath": "/sprites/food/miners-treat.png"
-        },
-        {
-            "name": "Morel",
-            "category": "crop",
-            "base": true,
-            "forageable": true,
-            "prices": {
-                "base": {
-                    "normal": 150,
-                    "silver": 187,
-                    "gold": 225,
-                    "iridium": 300
-                }
-            },
-            "description": "Sought after for its unique nutty flavor."
-        },
-        {
-            "name": "Moss",
-            "category": "crop",
-            "base": true,
-            "forageable": true,
-            "prices": {
-                "base": {
-                    "normal": 5,
-                    "silver": 6,
-                    "gold": 7,
-                    "iridium": 10
-                }
-            },
-            "description": "Hangs from the branches of old-growth trees."
-        },
-        {
-            "name": "Moss Soup",
-            "category": "cooked",
-            "base": false,
-            "prices": {
-                "base": {
-                    "normal": 80
-                }
-            },
-            "spritePath": "/sprites/food/moss-soup.png"
-        },
-        {
-            "name": "Mussel",
-            "category": "fish",
-            "base": true,
-            "prices": {
-                "base": {
-                    "normal": 30,
-                    "silver": 37,
-                    "gold": 45,
-                    "iridium": 60
-                }
-            },
-            "description": "A common bivalve."
-        },
-        {
-            "name": "Oil",
-            "category": "crop",
-            "base": false,
-            "prices": {
-                "base": {
-                    "normal": 100
-                },
-                "artisan": {
-                    "normal": 100
-                }
-            },
-            "spritePath": "/sprites/processedes/oil.png"
-        },
-        {
-            "name": "Omelet",
-            "category": "cooked",
-            "base": false,
-            "prices": {
-                "base": {
-                    "normal": 125
-                }
-            },
-            "spritePath": "/sprites/food/omelet.png"
-        },
-        {
-            "name": "Orange",
-            "category": "fruit",
-            "base": true,
-            "prices": {
-                "base": {
-                    "normal": 100,
-                    "silver": 125,
-                    "gold": 150,
-                    "iridium": 200
-                },
-                "tiller": {
-                    "normal": 110,
-                    "silver": 137,
-                    "gold": 165,
-                    "iridium": 220
-                }
-            },
-            "description": "Juicy, tangy, and bursting with sweet summer aroma.",
-            "color": "orange",
-            "daysToMature": 28,
-            "daysToRegrow": 1
-        },
-        {
-            "name": "Pale Ale",
-            "category": "artisan-good",
-            "base": false,
-            "prices": {
-                "base": {
-                    "normal": 300,
-                    "silver": 375,
-                    "gold": 450,
-                    "iridium": 600
-                },
-                "artisan": {
-                    "normal": 420,
-                    "silver": 525,
-                    "gold": 630,
-                    "iridium": 840
-                }
-            },
-            "spritePath": "/sprites/processedes/pale-ale.png"
-        },
-        {
-            "name": "Pale Broth",
-            "category": "cooked",
-            "base": false,
-            "prices": {
-                "base": {
-                    "normal": 150
-                }
-            },
-            "spritePath": "/sprites/food/pale-broth.png"
-        },
-        {
-            "name": "Pancakes",
-            "category": "cooked",
-            "base": false,
-            "prices": {
-                "base": {
-                    "normal": 80
-                }
-            },
-            "spritePath": "/sprites/food/pancakes.png"
-        },
-        {
-            "name": "Parsnip",
-            "category": "crop",
-            "base": true,
-            "prices": {
-                "base": {
-                    "normal": 35,
-                    "silver": 43,
-                    "gold": 52,
-                    "iridium": 70
-                },
-                "tiller": {
-                    "normal": 38,
-                    "silver": 47,
-                    "gold": 57,
-                    "iridium": 77
-                }
-            },
-            "description": "A spring tuber closely related to the carrot. It has an earthy taste and is full of nutrients.",
-            "color": "yellow",
-            "daysToMature": 4
-        },
-        {
-            "name": "Parsnip Soup",
-            "category": "cooked",
-            "base": false,
-            "prices": {
-                "base": {
-                    "normal": 120
-                }
-            },
-            "spritePath": "/sprites/food/parsnip-soup.png"
-        },
-        {
-            "name": "Peach",
-            "category": "fruit",
-            "base": true,
-            "prices": {
-                "base": {
-                    "normal": 140,
-                    "silver": 175,
-                    "gold": 210,
-                    "iridium": 280
-                },
-                "tiller": {
-                    "normal": 154,
-                    "silver": 192,
-                    "gold": 231,
-                    "iridium": 308
-                }
-            },
-            "description": "It's almost fuzzy to the touch.",
-            "color": "pink",
-            "daysToMature": 28,
-            "daysToRegrow": 1
-        },
-        {
-            "name": "Pepper Poppers",
-            "category": "cooked",
-            "base": false,
-            "prices": {
-                "base": {
-                    "normal": 200
-                }
-            },
-            "spritePath": "/sprites/food/pepper-poppers.png"
-        },
-        {
-            "name": "Periwinkle",
-            "category": "fish",
-            "base": true,
-            "prices": {
-                "base": {
-                    "normal": 20,
-                    "silver": 25,
-                    "gold": 30,
-                    "iridium": 40
-                }
-            },
-            "description": "A tiny freshwater snail."
-        },
-        {
-            "name": "Pineapple",
-            "category": "fruit",
-            "base": true,
-            "prices": {
-                "base": {
-                    "normal": 300,
-                    "silver": 375,
-                    "gold": 450,
-                    "iridium": 600
-                },
-                "tiller": {
-                    "normal": 330,
-                    "silver": 412,
-                    "gold": 495,
-                    "iridium": 660
-                }
-            },
-            "description": "A sweet and tangy tropical treat.",
-            "color": "yellow",
-            "daysToMature": 14,
-            "daysToRegrow": 7
-        },
-        {
-            "name": "Pink Cake",
-            "category": "cooked",
-            "base": false,
-            "prices": {
-                "base": {
-                    "normal": 480
-                }
-            },
-            "spritePath": "/sprites/food/pink-cake.png"
-        },
-        {
-            "name": "Pizza",
-            "category": "cooked",
-            "base": false,
-            "prices": {
-                "base": {
-                    "normal": 300
-                }
-            },
-            "spritePath": "/sprites/food/pizza.png"
-        },
-        {
-            "name": "Plum Pudding",
-            "category": "cooked",
-            "base": false,
-            "prices": {
-                "base": {
-                    "normal": 260
-                }
-            },
-            "spritePath": "/sprites/food/plum-pudding.png"
-        },
-        {
-            "name": "Poi",
-            "category": "cooked",
-            "base": false,
-            "prices": {
-                "base": {
-                    "normal": 400
-                }
-            },
-            "spritePath": "/sprites/food/poi.png"
-        },
-        {
-            "name": "Pomegranate",
-            "category": "fruit",
-            "base": true,
-            "prices": {
-                "base": {
-                    "normal": 140,
-                    "silver": 175,
-                    "gold": 210,
-                    "iridium": 280
-                },
-                "tiller": {
-                    "normal": 154,
-                    "silver": 192,
-                    "gold": 231,
-                    "iridium": 308
-                }
-            },
-            "description": "Within the fruit are clusters of juicy seeds.",
-            "color": "dark-pink",
-            "daysToMature": 28,
-            "daysToRegrow": 1
-        },
-        {
-            "name": "Poppy",
-            "category": "crop",
-            "base": true,
-            "prices": {
-                "base": {
-                    "normal": 140,
-                    "silver": 175,
-                    "gold": 210,
-                    "iridium": 280
-                },
-                "tiller": {
-                    "normal": 154,
-                    "silver": 192,
-                    "gold": 231,
-                    "iridium": 308
-                }
-            },
-            "description": "In addition to its colorful flower, the Poppy has culinary and medicinal uses.",
-            "daysToMature": 7
-        },
-        {
-            "name": "Poppyseed Muffin",
-            "category": "cooked",
-            "base": false,
-            "prices": {
-                "base": {
-                    "normal": 250
-                }
-            },
-            "spritePath": "/sprites/food/poppyseed-muffin.png"
-        },
-        {
-            "name": "Potato",
-            "category": "crop",
-            "base": true,
-            "prices": {
-                "base": {
-                    "normal": 80,
-                    "silver": 100,
-                    "gold": 120,
-                    "iridium": 160
-                },
-                "tiller": {
-                    "normal": 88,
-                    "silver": 110,
-                    "gold": 132,
-                    "iridium": 176
-                }
-            },
-            "description": "A widely cultivated tuber.",
-            "color": "brown",
-            "daysToMature": 6
-        },
-        {
-            "name": "Powdermelon",
-            "category": "fruit",
-            "base": true,
-            "prices": {
-                "base": {
-                    "normal": 60,
-                    "silver": 75,
-                    "gold": 90,
-                    "iridium": 120
-                },
-                "tiller": {
-                    "normal": 66,
-                    "silver": 82,
-                    "gold": 99,
-                    "iridium": 132
-                }
-            },
-            "description": "Named for the powdery coating that forms on the surface, this melon is crisp and sweet, with a delicate flavor.",
-            "color": "white",
-            "daysToMature": 7
-        },
-        {
-            "name": "Pumpkin",
-            "category": "crop",
-            "base": true,
-            "prices": {
-                "base": {
-                    "normal": 320,
-                    "silver": 400,
-                    "gold": 480,
-                    "iridium": 640
-                },
-                "tiller": {
-                    "normal": 352,
-                    "silver": 440,
-                    "gold": 528,
-                    "iridium": 704
-                }
-            },
-            "description": "A fall favorite, grown for its crunchy seeds and delicately flavored flesh. As a bonus, the hollow shell can be carved into a festive decoration.",
-            "color": "orange",
-            "daysToMature": 13
-        },
-        {
-            "name": "Pumpkin Pie",
-            "category": "cooked",
-            "base": false,
-            "prices": {
-                "base": {
-                    "normal": 385
-                }
-            },
-            "spritePath": "/sprites/food/pumpkin-pie.png"
-        },
-        {
-            "name": "Pumpkin Soup",
-            "category": "cooked",
-            "base": false,
-            "prices": {
-                "base": {
-                    "normal": 300
-                }
-            },
-            "spritePath": "/sprites/food/pumpkin-soup.png"
-        },
-        {
-            "name": "Qi Fruit",
-            "category": "fruit",
-            "base": true,
-            "prices": {
-                "base": {
-                    "normal": 1
-                },
-                "tiller": {
-                    "normal": 1
-                }
-            },
-            "description": "Mr. Qi has challenged you to ship 500 of these strange melons.",
-            "color": "blue",
-            "daysToMature": 4
-        },
-        {
-            "name": "Radish",
-            "category": "crop",
-            "base": true,
-            "prices": {
-                "base": {
-                    "normal": 90,
-                    "silver": 112,
-                    "gold": 135,
-                    "iridium": 180
-                },
-                "tiller": {
-                    "normal": 99,
-                    "silver": 123,
-                    "gold": 148,
-                    "iridium": 198
-                }
-            },
-            "description": "A crisp and refreshing root vegetable with hints of pepper when eaten raw.",
-            "color": "red",
-            "daysToMature": 6
-        },
-        {
-            "name": "Radish Salad",
-            "category": "cooked",
-            "base": false,
-            "prices": {
-                "base": {
-                    "normal": 300
-                }
-            },
-            "spritePath": "/sprites/food/radish-salad.png"
-        },
-        {
-            "name": "Rainbow Trout",
-            "category": "fish",
-            "base": true,
-            "prices": {
-                "base": {
-                    "normal": 65,
-                    "silver": 81,
-                    "gold": 97,
-                    "iridium": 130
-                }
-            },
-            "description": "A freshwater trout with colorful markings."
-        },
-        {
-            "name": "Raisins",
-            "category": "artisan-good",
-            "base": false,
-            "prices": {
-                "base": {
-                    "normal": 600
-                },
-                "artisan": {
-                    "normal": 840
-                }
-            },
-            "spritePath": "/sprites/processedes/raisins.png"
-        },
-        {
-            "name": "Red Cabbage",
-            "category": "crop",
-            "base": true,
-            "prices": {
-                "base": {
-                    "normal": 260,
-                    "silver": 325,
-                    "gold": 390,
-                    "iridium": 520
-                },
-                "tiller": {
-                    "normal": 286,
-                    "silver": 357,
-                    "gold": 429,
-                    "iridium": 572
-                }
-            },
-            "description": "Often used in salads and coleslaws. The color can range from purple to blue to green-yellow depending on soil conditions.",
-            "daysToMature": 9,
-            "color": "dark-purple"
-        },
-        {
-            "name": "Red Plate",
-            "category": "cooked",
-            "base": false,
-            "prices": {
-                "base": {
-                    "normal": 400
-                }
-            },
-            "spritePath": "/sprites/food/red-plate.png"
-        },
-        {
-            "name": "Rhubarb",
-            "category": "fruit",
-            "base": true,
-            "prices": {
-                "base": {
-                    "normal": 220,
-                    "silver": 275,
-                    "gold": 330,
-                    "iridium": 440
-                },
-                "tiller": {
-                    "normal": 242,
-                    "silver": 302,
-                    "gold": 363,
-                    "iridium": 484
-                }
-            },
-            "description": "The stalks are extremely tart, but make a great dessert when sweetened.",
-            "color": "red",
-            "daysToMature": 13
-        },
-        {
-            "name": "Rhubarb Pie",
-            "category": "cooked",
-            "base": false,
-            "prices": {
-                "base": {
-                    "normal": 400
-                }
-            },
-            "spritePath": "/sprites/food/rhubarb-pie.png"
-        },
-        {
-            "name": "Rice",
-            "category": "processed",
-            "base": false,
-            "prices": {
-                "base": {
-                    "normal": 100
-                }
-            },
-            "spritePath": "/sprites/processedes/rice.png",
-            "description": "A basic grain often served under vegetables."
-        },
-        {
-            "name": "Rice Pudding",
-            "category": "cooked",
-            "base": false,
-            "prices": {
-                "base": {
-                    "normal": 260
-                }
-            },
-            "spritePath": "/sprites/food/rice-pudding.png"
-        },
-        {
-            "name": "Roasted Hazelnuts",
-            "category": "cooked",
-            "base": false,
-            "prices": {
-                "base": {
-                    "normal": 270
-                }
-            },
-            "spritePath": "/sprites/food/roasted-hazelnuts.png"
-        },
-        {
-            "name": "Roots Platter",
-            "category": "cooked",
-            "base": false,
-            "prices": {
-                "base": {
-                    "normal": 100
-                }
-            },
-            "spritePath": "/sprites/food/roots-platter.png"
-        },
-        {
-            "name": "Salad",
-            "category": "cooked",
-            "base": false,
-            "prices": {
-                "base": {
-                    "normal": 110
-                }
-            },
-            "spritePath": "/sprites/food/salad.png"
-        },
-        {
-            "name": "Salmon",
-            "category": "fish",
-            "base": true,
-            "prices": {
-                "base": {
-                    "normal": 75,
-                    "silver": 93,
-                    "gold": 112,
-                    "iridium": 150
-                }
-            },
-            "description": "Swims upstream to spawn."
-        },
-        {
-            "name": "Salmon Dinner",
-            "category": "cooked",
-            "base": false,
-            "prices": {
-                "base": {
-                    "normal": 300
-                }
-            },
-            "spritePath": "/sprites/food/salmon-dinner.png"
-        },
-        {
-            "name": "Salmonberry",
-            "category": "fruit",
-            "base": true,
-            "prices": {
-                "base": {
-                    "normal": 5,
-                    "silver": 6,
-                    "gold": 7,
-                    "iridium": 10
-                },
-                "tiller": {
-                    "normal": 5,
-                    "silver": 6,
-                    "gold": 7,
-                    "iridium": 11
-                },
-                "bearsKnowledge": {
-                    "normal": 15,
-                    "silver": 18,
-                    "gold": 21,
-                    "iridium": 30
-                },
-                "bearsKnowledgeTiller": {
-                    "normal": 16,
-                    "silver": 19,
-                    "gold": 23,
-                    "iridium": 33
-                }
-            },
-            "description": "A spring-time berry with the flavor of the forest.",
-            "color": "red",
-            "forageable": true
-        },
-        {
-            "name": "Sardine",
-            "category": "fish",
-            "base": true,
-            "prices": {
-                "base": {
-                    "normal": 40,
-                    "silver": 50,
-                    "gold": 60,
-                    "iridium": 80
-                }
-            },
-            "description": "A common ocean fish."
-        },
-        {
-            "name": "Sashimi",
-            "category": "cooked",
-            "base": false,
-            "prices": {
-                "base": {
-                    "normal": 75
-                }
-            },
-            "spritePath": "/sprites/food/sashimi.png"
-        },
-        {
-            "name": "Sea Cucumber",
-            "category": "fish",
-            "base": true,
-            "prices": {
-                "base": {
-                    "normal": 75,
-                    "silver": 93,
-                    "gold": 112,
-                    "iridium": 150
-                }
-            },
-            "description": "A slimy, tube-shaped creature."
-        },
-        {
-            "name": "Seafoam Pudding",
-            "category": "cooked",
-            "base": false,
-            "prices": {
-                "base": {
-                    "normal": 300
-                }
-            },
-            "spritePath": "/sprites/food/seafoam-pudding.png"
-        },
-        {
-            "name": "Seaweed",
-            "category": "fish",
-            "base": true,
-            "prices": {
-                "base": {
-                    "normal": 20
-                }
-            },
-            "description": "Can be used in cooking."
-        },
-        {
-            "name": "Shrimp",
-            "category": "fish",
-            "base": true,
-            "prices": {
-                "base": {
-                    "normal": 60,
-                    "silver": 75,
-                    "gold": 90,
-                    "iridium": 120
-                }
-            },
-            "description": "A scavenger found in saltwater."
-        },
-        {
-            "name": "Shrimp Cocktail",
-            "category": "cooked",
-            "base": false,
-            "prices": {
-                "base": {
-                    "normal": 160
-                }
-            },
-            "spritePath": "/sprites/food/shrimp-cocktail.png"
-        },
-        {
-            "name": "Snail",
-            "category": "fish",
-            "base": true,
-            "prices": {
-                "base": {
-                    "normal": 65,
-                    "silver": 81,
-                    "gold": 97,
-                    "iridium": 130
-                }
-            },
-            "description": "A slow-moving crawling creature."
-        },
-        {
-            "name": "Spaghetti",
-            "category": "cooked",
-            "base": false,
-            "prices": {
-                "base": {
-                    "normal": 120
-                }
-            },
-            "spritePath": "/sprites/food/spaghetti.png"
-        },
-        {
-            "name": "Spice Berry",
-            "category": "fruit",
-            "base": true,
-            "prices": {
-                "base": {
-                    "normal": 80,
-                    "silver": 100,
-                    "gold": 120,
-                    "iridium": 160
-                },
-                "tiller": {
-                    "normal": 80,
-                    "silver": 100,
-                    "gold": 120,
-                    "iridium": 160
-                }
-            },
-            "description": "It fills the air with a pungent aroma.",
-            "color": "orange",
-            "forageable": true
-        },
-        {
-            "name": "Spicy Eel",
-            "category": "cooked",
-            "base": false,
-            "prices": {
-                "base": {
-                    "normal": 175
-                }
-            },
-            "spritePath": "/sprites/food/spicy-eel.png"
-        },
-        {
-            "name": "Squid",
-            "category": "fish",
-            "base": true,
-            "prices": {
-                "base": {
-                    "normal": 80,
-                    "silver": 100,
-                    "gold": 120,
-                    "iridium": 160
-                }
-            },
-            "description": "A deep-sea creature."
-        },
-        {
-            "name": "Squid Ink",
-            "category": "fish",
-            "base": true,
-            "prices": {
-                "base": {
-                    "normal": 110
-                }
-            },
-            "description": "Used in cooking and dyeing."
-        },
-        {
-            "name": "Squid Ink Ravioli",
-            "category": "cooked",
-            "base": false,
-            "prices": {
-                "base": {
-                    "normal": 150
-                }
-            },
-            "spritePath": "/sprites/food/squid-ink-ravioli.png"
-        },
-        {
-            "name": "Starfruit",
-            "category": "fruit",
-            "base": true,
-            "prices": {
-                "base": {
-                    "normal": 750,
-                    "silver": 937,
-                    "gold": 1125,
-                    "iridium": 1500
-                },
-                "tiller": {
-                    "normal": 825,
-                    "silver": 1030,
-                    "gold": 1237,
-                    "iridium": 1650
-                }
-            },
-            "description": "An extremely juicy fruit that grows in hot, humid weather. Slightly sweet with a sour undertone.",
-            "color": "yellow",
-            "daysToMature": 13
-        },
-        {
-            "name": "Stir Fry",
-            "category": "cooked",
-            "base": false,
-            "prices": {
-                "base": {
-                    "normal": 335
-                }
-            },
-            "spritePath": "/sprites/food/stir-fry.png"
-        },
-        {
-            "name": "Strange Bun",
-            "category": "cooked",
-            "base": false,
-            "prices": {
-                "base": {
-                    "normal": 225
-                }
-            },
-            "spritePath": "/sprites/food/strange-bun.png"
-        },
-        {
-            "name": "Strawberry",
-            "category": "fruit",
-            "base": true,
-            "prices": {
-                "base": {
-                    "normal": 120,
-                    "silver": 150,
-                    "gold": 180,
-                    "iridium": 240
-                },
-                "tiller": {
-                    "normal": 132,
-                    "silver": 165,
-                    "gold": 198,
-                    "iridium": 264
-                }
-            },
-            "description": "A sweet, juicy favorite with an appealing red color.",
-            "color": "red",
-            "daysToMature": 8,
-            "daysToRegrow": 4
-        },
-        {
-            "name": "Stuffing",
-            "category": "cooked",
-            "base": false,
-            "prices": {
-                "base": {
-                    "normal": 165
-                }
-            },
-            "spritePath": "/sprites/food/stuffing.png"
-        },
-        {
-            "name": "Sugar",
-            "category": "processed",
-            "base": false,
-            "prices": {
-                "base": {
-                    "normal": 50
-                }
-            },
-            "spritePath": "/sprites/processedes/sugar.png"
-        },
-        {
-            "name": "Summer Spangle",
-            "category": "crop",
-            "base": true,
-            "prices": {
-                "base": {
-                    "normal": 90,
-                    "silver": 112,
-                    "gold": 135,
-                    "iridium": 180
-                },
-                "tiller": {
-                    "normal": 99,
-                    "silver": 123,
-                    "gold": 148,
-                    "iridium": 198
-                }
-            },
-            "description": "A tropical bloom that thrives in the humid summer air. Has a sweet, tangy aroma.",
-            "daysToMature": 8
-        },
-        {
-            "name": "Summer Squash",
-            "category": "crop",
-            "base": true,
-            "prices": {
-                "base": {
-                    "normal": 45,
-                    "silver": 56,
-                    "gold": 67,
-                    "iridium": 90
-                },
-                "tiller": {
-                    "normal": 50,
-                    "silver": 62,
-                    "gold": 75,
-                    "iridium": 100
-                }
-            },
-            "description": "A curved yellow squash that is harvested while immature, and still tender.",
-            "color": "yellow",
-            "daysToMature": 6,
-            "daysToRegrow": 3
-        },
-        {
-            "name": "Sunfish",
-            "category": "fish",
-            "base": true,
-            "prices": {
-                "base": {
-                    "normal": 30,
-                    "silver": 37,
-                    "gold": 45,
-                    "iridium": 60
-                }
-            },
-            "description": "A common river fish."
-        },
-        {
-            "name": "Sunflower",
-            "category": "crop",
-            "base": true,
-            "prices": {
-                "base": {
-                    "normal": 80,
-                    "silver": 100,
-                    "gold": 120,
-                    "iridium": 160
-                },
-                "tiller": {
-                    "normal": 88,
-                    "silver": 110,
-                    "gold": 132,
-                    "iridium": 176
-                }
-            },
-            "description": "A common misconception is that the flower turns so it's always facing the sun.",
-            "daysToMature": 8
-        },
-        {
-            "name": "Super Meal",
-            "category": "cooked",
-            "base": false,
-            "prices": {
-                "base": {
-                    "normal": 220
-                }
-            },
-            "spritePath": "/sprites/food/super-meal.png"
-        },
-        {
-            "name": "Survival Burger",
-            "category": "cooked",
-            "base": false,
-            "prices": {
-                "base": {
-                    "normal": 180
-                }
-            },
-            "spritePath": "/sprites/food/survival-burger.png"
-        },
-        {
-            "name": "Sweet Gem Berry",
-            "category": "crop",
-            "base": true,
-            "prices": {
-                "base": {
-                    "normal": 3000,
-                    "silver": 3750,
-                    "gold": 4500,
-                    "iridium": 6000
-                }
-            },
-            "description": "It's by far the sweetest thing you've ever smelled.",
-            "daysToMature": 24
-        },
-        {
-            "name": "Taro Root",
-            "category": "crop",
-            "base": true,
-            "prices": {
-                "base": {
-                    "normal": 100,
-                    "silver": 125,
-                    "gold": 150,
-                    "iridium": 200
-                },
-                "tiller": {
-                    "normal": 110,
-                    "silver": 137,
-                    "gold": 165,
-                    "iridium": 220
-                }
-            },
-            "description": "This starchy root is one of the most ancient crops.",
-            "color": "brown",
-            "daysToMature": 7
-        },
-        {
-            "name": "Tea Leaves",
-            "category": "crop",
-            "base": true,
-            "prices": {
-                "base": {
-                    "normal": 50
-                }
-            },
-            "description": "The young leaves of the tea plant. Can be brewed into the popular, energizing beverage.",
-            "daysToMature": 20,
-            "daysToRegrow": 1
-        },
-        {
-            "name": "Tom Kha Soup",
-            "category": "cooked",
-            "base": false,
-            "prices": {
-                "base": {
-                    "normal": 250
-                }
-            },
-            "spritePath": "/sprites/food/tom-kha-soup.png"
-        },
-        {
-            "name": "Tomato",
-            "category": "crop",
-            "base": true,
-            "prices": {
-                "base": {
-                    "normal": 60,
-                    "silver": 75,
-                    "gold": 90,
-                    "iridium": 120
-                },
-                "tiller": {
-                    "normal": 66,
-                    "silver": 82,
-                    "gold": 99,
-                    "iridium": 132
-                }
-            },
-            "description": "Rich and slightly tangy, the Tomato has a wide variety of culinary uses.",
-            "color": "red",
-            "daysToMature": 11,
-            "daysToRegrow": 4
-        },
-        {
-            "name": "Tortilla",
-            "category": "cooked",
-            "base": false,
-            "prices": {
-                "base": {
-                    "normal": 50
-                }
-            },
-            "spritePath": "/sprites/food/tortilla.png"
-        },
-        {
-            "name": "Triple Shot Espresso",
-            "category": "cooked",
-            "base": false,
-            "prices": {
-                "base": {
-                    "normal": 450
-                }
-            },
-            "spritePath": "/sprites/food/triple-shot-espresso.png"
-        },
-        {
-            "name": "Tropical Curry",
-            "category": "cooked",
-            "base": false,
-            "prices": {
-                "base": {
-                    "normal": 500
-                }
-            },
-            "spritePath": "/sprites/food/tropical-curry.png"
-        },
-        {
-            "name": "Trout Soup",
-            "category": "cooked",
-            "base": false,
-            "prices": {
-                "base": {
-                    "normal": 100
-                }
-            },
-            "spritePath": "/sprites/food/trout-soup.png"
-        },
-        {
-            "name": "Truffle",
-            "category": "animal-product",
-            "base": true,
-            "prices": {
-                "base": {
-                    "normal": 625,
-                    "silver": 781,
-                    "gold": 937,
-                    "iridium": 1250
-                }
-            },
-            "description": "A gourmet type of mushroom with a unique taste.",
-            "daysToMature": 1
-        },
-        {
-            "name": "Truffle Oil",
-            "category": "artisan-good",
-            "base": false,
-            "prices": {
-                "base": {
-                    "normal": 1065
-                },
-                "artisan": {
-                    "normal": 1491
-                }
-            },
-            "spritePath": "/sprites/processedes/truffle-oil.png"
-        },
-        {
-            "name": "Tulip",
-            "category": "crop",
-            "base": true,
-            "prices": {
-                "base": {
-                    "normal": 30,
-                    "silver": 37,
-                    "gold": 45,
-                    "iridium": 60
-                },
-                "tiller": {
-                    "normal": 33,
-                    "silver": 40,
-                    "gold": 49,
-                    "iridium": 66
-                }
-            },
-            "description": "The most popular spring flower. Has a very faint sweet smell.",
-            "daysToMature": 6
-        },
-        {
-            "name": "Tuna",
-            "category": "fish",
-            "base": true,
-            "prices": {
-                "base": {
-                    "normal": 100,
-                    "silver": 125,
-                    "gold": 150,
-                    "iridium": 200
-                }
-            },
-            "description": "A large fish that lives in the ocean."
-        },
-        {
-            "name": "Unmilled Rice",
-            "category": "crop",
-            "base": true,
-            "prices": {
-                "base": {
-                    "normal": 30,
-                    "silver": 37,
-                    "gold": 45,
-                    "iridium": 60
-                },
-                "tiller": {
-                    "normal": 33,
-                    "silver": 40,
-                    "gold": 49,
-                    "iridium": 66
-                }
-            },
-            "description": "Rice in its rawest form. Run this through a mill to increase the value.",
-            "color": "brown",
-            "daysToMature": 6
-        },
-        {
-            "name": "Vegetable Medley",
-            "category": "cooked",
-            "base": false,
-            "prices": {
-                "base": {
-                    "normal": 120
-                }
-            },
-            "spritePath": "/sprites/food/vegetable-medley.png"
-        },
-        {
-            "name": "Vinegar",
-            "description": "An aged fermented liquid used in many cooking recipes.",
-            "category": "artisan-good",
-            "base": false,
-            "prices": {
-                "base": {
-                    "normal": 100
-                },
-                "artisan": {
-                    "normal": 140
-                }
-            },
-            "spritePath": "/sprites/processedes/vinegar.png"
-        },
-        {
-            "name": "Void Mayonnaise",
-            "category": "artisan-good",
-            "base": true,
-            "prices": {
-                "base": {
-                    "normal": 275
-                }
-            },
-            "description": "A thick, purple paste that smells like burnt hair."
-        },
-        {
-            "name": "Wheat",
-            "category": "crop",
-            "base": true,
-            "prices": {
-                "base": {
-                    "normal": 25,
-                    "silver": 31,
-                    "gold": 37,
-                    "iridium": 50
-                },
-                "tiller": {
-                    "normal": 27,
-                    "silver": 34,
-                    "gold": 40,
-                    "iridium": 55
-                }
-            },
-            "description": "One of the most widely cultivated grains. Makes a great flour for breads and cakes.",
-            "color": "yellow",
-            "daysToMature": 4
-        },
-        {
-            "name": "Wheat Flour",
-            "category": "processed",
-            "base": false,
-            "prices": {
-                "base": {
-                    "normal": 100
-                }
-            },
-            "spritePath": "/sprites/processedes/wheat-flour.png"
-        },
-        {
-            "name": "White Algae",
-            "category": "fish",
-            "base": true,
-            "prices": {
-                "base": {
-                    "normal": 25
-                }
-            },
-            "description": "It's super slimy."
-        },
-        {
-            "name": "Wild Horseradish",
-            "category": "crop",
-            "base": true,
-            "forageable": true,
-            "prices": {
-                "base": {
-                    "normal": 50,
-                    "silver": 62,
-                    "gold": 75,
-                    "iridium": 100
-                }
-            },
-            "description": "A spicy root found in the spring."
-        },
-        {
-            "name": "Wild Plum",
-            "category": "fruit",
-            "base": true,
-            "prices": {
-                "base": {
-                    "normal": 80,
-                    "silver": 100,
-                    "gold": 120,
-                    "iridium": 160
-                },
-                "tiller": {
-                    "normal": 80,
-                    "silver": 100,
-                    "gold": 120,
-                    "iridium": 160
-                }
-            },
-            "description": "Tart and juicy with a pungent aroma.",
-            "color": "purple",
-            "forageable": true
-        },
-        {
-            "name": "Winter Root",
-            "category": "crop",
-            "base": true,
-            "forageable": true,
-            "prices": {
-                "base": {
-                    "normal": 70,
-                    "silver": 87,
-                    "gold": 105,
-                    "iridium": 140
-                }
-            },
-            "description": "A starchy tuber found by digging."
-        },
-        {
-            "name": "Yam",
-            "category": "crop",
-            "base": true,
-            "prices": {
-                "base": {
-                    "normal": 160,
-                    "silver": 200,
-                    "gold": 240,
-                    "iridium": 320
-                },
-                "tiller": {
-                    "normal": 176,
-                    "silver": 220,
-                    "gold": 264,
-                    "iridium": 352
-                }
-            },
-            "description": "A starchy tuber with a lot of culinary versatility.",
-            "color": "brown",
-            "daysToMature": 10
+  "items": [
+    {
+      "name": "Algae Soup",
+      "category": "cooked",
+      "base": false,
+      "prices": {
+        "base": {
+          "normal": 100
         }
-    ]
+      },
+      "spritePath": "/sprites/food/algae-soup.png",
+      "description": "It's a little slimy.",
+      "energy": 75,
+      "health": 33
+    },
+    {
+      "name": "Amaranth",
+      "category": "crop",
+      "base": true,
+      "prices": {
+        "base": {
+          "normal": 150
+        },
+        "tiller": {
+          "normal": 165,
+          "silver": 205
+        }
+      },
+      "description": "A purple grain cultivated by an ancient civilization.",
+      "color": "pink",
+      "daysToMature": 7
+    },
+    {
+      "name": "Anchovy",
+      "category": "fish",
+      "base": true,
+      "prices": {
+        "base": {
+          "normal": 30
+        }
+      },
+      "spritePath": "/sprites/bases/fish/anchovy.png"
+    },
+    {
+      "name": "Ancient Fruit",
+      "category": "fruit",
+      "base": true,
+      "prices": {
+        "base": {
+          "normal": 550
+        },
+        "tiller": {
+          "normal": 605,
+          "silver": 755
+        }
+      },
+      "description": "It's been dormant for eons.",
+      "color": "light-blue",
+      "daysToMature": 28,
+      "daysToRegrow": 7
+    },
+    {
+      "name": "Apple",
+      "category": "fruit",
+      "base": true,
+      "prices": {
+        "base": {
+          "normal": 100
+        },
+        "tiller": {
+          "normal": 110
+        }
+      },
+      "description": "A crisp fruit used for juice and cider.",
+      "color": "red",
+      "daysToMature": 28,
+      "daysToRegrow": 1
+    },
+    {
+      "name": "Apricot",
+      "category": "fruit",
+      "base": true,
+      "prices": {
+        "base": {
+          "normal": 50
+        },
+        "tiller": {
+          "normal": 55
+        }
+      },
+      "description": "A tender little fruit with a rock-hard pit.",
+      "color": "orange",
+      "daysToMature": 28,
+      "daysToRegrow": 1
+    },
+    {
+      "name": "Artichoke",
+      "category": "crop",
+      "base": true,
+      "prices": {
+        "base": {
+          "normal": 160
+        },
+        "tiller": {
+          "normal": 176
+        }
+      },
+      "description": "The bud of a thistle plant. The spiny outer leaves conceal a fleshy, filling interior.",
+      "color": "green",
+      "daysToMature": 8
+    },
+    {
+      "name": "Artichoke Dip",
+      "category": "cooked",
+      "base": false,
+      "prices": {
+        "base": {
+          "normal": 210
+        }
+      },
+      "spritePath": "/sprites/food/artichoke-dip.png",
+      "description": "It's cool and refreshing.",
+      "energy": 100,
+      "health": 45
+    },
+    {
+      "name": "Autumn's Bounty",
+      "category": "cooked",
+      "base": false,
+      "prices": {
+        "base": {
+          "normal": 350
+        }
+      },
+      "spritePath": "/sprites/food/autumns-bounty.png",
+      "description": "A taste of the season.",
+      "energy": 220,
+      "health": 99,
+      "buffs": [
+        {
+          "name": "Foraging",
+          "amount": 2,
+          "duration": 461
+        },
+        {
+          "name": "Defense",
+          "amount": 2,
+          "duration": 461
+        }
+      ]
+    },
+    {
+      "name": "Baked Fish",
+      "category": "cooked",
+      "base": false,
+      "prices": {
+        "base": {
+          "normal": 100
+        }
+      },
+      "spritePath": "/sprites/food/baked-fish.png",
+      "description": "Baked fish on a bed of herbs.",
+      "energy": 75,
+      "health": 33
+    },
+    {
+      "name": "Banana",
+      "category": "fruit",
+      "base": true,
+      "prices": {
+        "base": {
+          "normal": 150
+        },
+        "tiller": {
+          "normal": 165,
+          "silver": 205
+        }
+      },
+      "description": "A sweet, starchy tropical fruit.",
+      "color": "yellow",
+      "daysToMature": 28,
+      "daysToRegrow": 1
+    },
+    {
+      "name": "Banana Pudding",
+      "category": "cooked",
+      "base": false,
+      "prices": {
+        "base": {
+          "normal": 260
+        }
+      },
+      "spritePath": "/sprites/food/banana-pudding.png",
+      "description": "A creamy dessert with a wonderful tropical flavor.",
+      "energy": 125,
+      "health": 56,
+      "buffs": [
+        {
+          "name": "Mining",
+          "amount": 1,
+          "duration": 301
+        },
+        {
+          "name": "Luck",
+          "amount": 1,
+          "duration": 301
+        },
+        {
+          "name": "Defense",
+          "amount": 1,
+          "duration": 301
+        }
+      ]
+    },
+    {
+      "name": "Bean Hotpot",
+      "category": "cooked",
+      "base": false,
+      "prices": {
+        "base": {
+          "normal": 100
+        }
+      },
+      "spritePath": "/sprites/food/bean-hotpot.png",
+      "description": "It sure is healthy.",
+      "energy": 125,
+      "health": 56,
+      "buffs": [
+        {
+          "name": "Max Energy",
+          "amount": 30,
+          "duration": 420
+        },
+        {
+          "name": "Magnetism",
+          "amount": 32,
+          "duration": 420
+        }
+      ]
+    },
+    {
+      "name": "Beer",
+      "category": "artisan-good",
+      "base": false,
+      "prices": {
+        "base": {
+          "normal": 200
+        },
+        "artisan": {
+          "normal": 280
+        }
+      },
+      "spritePath": "/sprites/processedes/beer.png"
+    },
+    {
+      "name": "Beet",
+      "category": "crop",
+      "base": true,
+      "prices": {
+        "base": {
+          "normal": 100
+        },
+        "tiller": {
+          "normal": 110
+        }
+      },
+      "description": "A sweet and earthy root vegetable. As a bonus, the leaves make a great salad.",
+      "color": "purple",
+      "daysToMature": 6
+    },
+    {
+      "name": "Blackberry",
+      "category": "fruit",
+      "base": true,
+      "prices": {
+        "base": {
+          "normal": 20
+        },
+        "tiller": {
+          "normal": 22,
+          "silver": 28
+        },
+        "bearsKnowledge": {
+          "normal": 60
+        },
+        "bearsKnowledgeTiller": {
+          "normal": 66,
+          "silver": 83
+        }
+      },
+      "description": "An early-fall treat.",
+      "color": "dark-blue",
+      "forageable": true
+    },
+    {
+      "name": "Blackberry Cobbler",
+      "category": "cooked",
+      "base": false,
+      "prices": {
+        "base": {
+          "normal": 260
+        }
+      },
+      "spritePath": "/sprites/food/blackberry-cobbler.png",
+      "description": "There's nothing quite like it.",
+      "energy": 175,
+      "health": 78
+    },
+    {
+      "name": "Blobfish",
+      "category": "fish",
+      "base": true,
+      "prices": {
+        "base": {
+          "normal": 500
+        }
+      },
+      "description": "This bizarre creature spent its entire life at extreme ocean depths before you caught it.",
+      "spritePath": "/sprites/bases/fish/blobfish.png"
+    },
+    {
+      "name": "Blue Discus",
+      "category": "fish",
+      "base": true,
+      "prices": {
+        "base": {
+          "normal": 120
+        }
+      },
+      "description": "A rare freshwater fish imported from South America.",
+      "spritePath": "/sprites/bases/fish/blue-discus.png"
+    },
+    {
+      "name": "Blue Jazz",
+      "category": "crop",
+      "base": true,
+      "prices": {
+        "base": {
+          "normal": 50
+        }
+      },
+      "description": "The flower grows in a sphere to invite as many butterflies as possible.",
+      "daysToMature": 7
+    },
+    {
+      "name": "Blueberry",
+      "category": "fruit",
+      "base": true,
+      "prices": {
+        "base": {
+          "normal": 50
+        },
+        "tiller": {
+          "normal": 55
+        }
+      },
+      "color": "blue",
+      "daysToMature": 13,
+      "daysToRegrow": 4
+    },
+    {
+      "name": "Blueberry Tart",
+      "category": "cooked",
+      "base": false,
+      "prices": {
+        "base": {
+          "normal": 150
+        }
+      },
+      "spritePath": "/sprites/food/blueberry-tart.png",
+      "description": "It's subtle and refreshing.",
+      "energy": 125,
+      "health": 56
+    },
+    {
+      "name": "Bok Choy",
+      "category": "crop",
+      "base": true,
+      "prices": {
+        "base": {
+          "normal": 80
+        },
+        "tiller": {
+          "normal": 88
+        }
+      },
+      "description": "The leafy greens and fibrous stalks are healthy and delicious.",
+      "color": "green",
+      "daysToMature": 4
+    },
+    {
+      "name": "Bread",
+      "category": "cooked",
+      "base": false,
+      "prices": {
+        "base": {
+          "normal": 60
+        }
+      },
+      "spritePath": "/sprites/food/bread.png",
+      "description": "A crusty baguette.",
+      "energy": 50,
+      "health": 22
+    },
+    {
+      "name": "Bream",
+      "category": "fish",
+      "base": true,
+      "prices": {
+        "base": {
+          "normal": 45
+        }
+      },
+      "description": "A fairly common river fish.",
+      "spritePath": "/sprites/bases/fish/bream.png"
+    },
+    {
+      "name": "Broccoli",
+      "category": "crop",
+      "base": true,
+      "prices": {
+        "base": {
+          "normal": 70
+        },
+        "tiller": {
+          "normal": 77,
+          "silver": 95
+        }
+      },
+      "description": "The flowering head of a broccoli plant. The tiny buds give it a unique texture.",
+      "daysToMature": 8,
+      "daysToRegrow": 4
+    },
+    {
+      "name": "Bruschetta",
+      "category": "cooked",
+      "base": false,
+      "prices": {
+        "base": {
+          "normal": 210
+        }
+      },
+      "spritePath": "/sprites/food/bruschetta.png",
+      "description": "Roasted tomatoes on a crisp white bread.",
+      "energy": 113,
+      "health": 50
+    },
+    {
+      "name": "Bullhead",
+      "category": "fish",
+      "base": true,
+      "prices": {
+        "base": {
+          "normal": 75
+        }
+      },
+      "description": "This fish is attracted to metal objects.",
+      "spritePath": "/sprites/bases/fish/bullhead.png"
+    },
+    {
+      "name": "Cactus Fruit",
+      "category": "fruit",
+      "base": true,
+      "prices": {
+        "base": {
+          "normal": 75
+        },
+        "tiller": {
+          "normal": 82,
+          "iridium": 165
+        }
+      },
+      "description": "The sweet fruit of the prickly pear cactus.",
+      "color": "green",
+      "daysToMature": 12,
+      "daysToRegrow": 3,
+      "forageable": true
+    },
+    {
+      "name": "Carp",
+      "category": "fish",
+      "base": true,
+      "prices": {
+        "base": {
+          "normal": 30
+        }
+      },
+      "description": "A common pond fish.",
+      "spritePath": "/sprites/bases/fish/carp.png"
+    },
+    {
+      "name": "Carp Surprise",
+      "category": "cooked",
+      "base": false,
+      "prices": {
+        "base": {
+          "normal": 150
+        }
+      },
+      "spritePath": "/sprites/food/carp-surprise.png",
+      "description": "It's bland and oily.",
+      "energy": 90,
+      "health": 40
+    },
+    {
+      "name": "Carrot",
+      "category": "crop",
+      "base": true,
+      "prices": {
+        "base": {
+          "normal": 35
+        },
+        "tiller": {
+          "normal": 38,
+          "iridium": 77
+        }
+      },
+      "description": "A fast-growing, colorful tuber that makes for a great snack.",
+      "color": "orange",
+      "daysToMature": 3
+    },
+    {
+      "name": "Catfish",
+      "category": "fish",
+      "base": true,
+      "prices": {
+        "base": {
+          "normal": 200
+        }
+      },
+      "spritePath": "/sprites/bases/fish/catfish.png"
+    },
+    {
+      "name": "Cauliflower",
+      "category": "crop",
+      "base": true,
+      "prices": {
+        "base": {
+          "normal": 175
+        },
+        "tiller": {
+          "normal": 192,
+          "silver": 239,
+          "iridium": 385
+        }
+      },
+      "description": "Valuable, but slow-growing. Despite its pale color, the florets are packed with nutrients.",
+      "color": "white",
+      "daysToMature": 12
+    },
+    {
+      "name": "Cave Carrot",
+      "category": "crop",
+      "base": true,
+      "prices": {
+        "base": {
+          "normal": 25
+        }
+      },
+      "description": "A starchy snack found in the mines."
+    },
+    {
+      "name": "Chanterelle",
+      "category": "crop",
+      "base": true,
+      "forageable": true,
+      "prices": {
+        "base": {
+          "normal": 160
+        }
+      },
+      "description": "A tasty mushroom with a fruity smell and a mild, nutty flavor."
+    },
+    {
+      "name": "Cheese",
+      "category": "artisan-good",
+      "base": true,
+      "prices": {
+        "base": {
+          "normal": 230
+        },
+        "rancher": {
+          "normal": 276,
+          "silver": 344
+        },
+        "artisan": {
+          "normal": 322,
+          "silver": 401,
+          "gold": 480,
+          "iridium": 640
+        }
+      },
+      "spritePath": "/sprites/processedes/cheese.png"
+    },
+    {
+      "name": "Cheese Cauliflower",
+      "category": "cooked",
+      "base": false,
+      "prices": {
+        "base": {
+          "normal": 300
+        }
+      },
+      "spritePath": "/sprites/food/cheese-cauliflower.png",
+      "description": "It smells great!",
+      "energy": 138,
+      "health": 62
+    },
+    {
+      "name": "Cherry",
+      "category": "fruit",
+      "base": true,
+      "prices": {
+        "base": {
+          "normal": 80
+        },
+        "tiller": {
+          "normal": 88
+        }
+      },
+      "description": "It's popular, and ripens sooner than most other fruits.",
+      "color": "red",
+      "daysToMature": 28,
+      "daysToRegrow": 1
+    },
+    {
+      "name": "Chocolate Cake",
+      "category": "cooked",
+      "base": false,
+      "prices": {
+        "base": {
+          "normal": 200
+        }
+      },
+      "spritePath": "/sprites/food/chocolate-cake.png",
+      "description": "Rich and moist with a thick fudge icing.",
+      "energy": 150,
+      "health": 67
+    },
+    {
+      "name": "Chowder",
+      "category": "cooked",
+      "base": false,
+      "prices": {
+        "base": {
+          "normal": 135
+        }
+      },
+      "spritePath": "/sprites/food/chowder.png",
+      "description": "A perfect way to warm yourself after a cold night at sea.",
+      "energy": 225,
+      "health": 101,
+      "buffs": [
+        {
+          "name": "Fishing",
+          "amount": 1,
+          "duration": 1007
+        }
+      ]
+    },
+    {
+      "name": "Chub",
+      "category": "fish",
+      "base": true,
+      "prices": {
+        "base": {
+          "normal": 50
+        }
+      },
+      "description": "A common freshwater fish.",
+      "spritePath": "/sprites/bases/fish/chub.png"
+    },
+    {
+      "name": "Clam",
+      "category": "fish",
+      "base": true,
+      "prices": {
+        "base": {
+          "normal": 50
+        }
+      },
+      "description": "Someone lived in here once.",
+      "spritePath": "/sprites/bases/fish/clam.png"
+    },
+    {
+      "name": "Cloth",
+      "category": "artisan-good",
+      "base": false,
+      "prices": {
+        "base": {
+          "normal": 470
+        },
+        "artisan": {
+          "normal": 658
+        }
+      },
+      "description": "A bolt of fine cloth.",
+      "spritePath": "/sprites/processedes/cloth.png"
+    },
+    {
+      "name": "Coal",
+      "category": "processed",
+      "base": true,
+      "prices": {
+        "base": {
+          "normal": 15
+        }
+      },
+      "spritePath": "/sprites/bases/other/coal.png"
+    },
+    {
+      "name": "Coconut",
+      "category": "fruit",
+      "base": true,
+      "prices": {
+        "base": {
+          "normal": 100
+        },
+        "tiller": {
+          "normal": 100
+        }
+      },
+      "description": "A seed of the coconut palm. It has many culinary uses.",
+      "color": "brown",
+      "forageable": true
+    },
+    {
+      "name": "Coffee",
+      "category": "artisan-good",
+      "base": false,
+      "prices": {
+        "base": {
+          "normal": 150
+        }
+      },
+      "spritePath": "/sprites/processedes/coffee.png"
+    },
+    {
+      "name": "Coffee Bean",
+      "category": "crop",
+      "base": true,
+      "description": "Plant in spring or summer to grow a coffee plant. Place five beans in a keg to make coffee.",
+      "prices": {
+        "base": {
+          "normal": 15
+        }
+      },
+      "daysToMature": 10,
+      "daysToRegrow": 2
+    },
+    {
+      "name": "Coleslaw",
+      "category": "cooked",
+      "base": false,
+      "prices": {
+        "base": {
+          "normal": 345
+        }
+      },
+      "spritePath": "/sprites/food/coleslaw.png",
+      "description": "It's light, fresh and very healthy.",
+      "energy": 213,
+      "health": 95
+    },
+    {
+      "name": "Common Mushroom",
+      "category": "crop",
+      "base": true,
+      "forageable": true,
+      "prices": {
+        "base": {
+          "normal": 40
+        }
+      },
+      "description": "Slightly nutty, with good texture."
+    },
+    {
+      "name": "Complete Breakfast",
+      "category": "cooked",
+      "base": false,
+      "prices": {
+        "base": {
+          "normal": 350
+        }
+      },
+      "spritePath": "/sprites/food/complete-breakfast.png",
+      "description": "You'll feel ready to take on the world!",
+      "energy": 200,
+      "health": 90,
+      "buffs": [
+        {
+          "name": "Farming",
+          "amount": 2,
+          "duration": 420
+        },
+        {
+          "name": "Max Energy",
+          "amount": 50,
+          "duration": 420
+        }
+      ]
+    },
+    {
+      "name": "Cookie",
+      "category": "cooked",
+      "base": false,
+      "prices": {
+        "base": {
+          "normal": 140
+        }
+      },
+      "spritePath": "/sprites/food/cookie.png",
+      "description": "Very chewy.",
+      "energy": 90,
+      "health": 40
+    },
+    {
+      "name": "Coral",
+      "category": "crop",
+      "base": true,
+      "forageable": true,
+      "prices": {
+        "base": {
+          "normal": 80
+        }
+      },
+      "description": "A rare and beautiful coral from the ocean."
+    },
+    {
+      "name": "Corn",
+      "category": "crop",
+      "base": true,
+      "prices": {
+        "base": {
+          "normal": 50
+        },
+        "tiller": {
+          "normal": 55
+        }
+      },
+      "description": "One of the most popular grains. The sweet, fresh cobs are a summer favorite.",
+      "color": "yellow",
+      "daysToMature": 14,
+      "daysToRegrow": 4
+    },
+    {
+      "name": "Crab",
+      "category": "fish",
+      "base": true,
+      "prices": {
+        "base": {
+          "normal": 100
+        }
+      },
+      "description": "A marine crustacean with a hard shell.",
+      "spritePath": "/sprites/bases/fish/crab.png"
+    },
+    {
+      "name": "Crab Cakes",
+      "category": "cooked",
+      "base": false,
+      "prices": {
+        "base": {
+          "normal": 275
+        }
+      },
+      "spritePath": "/sprites/food/crab-cakes.png",
+      "description": "Crab, bread crumbs, and egg formed into patties then fried to a golden brown.",
+      "energy": 225,
+      "health": 101,
+      "buffs": [
+        {
+          "name": "Speed",
+          "amount": 1,
+          "duration": 1007
+        },
+        {
+          "name": "Defense",
+          "amount": 1,
+          "duration": 1007
+        }
+      ]
+    },
+    {
+      "name": "Cranberries",
+      "category": "fruit",
+      "base": true,
+      "prices": {
+        "base": {
+          "normal": 75
+        },
+        "tiller": {
+          "normal": 82,
+          "iridium": 165
+        }
+      },
+      "description": "These tart red berries are a traditional winter food.",
+      "color": "red",
+      "daysToMature": 7,
+      "daysToRegrow": 5
+    },
+    {
+      "name": "Cranberry Candy",
+      "category": "cooked",
+      "base": false,
+      "prices": {
+        "base": {
+          "normal": 175
+        }
+      },
+      "spritePath": "/sprites/food/cranberry-candy.png",
+      "description": "It's sweet enough to mask the bitter fruit.",
+      "energy": 125,
+      "health": 56
+    },
+    {
+      "name": "Cranberry Sauce",
+      "category": "cooked",
+      "base": false,
+      "prices": {
+        "base": {
+          "normal": 120
+        }
+      },
+      "spritePath": "/sprites/food/cranberry-sauce.png",
+      "description": "A festive treat.",
+      "energy": 125,
+      "health": 56,
+      "buffs": [
+        {
+          "name": "Mining",
+          "amount": 2,
+          "duration": 210
+        }
+      ]
+    },
+    {
+      "name": "Crayfish",
+      "category": "fish",
+      "base": true,
+      "prices": {
+        "base": {
+          "normal": 75
+        }
+      },
+      "description": "A small freshwater relative of the lobster.",
+      "spritePath": "/sprites/bases/fish/crayfish.png"
+    },
+    {
+      "name": "Crispy Bass",
+      "category": "cooked",
+      "base": false,
+      "prices": {
+        "base": {
+          "normal": 150
+        }
+      },
+      "spritePath": "/sprites/food/crispy-bass.png",
+      "description": "Wow, the breading is perfect.",
+      "energy": 90,
+      "health": 40,
+      "buffs": [
+        {
+          "name": "Magnetism",
+          "amount": 64,
+          "duration": 420
+        }
+      ]
+    },
+    {
+      "name": "Crocus",
+      "category": "crop",
+      "base": true,
+      "forageable": true,
+      "prices": {
+        "base": {
+          "normal": 60
+        }
+      },
+      "description": "A flower that blooms in the winter."
+    },
+    {
+      "name": "Crystal Fruit",
+      "category": "fruit",
+      "base": true,
+      "prices": {
+        "base": {
+          "normal": 150
+        },
+        "tiller": {
+          "normal": 150
+        }
+      },
+      "description": "A delicate fruit that pops up from the snow.",
+      "color": "blue",
+      "forageable": true
+    },
+    {
+      "name": "Daffodil",
+      "category": "crop",
+      "base": true,
+      "forageable": true,
+      "prices": {
+        "base": {
+          "normal": 30
+        }
+      },
+      "description": "A traditional spring flower that makes a nice gift."
+    },
+    {
+      "name": "Dandelion",
+      "category": "crop",
+      "base": true,
+      "forageable": true,
+      "prices": {
+        "base": {
+          "normal": 40
+        }
+      },
+      "description": "Not the prettiest flower, but the leaves make a good salad."
+    },
+    {
+      "name": "Dinosaur Egg",
+      "category": "animal-product",
+      "base": true,
+      "prices": {
+        "base": {
+          "normal": 350
+        },
+        "rancher": {
+          "normal": 420,
+          "silver": 524
+        }
+      },
+      "description": "A giant spotted egg... The stegosaurus inside is long dead.",
+      "daysToMature": 7
+    },
+    {
+      "name": "Dinosaur Mayonnaise",
+      "category": "artisan-good",
+      "base": false,
+      "prices": {
+        "base": {
+          "normal": 800
+        },
+        "artisan": {
+          "normal": 1120
+        }
+      },
+      "description": "It's an odd color... This must be from a Dino Egg.",
+      "spritePath": "/sprites/processedes/dinosaur-mayonnaise.png"
+    },
+    {
+      "name": "Dish O' The Sea",
+      "category": "cooked",
+      "base": false,
+      "prices": {
+        "base": {
+          "normal": 220
+        }
+      },
+      "spritePath": "/sprites/food/dish-o-the-sea.png",
+      "description": "This'll keep you warm in the cold sea air.",
+      "energy": 150,
+      "health": 67,
+      "buffs": [
+        {
+          "name": "Fishing",
+          "amount": 3,
+          "duration": 335
+        }
+      ]
+    },
+    {
+      "name": "Duck Egg",
+      "category": "animal-product",
+      "base": true,
+      "prices": {
+        "base": {
+          "normal": 95
+        },
+        "rancher": {
+          "normal": 114,
+          "silver": 141,
+          "gold": 170
+        }
+      },
+      "description": "It's still warm.",
+      "daysToMature": 2
+    },
+    {
+      "name": "Duck Feather",
+      "category": "animal-product",
+      "base": true,
+      "prices": {
+        "base": {
+          "normal": 125
+        },
+        "rancher": {
+          "normal": 150,
+          "gold": 224
+        }
+      },
+      "description": "It's so colorful and beautiful.",
+      "daysToMature": 2
+    },
+    {
+      "name": "Duck Mayonnaise",
+      "category": "artisan-good",
+      "base": true,
+      "prices": {
+        "base": {
+          "normal": 375
+        },
+        "rancher": {
+          "normal": 450
+        },
+        "artisan": {
+          "normal": 525
+        }
+      },
+      "spritePath": "/sprites/processedes/duck-mayonnaise.png"
+    },
+    {
+      "name": "Eel",
+      "category": "fish",
+      "base": true,
+      "prices": {
+        "base": {
+          "normal": 85
+        }
+      },
+      "description": "A long, slippery fish.",
+      "spritePath": "/sprites/bases/fish/eel.png"
+    },
+    {
+      "name": "Egg",
+      "category": "animal-product",
+      "base": true,
+      "prices": {
+        "base": {
+          "normal": 50
+        },
+        "rancher": {
+          "normal": 60,
+          "silver": 74
+        }
+      },
+      "description": "A regular white chicken egg.",
+      "daysToMature": 1
+    },
+    {
+      "name": "Eggplant",
+      "category": "crop",
+      "base": true,
+      "prices": {
+        "base": {
+          "normal": 60
+        },
+        "tiller": {
+          "normal": 66
+        }
+      },
+      "description": "A rich and wholesome relative of the tomato. Delicious fried or stewed.",
+      "color": "purple",
+      "daysToMature": 5,
+      "daysToRegrow": 5
+    },
+    {
+      "name": "Eggplant Parmesan",
+      "category": "cooked",
+      "base": false,
+      "prices": {
+        "base": {
+          "normal": 200
+        }
+      },
+      "spritePath": "/sprites/food/eggplant-parmesan.png",
+      "description": "Tangy, cheesy, and wonderful.",
+      "energy": 175,
+      "health": 78,
+      "buffs": [
+        {
+          "name": "Mining",
+          "amount": 1,
+          "duration": 279
+        },
+        {
+          "name": "Defense",
+          "amount": 3,
+          "duration": 279
+        }
+      ]
+    },
+    {
+      "name": "Escargot",
+      "category": "cooked",
+      "base": false,
+      "prices": {
+        "base": {
+          "normal": 125
+        }
+      },
+      "spritePath": "/sprites/food/escargot.png",
+      "description": "Butter-soaked snails cooked to perfection.",
+      "energy": 225,
+      "health": 101,
+      "buffs": [
+        {
+          "name": "Fishing",
+          "amount": 2,
+          "duration": 1007
+        }
+      ]
+    },
+    {
+      "name": "Fairy Rose",
+      "category": "crop",
+      "base": true,
+      "prices": {
+        "base": {
+          "normal": 290
+        },
+        "tiller": {
+          "normal": 319
+        }
+      },
+      "description": "An old folk legend suggests that the sweet smell of this flower attracts fairies.",
+      "daysToMature": 12
+    },
+    {
+      "name": "Farmer's Lunch",
+      "category": "cooked",
+      "base": false,
+      "prices": {
+        "base": {
+          "normal": 150
+        }
+      },
+      "spritePath": "/sprites/food/farmers-lunch.png",
+      "description": "This'll keep you going.",
+      "energy": 200,
+      "health": 90,
+      "buffs": [
+        {
+          "name": "Farming",
+          "amount": 3,
+          "duration": 335
+        }
+      ]
+    },
+    {
+      "name": "Fiddlehead Fern",
+      "category": "crop",
+      "base": true,
+      "forageable": true,
+      "prices": {
+        "base": {
+          "normal": 90
+        }
+      },
+      "description": "The young shoots are an edible delicacy."
+    },
+    {
+      "name": "Fiddlehead Risotto",
+      "category": "cooked",
+      "base": false,
+      "prices": {
+        "base": {
+          "normal": 350
+        }
+      },
+      "spritePath": "/sprites/food/fiddlehead-risotto.png",
+      "description": "A creamy rice dish served with sauteed fern heads. It's a little bland.",
+      "energy": 225,
+      "health": 101
+    },
+    {
+      "name": "Fish Stew",
+      "category": "cooked",
+      "base": false,
+      "prices": {
+        "base": {
+          "normal": 175
+        }
+      },
+      "spritePath": "/sprites/food/fish-stew.png",
+      "description": "It smells a lot like the sea. Tastes better, though.",
+      "energy": 225,
+      "health": 101,
+      "buffs": [
+        {
+          "name": "Fishing",
+          "amount": 3,
+          "duration": 1007
+        }
+      ]
+    },
+    {
+      "name": "Fish Taco",
+      "category": "cooked",
+      "base": false,
+      "prices": {
+        "base": {
+          "normal": 500
+        }
+      },
+      "spritePath": "/sprites/food/fish-taco.png",
+      "description": "It smells delicious.",
+      "energy": 165,
+      "health": 74,
+      "buffs": [
+        {
+          "name": "Fishing",
+          "amount": 2,
+          "duration": 420
+        }
+      ]
+    },
+    {
+      "name": "Flounder",
+      "category": "fish",
+      "base": true,
+      "prices": {
+        "base": {
+          "normal": 100
+        }
+      },
+      "description": "A flat fish that lives on the ocean floor.",
+      "spritePath": "/sprites/bases/fish/flounder.png"
+    },
+    {
+      "name": "Fried Calamari",
+      "category": "cooked",
+      "base": false,
+      "prices": {
+        "base": {
+          "normal": 150
+        }
+      },
+      "spritePath": "/sprites/food/fried-calamari.png",
+      "description": "It's so chewy.",
+      "energy": 80,
+      "health": 36
+    },
+    {
+      "name": "Fried Eel",
+      "category": "cooked",
+      "base": false,
+      "prices": {
+        "base": {
+          "normal": 120
+        }
+      },
+      "spritePath": "/sprites/food/fried-eel.png",
+      "description": "Greasy but flavorful.",
+      "energy": 75,
+      "health": 33,
+      "buffs": [
+        {
+          "name": "Luck",
+          "amount": 1,
+          "duration": 420
+        }
+      ]
+    },
+    {
+      "name": "Fried Egg",
+      "category": "cooked",
+      "base": false,
+      "prices": {
+        "base": {
+          "normal": 35
+        }
+      },
+      "spritePath": "/sprites/food/fried-egg.png",
+      "description": "Sunny-side up.",
+      "energy": 50,
+      "health": 22
+    },
+    {
+      "name": "Fried Mushroom",
+      "category": "cooked",
+      "base": false,
+      "prices": {
+        "base": {
+          "normal": 200
+        }
+      },
+      "spritePath": "/sprites/food/fried-mushroom.png",
+      "description": "Earthy and aromatic.",
+      "energy": 135,
+      "health": 60,
+      "buffs": [
+        {
+          "name": "Attack",
+          "amount": 2,
+          "duration": 420
+        }
+      ]
+    },
+    {
+      "name": "Fruit Salad",
+      "category": "cooked",
+      "base": false,
+      "prices": {
+        "base": {
+          "normal": 450
+        }
+      },
+      "spritePath": "/sprites/food/fruit-salad.png",
+      "description": "A delicious combination of summer fruits.",
+      "energy": 263,
+      "health": 118
+    },
+    {
+      "name": "Garlic",
+      "category": "crop",
+      "base": true,
+      "prices": {
+        "base": {
+          "normal": 60
+        },
+        "tiller": {
+          "normal": 66
+        }
+      },
+      "description": "Adds a wonderful zestiness to dishes. High quality garlic can be pretty spicy.",
+      "color": "white",
+      "daysToMature": 4
+    },
+    {
+      "name": "Ghostfish",
+      "category": "fish",
+      "base": true,
+      "prices": {
+        "base": {
+          "normal": 45
+        }
+      },
+      "spritePath": "/sprites/bases/fish/ghostfish.png"
+    },
+    {
+      "name": "Ginger",
+      "category": "crop",
+      "base": true,
+      "forageable": true,
+      "prices": {
+        "base": {
+          "normal": 60
+        }
+      },
+      "description": "This sharp, spicy root can be used in cooking."
+    },
+    {
+      "name": "Ginger Ale",
+      "category": "cooked",
+      "base": false,
+      "prices": {
+        "base": {
+          "normal": 200
+        }
+      },
+      "spritePath": "/sprites/food/ginger-ale.png",
+      "description": "A zesty soda known for its soothing effect on the stomach.",
+      "energy": 63,
+      "health": 28,
+      "buffs": [
+        {
+          "name": "Luck",
+          "amount": 1,
+          "duration": 300
+        }
+      ]
+    },
+    {
+      "name": "Glazed Yams",
+      "category": "cooked",
+      "base": false,
+      "prices": {
+        "base": {
+          "normal": 200
+        }
+      },
+      "spritePath": "/sprites/food/glazed-yams.png",
+      "description": "Sweet and satisfying... The sugar gives it a hint of caramel.",
+      "energy": 200,
+      "health": 90
+    },
+    {
+      "name": "Goat Cheese",
+      "category": "artisan-good",
+      "base": true,
+      "prices": {
+        "base": {
+          "normal": 400
+        },
+        "rancher": {
+          "normal": 480
+        },
+        "artisan": {
+          "normal": 560
+        }
+      },
+      "spritePath": "/sprites/processedes/goat-cheese.png"
+    },
+    {
+      "name": "Goat Milk",
+      "category": "animal-product",
+      "base": true,
+      "prices": {
+        "base": {
+          "normal": 225
+        },
+        "rancher": {
+          "normal": 270,
+          "gold": 404
+        }
+      },
+      "description": "The milk of a goat.",
+      "daysToMature": 2
+    },
+    {
+      "name": "Golden Egg",
+      "category": "animal-product",
+      "base": true,
+      "prices": {
+        "base": {
+          "normal": 500
+        },
+        "rancher": {
+          "normal": 600
+        }
+      },
+      "description": "This egg gleams with a pure golden light.",
+      "daysToMature": 1
+    },
+    {
+      "name": "Grape",
+      "category": "fruit",
+      "base": true,
+      "prices": {
+        "base": {
+          "normal": 80
+        },
+        "tiller": {
+          "normal": 88
+        }
+      },
+      "description": "A sweet cluster of fruit.",
+      "color": "dark-purple",
+      "daysToMature": 10,
+      "daysToRegrow": 3,
+      "forageable": true
+    },
+    {
+      "name": "Green Algae",
+      "category": "fish",
+      "base": true,
+      "prices": {
+        "base": {
+          "normal": 15
+        }
+      },
+      "description": "It's slimy.",
+      "spritePath": "/sprites/bases/fish/green-algae.png"
+    },
+    {
+      "name": "Green Bean",
+      "category": "crop",
+      "base": true,
+      "prices": {
+        "base": {
+          "normal": 40
+        },
+        "tiller": {
+          "normal": 44
+        }
+      },
+      "description": "A juicy little bean with a cool, crisp snap.",
+      "color": "green",
+      "daysToMature": 10,
+      "daysToRegrow": 3
+    },
+    {
+      "name": "Green Tea",
+      "category": "artisan-good",
+      "base": false,
+      "spritePath": "/sprites/processedes/green-tea.png"
+    },
+    {
+      "name": "Hashbrowns",
+      "category": "cooked",
+      "base": false,
+      "prices": {
+        "base": {
+          "normal": 120
+        }
+      },
+      "spritePath": "/sprites/food/hashbrowns.png",
+      "description": "Crispy and golden-brown!",
+      "energy": 90,
+      "health": 40,
+      "buffs": [
+        {
+          "name": "Farming",
+          "amount": 1,
+          "duration": 335
+        }
+      ]
+    },
+    {
+      "name": "Hazelnut",
+      "category": "crop",
+      "base": true,
+      "forageable": true,
+      "prices": {
+        "base": {
+          "normal": 90
+        }
+      },
+      "description": "That's one big hazelnut!"
+    },
+    {
+      "name": "Herring",
+      "category": "fish",
+      "base": true,
+      "prices": {
+        "base": {
+          "normal": 30
+        }
+      },
+      "spritePath": "/sprites/bases/fish/herring.png"
+    },
+    {
+      "name": "Holly",
+      "category": "crop",
+      "base": true,
+      "forageable": true,
+      "prices": {
+        "base": {
+          "normal": 80
+        }
+      },
+      "description": "The leaves and bright red berries make a popular winter decoration."
+    },
+    {
+      "name": "Honey",
+      "category": "animal-product",
+      "base": true,
+      "prices": {
+        "base": {
+          "normal": 100
+        },
+        "artisan": {
+          "normal": 140
+        }
+      },
+      "description": "It's a sweet syrup produced by bees. (Wild Honey assumed)",
+      "daysToMature": 1
+    },
+    {
+      "name": "Hops",
+      "category": "crop",
+      "base": true,
+      "prices": {
+        "base": {
+          "normal": 25
+        },
+        "tiller": {
+          "normal": 27,
+          "silver": 34,
+          "iridium": 55
+        }
+      },
+      "description": "A bitter, tangy flower used to flavor beer.",
+      "color": "green",
+      "daysToMature": 11,
+      "daysToRegrow": 1
+    },
+    {
+      "name": "Hot Pepper",
+      "category": "fruit",
+      "base": true,
+      "prices": {
+        "base": {
+          "normal": 40
+        },
+        "tiller": {
+          "normal": 44
+        }
+      },
+      "description": "Fiery hot with a hint of sweetness.",
+      "color": "red",
+      "daysToMature": 5,
+      "daysToRegrow": 3
+    },
+    {
+      "name": "Ice Cream",
+      "category": "cooked",
+      "base": false,
+      "prices": {
+        "base": {
+          "normal": 120
+        }
+      },
+      "spritePath": "/sprites/food/ice-cream.png",
+      "description": "It's hard to find someone who doesn't like this.",
+      "energy": 100,
+      "health": 45
+    },
+    {
+      "name": "Ice Pip",
+      "category": "fish",
+      "base": true,
+      "prices": {
+        "base": {
+          "normal": 500
+        }
+      },
+      "spritePath": "/sprites/bases/fish/ice-pip.png"
+    },
+    {
+      "name": "Kale",
+      "category": "crop",
+      "base": true,
+      "prices": {
+        "base": {
+          "normal": 110
+        },
+        "tiller": {
+          "normal": 121,
+          "silver": 150
+        }
+      },
+      "description": "The waxy leaves are great in soups and stir fries.",
+      "color": "green",
+      "daysToMature": 6
+    },
+    {
+      "name": "Large Egg",
+      "category": "animal-product",
+      "base": true,
+      "prices": {
+        "base": {
+          "normal": 95
+        },
+        "rancher": {
+          "normal": 114,
+          "silver": 141,
+          "gold": 170
+        }
+      },
+      "description": "It's an uncommonly large white egg!",
+      "daysToMature": 1
+    },
+    {
+      "name": "Large Goat Milk",
+      "category": "animal-product",
+      "base": true,
+      "prices": {
+        "base": {
+          "normal": 345
+        },
+        "rancher": {
+          "normal": 414,
+          "gold": 620
+        }
+      },
+      "description": "A gallon of creamy goat's milk.",
+      "daysToMature": 2
+    },
+    {
+      "name": "Large Milk",
+      "category": "animal-product",
+      "base": true,
+      "prices": {
+        "base": {
+          "normal": 190
+        },
+        "rancher": {
+          "normal": 228,
+          "silver": 284
+        }
+      },
+      "description": "A large jug of cow's milk.",
+      "daysToMature": 1
+    },
+    {
+      "name": "Largemouth Bass",
+      "category": "fish",
+      "base": true,
+      "prices": {
+        "base": {
+          "normal": 100
+        }
+      },
+      "description": "A popular freshwater game fish.",
+      "spritePath": "/sprites/bases/fish/largemouth-bass.png"
+    },
+    {
+      "name": "Lava Eel",
+      "category": "fish",
+      "base": true,
+      "prices": {
+        "base": {
+          "normal": 700
+        }
+      },
+      "spritePath": "/sprites/bases/fish/lava-eel.png"
+    },
+    {
+      "name": "Leek",
+      "category": "crop",
+      "base": true,
+      "forageable": true,
+      "prices": {
+        "base": {
+          "normal": 60
+        }
+      },
+      "description": "A tasty relative of the onion."
+    },
+    {
+      "name": "Lionfish",
+      "category": "fish",
+      "base": true,
+      "prices": {
+        "base": {
+          "normal": 100
+        }
+      },
+      "description": "Despite its fearsome look, the meat is surprisingly sweet. Don't touch the spines!",
+      "spritePath": "/sprites/bases/fish/lionfish.png"
+    },
+    {
+      "name": "Lobster",
+      "category": "fish",
+      "base": true,
+      "prices": {
+        "base": {
+          "normal": 120
+        }
+      },
+      "description": "A large ocean-dwelling crustacean.",
+      "spritePath": "/sprites/bases/fish/lobster.png"
+    },
+    {
+      "name": "Lobster Bisque",
+      "category": "cooked",
+      "base": false,
+      "prices": {
+        "base": {
+          "normal": 205
+        }
+      },
+      "spritePath": "/sprites/food/lobster-bisque.png",
+      "description": "This delicate soup is a secret family recipe of Willy's.",
+      "energy": 225,
+      "health": 101,
+      "buffs": [
+        {
+          "name": "Fishing",
+          "amount": 3,
+          "duration": 1007
+        },
+        {
+          "name": "Max Energy",
+          "amount": 50,
+          "duration": 1007
+        }
+      ]
+    },
+    {
+      "name": "Lucky Lunch",
+      "category": "cooked",
+      "base": false,
+      "prices": {
+        "base": {
+          "normal": 250
+        }
+      },
+      "spritePath": "/sprites/food/lucky-lunch.png",
+      "description": "A special little meal.",
+      "energy": 100,
+      "health": 45,
+      "buffs": [
+        {
+          "name": "Luck",
+          "amount": 3,
+          "duration": 671
+        }
+      ]
+    },
+    {
+      "name": "Magma Cap",
+      "category": "crop",
+      "base": true,
+      "forageable": true,
+      "prices": {
+        "base": {
+          "normal": 400
+        }
+      },
+      "description": "A glowing mushroom that thrives in intense heat."
+    },
+    {
+      "name": "Maki Roll",
+      "category": "cooked",
+      "base": false,
+      "prices": {
+        "base": {
+          "normal": 220
+        }
+      },
+      "spritePath": "/sprites/food/maki-roll.png",
+      "description": "Fish and rice wrapped in seaweed.",
+      "energy": 100,
+      "health": 45
+    },
+    {
+      "name": "Mango",
+      "category": "fruit",
+      "base": true,
+      "prices": {
+        "base": {
+          "normal": 130
+        },
+        "tiller": {
+          "normal": 143
+        }
+      },
+      "description": "A big, sweet tropical fruit with a unique flavor.",
+      "color": "yellow",
+      "daysToMature": 28,
+      "daysToRegrow": 1
+    },
+    {
+      "name": "Mango Sticky Rice",
+      "category": "cooked",
+      "base": false,
+      "prices": {
+        "base": {
+          "normal": 250
+        }
+      },
+      "spritePath": "/sprites/food/mango-sticky-rice.png",
+      "description": "Sweet mango and coconut transforms this rice into something very special.",
+      "energy": 113,
+      "health": 50,
+      "buffs": [
+        {
+          "name": "Defense",
+          "amount": 3,
+          "duration": 301
+        }
+      ]
+    },
+    {
+      "name": "Maple Bar",
+      "category": "cooked",
+      "base": false,
+      "prices": {
+        "base": {
+          "normal": 300
+        }
+      },
+      "spritePath": "/sprites/food/maple-bar.png",
+      "description": "It's a sweet doughnut topped with a rich maple glaze.",
+      "energy": 225,
+      "health": 101,
+      "buffs": [
+        {
+          "name": "Farming",
+          "amount": 1,
+          "duration": 1007
+        },
+        {
+          "name": "Fishing",
+          "amount": 1,
+          "duration": 1007
+        },
+        {
+          "name": "Mining",
+          "amount": 1,
+          "duration": 1007
+        }
+      ]
+    },
+    {
+      "name": "Maple Syrup",
+      "category": "artisan-good",
+      "base": true,
+      "prices": {
+        "base": {
+          "normal": 200
+        }
+      },
+      "description": "A sweet syrup with a unique flavor.",
+      "spritePath": "/sprites/processedes/maple-syrup.png"
+    },
+    {
+      "name": "Mayonnaise",
+      "category": "artisan-good",
+      "base": true,
+      "prices": {
+        "base": {
+          "normal": 190
+        },
+        "rancher": {
+          "normal": 228,
+          "silver": 284
+        },
+        "artisan": {
+          "normal": 266,
+          "silver": 331
+        }
+      },
+      "spritePath": "/sprites/processedes/mayonnaise.png"
+    },
+    {
+      "name": "Mead",
+      "category": "artisan-good",
+      "base": false,
+      "prices": {
+        "base": {
+          "normal": 300
+        },
+        "artisan": {
+          "normal": 420
+        }
+      },
+      "spritePath": "/sprites/processedes/mead.png"
+    },
+    {
+      "name": "Melon",
+      "category": "fruit",
+      "base": true,
+      "prices": {
+        "base": {
+          "normal": 250
+        },
+        "tiller": {
+          "normal": 275
+        }
+      },
+      "description": "A cool, sweet summer treat.",
+      "color": "pink",
+      "daysToMature": 12
+    },
+    {
+      "name": "Midnight Carp",
+      "category": "fish",
+      "base": true,
+      "prices": {
+        "base": {
+          "normal": 150
+        }
+      },
+      "description": "This shy fish only comes out at night.",
+      "spritePath": "/sprites/bases/fish/midnight-carp.png"
+    },
+    {
+      "name": "Midnight Squid",
+      "category": "fish",
+      "base": true,
+      "prices": {
+        "base": {
+          "normal": 100
+        }
+      },
+      "description": "It drifts along the bottom of the sea, preying on whatever unfortunate creature happens by.",
+      "spritePath": "/sprites/bases/fish/midnight-squid.png"
+    },
+    {
+      "name": "Milk",
+      "category": "animal-product",
+      "base": true,
+      "prices": {
+        "base": {
+          "normal": 125
+        },
+        "rancher": {
+          "normal": 150
+        }
+      },
+      "description": "A jug of cow's milk.",
+      "daysToMature": 1
+    },
+    {
+      "name": "Miner's Treat",
+      "category": "cooked",
+      "base": false,
+      "prices": {
+        "base": {
+          "normal": 200
+        }
+      },
+      "spritePath": "/sprites/food/miners-treat.png",
+      "description": "This should keep your energy up.",
+      "energy": 125,
+      "health": 56,
+      "buffs": [
+        {
+          "name": "Mining",
+          "amount": 3,
+          "duration": 335
+        },
+        {
+          "name": "Magnetism",
+          "amount": 32,
+          "duration": 335
+        }
+      ]
+    },
+    {
+      "name": "Morel",
+      "category": "crop",
+      "base": true,
+      "forageable": true,
+      "prices": {
+        "base": {
+          "normal": 150
+        }
+      },
+      "description": "Sought after for its unique nutty flavor."
+    },
+    {
+      "name": "Moss",
+      "category": "crop",
+      "base": true,
+      "forageable": true,
+      "prices": {
+        "base": {
+          "normal": 5
+        }
+      },
+      "description": "Hangs from the branches of old-growth trees."
+    },
+    {
+      "name": "Moss Soup",
+      "category": "cooked",
+      "base": false,
+      "prices": {
+        "base": {
+          "normal": 80
+        }
+      },
+      "spritePath": "/sprites/food/moss-soup.png",
+      "description": "It's thick and slimy, but edible.",
+      "energy": 70,
+      "health": 31
+    },
+    {
+      "name": "Mussel",
+      "category": "fish",
+      "base": true,
+      "prices": {
+        "base": {
+          "normal": 30
+        }
+      },
+      "description": "A common bivalve.",
+      "spritePath": "/sprites/bases/fish/mussel.png"
+    },
+    {
+      "name": "Nautilus Shell",
+      "category": "crop",
+      "base": true,
+      "forageable": true,
+      "prices": {
+        "base": {
+          "normal": 120
+        }
+      },
+      "description": "A nautilus shell, found washed up on the beach. The inside is a perfect spiral."
+    },
+    {
+      "name": "Octopus",
+      "category": "fish",
+      "base": true,
+      "prices": {
+        "base": {
+          "normal": 150
+        }
+      },
+      "spritePath": "/sprites/bases/fish/octopus.png"
+    },
+    {
+      "name": "Oil",
+      "category": "crop",
+      "base": false,
+      "prices": {
+        "base": {
+          "normal": 100
+        },
+        "artisan": {
+          "normal": 100
+        }
+      },
+      "spritePath": "/sprites/processedes/oil.png"
+    },
+    {
+      "name": "Omelet",
+      "category": "cooked",
+      "base": false,
+      "prices": {
+        "base": {
+          "normal": 125
+        }
+      },
+      "spritePath": "/sprites/food/omelet.png",
+      "description": "It's super fluffy.",
+      "energy": 100,
+      "health": 45
+    },
+    {
+      "name": "Orange",
+      "category": "fruit",
+      "base": true,
+      "prices": {
+        "base": {
+          "normal": 100
+        },
+        "tiller": {
+          "normal": 110
+        }
+      },
+      "description": "Juicy, tangy, and bursting with sweet summer aroma.",
+      "color": "orange",
+      "daysToMature": 28,
+      "daysToRegrow": 1
+    },
+    {
+      "name": "Ostrich Egg",
+      "category": "animal-product",
+      "base": true,
+      "prices": {
+        "base": {
+          "normal": 600
+        },
+        "rancher": {
+          "normal": 720
+        }
+      },
+      "description": "At 2.2 kilograms, it's a remarkably large egg.",
+      "daysToMature": 7
+    },
+    {
+      "name": "Oyster",
+      "category": "fish",
+      "base": true,
+      "prices": {
+        "base": {
+          "normal": 40
+        }
+      },
+      "description": "Plucked from the ocean floor. Not to be confused with the Pearl.",
+      "spritePath": "/sprites/bases/fish/oyster.png"
+    },
+    {
+      "name": "Pale Ale",
+      "category": "artisan-good",
+      "base": false,
+      "prices": {
+        "base": {
+          "normal": 300
+        },
+        "artisan": {
+          "normal": 420
+        }
+      },
+      "spritePath": "/sprites/processedes/pale-ale.png"
+    },
+    {
+      "name": "Pale Broth",
+      "category": "cooked",
+      "base": false,
+      "prices": {
+        "base": {
+          "normal": 150
+        }
+      },
+      "spritePath": "/sprites/food/pale-broth.png",
+      "description": "A delicate broth with a hint of sulfur.",
+      "energy": 125,
+      "health": 56
+    },
+    {
+      "name": "Pancakes",
+      "category": "cooked",
+      "base": false,
+      "prices": {
+        "base": {
+          "normal": 80
+        }
+      },
+      "spritePath": "/sprites/food/pancakes.png",
+      "description": "A double stack of fluffy, soft pancakes.",
+      "energy": 90,
+      "health": 40,
+      "buffs": [
+        {
+          "name": "Foraging",
+          "amount": 2,
+          "duration": 671
+        }
+      ]
+    },
+    {
+      "name": "Parsnip",
+      "category": "crop",
+      "base": true,
+      "prices": {
+        "base": {
+          "normal": 35
+        },
+        "tiller": {
+          "normal": 38,
+          "iridium": 77
+        }
+      },
+      "description": "A spring tuber closely related to the carrot. It has an earthy taste and is full of nutrients.",
+      "color": "yellow",
+      "daysToMature": 4
+    },
+    {
+      "name": "Parsnip Soup",
+      "category": "cooked",
+      "base": false,
+      "prices": {
+        "base": {
+          "normal": 120
+        }
+      },
+      "spritePath": "/sprites/food/parsnip-soup.png",
+      "description": "It's fresh and hearty.",
+      "energy": 85,
+      "health": 38
+    },
+    {
+      "name": "Peach",
+      "category": "fruit",
+      "base": true,
+      "prices": {
+        "base": {
+          "normal": 140
+        },
+        "tiller": {
+          "normal": 154
+        }
+      },
+      "description": "It's almost fuzzy to the touch.",
+      "color": "pink",
+      "daysToMature": 28,
+      "daysToRegrow": 1
+    },
+    {
+      "name": "Pepper Poppers",
+      "category": "cooked",
+      "base": false,
+      "prices": {
+        "base": {
+          "normal": 200
+        }
+      },
+      "spritePath": "/sprites/food/pepper-poppers.png",
+      "description": "Spicy breaded peppers filled with cheese.",
+      "energy": 130,
+      "health": 58,
+      "buffs": [
+        {
+          "name": "Farming",
+          "amount": 2,
+          "duration": 420
+        },
+        {
+          "name": "Speed",
+          "amount": 1,
+          "duration": 420
+        }
+      ]
+    },
+    {
+      "name": "Perch",
+      "category": "fish",
+      "base": true,
+      "prices": {
+        "base": {
+          "normal": 55
+        }
+      },
+      "spritePath": "/sprites/bases/fish/perch.png"
+    },
+    {
+      "name": "Periwinkle",
+      "category": "fish",
+      "base": true,
+      "prices": {
+        "base": {
+          "normal": 20
+        }
+      },
+      "description": "A tiny freshwater snail.",
+      "spritePath": "/sprites/bases/fish/periwinkle.png"
+    },
+    {
+      "name": "Pike",
+      "category": "fish",
+      "base": true,
+      "prices": {
+        "base": {
+          "normal": 100
+        }
+      },
+      "spritePath": "/sprites/bases/fish/pike.png"
+    },
+    {
+      "name": "Pineapple",
+      "category": "fruit",
+      "base": true,
+      "prices": {
+        "base": {
+          "normal": 300
+        },
+        "tiller": {
+          "normal": 330
+        }
+      },
+      "description": "A sweet and tangy tropical treat.",
+      "color": "yellow",
+      "daysToMature": 14,
+      "daysToRegrow": 7
+    },
+    {
+      "name": "Pink Cake",
+      "category": "cooked",
+      "base": false,
+      "prices": {
+        "base": {
+          "normal": 480
+        }
+      },
+      "spritePath": "/sprites/food/pink-cake.png",
+      "description": "There's little heart candies on top.",
+      "energy": 250,
+      "health": 112
+    },
+    {
+      "name": "Pizza",
+      "category": "cooked",
+      "base": false,
+      "prices": {
+        "base": {
+          "normal": 300
+        }
+      },
+      "spritePath": "/sprites/food/pizza.png",
+      "description": "It's popular for all the right reasons.",
+      "energy": 150,
+      "health": 67
+    },
+    {
+      "name": "Plum Pudding",
+      "category": "cooked",
+      "base": false,
+      "prices": {
+        "base": {
+          "normal": 260
+        }
+      },
+      "spritePath": "/sprites/food/plum-pudding.png",
+      "description": "A traditional holiday treat.",
+      "energy": 175,
+      "health": 78
+    },
+    {
+      "name": "Poi",
+      "category": "cooked",
+      "base": false,
+      "prices": {
+        "base": {
+          "normal": 400
+        }
+      },
+      "spritePath": "/sprites/food/poi.png",
+      "description": "A traditional food with a delicate, sweet flavor when eaten fresh.",
+      "energy": 75,
+      "health": 33
+    },
+    {
+      "name": "Pomegranate",
+      "category": "fruit",
+      "base": true,
+      "prices": {
+        "base": {
+          "normal": 140
+        },
+        "tiller": {
+          "normal": 154
+        }
+      },
+      "description": "Within the fruit are clusters of juicy seeds.",
+      "color": "dark-pink",
+      "daysToMature": 28,
+      "daysToRegrow": 1
+    },
+    {
+      "name": "Poppy",
+      "category": "crop",
+      "base": true,
+      "prices": {
+        "base": {
+          "normal": 140
+        },
+        "tiller": {
+          "normal": 154
+        }
+      },
+      "description": "In addition to its colorful flower, the Poppy has culinary and medicinal uses.",
+      "daysToMature": 7
+    },
+    {
+      "name": "Poppyseed Muffin",
+      "category": "cooked",
+      "base": false,
+      "prices": {
+        "base": {
+          "normal": 250
+        }
+      },
+      "spritePath": "/sprites/food/poppyseed-muffin.png",
+      "description": "It has a soothing effect.",
+      "energy": 150,
+      "health": 67
+    },
+    {
+      "name": "Potato",
+      "category": "crop",
+      "base": true,
+      "prices": {
+        "base": {
+          "normal": 80
+        },
+        "tiller": {
+          "normal": 88
+        }
+      },
+      "description": "A widely cultivated tuber.",
+      "color": "brown",
+      "daysToMature": 6
+    },
+    {
+      "name": "Powdermelon",
+      "category": "fruit",
+      "base": true,
+      "prices": {
+        "base": {
+          "normal": 60
+        },
+        "tiller": {
+          "normal": 66
+        }
+      },
+      "description": "Named for the powdery coating that forms on the surface, this melon is crisp and sweet, with a delicate flavor.",
+      "color": "white",
+      "daysToMature": 7
+    },
+    {
+      "name": "Pufferfish",
+      "category": "fish",
+      "base": true,
+      "prices": {
+        "base": {
+          "normal": 200
+        }
+      },
+      "spritePath": "/sprites/bases/fish/pufferfish.png"
+    },
+    {
+      "name": "Pumpkin",
+      "category": "crop",
+      "base": true,
+      "prices": {
+        "base": {
+          "normal": 320
+        },
+        "tiller": {
+          "normal": 352
+        }
+      },
+      "description": "A fall favorite, grown for its crunchy seeds and delicately flavored flesh. As a bonus, the hollow shell can be carved into a festive decoration.",
+      "color": "orange",
+      "daysToMature": 13
+    },
+    {
+      "name": "Pumpkin Pie",
+      "category": "cooked",
+      "base": false,
+      "prices": {
+        "base": {
+          "normal": 385
+        }
+      },
+      "spritePath": "/sprites/food/pumpkin-pie.png",
+      "description": "Silky pumpkin cream in a flaky crust.",
+      "energy": 225,
+      "health": 101
+    },
+    {
+      "name": "Pumpkin Soup",
+      "category": "cooked",
+      "base": false,
+      "prices": {
+        "base": {
+          "normal": 300
+        }
+      },
+      "spritePath": "/sprites/food/pumpkin-soup.png",
+      "description": "A seasonal favorite.",
+      "energy": 200,
+      "health": 90,
+      "buffs": [
+        {
+          "name": "Defense",
+          "amount": 2,
+          "duration": 461
+        },
+        {
+          "name": "Luck",
+          "amount": 2,
+          "duration": 461
+        }
+      ]
+    },
+    {
+      "name": "Purple Mushroom",
+      "category": "crop",
+      "base": true,
+      "forageable": true,
+      "prices": {
+        "base": {
+          "normal": 250
+        }
+      },
+      "description": "A rare mushroom found deep in the mines."
+    },
+    {
+      "name": "Qi Fruit",
+      "category": "fruit",
+      "base": true,
+      "prices": {
+        "base": {
+          "normal": 1
+        },
+        "tiller": {
+          "normal": 1
+        }
+      },
+      "description": "Mr. Qi has challenged you to ship 500 of these strange melons.",
+      "color": "blue",
+      "daysToMature": 4
+    },
+    {
+      "name": "Rabbit's Foot",
+      "category": "animal-product",
+      "base": true,
+      "prices": {
+        "base": {
+          "normal": 565
+        },
+        "rancher": {
+          "normal": 678,
+          "gold": 1016
+        }
+      },
+      "description": "It's been separated from its owner, but it still holds its lucky power.",
+      "daysToMature": 4
+    },
+    {
+      "name": "Radish",
+      "category": "crop",
+      "base": true,
+      "prices": {
+        "base": {
+          "normal": 90
+        },
+        "tiller": {
+          "normal": 99
+        }
+      },
+      "description": "A crisp and refreshing root vegetable with hints of pepper when eaten raw.",
+      "color": "red",
+      "daysToMature": 6
+    },
+    {
+      "name": "Radish Salad",
+      "category": "cooked",
+      "base": false,
+      "prices": {
+        "base": {
+          "normal": 300
+        }
+      },
+      "spritePath": "/sprites/food/radish-salad.png",
+      "description": "The radishes are so crisp!",
+      "energy": 200,
+      "health": 90
+    },
+    {
+      "name": "Rainbow Trout",
+      "category": "fish",
+      "base": true,
+      "prices": {
+        "base": {
+          "normal": 65
+        }
+      },
+      "description": "A freshwater trout with colorful markings.",
+      "spritePath": "/sprites/bases/fish/rainbow-trout.png"
+    },
+    {
+      "name": "Raisins",
+      "category": "artisan-good",
+      "base": false,
+      "prices": {
+        "base": {
+          "normal": 600
+        },
+        "artisan": {
+          "normal": 840
+        }
+      },
+      "spritePath": "/sprites/processedes/raisins.png"
+    },
+    {
+      "name": "Red Cabbage",
+      "category": "crop",
+      "base": true,
+      "prices": {
+        "base": {
+          "normal": 260
+        },
+        "tiller": {
+          "normal": 286
+        }
+      },
+      "description": "Often used in salads and coleslaws. The color can range from purple to blue to green-yellow depending on soil conditions.",
+      "daysToMature": 9,
+      "color": "dark-purple"
+    },
+    {
+      "name": "Red Mullet",
+      "category": "fish",
+      "base": true,
+      "prices": {
+        "base": {
+          "normal": 75
+        }
+      },
+      "spritePath": "/sprites/bases/fish/red-mullet.png"
+    },
+    {
+      "name": "Red Mushroom",
+      "category": "crop",
+      "base": true,
+      "forageable": true,
+      "prices": {
+        "base": {
+          "normal": 75
+        }
+      },
+      "description": "A very rare mushroom with a powerful, concentrated flavor."
+    },
+    {
+      "name": "Red Plate",
+      "category": "cooked",
+      "base": false,
+      "prices": {
+        "base": {
+          "normal": 400
+        }
+      },
+      "spritePath": "/sprites/food/red-plate.png",
+      "description": "Full of antioxidants.",
+      "energy": 240,
+      "health": 108,
+      "buffs": [
+        {
+          "name": "Max Energy",
+          "amount": 50,
+          "duration": 210
+        }
+      ]
+    },
+    {
+      "name": "Red Snapper",
+      "category": "fish",
+      "base": true,
+      "prices": {
+        "base": {
+          "normal": 50
+        }
+      },
+      "spritePath": "/sprites/bases/fish/red-snapper.png"
+    },
+    {
+      "name": "Rhubarb",
+      "category": "fruit",
+      "base": true,
+      "prices": {
+        "base": {
+          "normal": 220
+        },
+        "tiller": {
+          "normal": 242
+        }
+      },
+      "description": "The stalks are extremely tart, but make a great dessert when sweetened.",
+      "color": "red",
+      "daysToMature": 13
+    },
+    {
+      "name": "Rhubarb Pie",
+      "category": "cooked",
+      "base": false,
+      "prices": {
+        "base": {
+          "normal": 400
+        }
+      },
+      "spritePath": "/sprites/food/rhubarb-pie.png",
+      "description": "Mmm, tangy and sweet!",
+      "energy": 215,
+      "health": 96
+    },
+    {
+      "name": "Rice",
+      "category": "processed",
+      "base": false,
+      "prices": {
+        "base": {
+          "normal": 100
+        }
+      },
+      "spritePath": "/sprites/processedes/rice.png",
+      "description": "A basic grain often served under vegetables."
+    },
+    {
+      "name": "Rice Pudding",
+      "category": "cooked",
+      "base": false,
+      "prices": {
+        "base": {
+          "normal": 260
+        }
+      },
+      "spritePath": "/sprites/food/rice-pudding.png",
+      "description": "It's creamy, sweet, and fun to eat.",
+      "energy": 115,
+      "health": 51
+    },
+    {
+      "name": "Roasted Hazelnuts",
+      "category": "cooked",
+      "base": false,
+      "prices": {
+        "base": {
+          "normal": 270
+        }
+      },
+      "spritePath": "/sprites/food/roasted-hazelnuts.png",
+      "description": "The roasting process creates a rich forest flavor.",
+      "energy": 175,
+      "health": 78
+    },
+    {
+      "name": "Roots Platter",
+      "category": "cooked",
+      "base": false,
+      "prices": {
+        "base": {
+          "normal": 100
+        }
+      },
+      "spritePath": "/sprites/food/roots-platter.png",
+      "description": "This'll get you digging for more.",
+      "energy": 125,
+      "health": 56,
+      "buffs": [
+        {
+          "name": "Attack",
+          "amount": 3,
+          "duration": 335
+        }
+      ]
+    },
+    {
+      "name": "Salad",
+      "category": "cooked",
+      "base": false,
+      "prices": {
+        "base": {
+          "normal": 110
+        }
+      },
+      "spritePath": "/sprites/food/salad.png",
+      "description": "A healthy garden salad.",
+      "energy": 113,
+      "health": 50
+    },
+    {
+      "name": "Salmon",
+      "category": "fish",
+      "base": true,
+      "prices": {
+        "base": {
+          "normal": 75
+        }
+      },
+      "description": "Swims upstream to spawn.",
+      "spritePath": "/sprites/bases/fish/salmon.png"
+    },
+    {
+      "name": "Salmon Dinner",
+      "category": "cooked",
+      "base": false,
+      "prices": {
+        "base": {
+          "normal": 300
+        }
+      },
+      "spritePath": "/sprites/food/salmon-dinner.png",
+      "description": "The lemon spritz makes it special.",
+      "energy": 125,
+      "health": 56
+    },
+    {
+      "name": "Salmonberry",
+      "category": "fruit",
+      "base": true,
+      "prices": {
+        "base": {
+          "normal": 5
+        },
+        "tiller": {
+          "normal": 5,
+          "iridium": 11
+        },
+        "bearsKnowledge": {
+          "normal": 15,
+          "gold": 21
+        },
+        "bearsKnowledgeTiller": {
+          "normal": 16,
+          "silver": 19,
+          "gold": 23,
+          "iridium": 33
+        }
+      },
+      "description": "A spring-time berry with the flavor of the forest.",
+      "color": "red",
+      "forageable": true
+    },
+    {
+      "name": "Sandfish",
+      "category": "fish",
+      "base": true,
+      "prices": {
+        "base": {
+          "normal": 75
+        }
+      },
+      "spritePath": "/sprites/bases/fish/sandfish.png"
+    },
+    {
+      "name": "Sardine",
+      "category": "fish",
+      "base": true,
+      "prices": {
+        "base": {
+          "normal": 40
+        }
+      },
+      "description": "A common ocean fish.",
+      "spritePath": "/sprites/bases/fish/sardine.png"
+    },
+    {
+      "name": "Sashimi",
+      "category": "cooked",
+      "base": false,
+      "prices": {
+        "base": {
+          "normal": 75
+        }
+      },
+      "spritePath": "/sprites/food/sashimi.png",
+      "description": "Raw fish sliced into thin pieces.",
+      "energy": 75,
+      "health": 33
+    },
+    {
+      "name": "Scorpion Carp",
+      "category": "fish",
+      "base": true,
+      "prices": {
+        "base": {
+          "normal": 150
+        }
+      },
+      "spritePath": "/sprites/bases/fish/scorpion-carp.png"
+    },
+    {
+      "name": "Sea Cucumber",
+      "category": "fish",
+      "base": true,
+      "prices": {
+        "base": {
+          "normal": 75
+        }
+      },
+      "description": "A slimy, tube-shaped creature.",
+      "spritePath": "/sprites/bases/fish/sea-cucumber.png"
+    },
+    {
+      "name": "Sea Urchin",
+      "category": "crop",
+      "base": true,
+      "forageable": true,
+      "prices": {
+        "base": {
+          "normal": 160
+        }
+      },
+      "description": "A spiny creature found on the ocean floor."
+    },
+    {
+      "name": "Seafoam Pudding",
+      "category": "cooked",
+      "base": false,
+      "prices": {
+        "base": {
+          "normal": 300
+        }
+      },
+      "spritePath": "/sprites/food/seafoam-pudding.png",
+      "description": "This briny pudding will really get you into the maritime mindset!",
+      "energy": 175,
+      "health": 78,
+      "buffs": [
+        {
+          "name": "Fishing",
+          "amount": 4,
+          "duration": 210
+        }
+      ]
+    },
+    {
+      "name": "Seaweed",
+      "category": "fish",
+      "base": true,
+      "prices": {
+        "base": {
+          "normal": 20
+        }
+      },
+      "description": "Can be used in cooking.",
+      "spritePath": "/sprites/bases/fish/seaweed.png"
+    },
+    {
+      "name": "Shrimp",
+      "category": "fish",
+      "base": true,
+      "prices": {
+        "base": {
+          "normal": 60
+        }
+      },
+      "description": "A scavenger found in saltwater.",
+      "spritePath": "/sprites/bases/fish/shrimp.png"
+    },
+    {
+      "name": "Shrimp Cocktail",
+      "category": "cooked",
+      "base": false,
+      "prices": {
+        "base": {
+          "normal": 160
+        }
+      },
+      "spritePath": "/sprites/food/shrimp-cocktail.png",
+      "description": "A sumptuous appetizer made with freshly-caught shrimp.",
+      "energy": 225,
+      "health": 101,
+      "buffs": [
+        {
+          "name": "Fishing",
+          "amount": 1,
+          "duration": 602
+        },
+        {
+          "name": "Luck",
+          "amount": 1,
+          "duration": 602
+        }
+      ]
+    },
+    {
+      "name": "Smallmouth Bass",
+      "category": "fish",
+      "base": true,
+      "prices": {
+        "base": {
+          "normal": 50
+        }
+      },
+      "spritePath": "/sprites/bases/fish/smallmouth-bass.png"
+    },
+    {
+      "name": "Snail",
+      "category": "fish",
+      "base": true,
+      "prices": {
+        "base": {
+          "normal": 65
+        }
+      },
+      "description": "A slow-moving crawling creature.",
+      "spritePath": "/sprites/bases/fish/snail.png"
+    },
+    {
+      "name": "Snow Yam",
+      "category": "crop",
+      "base": true,
+      "forageable": true,
+      "prices": {
+        "base": {
+          "normal": 100
+        }
+      },
+      "description": "This little yam was hiding beneath the snow."
+    },
+    {
+      "name": "Spaghetti",
+      "category": "cooked",
+      "base": false,
+      "prices": {
+        "base": {
+          "normal": 120
+        }
+      },
+      "spritePath": "/sprites/food/spaghetti.png",
+      "description": "An old favorite.",
+      "energy": 75,
+      "health": 33
+    },
+    {
+      "name": "Spice Berry",
+      "category": "fruit",
+      "base": true,
+      "prices": {
+        "base": {
+          "normal": 80
+        },
+        "tiller": {
+          "normal": 80
+        }
+      },
+      "description": "It fills the air with a pungent aroma.",
+      "color": "orange",
+      "forageable": true
+    },
+    {
+      "name": "Spicy Eel",
+      "category": "cooked",
+      "base": false,
+      "prices": {
+        "base": {
+          "normal": 175
+        }
+      },
+      "spritePath": "/sprites/food/spicy-eel.png",
+      "description": "It's really spicy! Be careful.",
+      "energy": 115,
+      "health": 51,
+      "buffs": [
+        {
+          "name": "Luck",
+          "amount": 1,
+          "duration": 420
+        },
+        {
+          "name": "Speed",
+          "amount": 1,
+          "duration": 420
+        }
+      ]
+    },
+    {
+      "name": "Spook Fish",
+      "category": "fish",
+      "base": true,
+      "prices": {
+        "base": {
+          "normal": 220
+        }
+      },
+      "description": "Its extremely large eyes are designed to pick up the faintest traces of light.",
+      "spritePath": "/sprites/bases/fish/spook-fish.png"
+    },
+    {
+      "name": "Spring Onion",
+      "category": "crop",
+      "base": true,
+      "forageable": true,
+      "prices": {
+        "base": {
+          "normal": 8
+        }
+      },
+      "description": "It's a little smelly, but very nutritious."
+    },
+    {
+      "name": "Squid",
+      "category": "fish",
+      "base": true,
+      "prices": {
+        "base": {
+          "normal": 80
+        }
+      },
+      "description": "A deep-sea creature.",
+      "spritePath": "/sprites/bases/fish/squid.png"
+    },
+    {
+      "name": "Squid Ink",
+      "category": "fish",
+      "base": true,
+      "prices": {
+        "base": {
+          "normal": 110
+        }
+      },
+      "description": "Used in cooking and dyeing.",
+      "spritePath": "/sprites/bases/fish/squid-ink.png"
+    },
+    {
+      "name": "Squid Ink Ravioli",
+      "category": "cooked",
+      "base": false,
+      "prices": {
+        "base": {
+          "normal": 150
+        }
+      },
+      "spritePath": "/sprites/food/squid-ink-ravioli.png",
+      "description": "Temporarily protects from debuffs.",
+      "energy": 125,
+      "health": 56,
+      "buffs": [
+        {
+          "name": "Mining",
+          "amount": 1,
+          "duration": 279
+        }
+      ]
+    },
+    {
+      "name": "Starfruit",
+      "category": "fruit",
+      "base": true,
+      "prices": {
+        "base": {
+          "normal": 750
+        },
+        "tiller": {
+          "normal": 825,
+          "silver": 1030
+        }
+      },
+      "description": "An extremely juicy fruit that grows in hot, humid weather. Slightly sweet with a sour undertone.",
+      "color": "yellow",
+      "daysToMature": 13
+    },
+    {
+      "name": "Stingray",
+      "category": "fish",
+      "base": true,
+      "prices": {
+        "base": {
+          "normal": 180
+        }
+      },
+      "description": "Despite its fearsome reputation, it's quite docile and shy.",
+      "spritePath": "/sprites/bases/fish/stingray.png"
+    },
+    {
+      "name": "Stir Fry",
+      "category": "cooked",
+      "base": false,
+      "prices": {
+        "base": {
+          "normal": 335
+        }
+      },
+      "spritePath": "/sprites/food/stir-fry.png",
+      "description": "Julienned vegetables on a bed of rice.",
+      "energy": 200,
+      "health": 90
+    },
+    {
+      "name": "Stonefish",
+      "category": "fish",
+      "base": true,
+      "prices": {
+        "base": {
+          "normal": 300
+        }
+      },
+      "spritePath": "/sprites/bases/fish/stonefish.png"
+    },
+    {
+      "name": "Strange Bun",
+      "category": "cooked",
+      "base": false,
+      "prices": {
+        "base": {
+          "normal": 225
+        }
+      },
+      "spritePath": "/sprites/food/strange-bun.png",
+      "description": "What's inside?",
+      "energy": 100,
+      "health": 45
+    },
+    {
+      "name": "Strawberry",
+      "category": "fruit",
+      "base": true,
+      "prices": {
+        "base": {
+          "normal": 120
+        },
+        "tiller": {
+          "normal": 132
+        }
+      },
+      "description": "A sweet, juicy favorite with an appealing red color.",
+      "color": "red",
+      "daysToMature": 8,
+      "daysToRegrow": 4
+    },
+    {
+      "name": "Stuffing",
+      "category": "cooked",
+      "base": false,
+      "prices": {
+        "base": {
+          "normal": 165
+        }
+      },
+      "spritePath": "/sprites/food/stuffing.png",
+      "description": "Ahh... the smell of warm bread and sage.",
+      "energy": 170,
+      "health": 76,
+      "buffs": [
+        {
+          "name": "Defense",
+          "amount": 2,
+          "duration": 335
+        }
+      ]
+    },
+    {
+      "name": "Sturgeon",
+      "category": "fish",
+      "base": true,
+      "prices": {
+        "base": {
+          "normal": 200
+        }
+      },
+      "spritePath": "/sprites/bases/fish/sturgeon.png"
+    },
+    {
+      "name": "Sugar",
+      "category": "processed",
+      "base": false,
+      "prices": {
+        "base": {
+          "normal": 50
+        }
+      },
+      "spritePath": "/sprites/processedes/sugar.png"
+    },
+    {
+      "name": "Summer Spangle",
+      "category": "crop",
+      "base": true,
+      "prices": {
+        "base": {
+          "normal": 90
+        },
+        "tiller": {
+          "normal": 99
+        }
+      },
+      "description": "A tropical bloom that thrives in the humid summer air. Has a sweet, tangy aroma.",
+      "daysToMature": 8
+    },
+    {
+      "name": "Summer Squash",
+      "category": "crop",
+      "base": true,
+      "prices": {
+        "base": {
+          "normal": 45
+        },
+        "tiller": {
+          "normal": 50
+        }
+      },
+      "description": "A curved yellow squash that is harvested while immature, and still tender.",
+      "color": "yellow",
+      "daysToMature": 6,
+      "daysToRegrow": 3
+    },
+    {
+      "name": "Sunfish",
+      "category": "fish",
+      "base": true,
+      "prices": {
+        "base": {
+          "normal": 30
+        }
+      },
+      "description": "A common river fish.",
+      "spritePath": "/sprites/bases/fish/sunfish.png"
+    },
+    {
+      "name": "Sunflower",
+      "category": "crop",
+      "base": true,
+      "prices": {
+        "base": {
+          "normal": 80
+        },
+        "tiller": {
+          "normal": 88
+        }
+      },
+      "description": "A common misconception is that the flower turns so it's always facing the sun.",
+      "daysToMature": 8
+    },
+    {
+      "name": "Super Cucumber",
+      "category": "fish",
+      "base": true,
+      "prices": {
+        "base": {
+          "normal": 250
+        }
+      },
+      "spritePath": "/sprites/bases/fish/super-cucumber.png"
+    },
+    {
+      "name": "Super Meal",
+      "category": "cooked",
+      "base": false,
+      "prices": {
+        "base": {
+          "normal": 220
+        }
+      },
+      "spritePath": "/sprites/food/super-meal.png",
+      "description": "It's a really energizing meal.",
+      "energy": 160,
+      "health": 72,
+      "buffs": [
+        {
+          "name": "Max Energy",
+          "amount": 40,
+          "duration": 210
+        },
+        {
+          "name": "Speed",
+          "amount": 1,
+          "duration": 210
+        }
+      ]
+    },
+    {
+      "name": "Survival Burger",
+      "category": "cooked",
+      "base": false,
+      "prices": {
+        "base": {
+          "normal": 180
+        }
+      },
+      "spritePath": "/sprites/food/survival-burger.png",
+      "description": "A convenient snack for the explorer.",
+      "energy": 125,
+      "health": 56,
+      "buffs": [
+        {
+          "name": "Foraging",
+          "amount": 3,
+          "duration": 335
+        }
+      ]
+    },
+    {
+      "name": "Sweet Gem Berry",
+      "category": "crop",
+      "base": true,
+      "prices": {
+        "base": {
+          "normal": 3000
+        }
+      },
+      "description": "It's by far the sweetest thing you've ever smelled.",
+      "daysToMature": 24
+    },
+    {
+      "name": "Sweet Pea",
+      "category": "crop",
+      "base": true,
+      "forageable": true,
+      "prices": {
+        "base": {
+          "normal": 50
+        }
+      },
+      "description": "A fragrant summer flower."
+    },
+    {
+      "name": "Taro Root",
+      "category": "crop",
+      "base": true,
+      "prices": {
+        "base": {
+          "normal": 100
+        },
+        "tiller": {
+          "normal": 110
+        }
+      },
+      "description": "This starchy root is one of the most ancient crops.",
+      "color": "brown",
+      "daysToMature": 7
+    },
+    {
+      "name": "Tea Leaves",
+      "category": "crop",
+      "base": true,
+      "prices": {
+        "base": {
+          "normal": 50
+        }
+      },
+      "description": "The young leaves of the tea plant. Can be brewed into the popular, energizing beverage.",
+      "daysToMature": 20,
+      "daysToRegrow": 1
+    },
+    {
+      "name": "Tiger Trout",
+      "category": "fish",
+      "base": true,
+      "prices": {
+        "base": {
+          "normal": 150
+        }
+      },
+      "spritePath": "/sprites/bases/fish/tiger-trout.png"
+    },
+    {
+      "name": "Tom Kha Soup",
+      "category": "cooked",
+      "base": false,
+      "prices": {
+        "base": {
+          "normal": 250
+        }
+      },
+      "spritePath": "/sprites/food/tom-kha-soup.png",
+      "description": "These flavors are incredible!",
+      "energy": 175,
+      "health": 78,
+      "buffs": [
+        {
+          "name": "Farming",
+          "amount": 2,
+          "duration": 420
+        },
+        {
+          "name": "Max Energy",
+          "amount": 30,
+          "duration": 420
+        }
+      ]
+    },
+    {
+      "name": "Tomato",
+      "category": "crop",
+      "base": true,
+      "prices": {
+        "base": {
+          "normal": 60
+        },
+        "tiller": {
+          "normal": 66
+        }
+      },
+      "description": "Rich and slightly tangy, the Tomato has a wide variety of culinary uses.",
+      "color": "red",
+      "daysToMature": 11,
+      "daysToRegrow": 4
+    },
+    {
+      "name": "Tortilla",
+      "category": "cooked",
+      "base": false,
+      "prices": {
+        "base": {
+          "normal": 50
+        }
+      },
+      "spritePath": "/sprites/food/tortilla.png",
+      "description": "Can be used as a vessel for food or eaten by itself.",
+      "energy": 50,
+      "health": 22
+    },
+    {
+      "name": "Triple Shot Espresso",
+      "category": "cooked",
+      "base": false,
+      "prices": {
+        "base": {
+          "normal": 450
+        }
+      },
+      "spritePath": "/sprites/food/triple-shot-espresso.png",
+      "description": "It's more potent than regular coffee!",
+      "energy": 8,
+      "health": 3,
+      "buffs": [
+        {
+          "name": "Speed",
+          "amount": 1,
+          "duration": 252
+        }
+      ]
+    },
+    {
+      "name": "Tropical Curry",
+      "category": "cooked",
+      "base": false,
+      "prices": {
+        "base": {
+          "normal": 500
+        }
+      },
+      "spritePath": "/sprites/food/tropical-curry.png",
+      "description": "An exotic, fragrant curry served in a pineapple bowl.",
+      "energy": 150,
+      "health": 67,
+      "buffs": [
+        {
+          "name": "Foraging",
+          "amount": 4,
+          "duration": 301
+        }
+      ]
+    },
+    {
+      "name": "Trout Soup",
+      "category": "cooked",
+      "base": false,
+      "prices": {
+        "base": {
+          "normal": 100
+        }
+      },
+      "spritePath": "/sprites/food/trout-soup.png",
+      "description": "Pretty salty.",
+      "energy": 100,
+      "health": 45,
+      "buffs": [
+        {
+          "name": "Fishing",
+          "amount": 1,
+          "duration": 279
+        }
+      ]
+    },
+    {
+      "name": "Truffle",
+      "category": "animal-product",
+      "base": true,
+      "prices": {
+        "base": {
+          "normal": 625
+        }
+      },
+      "description": "A gourmet type of mushroom with a unique taste.",
+      "daysToMature": 1
+    },
+    {
+      "name": "Truffle Oil",
+      "category": "artisan-good",
+      "base": false,
+      "prices": {
+        "base": {
+          "normal": 1065
+        },
+        "artisan": {
+          "normal": 1491
+        }
+      },
+      "spritePath": "/sprites/processedes/truffle-oil.png"
+    },
+    {
+      "name": "Tulip",
+      "category": "crop",
+      "base": true,
+      "prices": {
+        "base": {
+          "normal": 30
+        },
+        "tiller": {
+          "normal": 33,
+          "silver": 40
+        }
+      },
+      "description": "The most popular spring flower. Has a very faint sweet smell.",
+      "daysToMature": 6
+    },
+    {
+      "name": "Tuna",
+      "category": "fish",
+      "base": true,
+      "prices": {
+        "base": {
+          "normal": 100
+        }
+      },
+      "description": "A large fish that lives in the ocean.",
+      "spritePath": "/sprites/bases/fish/tuna.png"
+    },
+    {
+      "name": "Unmilled Rice",
+      "category": "crop",
+      "base": true,
+      "prices": {
+        "base": {
+          "normal": 30
+        },
+        "tiller": {
+          "normal": 33,
+          "silver": 40
+        }
+      },
+      "description": "Rice in its rawest form. Run this through a mill to increase the value.",
+      "color": "brown",
+      "daysToMature": 6
+    },
+    {
+      "name": "Vegetable Medley",
+      "category": "cooked",
+      "base": false,
+      "prices": {
+        "base": {
+          "normal": 120
+        }
+      },
+      "spritePath": "/sprites/food/vegetable-medley.png",
+      "description": "This is very nutritious.",
+      "energy": 165,
+      "health": 74
+    },
+    {
+      "name": "Vinegar",
+      "description": "An aged fermented liquid used in many cooking recipes.",
+      "category": "artisan-good",
+      "base": false,
+      "prices": {
+        "base": {
+          "normal": 100
+        },
+        "artisan": {
+          "normal": 140
+        }
+      },
+      "spritePath": "/sprites/processedes/vinegar.png"
+    },
+    {
+      "name": "Void Egg",
+      "category": "animal-product",
+      "base": true,
+      "prices": {
+        "base": {
+          "normal": 65
+        },
+        "rancher": {
+          "normal": 78,
+          "gold": 116
+        }
+      },
+      "description": "A jet-black egg with red flecks. It's warm to the touch.",
+      "daysToMature": 1
+    },
+    {
+      "name": "Void Mayonnaise",
+      "category": "artisan-good",
+      "base": true,
+      "prices": {
+        "base": {
+          "normal": 275
+        }
+      },
+      "spritePath": "/sprites/processedes/void-mayonnaise.png",
+      "description": "A thick, purple paste that smells like burnt hair."
+    },
+    {
+      "name": "Void Salmon",
+      "category": "fish",
+      "base": true,
+      "prices": {
+        "base": {
+          "normal": 150
+        }
+      },
+      "description": "A salmon that's turned dark and gloomy. A little scary.",
+      "spritePath": "/sprites/bases/fish/void-salmon.png"
+    },
+    {
+      "name": "Walleye",
+      "category": "fish",
+      "base": true,
+      "prices": {
+        "base": {
+          "normal": 105
+        }
+      },
+      "spritePath": "/sprites/bases/fish/walleye.png"
+    },
+    {
+      "name": "Wheat",
+      "category": "crop",
+      "base": true,
+      "prices": {
+        "base": {
+          "normal": 25
+        },
+        "tiller": {
+          "normal": 27,
+          "silver": 34,
+          "iridium": 55
+        }
+      },
+      "description": "One of the most widely cultivated grains. Makes a great flour for breads and cakes.",
+      "color": "yellow",
+      "daysToMature": 4
+    },
+    {
+      "name": "Wheat Flour",
+      "category": "processed",
+      "base": false,
+      "prices": {
+        "base": {
+          "normal": 100
+        }
+      },
+      "spritePath": "/sprites/processedes/wheat-flour.png"
+    },
+    {
+      "name": "White Algae",
+      "category": "fish",
+      "base": true,
+      "prices": {
+        "base": {
+          "normal": 25
+        }
+      },
+      "description": "It's super slimy.",
+      "spritePath": "/sprites/bases/fish/white-algae.png"
+    },
+    {
+      "name": "Wild Horseradish",
+      "category": "crop",
+      "base": true,
+      "forageable": true,
+      "prices": {
+        "base": {
+          "normal": 50
+        }
+      },
+      "description": "A spicy root found in the spring."
+    },
+    {
+      "name": "Wild Plum",
+      "category": "fruit",
+      "base": true,
+      "prices": {
+        "base": {
+          "normal": 80
+        },
+        "tiller": {
+          "normal": 80
+        }
+      },
+      "description": "Tart and juicy with a pungent aroma.",
+      "color": "purple",
+      "forageable": true
+    },
+    {
+      "name": "Winter Root",
+      "category": "crop",
+      "base": true,
+      "forageable": true,
+      "prices": {
+        "base": {
+          "normal": 70
+        }
+      },
+      "description": "A starchy tuber found by digging."
+    },
+    {
+      "name": "Woodskip",
+      "category": "fish",
+      "base": true,
+      "prices": {
+        "base": {
+          "normal": 75
+        }
+      },
+      "description": "A rare fish that lives only in special forest pools.",
+      "spritePath": "/sprites/bases/fish/woodskip.png"
+    },
+    {
+      "name": "Wool",
+      "category": "animal-product",
+      "base": true,
+      "prices": {
+        "base": {
+          "normal": 340
+        },
+        "rancher": {
+          "normal": 408
+        }
+      },
+      "description": "It's super soft.",
+      "daysToMature": 3
+    },
+    {
+      "name": "Yam",
+      "category": "crop",
+      "base": true,
+      "prices": {
+        "base": {
+          "normal": 160
+        },
+        "tiller": {
+          "normal": 176
+        }
+      },
+      "description": "A starchy tuber with a lot of culinary versatility.",
+      "color": "brown",
+      "daysToMature": 10
+    }
+  ]
 }

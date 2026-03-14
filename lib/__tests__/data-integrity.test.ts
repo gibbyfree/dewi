@@ -6,11 +6,13 @@
  * no need to add per-item assertions.
  */
 import { describe, it, expect } from "vitest"
+import { existsSync } from "fs"
+import { resolve } from "path"
 import type { GameItem, Recipe } from "@/types/items"
 import itemsData from "@/data/items.json"
 import recipesData from "@/data/recipes.json"
 import { buildItemIndex } from "@/lib/recipeGraph"
-import { getSourceItemName, getEffectivePrices, generateQualities } from "@/lib/prices"
+import { getSourceItemName, getEffectivePrices } from "@/lib/prices"
 
 import { getCaskAgingDays } from "@/config/processors"
 
@@ -74,7 +76,10 @@ describe("items.json integrity", () => {
     it("quality prices are ordered: normal <= silver <= gold <= iridium", () => {
         for (const item of items) {
             if (!item.prices) continue
-            for (const [tier, quals] of Object.entries(item.prices)) {
+            // Use getEffectivePrices so computed tiers (silver/gold/iridium) are included
+            const effective = getEffectivePrices(item, itemsByName)
+            if (!effective) continue
+            for (const [tier, quals] of Object.entries(effective)) {
                 const n = quals.normal
                 const s = quals.silver ?? n
                 const g = quals.gold ?? s
@@ -125,6 +130,28 @@ describe("items.json integrity", () => {
         }
     })
 
+    it("every cooked item has energy and health", () => {
+        const cooked = items.filter((i) => i.category === "cooked")
+        expect(cooked.length).toBeGreaterThan(0)
+        for (const item of cooked) {
+            expect(item.energy, `${item.name} missing energy`).toBeGreaterThan(0)
+            expect(item.health, `${item.name} missing health`).toBeGreaterThan(0)
+        }
+    })
+
+    it("cooked item buffs are well-formed", () => {
+        const cooked = items.filter((i) => i.category === "cooked")
+        for (const item of cooked) {
+            if (!item.buffs) continue
+            expect(item.buffs.length, `${item.name} buffs should not be empty array`).toBeGreaterThan(0)
+            for (const buff of item.buffs) {
+                expect(buff.name.length, `${item.name} buff missing name`).toBeGreaterThan(0)
+                expect(buff.amount, `${item.name} buff amount`).toBeGreaterThan(0)
+                expect(buff.duration, `${item.name} buff duration`).toBeGreaterThan(0)
+            }
+        }
+    })
+
     it("non-base items should not have daysToMature/daysToRegrow", () => {
         const derived = items.filter((i) => !i.base)
         for (const item of derived) {
@@ -133,6 +160,34 @@ describe("items.json integrity", () => {
                 `${item.name} (derived) should not have daysToMature`
             ).toBeUndefined()
         }
+    })
+
+    it("every item with a sprite has the file on disk", () => {
+        const root = resolve(__dirname, "../..")
+        const slug = (name: string) =>
+            name.toLowerCase().replace(/'/g, "").replace(/\s+/g, "-")
+
+        const missingSprites: string[] = []
+
+        for (const item of items) {
+            let spritePath: string | null = null
+
+            if (item.spritePath) {
+                spritePath = item.spritePath
+            } else if (item.base) {
+                const subfolder =
+                    item.category === "fish" ? "fish"
+                    : item.category === "animal-product" ? "animals"
+                    : "crops"
+                spritePath = `/sprites/bases/${subfolder}/${slug(item.name)}.png`
+            }
+
+            if (spritePath && !existsSync(resolve(root, "public", spritePath.replace(/^\//, "")))) {
+                missingSprites.push(`${item.name} → public${spritePath}`)
+            }
+        }
+
+        expect(missingSprites, "Missing sprite files").toEqual([])
     })
 })
 

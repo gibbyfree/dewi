@@ -8,6 +8,7 @@ import {
     getDerivationTree,
     buildItemIndex,
     getRecipesForItem,
+    buildAliasMap,
 } from "@/lib/recipeGraph"
 import type { GameItem, Recipe } from "@/types/items"
 
@@ -337,5 +338,86 @@ describe("sprite resolution", () => {
         const products = getProductsForItem(berry, syntheticRecipes)
         // syntheticRecipes have no sprite templates
         expect(products[0].resolvedSprite).toBeNull()
+    })
+})
+
+// ---------------------------------------------------------------------------
+// buildAliasMap + alias-aware matching
+// ---------------------------------------------------------------------------
+describe("buildAliasMap and alias matching", () => {
+    const aliasGroups = [["Egg", "Large Egg", "Duck Egg"], ["Milk", "Large Milk"]]
+    const aliasMap = buildAliasMap(aliasGroups)
+
+    const eggRecipe: Recipe = {
+        base: "Egg",
+        products: [{ name: "Fried Egg", processor: "Kitchen", ingredients: [{ name: "Egg", quantity: 1 }] }],
+    }
+    const multiRecipe: Recipe = {
+        base: ["Egg", "Milk"],
+        products: [{ name: "Omelet", processor: "Kitchen", ingredients: [{ name: "Egg", quantity: 1 }, { name: "Milk", quantity: 1 }] }],
+    }
+
+    const egg = makeItem({ name: "Egg", category: "animal-product" })
+    const largeEgg = makeItem({ name: "Large Egg", category: "animal-product" })
+    const duckEgg = makeItem({ name: "Duck Egg", category: "animal-product" })
+    const milk = makeItem({ name: "Milk", category: "animal-product" })
+    const largeMilk = makeItem({ name: "Large Milk", category: "animal-product" })
+
+    it("maps each alias to the canonical name", () => {
+        expect(aliasMap.get("Egg")).toBe("Egg")
+        expect(aliasMap.get("Large Egg")).toBe("Egg")
+        expect(aliasMap.get("Duck Egg")).toBe("Egg")
+        expect(aliasMap.get("Large Milk")).toBe("Milk")
+    })
+
+    it("string base matches aliases", () => {
+        expect(getProductsForItem(egg, [eggRecipe], aliasMap)).toHaveLength(1)
+        expect(getProductsForItem(largeEgg, [eggRecipe], aliasMap)).toHaveLength(1)
+        expect(getProductsForItem(duckEgg, [eggRecipe], aliasMap)).toHaveLength(1)
+        expect(getProductsForItem(milk, [eggRecipe], aliasMap)).toHaveLength(0)
+    })
+
+    it("array base matches aliases", () => {
+        expect(getProductsForItem(largeEgg, [multiRecipe], aliasMap)).toHaveLength(1)
+        expect(getProductsForItem(largeMilk, [multiRecipe], aliasMap)).toHaveLength(1)
+    })
+
+    it("no alias map — only exact matches", () => {
+        expect(getProductsForItem(largeEgg, [eggRecipe])).toHaveLength(0)
+        expect(getProductsForItem(egg, [eggRecipe])).toHaveLength(1)
+    })
+
+    it("direct match suppresses alias match for the same processor", () => {
+        // Large Egg has its own Mayonnaise Machine recipe → alias Egg→Mayonnaise should be excluded
+        const eggMayoRecipe: Recipe = {
+            base: "Egg",
+            products: [{ name: "Mayonnaise", processor: "Mayonnaise Machine", ingredients: [{ name: "Egg", quantity: 1 }] }],
+        }
+        const largeEggDirectRecipe: Recipe = {
+            base: "Large Egg",
+            products: [{ name: "Mayonnaise", processor: "Mayonnaise Machine", ingredients: [{ name: "Large Egg", quantity: 1 }], outputQuality: "gold" }],
+        }
+        const results = getProductsForItem(largeEgg, [eggMayoRecipe, largeEggDirectRecipe], aliasMap)
+        // Only the direct Large Egg recipe should appear, not the alias Egg recipe
+        expect(results).toHaveLength(1)
+        expect(results[0].product.outputQuality).toBe("gold")
+    })
+
+    it("alias match is kept when no direct match exists for that processor", () => {
+        // Duck Egg has a direct Mayonnaise Machine recipe (Duck Mayo), so alias Egg recipe excluded
+        // But for a different processor (Kitchen), alias matches are kept
+        const duckDirectRecipe: Recipe = {
+            base: "Duck Egg",
+            products: [{ name: "Duck Mayonnaise", processor: "Mayonnaise Machine", ingredients: [{ name: "Duck Egg", quantity: 1 }] }],
+        }
+        const kitchenRecipe: Recipe = {
+            base: "Egg",
+            products: [{ name: "Fried Egg", processor: "Kitchen", ingredients: [{ name: "Egg", quantity: 1 }] }],
+        }
+        const results = getProductsForItem(duckEgg, [eggRecipe, duckDirectRecipe, kitchenRecipe], aliasMap)
+        const names = results.map(r => r.resolvedName)
+        expect(names).toContain("Duck Mayonnaise")   // direct
+        expect(names).not.toContain("Mayonnaise")    // suppressed (same processor as direct)
+        expect(names).toContain("Fried Egg")         // alias kept (different processor)
     })
 })

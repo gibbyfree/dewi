@@ -1,7 +1,8 @@
 "use client"
 
-import { Fragment } from "react"
+import { Fragment, useState, useRef } from "react"
 import Image from "next/image"
+import { Popover as PopoverPrimitive } from "radix-ui"
 import type { GameItem, Recipe, RecipeIngredient } from "@/types/items"
 import {
     Item,
@@ -11,13 +12,21 @@ import {
 } from "@/components/ui/item"
 import recipesData from "@/data/recipes.json"
 import itemsData from "@/data/items.json"
-import { getProductsForItem, buildItemIndex } from "@/lib/recipeGraph"
-import { resolveFormula, getEffectivePrices, getPriceCategory, getSourceItemName } from "@/lib/prices"
+import { getProductsForItem, buildItemIndex, buildAliasMap } from "@/lib/recipeGraph"
+import { resolveFormula, getEffectivePrices, getPriceCategory, getSourceItemName, formatBuffs } from "@/lib/prices"
 import { getCaskAgingDays } from "@/config/processors"
 
-const recipes = recipesData.recipes as unknown as Recipe[]
+const recipesTyped = recipesData as unknown as { aliases: string[][]; recipes: Recipe[] }
+const recipes = recipesTyped.recipes
+const aliasMap = buildAliasMap(recipesTyped.aliases ?? [])
 const items = itemsData.items as GameItem[]
 const itemsByName = buildItemIndex(items)
+
+const qualitySprites: Record<string, string> = {
+    silver: "/sprites/silver.webp",
+    gold: "/sprites/gold.webp",
+    iridium: "/sprites/iridium.webp",
+}
 
 // Map product names to price formula names
 const PRICE_FORMULA_PATTERNS: [RegExp, string][] = [
@@ -34,6 +43,9 @@ function getProductFormula(productName: string): string | null {
     }
     return null
 }
+
+// Formulas where price depends on the selected quality price, not the base normal price
+const QUALITY_SENSITIVE_FORMULAS = new Set(["smoked_fish"])
 
 // Convert processor name to sprite filename
 function getProcessorSpritePath(processorName: string): string {
@@ -89,14 +101,72 @@ function computeIngredientsCost(
     return total
 }
 
+// Look up the effective sell price for any ingredient at normal quality
+function getIngredientPrice(ingredientName: string, professions: string[]): number {
+    const item = itemsByName.get(ingredientName)
+    if (!item?.prices) return 0
+    const cat = getPriceCategory(item.name, item.category, item.forageable ?? false, false, professions)
+    const prices = getEffectivePrices(item, itemsByName)
+    return prices?.[cat as keyof typeof prices]?.normal ?? prices?.base?.normal ?? 0
+}
+
+// Wraps an ingredient sprite with a popover showing name + price on hover (desktop) or tap (mobile)
+function IngredientPopover({
+    children,
+    ingredientName,
+    ingredientPrice,
+}: {
+    children: React.ReactNode
+    ingredientName: string
+    ingredientPrice: number
+}) {
+    const [open, setOpen] = useState(false)
+    const closeTimer = useRef<ReturnType<typeof setTimeout>>(undefined)
+
+    const handlePointerEnter = (e: React.PointerEvent) => {
+        if (e.pointerType === "touch") return
+        clearTimeout(closeTimer.current)
+        setOpen(true)
+    }
+    const handlePointerLeave = (e: React.PointerEvent) => {
+        if (e.pointerType === "touch") return
+        closeTimer.current = setTimeout(() => setOpen(false), 150)
+    }
+
+    return (
+        <PopoverPrimitive.Root open={open} onOpenChange={setOpen}>
+            <PopoverPrimitive.Trigger asChild>
+                <div onPointerEnter={handlePointerEnter} onPointerLeave={handlePointerLeave}>
+                    {children}
+                </div>
+            </PopoverPrimitive.Trigger>
+            <PopoverPrimitive.Portal>
+                <PopoverPrimitive.Content
+                    side="top"
+                    sideOffset={4}
+                    onPointerEnter={handlePointerEnter}
+                    onPointerLeave={handlePointerLeave}
+                    onOpenAutoFocus={(e) => e.preventDefault()}
+                    className="z-50 rounded-md border bg-popover px-3 py-1.5 text-sm text-popover-foreground shadow-md data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95"
+                >
+                    <p className="font-medium">{ingredientName}</p>
+                    {ingredientPrice > 0 && <p className="text-muted-foreground">{ingredientPrice}g</p>}
+                </PopoverPrimitive.Content>
+            </PopoverPrimitive.Portal>
+        </PopoverPrimitive.Root>
+    )
+}
+
 // Get sprite path for an ingredient item
 function getIngredientSpritePath(ingredientName: string): string | null {
     const item = itemsByName.get(ingredientName)
     if (!item) return null
     if (item.spritePath) return item.spritePath
     if (item.base) {
-        const fileName = item.name.toLowerCase().replace(/\s+/g, "-")
-        const subfolder = item.category === "animal-product" ? "animals" : "crops"
+        const fileName = item.name.toLowerCase().replace(/'/g, "").replace(/\s+/g, "-")
+        const subfolder = item.category === "animal-product" ? "animals"
+            : item.category === "fish" ? "fish"
+            : "crops"
         return `/sprites/bases/${subfolder}/${fileName}.png`
     }
     return null
@@ -111,7 +181,13 @@ interface DerivedItemsProps {
 }
 
 export function DerivedItems({ baseItem, professions, selectedBasePrice, selectedQuality, onNavigateToItem }: DerivedItemsProps) {
-    const resolvedProducts = getProductsForItem(baseItem, recipes)
+    // Sort so Kitchen recipes (cooking) always appear last
+    const resolvedProducts = getProductsForItem(baseItem, recipes, aliasMap)
+        .sort((a, b) => {
+            const aKitchen = a.product.processor === "Kitchen" ? 1 : 0
+            const bKitchen = b.product.processor === "Kitchen" ? 1 : 0
+            return aKitchen - bKitchen
+        })
 
     // Also check if this item itself is cask-eligible (e.g. when navigating to a wine)
     const caskAging = getCaskAgingDays(baseItem.name)
@@ -120,26 +196,32 @@ export function DerivedItems({ baseItem, professions, selectedBasePrice, selecte
 
     if (!hasRecipeProducts && !hasCaskAging) return null
 
-    // For derived items, use artisan if it's in professions, otherwise use base
-    const category = professions.includes("artisan") ? "artisan" : "base"
-
     return (
         <div className="mt-6">
             <div className="space-y-4">
                 {resolvedProducts.map(({ product, resolvedName, resolvedSprite }) => {
                     const derivedItem = itemsByName.get(resolvedName) ?? null
-                    // Resolve {input} template in ingredient names
-                    const resolvedIngredients = product.ingredients.map(i => ({
-                        ...i,
-                        name: i.name === "{input}" ? baseItem.name : i.name,
-                    }))
+                    // Resolve {input} template and alias substitution in ingredient names.
+                    // If an ingredient is an alias of the viewed item (e.g. "Egg" when viewing "Large Egg"),
+                    // substitute the viewed item's name so sprites and costs are correct.
+                    const itemCanonical = aliasMap.get(baseItem.name) ?? baseItem.name
+                    const resolvedIngredients = product.ingredients.map(i => {
+                        let name = i.name === "{input}" ? baseItem.name : i.name
+                        if (name !== baseItem.name && (aliasMap.get(name) ?? name) === itemCanonical) {
+                            name = baseItem.name
+                        }
+                        return { ...i, name }
+                    })
                     const viewedIngredient = resolvedIngredients.find(i => i.name === baseItem.name)
                     const inputQuantity = viewedIngredient?.quantity || resolvedIngredients[0]?.quantity || 1
                     const outputQuantity = product.outputQuantity || 1
                     const processingDays = product.processingDays
                     const isKitchenRecipe = product.processor === "Kitchen"
-                    const hasMultipleIngredients = new Set(resolvedIngredients.map(i => i.name)).size > 1
-                    const showIngredientSprites = isKitchenRecipe || hasMultipleIngredients
+                    // Extra ingredients are those beyond the base item being viewed
+                    const extraIngredients = resolvedIngredients.filter(i => i.name !== baseItem.name)
+                    // Kitchen: show all ingredient sprites. Other multi-ingredient processors: show processor + extras.
+                    const showIngredientSprites = isKitchenRecipe
+                    const showProcessorWithExtras = !isKitchenRecipe && extraIngredients.length > 0
 
                     // Determine sprite
                     let derivedSpriteUrl: string
@@ -154,39 +236,38 @@ export function DerivedItems({ baseItem, professions, selectedBasePrice, selecte
 
                     // Compute price from formula if available, otherwise use stored prices
                     let price = 0
-                    const formulaName = getProductFormula(resolvedName)
+                    const formulaName = product.priceFormula ?? getProductFormula(resolvedName)
                     if (formulaName && baseItem.prices?.base) {
-                        const baseNormalPrice = baseItem.prices.base.normal
-                        price = resolveFormula(formulaName, baseNormalPrice) ?? 0
+                        // Quality-sensitive formulas (smoked_fish) use the profession+quality-adjusted price,
+                        // i.e. whatever you'd sell the fish for (selectedBasePrice).
+                        // Other formulas (wine, jelly, juice, pickles, dried) use the base normal price.
+                        const inputPrice = QUALITY_SENSITIVE_FORMULAS.has(formulaName)
+                            ? selectedBasePrice
+                            : baseItem.prices.base.normal
+                        price = resolveFormula(formulaName, inputPrice) ?? 0
                         if (professions.includes("artisan")) {
                             price = Math.floor(price * 1.4)
                         }
                     } else if (derivedItem?.prices) {
-                        const prices = derivedItem.prices[category as keyof typeof derivedItem.prices]
+                        const effectivePrices = getEffectivePrices(derivedItem, itemsByName)
+                        const derivedCat = getPriceCategory(derivedItem.name, derivedItem.category, false, false, professions)
+                        const prices = effectivePrices?.[derivedCat as keyof typeof effectivePrices] ?? effectivePrices?.base
                         price = prices?.normal || 0
                     }
 
                     // Calculate delta: total output value minus total ingredient cost
+                    // Ingredient cost uses selectedBasePrice (profession-adjusted) as the opportunity cost
                     const totalBaseCost = computeIngredientsCost(resolvedIngredients, baseItem, selectedBasePrice, professions)
                     const totalOutputValue = price * outputQuantity
                     const delta = totalBaseCost > 0 ? totalOutputValue - totalBaseCost : 0
                     const deltaText = delta > 0 ? `+${delta}g` : delta < 0 ? `${delta}g` : "0g"
 
-                    // Gold per day calculation
-                    const effectiveProcessingDays = processingDays ?? 1
-                    const isDehydrator = product.processor === "Dehydrator"
-                    const goldPerDay = isDehydrator
-                        ? delta / effectiveProcessingDays / inputQuantity
-                        : delta / effectiveProcessingDays
-                    const goldPerDayText = goldPerDay > 0
-                        ? `${Math.round(goldPerDay)}g${isDehydrator ? '/item' : ''}/day`
-                        : ""
                     const deltaColor = delta > 0 ? "text-green-600" : delta < 0 ? "text-red-600" : "text-gray-600"
 
                     const displayName = resolvedName || product.name
                     const isClickable = !!derivedItem && !!onNavigateToItem
 
-                    // For Kitchen/multi-ingredient recipes, order viewed item first
+                    // For Kitchen recipes, show viewed item first then extras
                     const orderedIngredients = showIngredientSprites
                         ? [
                             ...resolvedIngredients.filter(i => i.name === baseItem.name),
@@ -194,48 +275,101 @@ export function DerivedItems({ baseItem, professions, selectedBasePrice, selecte
                         ]
                         : []
 
+                    const processorIcon = (
+                        <div className="relative group w-12 h-12">
+                            <Image
+                                src={getProcessorSpritePath(product.processor)}
+                                alt={product.processor}
+                                width={48}
+                                height={48}
+                                className={product.processor === "Fish Smoker" ? "group-hover:opacity-0" : ""}
+                            />
+                            {product.processor === "Fish Smoker" && (
+                                <Image
+                                    src="/sprites/processors/fish-smoker-glow.png"
+                                    alt={product.processor}
+                                    width={48}
+                                    height={48}
+                                    className="absolute top-0 left-0 opacity-0 group-hover:opacity-100"
+                                />
+                            )}
+                            {!showProcessorWithExtras && inputQuantity > 1 && (
+                                <div className="absolute -top-1 -right-1 bg-blue-600 text-white text-xs font-bold rounded-full w-5 h-5 flex items-center justify-center">
+                                    {inputQuantity}
+                                </div>
+                            )}
+                        </div>
+                    )
+
                     return (
                         <div key={`${resolvedName}-${product.processor}`} className="flex items-center gap-3">
                             {showIngredientSprites ? (
+                                // Kitchen recipe: show all ingredient sprites
                                 <div className="flex items-center gap-1">
                                     {orderedIngredients.map((ing, idx) => {
                                         const spritePath = getIngredientSpritePath(ing.name)
+                                        const ingPrice = ing.name === baseItem.name
+                                            ? selectedBasePrice
+                                            : getIngredientPrice(ing.name, professions)
                                         return (
                                             <Fragment key={ing.name}>
                                                 {idx > 0 && <span className="text-lg text-gray-400">+</span>}
-                                                <div className="relative">
-                                                    {spritePath && (
-                                                        <Image
-                                                            src={spritePath}
-                                                            alt={ing.name}
-                                                            width={32}
-                                                            height={32}
-                                                        />
-                                                    )}
-                                                    {ing.quantity > 1 && (
-                                                        <div className="absolute -top-1 -right-1 bg-blue-600 text-white text-xs font-bold rounded-full w-4 h-4 flex items-center justify-center text-[10px]">
-                                                            {ing.quantity}
-                                                        </div>
-                                                    )}
-                                                </div>
+                                                <IngredientPopover ingredientName={ing.name} ingredientPrice={ingPrice}>
+                                                    <div className="relative">
+                                                        {spritePath && (
+                                                            <Image
+                                                                src={spritePath}
+                                                                alt={ing.name}
+                                                                width={32}
+                                                                height={32}
+                                                            />
+                                                        )}
+                                                        {ing.quantity > 1 && (
+                                                            <div className="absolute -top-1 -right-1 bg-blue-600 text-white text-xs font-bold rounded-full w-4 h-4 flex items-center justify-center text-[10px]">
+                                                                {ing.quantity}
+                                                            </div>
+                                                        )}
+                                                    </div>
+                                                </IngredientPopover>
+                                            </Fragment>
+                                        )
+                                    })}
+                                </div>
+                            ) : showProcessorWithExtras ? (
+                                // Non-Kitchen processor with extra ingredients (e.g. Fish Smoker + Coal):
+                                // show processor icon + extra ingredient sprites
+                                <div className="flex items-center gap-1">
+                                    {processorIcon}
+                                    {extraIngredients.map((ing) => {
+                                        const spritePath = getIngredientSpritePath(ing.name)
+                                        const ingPrice = getIngredientPrice(ing.name, professions)
+                                        return (
+                                            <Fragment key={ing.name}>
+                                                <span className="text-lg text-gray-400">+</span>
+                                                <IngredientPopover ingredientName={ing.name} ingredientPrice={ingPrice}>
+                                                    <div className="relative">
+                                                        {spritePath && (
+                                                            <Image
+                                                                src={spritePath}
+                                                                alt={ing.name}
+                                                                width={32}
+                                                                height={32}
+                                                            />
+                                                        )}
+                                                        {ing.quantity > 1 && (
+                                                            <div className="absolute -top-1 -right-1 bg-blue-600 text-white text-xs font-bold rounded-full w-4 h-4 flex items-center justify-center text-[10px]">
+                                                                {ing.quantity}
+                                                            </div>
+                                                        )}
+                                                    </div>
+                                                </IngredientPopover>
                                             </Fragment>
                                         )
                                     })}
                                 </div>
                             ) : (
-                                <div className="relative">
-                                    <Image
-                                        src={getProcessorSpritePath(product.processor)}
-                                        alt={product.processor}
-                                        width={48}
-                                        height={48}
-                                    />
-                                    {inputQuantity > 1 && (
-                                        <div className="absolute -top-1 -right-1 bg-blue-600 text-white text-xs font-bold rounded-full w-5 h-5 flex items-center justify-center">
-                                            {inputQuantity}
-                                        </div>
-                                    )}
-                                </div>
+                                // Standard processor: just the processor icon
+                                processorIcon
                             )}
                             <span className="text-2xl">→</span>
                             <Item
@@ -245,7 +379,7 @@ export function DerivedItems({ baseItem, professions, selectedBasePrice, selecte
                             >
                                 <ItemContent>
                                     <ItemTitle className="flex items-center gap-2">
-                                        <div className="relative">
+                                        <div className="relative w-12 h-12 flex items-center justify-center">
                                             <Image
                                                 src={derivedSpriteUrl}
                                                 alt={displayName}
@@ -257,6 +391,15 @@ export function DerivedItems({ baseItem, professions, selectedBasePrice, selecte
                                                     {outputQuantity}
                                                 </div>
                                             )}
+                                            {product.outputQuality && product.outputQuality !== "normal" && qualitySprites[product.outputQuality] && (
+                                                <Image
+                                                    src={qualitySprites[product.outputQuality]}
+                                                    alt={product.outputQuality}
+                                                    width={48}
+                                                    height={48}
+                                                    className="absolute -bottom-4 -left-4 z-10"
+                                                />
+                                            )}
                                         </div>
                                         <span>{displayName}</span>
                                     </ItemTitle>
@@ -266,22 +409,25 @@ export function DerivedItems({ baseItem, professions, selectedBasePrice, selecte
                                                 {price}g{outputQuantity > 1 && <span className="text-xs text-gray-500">/ea</span>}
                                             </>
                                         )}
-                                        {totalBaseCost > 0 && price > 0 && (
+                                        {totalBaseCost > 0 && price > 0 && delta !== 0 && (
                                             <span className={`ml-2 text-sm ${deltaColor}`}>
                                                 ({deltaText})
                                             </span>
                                         )}
-                                        {totalBaseCost > 0 && goldPerDayText && (
-                                            <span className="ml-2 text-xs text-gray-500">
-                                                {goldPerDayText}
-                                            </span>
-                                        )}
-                                        {processingDays !== undefined && processingDays > 0 && (
+{processingDays !== undefined && processingDays > 0 && (
                                             <span className="ml-2 text-xs text-gray-400">
                                                 {processingDays}d
                                             </span>
                                         )}
                                     </ItemDescription>
+                                    {isKitchenRecipe && derivedItem && derivedItem.energy !== undefined && (
+                                        <div className="text-sm text-gray-600 space-y-0.5">
+                                            <div>⚡ {derivedItem.energy} &nbsp;❤️ {derivedItem.health}</div>
+                                            {derivedItem.buffs && derivedItem.buffs.length > 0 && (
+                                                <div className="text-xs text-indigo-600">{formatBuffs(derivedItem.buffs)}</div>
+                                            )}
+                                        </div>
+                                    )}
                                 </ItemContent>
                             </Item>
                         </div>
@@ -289,18 +435,13 @@ export function DerivedItems({ baseItem, professions, selectedBasePrice, selecte
                 })}
 
                 {/* Cask aging section — shown when the item itself has caskAgingDays */}
-                {hasCaskAging && <CaskAgingSection item={baseItem} category={category} selectedQuality={selectedQuality} />}
+                {hasCaskAging && <CaskAgingSection item={baseItem} category={professions.includes("artisan") ? "artisan" : "base"} selectedQuality={selectedQuality} />}
             </div>
         </div>
     )
 }
 
 const qualityOrder = ["normal", "silver", "gold", "iridium"] as const
-const qualitySprites: Record<string, string> = {
-    silver: "/sprites/silver.webp",
-    gold: "/sprites/gold.webp",
-    iridium: "/sprites/iridium.webp",
-}
 
 // Map item name patterns to processed sprite type suffixes
 const DERIVED_SPRITE_SUFFIXES: [RegExp, string][] = [

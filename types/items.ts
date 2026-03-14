@@ -27,7 +27,14 @@ export type ItemPrices = {
     rancher?: PriceQualities
     bearsKnowledge?: PriceQualities
     bearsKnowledgeTiller?: PriceQualities
+    fisher?: PriceQualities
     angler?: PriceQualities
+}
+
+export interface FoodBuff {
+    name: string
+    amount: number
+    duration: number  // seconds
 }
 
 export interface GameItem {
@@ -41,6 +48,9 @@ export interface GameItem {
     daysToMature?: number
     daysToRegrow?: number
     forageable?: boolean
+    energy?: number
+    health?: number
+    buffs?: FoodBuff[]
 }
 
 // Recipe base can target a specific item name, an array of item names (cooking recipes), or a category
@@ -71,4 +81,9 @@ export interface RecipeProduct {
 export interface Recipe {
     base: RecipeBase
     products: RecipeProduct[]
+}
+
+export interface RecipesData {
+    aliases: string[][]
+    recipes: Recipe[]
 }

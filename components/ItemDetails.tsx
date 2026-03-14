@@ -1,6 +1,6 @@
 "use client"
 
-import { useState } from "react"
+import { useState, useRef } from "react"
 import Image from "next/image"
 import type { GameItem } from "@/types/items"
 import {
@@ -13,7 +13,7 @@ import { ToggleGroup, ToggleGroupItem } from "@/components/ui/toggle-group"
 import { DerivedItems } from "./DerivedItems"
 import itemsData from "@/data/items.json"
 import { buildItemIndex } from "@/lib/recipeGraph"
-import { getEffectivePrices, getPriceCategory, getSourceItemName } from "@/lib/prices"
+import { getEffectivePrices, getPriceCategory, getSourceItemName, formatBuffs } from "@/lib/prices"
 
 const items = itemsData.items as GameItem[]
 const itemsByName = buildItemIndex(items)
@@ -38,8 +38,10 @@ function getItemSpritePath(item: GameItem): string | null {
     if (item.spritePath) return item.spritePath
 
     if (item.base) {
-        const fileName = item.name.toLowerCase().replace(/\s+/g, "-")
-        const subfolder = item.category === "animal-product" ? "animals" : "crops"
+        const fileName = item.name.toLowerCase().replace(/'/g, "").replace(/\s+/g, "-")
+        const subfolder = item.category === "animal-product" ? "animals"
+            : item.category === "fish" ? "fish"
+            : "crops"
         return `/sprites/bases/${subfolder}/${fileName}.png`
     }
 
@@ -73,14 +75,25 @@ interface ItemDetailsProps {
 }
 
 export function ItemDetails({ item, professions, wasForaged, onWasForagedChange, onNavigateToItem }: ItemDetailsProps) {
-    return <ItemDetailsInner key={`${item.name}-${professions.join('-')}-${wasForaged}`} item={item} professions={professions} wasForaged={wasForaged} onWasForagedChange={onWasForagedChange} onNavigateToItem={onNavigateToItem} />
+    // selectedQuality lives here so it survives profession/foraged toggles.
+    // Only reset to "normal" when the item itself changes.
+    const [selectedQuality, setSelectedQuality] = useState<string>("normal")
+    const prevItemRef = useRef(item.name)
+    if (prevItemRef.current !== item.name) {
+        prevItemRef.current = item.name
+        setSelectedQuality("normal")
+    }
+    return <ItemDetailsInner key={`${item.name}-${wasForaged}`} item={item} professions={professions} wasForaged={wasForaged} onWasForagedChange={onWasForagedChange} onNavigateToItem={onNavigateToItem} selectedQuality={selectedQuality} onQualityChange={setSelectedQuality} />
 }
 
-function ItemDetailsInner({ item, professions, wasForaged, onWasForagedChange, onNavigateToItem }: ItemDetailsProps) {
+interface ItemDetailsInnerProps extends ItemDetailsProps {
+    selectedQuality: string
+    onQualityChange: (q: string) => void
+}
+
+function ItemDetailsInner({ item, professions, wasForaged, onWasForagedChange, onNavigateToItem, selectedQuality, onQualityChange }: ItemDetailsInnerProps) {
     const itemSprite = getItemSpritePath(item)
     const isForageable = item.forageable ?? false
-
-    const [selectedQuality, setSelectedQuality] = useState<string>("normal")
 
     // Determine which price category to use
     const category = getPriceCategory(item.name, item.category, isForageable, wasForaged, professions)
@@ -136,7 +149,7 @@ function ItemDetailsInner({ item, professions, wasForaged, onWasForagedChange, o
             )}
 
             {categories.map(category => {
-                const qualities = effectivePrices?.[category as keyof typeof effectivePrices]
+                const qualities = effectivePrices?.[category as keyof typeof effectivePrices] ?? effectivePrices?.base
                 if (!qualities) return null
 
                 return (
@@ -150,7 +163,7 @@ function ItemDetailsInner({ item, professions, wasForaged, onWasForagedChange, o
                                         variant="muted"
                                         className={`cursor-pointer transition-all ${isSelected ? 'ring-2 ring-primary' : 'hover:ring-1 hover:ring-gray-400'}`}
                                         onClick={() => {
-                                            setSelectedQuality(quality)
+                                            onQualityChange(quality)
                                         }}
                                     >
                                         <ItemContent>
@@ -196,6 +209,15 @@ function ItemDetailsInner({ item, professions, wasForaged, onWasForagedChange, o
                     </div>
                 )
             })}
+
+            {item.category === "cooked" && item.energy !== undefined && (
+                <div className="text-sm text-gray-600 space-y-0.5">
+                    <div>⚡ {item.energy} &nbsp;❤️ {item.health}</div>
+                    {item.buffs && item.buffs.length > 0 && (
+                        <div className="text-xs text-indigo-600">{formatBuffs(item.buffs)}</div>
+                    )}
+                </div>
+            )}
 
             <DerivedItems
                 baseItem={item}
