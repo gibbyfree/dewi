@@ -68,10 +68,7 @@ function getDerivedSpritePath(color: string, processorName: string, baseItem: Ga
         processorType = "unknown"
     }
 
-    if (color) {
-        return `/sprites/processedes/${color}/${color}-${processorType}.png`
-    }
-    return `/sprites/processedes/${color}-${processorType}.png`
+    return `/sprites/processedes/${color}/${color}-${processorType}.png`
 }
 
 /**
